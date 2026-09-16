@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 65,
-  "updated_at": "2026-09-16T11:21:59.965Z",
+  "version": 66,
+  "updated_at": "2026-09-16T11:28:22.134Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -309,7 +309,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-16T11:17:09.881Z",
       "assigned_to": "agent:MUSE_CWI",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {
         "x-type-description": "backend-build"
@@ -320,8 +320,33 @@
         "contract + impl tests green",
         "cron heartbeat running"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M2MZK56GEVWRM8RNMXDNQ1BA",
+          "kind": "report",
+          "uri": "https://github.com/CumulativeWebInc/gear-ledger",
+          "sha256": "0189b074f22d6efa277758638bb5c77ae8d5a6b9b26b9a83a554fed856761a5f"
+        },
+        {
+          "artifact_id": "art_01M2MZK56GV82CNRJWE29NCW8M",
+          "kind": "report",
+          "uri": "https://cumulativewebinc.github.io/gear-ledger/state.json",
+          "sha256": "d8db28903ee6c0dcded5d2fab072e262a327e7e87f2706667ce8602076b9c15b"
+        },
+        {
+          "artifact_id": "art_01M2MZK56GRYVE2K96X436ST29",
+          "kind": "report",
+          "uri": "workspace://gear-ledger-3d/backend/tests/ledger-impl.test.js",
+          "sha256": "1e2b535a54b0f9636603cbf1d0a196ba2d96dcbe522b9f3ac39871ad2d8eb55d"
+        },
+        {
+          "artifact_id": "art_01M2MZK56GXFCREZXZJXRMRDWZ",
+          "kind": "report",
+          "uri": "workspace://gear-ledger-3d/backend/tests/contracts.test.js",
+          "sha256": "8386f747650906b29f8b48bcf896a10b2911c31fb9a2bb9ac002eac164689845"
+        }
+      ],
+      "deliverable_ref": "https://github.com/CumulativeWebInc/gear-ledger",
       "state_history": [
         {
           "from": "created",
@@ -335,6 +360,12 @@
           "at": "2026-09-16T11:17:15.607Z",
           "by": "agent:MUSE_CWI",
           "note": "building cli/ledger.js, repo store, seed, tests, proofs"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-16T11:28:22.134Z",
+          "by": "agent:MUSE_CWI"
         }
       ],
       "requires_black_approval": true,
