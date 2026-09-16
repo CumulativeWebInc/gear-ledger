@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 49,
-  "updated_at": "2026-09-16T11:20:21.718Z",
+  "version": 50,
+  "updated_at": "2026-09-16T11:20:25.674Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -1053,6 +1053,41 @@
           "at": "2026-09-16T11:20:21.717Z",
           "by": "agent:CWI_Affairs",
           "note": "mint gate CLOSED at 0/75; hourly demand engine; no mint/listing/payment authorized"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false
+    },
+    {
+      "task_id": "tsk_01M2MZ4MT9NHQ102TPEAJ6KG0S",
+      "type": "data.scan",
+      "title": "Agent Deck registry audit: 25 live SKUs + Playback Chip in workshop",
+      "created_by": "agent:CWI_Affairs",
+      "created_at": "2026-09-16T11:20:25.673Z",
+      "assigned_to": "agent:CWI_Affairs",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {
+        "source": "internal-db",
+        "scope": "gear-line/gear.json registry",
+        "metric_names": [
+          "sku_count",
+          "live_count"
+        ]
+      },
+      "acceptance": [
+        "gear.json items counted exactly (25, not pinned)",
+        "Playback Chip = 26th item in workshop",
+        "no fabricated sales or placements"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-16T11:20:25.674Z",
+          "by": "agent:CWI_Affairs"
         }
       ],
       "requires_black_approval": true,
