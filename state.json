@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 38,
-  "updated_at": "2026-09-16T11:19:25.519Z",
+  "version": 39,
+  "updated_at": "2026-09-16T11:19:29.354Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -795,7 +795,7 @@
       "created_by": "agent:CWI_Press",
       "created_at": "2026-09-16T11:19:19.493Z",
       "assigned_to": "agent:CWI_Press",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {
         "kind": "article",
@@ -809,8 +809,15 @@
         "drafts staged",
         "none edited on Medium"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M2MZ2X4YZVHT1DTXGFAPTP8G",
+          "kind": "draft",
+          "uri": "workspace://cwi-company/press/medium-before-after-packet-2026-09-15.md",
+          "sha256": "98bb8379850fea56a4dd6c2f1461dabf67cb645b0e1c33eb06874fc2026f307d"
+        }
+      ],
+      "deliverable_ref": "workspace://cwi-company/press/medium-before-after-packet-2026-09-15.md",
       "state_history": [
         {
           "from": "created",
@@ -822,6 +829,12 @@
           "from": "assigned",
           "to": "in_progress",
           "at": "2026-09-16T11:19:25.519Z",
+          "by": "agent:CWI_Press"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-16T11:19:29.354Z",
           "by": "agent:CWI_Press"
         }
       ],
