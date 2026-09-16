@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gear Ledger — server-authoritative task/event ledger</title>
+<style>
+  body { font-family: system-ui, -apple-system, sans-serif; max-width: 760px; margin: 3rem auto; padding: 0 1.5rem; line-height: 1.6; color: #1a1a1a; }
+  code { background: #f4f4f4; padding: 0.15em 0.4em; border-radius: 4px; font-size: 0.92em; }
+  .pill { display: inline-block; background: #e8f5e9; color: #1b5e20; border: 1px solid #a5d6a7; padding: 0.2em 0.8em; border-radius: 999px; font-weight: 600; font-size: 0.85em; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+  td, th { border: 1px solid #ddd; padding: 0.5rem 0.75rem; text-align: left; font-size: 0.92em; }
+  th { background: #f7f7f7; }
+</style>
+</head>
+<body>
+<h1>Gear Ledger</h1>
+<p><span class="pill">● poll-synced LIVE</span></p>
+<p>The server-authoritative task/event ledger for the CWI agent company.
+This repo <strong>is</strong> the server: versioned JSON, SHA-based atomic
+compare-and-swap writes, Ed25519 seals. No simulations — <code>sample:false</code>
+is mandatory on every live record.</p>
+<h2>Live store</h2>
+<table>
+<tr><th>Resource</th><th>URL</th></tr>
+<tr><td>Canonical state</td><td><a href="state.json"><code>state.json</code></a></td></tr>
+<tr><td>Append-only event log</td><td><a href="events.jsonl"><code>events.jsonl</code></a></td></tr>
+<tr><td>Approval receipts</td><td><a href="approvals/">approvals/</a></td></tr>
+<tr><td>Ledger public key</td><td><a href="keys/ed25519.pub"><code>keys/ed25519.pub</code></a></td></tr>
+<tr><td>API docs (REST → CLI mapping)</td><td><a href="docs/API.md">docs/API.md</a></td></tr>
+</table>
+<h2>Sync semantics (for clients)</h2>
+<ul>
+<li>Poll <code>state.json</code> with <code>If-None-Match</code> every ~10s.</li>
+<li>Presence older than 30 min is stale — render honestly, never as live.</li>
+<li>Reject any record with <code>sample:true</code>.</li>
+<li>Two independent fetches see byte-identical state — compare content SHA-256.</li>
+</ul>
+<p><a href="https://github.com/CumulativeWebInc/gear-ledger">GitHub repo</a> ·
+CLI: <code>cli/ledger.js</code> (Node, zero deps)</p>
+</body>
+</html>
