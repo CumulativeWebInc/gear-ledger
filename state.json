@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 4,
-  "updated_at": "2026-09-16T11:16:47.686Z",
+  "version": 5,
+  "updated_at": "2026-09-16T11:16:51.521Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -241,6 +241,36 @@
           "at": "2026-09-16T11:16:47.685Z",
           "by": "agent:CWI_Data",
           "note": "checked the 3 URLs live 2026-09-16; all serving 200"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false
+    },
+    {
+      "task_id": "tsk_01M2MYY3P0DJ47B1FJXAFANZ3C",
+      "type": "custom",
+      "title": "CWI backup system build + restore test",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-16T11:16:51.521Z",
+      "assigned_to": "agent:MUSE_CWI",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {
+        "x-type-description": "backup-system"
+      },
+      "acceptance": [
+        "7 parts encrypted AES-256, ~782 MB",
+        "restore test passed same day 2026-09-16",
+        "passphrase only at ~/.config/cwi-docs/passphrase (0600), Black holds a copy"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-16T11:16:51.521Z",
+          "by": "agent:MUSE_CWI"
         }
       ],
       "requires_black_approval": true,
