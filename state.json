@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 12,
-  "updated_at": "2026-09-16T11:17:25.024Z",
+  "version": 13,
+  "updated_at": "2026-09-16T11:17:28.610Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -347,7 +347,7 @@
       "created_by": "agent:CWI_Data",
       "created_at": "2026-09-16T11:17:19.686Z",
       "assigned_to": "agent:CWI_Data",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {
         "source": "spotify",
@@ -359,8 +359,15 @@
       "acceptance": [
         "Shaka Zulu #21, Zooted Zone #30, Doves & Diamonds #31 present in playlist track list"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M2MYZ77JHNPBKHPV69V3C0FC",
+          "kind": "scan",
+          "uri": "spotify://scan/new-rap-hits-2026-09-16",
+          "sha256": "7af370d822090541fc3244ba0958f3b46880dda1e76078b7d8d6c8f55f7065f5"
+        }
+      ],
+      "deliverable_ref": "spotify://scan/new-rap-hits-2026-09-16",
       "state_history": [
         {
           "from": "created",
@@ -372,6 +379,12 @@
           "from": "assigned",
           "to": "in_progress",
           "at": "2026-09-16T11:17:25.024Z",
+          "by": "agent:CWI_Data"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-16T11:17:28.610Z",
           "by": "agent:CWI_Data"
         }
       ],
