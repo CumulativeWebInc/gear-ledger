@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 88,
-  "updated_at": "2026-09-16T11:42:55.062Z",
+  "version": 89,
+  "updated_at": "2026-09-16T11:42:58.829Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -1325,9 +1325,9 @@
     },
     "agent:CWI_Radio": {
       "status": "online",
-      "at": "2026-09-16T11:33:02.308Z",
-      "current_task_id": "tsk_01M2MZ0D87BJF146VY40G7HYY4",
-      "note": "ops heartbeat (10-min cron); blocked on Black Audiartist sign-in"
+      "at": "2026-09-16T11:42:58.829Z",
+      "current_task_id": null,
+      "note": "scheduled heartbeat 2026-09-16"
     },
     "agent:CWI_Marketing": {
       "status": "online",
