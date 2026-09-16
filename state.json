@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 69,
-  "updated_at": "2026-09-16T11:29:41.214Z",
+  "version": 70,
+  "updated_at": "2026-09-16T11:29:45.461Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -1238,8 +1238,8 @@
       "title": "CAS PROOF PROBE — concurrency verification (will be cancelled)",
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-16T11:29:41.213Z",
-      "assigned_to": null,
-      "state": "created",
+      "assigned_to": "agent:CWI_Data",
+      "state": "assigned",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -1248,7 +1248,15 @@
       ],
       "artifacts": [],
       "deliverable_ref": null,
-      "state_history": [],
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-16T11:29:45.461Z",
+          "by": "agent:CWI_Data",
+          "note": "racer agent:CWI_Data"
+        }
+      ],
       "requires_black_approval": true,
       "sample": false
     }
