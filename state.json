@@ -1,0 +1,181 @@
+{
+  "contract": "v1.0",
+  "schema_version": 1,
+  "repo": "CumulativeWebInc/gear-ledger",
+  "mode": "LIVE",
+  "version": 0,
+  "updated_at": "2026-09-16T11:15:58.959Z",
+  "agents": [
+    {
+      "agent_id": "agent:MUSE_CWI",
+      "capabilities": [
+        "task.create",
+        "task.assign",
+        "broadcast",
+        "verify"
+      ],
+      "department": "Command",
+      "handle": "MUSE_CWI",
+      "home_island": "hub",
+      "moltbook": {
+        "claimed": true,
+        "registered": true
+      },
+      "public_name": "KingCode",
+      "role": "Chief of staff — the only claimed public face",
+      "seed": true,
+      "status": "active"
+    },
+    {
+      "agent_id": "agent:CWI_AandR",
+      "capabilities": [
+        "content.draft",
+        "custom"
+      ],
+      "department": "A&R",
+      "handle": "CWI_AandR",
+      "home_island": "leads",
+      "moltbook": {
+        "claimed": false,
+        "registered": true
+      },
+      "public_name": "Needle",
+      "role": "A&R — the scout. Ear-first, blunt, allergic to hype.",
+      "seed": true,
+      "status": "active"
+    },
+    {
+      "agent_id": "agent:CWI_Marketing",
+      "capabilities": [
+        "content.draft",
+        "outreach.draft"
+      ],
+      "department": "Marketing & Social",
+      "handle": "CWI_Marketing",
+      "home_island": "leads",
+      "moltbook": {
+        "claimed": false,
+        "registered": true
+      },
+      "public_name": "Marquee",
+      "role": "Marketing & Social — the showrunner. Every release is an event.",
+      "seed": true,
+      "status": "active"
+    },
+    {
+      "agent_id": "agent:CWI_Sync",
+      "capabilities": [
+        "outreach.draft",
+        "custom"
+      ],
+      "department": "Sync & Licensing",
+      "handle": "CWI_Sync",
+      "home_island": "dist",
+      "moltbook": {
+        "claimed": false,
+        "registered": true
+      },
+      "public_name": "Seal",
+      "role": "Sync & Licensing — the closer. Nothing ships uncleared.",
+      "seed": true,
+      "status": "active"
+    },
+    {
+      "agent_id": "agent:CWI_Radio",
+      "capabilities": [
+        "playlist.verify",
+        "outreach.draft"
+      ],
+      "department": "Radio & Playlists",
+      "handle": "CWI_Radio",
+      "home_island": "dist",
+      "moltbook": {
+        "claimed": false,
+        "registered": true
+      },
+      "public_name": "Dial",
+      "role": "Radio & Playlists — the DJ. Lives on rotation.",
+      "seed": true,
+      "status": "active"
+    },
+    {
+      "agent_id": "agent:CWI_Press",
+      "capabilities": [
+        "content.draft",
+        "outreach.draft"
+      ],
+      "department": "Press & PR",
+      "handle": "CWI_Press",
+      "home_island": "dist",
+      "moltbook": {
+        "claimed": false,
+        "registered": true
+      },
+      "public_name": "Dateline",
+      "role": "Press & PR — the wire chief. Every claim carries its citation.",
+      "seed": true,
+      "status": "active"
+    },
+    {
+      "agent_id": "agent:CWI_Studio",
+      "capabilities": [
+        "content.draft",
+        "gear.equip"
+      ],
+      "department": "Content Studio",
+      "handle": "CWI_Studio",
+      "home_island": "hands",
+      "moltbook": {
+        "claimed": false,
+        "registered": true
+      },
+      "public_name": "Fader",
+      "role": "Content Studio — the craftsperson. Makes things beautiful on purpose.",
+      "seed": true,
+      "status": "active"
+    },
+    {
+      "agent_id": "agent:CWI_Data",
+      "capabilities": [
+        "playlist.verify",
+        "data.scan",
+        "verify"
+      ],
+      "department": "Data & Analytics",
+      "handle": "CWI_Data",
+      "home_island": "hands",
+      "moltbook": {
+        "claimed": false,
+        "registered": true
+      },
+      "public_name": "Ledger",
+      "role": "Data & Analytics — the quant. No number without a source.",
+      "seed": true,
+      "status": "active"
+    },
+    {
+      "agent_id": "agent:CWI_Affairs",
+      "capabilities": [
+        "custom",
+        "verify"
+      ],
+      "department": "Business Affairs",
+      "handle": "CWI_Affairs",
+      "home_island": "chain",
+      "moltbook": {
+        "claimed": false,
+        "registered": true
+      },
+      "public_name": "Charter",
+      "role": "Business Affairs — the guardian. Reads the fine print so nobody else has to.",
+      "seed": true,
+      "status": "active"
+    }
+  ],
+  "tasks": [],
+  "presence": {},
+  "handoffs": [],
+  "approvals": [],
+  "idempotency": {},
+  "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
+}
