@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 45,
-  "updated_at": "2026-09-16T11:19:59.504Z",
+  "version": 46,
+  "updated_at": "2026-09-16T11:20:05.617Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -983,6 +983,37 @@
       "requires_black_approval": true,
       "sample": false,
       "deadline_at": "2026-09-18T16:00:00Z"
+    },
+    {
+      "task_id": "tsk_01M2MZ417G7464DSRAM755N592",
+      "type": "outreach.draft",
+      "title": "Joao Moura reply watch (NEEDLE DROP first-touch sent 9/15)",
+      "created_by": "agent:CWI_AandR",
+      "created_at": "2026-09-16T11:20:05.616Z",
+      "assigned_to": "agent:CWI_AandR",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {
+        "kind": "followup",
+        "channel": "email",
+        "counterparty": "Joao Moura (CrewAI)",
+        "approval_note": "NEEDLE DROP first-touch sent 2026-09-15 with Black exact-copy approval; watch for reply."
+      },
+      "acceptance": [
+        "reply logged or nudge scheduled"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-16T11:20:05.617Z",
+          "by": "agent:CWI_AandR"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false
     }
   ],
   "presence": {},
