@@ -187,6 +187,19 @@ function assertRegistered(doc, urn) {
 }
 
 export function checkTransition(doc, task, to, actor, opts = {}) {
+  // Open-board claim arbitration FIRST: a raced claim must surface
+  // task.already_claimed (with the winner) rather than transition.illegal —
+  // commit order is truth, and the loser is told exactly who won.
+  if (opts.claim) {
+    if (task.state !== 'created' || task.assigned_to !== null) {
+      throw new LedgerError('task.already_claimed', 'task already claimed', { claimed_by: task.assigned_to }, 409);
+    }
+    const a = assertRegistered(doc, actor);
+    if (!a.capabilities.includes(task.type)) {
+      throw new LedgerError('claim.ineligible', `${actor} lacks capability ${task.type}`, null, 422);
+    }
+    return;
+  }
   if (!TRANSITIONS[task.state].includes(to)) {
     throw new LedgerError('transition.illegal', `${task.state} → ${to} is not a legal transition`, { task_id: task.task_id }, 409);
   }
@@ -195,24 +208,14 @@ export function checkTransition(doc, task, to, actor, opts = {}) {
   }
   const rollback = task.state === 'delivered' && to === 'in_progress';
   switch (to) {
-    case 'assigned':
-      if (opts.claim) {
-        // open-board claim: eligibility re-checked inside the atomic step
-        if (task.state !== 'created' || task.assigned_to !== null) {
-          throw new LedgerError('task.already_claimed', 'task already claimed', { claimed_by: task.assigned_to }, 409);
-        }
-        const a = assertRegistered(doc, actor);
-        if (!a.capabilities.includes(task.type)) {
-          throw new LedgerError('claim.ineligible', `${actor} lacks capability ${task.type}`, null, 422);
-        }
-      } else {
-        // direct assign: creator or Black only
-        if (actor !== task.created_by && actor !== 'human:black') {
-          throw new LedgerError('assign.forbidden', 'only the creator or Black may direct-assign', null, 403);
-        }
-        assertRegistered(doc, opts.assignee);
+    case 'assigned': {
+      // direct assign: creator or Black only (open-board claims handled above)
+      if (actor !== task.created_by && actor !== 'human:black') {
+        throw new LedgerError('assign.forbidden', 'only the creator or Black may direct-assign', null, 403);
       }
+      assertRegistered(doc, opts.assignee);
       break;
+    }
     case 'in_progress':
       if (rollback) {
         if (!actor || actor === task.assigned_to || !isVerifierAgent(doc, actor)) {
