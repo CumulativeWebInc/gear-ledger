@@ -1,0 +1,1 @@
+{"event_id":"evt_01M2MYWGBZAMB2JW8HAG8TM3FD","event":"world.snapshot","at":"2026-09-16T11:15:58.976Z","actor":"system","sample":false,"data":{"note":"genesis: 9-agent registry committed, task/event stores empty","agents":9,"contract":"v1.0"}}
