@@ -33,13 +33,19 @@
  * Dependencies: none (node stdlib only).
  */
 import { execFileSync } from 'node:child_process';
-import { readFileSync } from 'node:fs';
+import { readFileSync, writeFileSync, rmSync } from 'node:fs';
 import { createHash, randomBytes, createPrivateKey, sign } from 'node:crypto';
-import { homedir } from 'node:os';
+import { homedir, tmpdir } from 'node:os';
+import { join } from 'node:path';
 
 const REPO = process.env.GEAR_LEDGER_REPO || 'CumulativeWebInc/gear-ledger';
 const BRANCH = process.env.GEAR_LEDGER_BRANCH || 'main';
 const GHAPI = process.env.GEAR_LEDGER_GHAPI || (homedir() + '/workspace/skills/github/bin/ghapi');
+const GHAPI_PUT_FILE = process.env.GEAR_LEDGER_GHAPI_PUT_FILE || (homedir() + '/workspace/skills/github/bin/ghapi_put_file');
+// ghapi takes --data as a CLI arg; payloads near/above the OS arg limit die
+// before any HTTP request (surfaces as HTTP 0). Route large PUT bodies
+// through the file-based helper on the same auth path.
+const LARGE_BODY_BYTES = 100000;
 const KEY_PATH = process.env.GEAR_LEDGER_KEY || (homedir() + '/.config/gear-ledger/ed25519.key');
 const CONTRACT = 'v1.0';
 const KID = 'cwi-ledger-2026';
@@ -74,10 +80,22 @@ export class LedgerError extends Error {
 
 // ---------------------------------------------------------------- GitHub layer
 function gh(method, path, data) {
-  const args = [method, path];
-  if (data !== undefined) args.push('--data', JSON.stringify(data));
+  const body = data !== undefined ? JSON.stringify(data) : undefined;
   try {
-    const out = execFileSync('python3', [GHAPI, ...args], { encoding: 'utf8', maxBuffer: 128 * 1024 * 1024 });
+    let out;
+    if (body !== undefined && method === 'PUT' && Buffer.byteLength(body, 'utf8') > LARGE_BODY_BYTES) {
+      const tmp = join(tmpdir(), `ghapi-body-${randomBytes(8).toString('hex')}.json`);
+      writeFileSync(tmp, body, 'utf8');
+      try {
+        out = execFileSync('python3', [GHAPI_PUT_FILE, path, tmp], { encoding: 'utf8', maxBuffer: 128 * 1024 * 1024 });
+      } finally {
+        rmSync(tmp, { force: true });
+      }
+    } else {
+      const args = [method, path];
+      if (body !== undefined) args.push('--data', body);
+      out = execFileSync('python3', [GHAPI, ...args], { encoding: 'utf8', maxBuffer: 128 * 1024 * 1024 });
+    }
     return JSON.parse(out);
   } catch (e) {
     const stderr = (e.stderr || '').toString();
