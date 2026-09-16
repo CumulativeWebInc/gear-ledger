@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 30,
-  "updated_at": "2026-09-16T11:18:46.256Z",
+  "version": 31,
+  "updated_at": "2026-09-16T11:18:52.301Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -672,7 +672,7 @@
       "created_by": "agent:CWI_Sync",
       "created_at": "2026-09-16T11:18:46.255Z",
       "assigned_to": "agent:CWI_Sync",
-      "state": "assigned",
+      "state": "in_progress",
       "priority": "normal",
       "inputs": {
         "kind": "pitch",
@@ -691,6 +691,12 @@
           "from": "created",
           "to": "assigned",
           "at": "2026-09-16T11:18:46.256Z",
+          "by": "agent:CWI_Sync"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-16T11:18:52.301Z",
           "by": "agent:CWI_Sync"
         }
       ],
