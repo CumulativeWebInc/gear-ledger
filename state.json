@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 2,
-  "updated_at": "2026-09-16T11:16:39.946Z",
+  "version": 3,
+  "updated_at": "2026-09-16T11:16:43.843Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -180,7 +180,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-16T11:16:34.395Z",
       "assigned_to": "agent:MUSE_CWI",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {
         "kind": "other",
@@ -194,8 +194,27 @@
         "agent-card.json teachPacks block live",
         "sitemap.xml includes the 8 teach URLs"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M2MYXVKZGKVYYH12JK6SDT4H",
+          "kind": "report",
+          "uri": "https://cumulativewebinc.github.io/cwi-learn/teach/",
+          "sha256": "f2f52d57cbbc99d11aa5747810524df7e996c257df10b2e5ee6524a7dc1a684a"
+        },
+        {
+          "artifact_id": "art_01M2MYXVM0W5EKFZSDBMPCYR4M",
+          "kind": "report",
+          "uri": "https://cumulativewebinc.github.io/cwi-learn/.well-known/agent-card.json",
+          "sha256": "55fff8be6d19dcfd74d9ed813ea92b2df6f0c5c0fa8a1a6c065a37d48fdcbf45"
+        },
+        {
+          "artifact_id": "art_01M2MYXVM0N8VMM8J9J1VQCTV7",
+          "kind": "report",
+          "uri": "https://cumulativewebinc.github.io/cwi-learn/sitemap.xml",
+          "sha256": "da68c94c346cd8aea95deb3f65f4ec128cd354c341d01b4e7b3cf934457a9eee"
+        }
+      ],
+      "deliverable_ref": "https://cumulativewebinc.github.io/cwi-learn/teach/",
       "state_history": [
         {
           "from": "created",
@@ -208,6 +227,12 @@
           "from": "assigned",
           "to": "in_progress",
           "at": "2026-09-16T11:16:39.946Z",
+          "by": "agent:MUSE_CWI"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-16T11:16:43.843Z",
           "by": "agent:MUSE_CWI"
         }
       ],
