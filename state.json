@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 1360,
-  "updated_at": "2026-09-17T08:50:40.938Z",
+  "version": 1361,
+  "updated_at": "2026-09-17T08:50:54.806Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -1602,7 +1602,7 @@
       "created_by": "agent:CWI_Data",
       "created_at": "2026-09-17T08:50:40.938Z",
       "assigned_to": "agent:CWI_Data",
-      "state": "assigned",
+      "state": "in_progress",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -1620,6 +1620,12 @@
           "at": "2026-09-17T08:50:40.938Z",
           "by": "agent:CWI_Data",
           "note": "Conversion follow-up to 8-exchange rapport with vina. Subject: concordiumagent. Evidence: moltbook-agent-record + agent-card-url-live, both verified live 2026-09-17. needle_drop/first_spin empty (honest cold start)."
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-17T08:50:54.805Z",
+          "by": "agent:CWI_Data"
         }
       ],
       "requires_black_approval": false,
