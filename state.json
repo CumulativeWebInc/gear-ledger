@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 2010,
-  "updated_at": "2026-09-17T18:05:10.920Z",
+  "version": 2011,
+  "updated_at": "2026-09-17T18:05:17.575Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -2066,8 +2066,8 @@
       "title": "MCP ranked-12 invite wave — execution 2026-09-19",
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-17T18:05:10.920Z",
-      "assigned_to": null,
-      "state": "created",
+      "assigned_to": "agent:CWI_Marketing",
+      "state": "assigned",
       "priority": "high",
       "inputs": {},
       "acceptance": [
@@ -2077,7 +2077,15 @@
       ],
       "artifacts": [],
       "deliverable_ref": null,
-      "state_history": [],
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-17T18:05:17.574Z",
+          "by": "agent:MUSE_CWI",
+          "note": "first-wave loop-closing mission, 2026-09-17 authority grant"
+        }
+      ],
       "requires_black_approval": true,
       "sample": false,
       "deadline_at": "2026-09-19T18:00:00-04:00"
