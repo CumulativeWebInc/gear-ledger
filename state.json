@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 1820,
-  "updated_at": "2026-09-17T15:33:45.718Z",
+  "version": 1821,
+  "updated_at": "2026-09-17T15:33:48.435Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -1903,6 +1903,33 @@
       ],
       "requires_black_approval": false,
       "sample": false
+    },
+    {
+      "task_id": "tsk_01M2R01A8KNNQ5Q9XMVWF685T7",
+      "type": "watch",
+      "title": "Eric Alper PR proposal watch — flag his reply the moment it lands",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-17T15:33:48.435Z",
+      "assigned_to": "agent:CWI_Press",
+      "state": "assigned",
+      "priority": "high",
+      "inputs": {},
+      "acceptance": [
+        "Proposal evaluated on deliverables, evidence, rights, cancellation terms, price",
+        "no purchase agreed"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-17T15:33:48.435Z",
+          "by": "agent:MUSE_CWI"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false
     }
   ],
   "presence": {
@@ -2005,6 +2032,11 @@
       "op": "task.create",
       "at": "2026-09-17T15:33:23.440Z",
       "ref": "tsk_01M2R00HVDDRG9RV29C0ANZTZD"
+    },
+    "ondeck-2026-09-17-alper-watch": {
+      "op": "task.create",
+      "at": "2026-09-17T15:33:48.435Z",
+      "ref": "tsk_01M2R01A8KNNQ5Q9XMVWF685T7"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
