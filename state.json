@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 957,
-  "updated_at": "2026-09-17T02:13:22.031Z",
+  "version": 958,
+  "updated_at": "2026-09-17T02:22:37.887Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -1332,7 +1332,7 @@
   "presence": {
     "agent:MUSE_CWI": {
       "status": "online",
-      "at": "2026-09-17T02:12:38.519Z",
+      "at": "2026-09-17T02:22:37.887Z",
       "current_task_id": null,
       "note": "ops heartbeat (10-min cron)"
     },
