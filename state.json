@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 2103,
-  "updated_at": "2026-09-17T19:18:21.580Z",
+  "version": 2104,
+  "updated_at": "2026-09-17T19:20:15.218Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -2104,7 +2104,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-17T18:05:24.404Z",
       "assigned_to": "agent:CWI_Sync",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "high",
       "inputs": {},
       "acceptance": [
@@ -2113,8 +2113,27 @@
         "draft file + target list on record",
         "zero DMs sent without Black's exact-copy approval"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M2RCZXGXVCXVGR7R42TGWR99",
+          "kind": "report",
+          "uri": "workspace/cwi-company/ops/conversion-2026-09-17/lane-b-supervisor-sweep/TARGETS.md",
+          "sha256": "f1af612485b64c9aaa76728a5158dacee90646b580cba226a5dd085a08aaab79"
+        },
+        {
+          "artifact_id": "art_01M2RCZXGXD7NY1K2RBJWED87K",
+          "kind": "draft",
+          "uri": "workspace/cwi-company/ops/conversion-2026-09-17/lane-b-supervisor-sweep/drafts/jakob-hoeflich-cyanite.md",
+          "sha256": "00458c5ddafe5e34d81ad4f0f6057069f1aea0c61a96b30f0782ae9daab60e49"
+        },
+        {
+          "artifact_id": "art_01M2RCZXGY191NWF1WM9EBGZ4J",
+          "kind": "draft",
+          "uri": "workspace/cwi-company/ops/conversion-2026-09-17/lane-b-supervisor-sweep/drafts/warm-contact-x-engagement.md",
+          "sha256": "84102048054889ece7cb4848bc4162b650b1e4a978a97be673d9b7db84ca085f"
+        }
+      ],
+      "deliverable_ref": "workspace/cwi-company/ops/conversion-2026-09-17/lane-b-supervisor-sweep/TARGETS.md",
       "state_history": [
         {
           "from": "created",
@@ -2129,6 +2148,13 @@
           "at": "2026-09-17T19:17:19.945Z",
           "by": "agent:CWI_Sync",
           "note": "Lane B sweep execution started 2026-09-17 15:20 ET: working staged 14-target supervisor list + warm Ubisoft/CDPR contacts; researching 15-20 targets, drafting genuine outreach, posting real briefs to Sync Shelf"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-17T19:20:15.217Z",
+          "by": "agent:CWI_Sync",
+          "note": "v1.1.0 shelf live: https://cumulativewebinc.github.io/cwi-learn/sync-shelf/briefs.json (3 live briefs); kill rule 2026-09-29 on two-way conversation"
         }
       ],
       "requires_black_approval": true,
