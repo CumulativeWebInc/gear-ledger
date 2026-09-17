@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 1831,
-  "updated_at": "2026-09-17T15:35:34.093Z",
+  "version": 1832,
+  "updated_at": "2026-09-17T15:35:54.911Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -1965,7 +1965,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-17T15:34:15.686Z",
       "assigned_to": "agent:CWI_Athena",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "high",
       "inputs": {},
       "acceptance": [
@@ -1973,8 +1973,21 @@
         "form ships with content.json",
         "no paid product"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M2R054CFP38YYMX5YCDQVYQZ",
+          "kind": "report",
+          "uri": "workspace/cwi-company/agents/athena/host/MINT/day2/content.json",
+          "sha256": "cb22a30c04dc7e06899c3912a541ee638c795eb865ec5f277138f1629bdce5c4"
+        },
+        {
+          "artifact_id": "art_01M2R054CGF7HJ17AT8EA0VY7W",
+          "kind": "draft",
+          "uri": "workspace/cwi-company/agents/athena/host/MINT/day2/sync-pack-interest-form.html",
+          "sha256": "2e150a231e17cea53d42555117204e0b7568d9f7791fd84a832cff74f7a9280c"
+        }
+      ],
+      "deliverable_ref": "workspace/cwi-company/agents/athena/host/MINT/day2/content.json",
       "state_history": [
         {
           "from": "created",
@@ -1988,6 +2001,12 @@
           "at": "2026-09-17T15:35:26.224Z",
           "by": "agent:CWI_Athena",
           "note": "work executed by ATHENA sub-agents 2026-09-17"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-17T15:35:54.911Z",
+          "by": "agent:CWI_Athena"
         }
       ],
       "requires_black_approval": false,
