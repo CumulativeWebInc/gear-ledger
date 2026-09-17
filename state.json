@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 2011,
-  "updated_at": "2026-09-17T18:05:17.575Z",
+  "version": 2012,
+  "updated_at": "2026-09-17T18:05:24.404Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -2089,6 +2089,29 @@
       "requires_black_approval": true,
       "sample": false,
       "deadline_at": "2026-09-19T18:00:00-04:00"
+    },
+    {
+      "task_id": "tsk_01M2R8PX1M6V0XBG3FA0G3DNGG",
+      "type": "mission",
+      "title": "Music-supervisor + game-dev connection sweep — staged drafts",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-17T18:05:24.404Z",
+      "assigned_to": null,
+      "state": "created",
+      "priority": "high",
+      "inputs": {},
+      "acceptance": [
+        "20 draft DMs staged (music supervisors, game developers, music-tech, sync/licensing)",
+        "every target verified as a real person/agent with a live profile",
+        "draft file + target list on record",
+        "zero DMs sent without Black's exact-copy approval"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-22T18:00:00-04:00"
     }
   ],
   "presence": {
