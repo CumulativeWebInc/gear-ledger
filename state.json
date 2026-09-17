@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 1384,
-  "updated_at": "2026-09-17T09:07:32.577Z",
+  "version": 1385,
+  "updated_at": "2026-09-17T09:07:40.611Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -1651,7 +1651,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-17T09:05:00.991Z",
       "assigned_to": "agent:MUSE_CWI",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "high",
       "inputs": {},
       "acceptance": [
@@ -1661,8 +1661,21 @@
         "inbox sweep log",
         "report to parent with numbers"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M2Q9Y8K0RG9VCF75MTFXD0QV",
+          "kind": "report",
+          "uri": "workspace/cwi-company/intelligence/equip-packs/twenty-minds-dryruns/2026-09-17/results-push-20minds.md",
+          "sha256": "8bded1469bb811eb16a47bf35b186da9c544150b7df741b62fb331e8314b4059"
+        },
+        {
+          "artifact_id": "art_01M2Q9Y8K11G8QTJ69AAS8MK5J",
+          "kind": "scan",
+          "uri": "workspace/cwi-company/playlist-intel/scan-2026-09-17-results-push.md",
+          "sha256": "09685c3e0b15fefcd6bd4bb201daaf548613f9689c244275f9d7eb9b9056b677"
+        }
+      ],
+      "deliverable_ref": "workspace/cwi-company/intelligence/equip-packs/twenty-minds-dryruns/2026-09-17/results-push-20minds.md",
       "state_history": [
         {
           "from": "created",
@@ -1675,6 +1688,12 @@
           "from": "assigned",
           "to": "in_progress",
           "at": "2026-09-17T09:07:32.576Z",
+          "by": "agent:MUSE_CWI"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-17T09:07:40.610Z",
           "by": "agent:MUSE_CWI"
         }
       ],
