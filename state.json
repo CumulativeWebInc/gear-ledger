@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 1358,
-  "updated_at": "2026-09-17T08:48:38.506Z",
+  "version": 1359,
+  "updated_at": "2026-09-17T08:48:58.340Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -1456,7 +1456,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-17T08:47:26.588Z",
       "assigned_to": "agent:CWI_Radio",
-      "state": "assigned",
+      "state": "cancelled",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -1471,6 +1471,13 @@
           "to": "assigned",
           "at": "2026-09-17T08:47:26.589Z",
           "by": "agent:MUSE_CWI"
+        },
+        {
+          "from": "assigned",
+          "to": "cancelled",
+          "at": "2026-09-17T08:48:58.339Z",
+          "by": "agent:MUSE_CWI",
+          "note": "superseded by tsk_01M2Q8TMH02KFY8552NKRKDDV5 (executor delivered: channel verified, Diabolique pitched, msg 1a0ae8d4498578fe)"
         }
       ],
       "requires_black_approval": false,
