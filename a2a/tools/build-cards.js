@@ -2,7 +2,7 @@
 // build-cards.js — generate one A2A Agent Card per CWI agent from agents.json.
 // Cards carry ONLY real, verifiable facts: Gear Ledger registry record,
 // sealed identity card, NEEDLE DROP trust root, real links.
-// Usage: node tools/build-cards.js [--agents agents.json] [--out ../a2a-cards-out]
+// Usage: node tools/build-cards.js [--agents server/agents.json] [--out cards]
 //        [--endpoint https://cwi-a2a.onrender.com/]
 import { writeFileSync, readFileSync, mkdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
@@ -11,6 +11,8 @@ import { realpathSync } from 'node:fs';
 const CARD_BASE = 'https://cumulativewebinc.github.io/cwi-learn/.well-known/agents';
 const REPO_README = 'https://github.com/CumulativeWebInc/gear-ledger/blob/main/a2a/README.md';
 const REPO_DEPLOY = 'https://github.com/CumulativeWebInc/gear-ledger/blob/main/a2a/DEPLOY.md';
+const REPO_INBOX_PROTOCOL = 'https://github.com/CumulativeWebInc/gear-ledger/blob/main/a2a/INBOX-PROTOCOL.md';
+const INBOX_ISSUES_URL = 'https://github.com/CumulativeWebInc/cwi-a2a-inbox/issues';
 
 // Real registry capabilities -> A2A skill descriptors. Every description states
 // the honest intake semantics: the server queues; it does not execute.
@@ -50,7 +52,7 @@ const CHIEF_SKILLS = [
     examples: [] },
 ];
 
-function buildCard(agent, endpoint, provenance) {
+function buildCard(agent, endpoint, provenance, transport) {
   const id = agent.identity || {};
   const skills = [];
   const seen = new Set();
@@ -66,9 +68,36 @@ function buildCard(agent, endpoint, provenance) {
     ? ' Sole claimed Moltbook agent for Cumulative Web Inc (handle muse_cwi).'
     : ' Registered on Moltbook; operates behind KingCode as the sole public face.';
 
+  // Transport: 'issues' = live github-issues-profile (no public HTTP endpoint);
+  // 'http' = planned/vanilla HTTP JSON-RPC endpoint.
+  const isIssues = transport === 'issues';
+  const ep = isIssues ? INBOX_ISSUES_URL : endpoint;
+  const transportNote = isIssues
+    ? ' Contactable over A2A via the github-issues-profile transport: send a JSON-RPC 2.0 request as a GitHub issue in the inbox repo (see documentationUrl). Async, relayed every ~10 minutes — not a live HTTP endpoint.'
+    : ' Contactable over A2A: messages are received, logged, and queued to the agent\u2019s recorded task queue.';
+  const deployment = isIssues
+    ? {
+        status: 'live',
+        live: true,
+        local_endpoint: 'http://localhost:41241/',
+        live_endpoint: ep,
+        transport: 'github-issues-profile',
+        protocol: REPO_INBOX_PROTOCOL,
+        relay_cadence: '~10 minutes',
+        note: 'Live via the CWI github-issues-profile transport: external agents send A2A JSON-RPC requests as GitHub issues; a relay forwards them to the gateway every ~10 minutes and posts the JSON-RPC response as an issue comment. This is not a live HTTP endpoint — round trips are async.',
+      }
+    : {
+        status: 'planned',
+        live: false,
+        local_endpoint: 'http://localhost:41241/',
+        planned_endpoint: endpoint,
+        runbook: REPO_DEPLOY,
+        note: 'No public A2A endpoint is live yet. Cards point at the documented $0 deployment target; status flips to live only after the runbook is executed and verified.',
+      };
+
   return {
     name: agent.public_name,
-    description: `${agent.public_name} — ${agent.role} (${agent.department}, Cumulative Web Inc).${moltbookNote} Contactable over A2A: messages are received, logged, and queued to the agent\u2019s recorded task queue. No automated execution.`,
+    description: `${agent.public_name} — ${agent.role} (${agent.department}, Cumulative Web Inc).${moltbookNote}${transportNote} No automated execution.`,
     protocolVersion: '1.0.0',
     version: '1.0.0',
     provider: {
@@ -82,20 +111,23 @@ function buildCard(agent, endpoint, provenance) {
     defaultOutputModes: ['text/plain'],
     skills,
     // v1.0 interface list (multi-agent hosting via tenant).
+    // Honest transport declaration: the github-issues-profile is NOT vanilla
+    // HTTP JSON-RPC — it is async and issue-based. Declared explicitly so no
+    // client mistakes it for a live socket.
     supportedInterfaces: [
-      { url: endpoint, protocolBinding: 'JSONRPC', protocolVersion: '1.0.0', tenant: agent.handle },
+      {
+        url: ep,
+        protocolBinding: 'JSONRPC',
+        protocolVersion: '1.0.0',
+        tenant: agent.handle,
+        ...(isIssues ? { transportProfile: 'github-issues-profile', documentation: REPO_INBOX_PROTOCOL } : {}),
+      },
     ],
+    transports: isIssues ? ['github-issues-profile'] : ['https'],
     // v0.3-compatible alias for older clients.
-    url: endpoint,
-    documentationUrl: REPO_README,
-    deployment: {
-      status: 'planned',
-      live: false,
-      local_endpoint: 'http://localhost:41241/',
-      planned_endpoint: endpoint,
-      runbook: REPO_DEPLOY,
-      note: 'No public A2A endpoint is live yet. Cards point at the documented $0 deployment target; status flips to live only after the runbook is executed and verified.',
-    },
+    url: ep,
+    documentationUrl: isIssues ? REPO_INBOX_PROTOCOL : REPO_README,
+    deployment,
     trust: {
       root: 'cwi-needledrop/v1',
       issuer: 'Cumulative Web Inc',
@@ -118,20 +150,21 @@ function buildCard(agent, endpoint, provenance) {
 }
 
 function main() {
-  let agentsPath = 'agents.json', outDir = '../a2a-cards-out', endpoint = 'https://cwi-a2a.onrender.com/';
+  let agentsPath = 'server/agents.json', outDir = 'cards', endpoint = 'https://cwi-a2a.onrender.com/', transport = 'issues';
   for (let i = 2; i < process.argv.length; i++) {
     if (process.argv[i] === '--agents') agentsPath = process.argv[++i];
     else if (process.argv[i] === '--out') outDir = process.argv[++i];
     else if (process.argv[i] === '--endpoint') endpoint = process.argv[++i];
+    else if (process.argv[i] === '--transport') transport = process.argv[++i];
   }
   const snap = JSON.parse(readFileSync(agentsPath, 'utf8'));
   const generated_at = new Date().toISOString();
-  const index = { schema: 'cwi.a2a-agent-card-index/1.0', generated_at, endpoint_planned: endpoint, agent_count: snap.agents.length, agents: [] };
+  const index = { schema: 'cwi.a2a-agent-card-index/1.0', generated_at, transport, endpoint: transport === 'issues' ? 'https://github.com/CumulativeWebInc/cwi-a2a-inbox/issues' : endpoint, endpoint_planned: transport === 'issues' ? undefined : endpoint, agent_count: snap.agents.length, agents: [] };
 
   for (const agent of snap.agents) {
     const dir = `${outDir}/${agent.handle}`;
     mkdirSync(dir, { recursive: true });
-    const card = buildCard(agent, endpoint, snap.provenance);
+    const card = buildCard(agent, endpoint, snap.provenance, transport);
     const file = `${dir}/agent-card.json`;
     writeFileSync(file, JSON.stringify(card, null, 2) + '\n');
     index.agents.push({
