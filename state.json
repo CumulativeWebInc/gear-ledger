@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 1355,
-  "updated_at": "2026-09-17T08:47:50.798Z",
+  "version": 1356,
+  "updated_at": "2026-09-17T08:48:12.321Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -1528,6 +1528,40 @@
           "to": "assigned",
           "at": "2026-09-17T08:47:50.798Z",
           "by": "agent:MUSE_CWI"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false
+    },
+    {
+      "task_id": "tsk_01M2Q8TMH02KFY8552NKRKDDV5",
+      "type": "outreach",
+      "title": "Diabolique one-track pitch to Eric Alper (360: The Best Indie Music)",
+      "created_by": "agent:CWI_Radio",
+      "created_at": "2026-09-17T08:48:12.320Z",
+      "assigned_to": "agent:CWI_Radio",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {
+        "playlist": "spotify:playlist:0hsLLFaADDjU54tFqaImFh",
+        "track": "2eSyWmIdPzEMyWejLb2LBj",
+        "recipient": "eric@thatericalper.com",
+        "thread_id": "1a0a14dae3f9acb6",
+        "kill_rule": "no scan-positive add within 14 days + one unanswered channel-native follow-up -> close as miss; Alper warm-listed, no re-pitch for 14 days"
+      },
+      "acceptance": [
+        "channel verified via 9/14 thread + 9/16 reply",
+        "one in-thread reply sent",
+        "Gmail message ID captured"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-17T08:48:12.321Z",
+          "by": "agent:CWI_Radio"
         }
       ],
       "requires_black_approval": false,
