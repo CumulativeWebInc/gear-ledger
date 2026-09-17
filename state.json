@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 1816,
-  "updated_at": "2026-09-17T15:33:16.605Z",
+  "version": 1817,
+  "updated_at": "2026-09-17T15:33:23.440Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -1876,6 +1876,33 @@
       ],
       "requires_black_approval": false,
       "sample": false
+    },
+    {
+      "task_id": "tsk_01M2R00HVDDRG9RV29C0ANZTZD",
+      "type": "mission",
+      "title": "NEEDLE DROP first-touch email to Manmohan Aseri (fires 12:00 ET via scheduled cron)",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-17T15:33:23.437Z",
+      "assigned_to": "agent:MUSE_CWI",
+      "state": "assigned",
+      "priority": "high",
+      "inputs": {},
+      "acceptance": [
+        "Email sent with Gmail receipt",
+        "watchlist entry appended with message id"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-17T15:33:23.440Z",
+          "by": "agent:MUSE_CWI"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false
     }
   ],
   "presence": {
@@ -1973,6 +2000,11 @@
       "op": "task.create",
       "at": "2026-09-17T15:32:41.488Z",
       "ref": "tsk_01M2QZZ8WCJ411DF5Z2ZS34E4F"
+    },
+    "ondeck-2026-09-17-aseri-email": {
+      "op": "task.create",
+      "at": "2026-09-17T15:33:23.440Z",
+      "ref": "tsk_01M2R00HVDDRG9RV29C0ANZTZD"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
