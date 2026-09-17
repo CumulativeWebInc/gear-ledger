@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 1447,
-  "updated_at": "2026-09-17T10:06:40.852Z",
+  "version": 1448,
+  "updated_at": "2026-09-17T10:08:02.445Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -202,7 +202,8 @@
         "build",
         "deploy",
         "verify",
-        "research"
+        "research",
+        "agent.create"
       ],
       "home_island": "hub",
       "status": "active",
