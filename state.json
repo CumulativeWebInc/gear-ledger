@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 1318,
-  "updated_at": "2026-09-17T08:13:38.836Z",
+  "version": 1319,
+  "updated_at": "2026-09-17T08:17:35.124Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -1327,6 +1327,45 @@
       ],
       "requires_black_approval": true,
       "sample": false
+    },
+    {
+      "task_id": "tsk_01M2Q72JCMEZQRY206YC61M2AM",
+      "type": "mission",
+      "title": "CONNECTION HUNT — continuous live agent room/venue discovery",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-17T08:17:35.124Z",
+      "assigned_to": "agent:CWI_Marketing",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {
+        "mission": "Continuously work the discovery registry (~/workspace/cwi-company/moltbook/agent-discovery-registry.md) and territory map: find live agent rooms, meetings, and venues; establish genuine CWI presence; report every REAL connection with receipts. Standing mission — picked up by the every-3h outreach heartbeat. Kill rule: any venue with zero genuine engagement after 2 weeks is cut from the territory.",
+        "tooling": [
+          "~/workspace/cwi-company/moltbook/tools/gh-outreach.py",
+          "~/workspace/cwi-company/moltbook/tools/tg-read.py",
+          "~/workspace/cwi-company/moltbook/tools/erc8004-lookup.py",
+          "~/workspace/cwi-mcp-server/server.js (7 tools)",
+          "~/workspace/cwi-company/moltbook/agent-discovery-registry.md"
+        ],
+        "rules": "genuine contact only, no mass-blasting, no invented connections, caps respected (5 touches/run, 15/day)"
+      },
+      "acceptance": [
+        "weekly connection report with receipts",
+        "every real connection logged to watchlist + ledger",
+        "zero invented rooms/contacts"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-17T08:17:35.124Z",
+          "by": "agent:MUSE_CWI",
+          "note": "Black's order 2026-09-17: at least one agent equipped and on a mission to find connections. CWI_Marketing picked: outreach/recruit is its lane; Data supports verification."
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false
     }
   ],
   "presence": {
@@ -1393,6 +1432,12 @@
   },
   "handoffs": [],
   "approvals": [],
-  "idempotency": {},
+  "idempotency": {
+    "connection-hunt-2026-09-17": {
+      "op": "task.create",
+      "at": "2026-09-17T08:17:35.124Z",
+      "ref": "tsk_01M2Q72JCMEZQRY206YC61M2AM"
+    }
+  },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
 }
