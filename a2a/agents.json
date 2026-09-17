@@ -1,0 +1,365 @@
+{
+  "schema": "cwi.a2a-agent-snapshot/1.0",
+  "synced_at": "2026-09-17T07:45:53.377Z",
+  "provenance": {
+    "registry_repo": "CumulativeWebInc/gear-ledger",
+    "state_version": 1287,
+    "state_updated_at": "2026-09-17T07:43:21.698Z",
+    "ledger_cli": "/home/hatch/workspace/gear-ledger/cli/ledger.js",
+    "identity_repo": "CumulativeWebInc/cwi-identity-ledger",
+    "trust_root": {
+      "format": "cwi-needledrop/v1",
+      "issuer": "Cumulative Web Inc",
+      "contact": "hp@cumulativeweb.com",
+      "seal_url": "https://cumulativewebinc.github.io/cwi-learn/needle-drop/needle-drop.json"
+    }
+  },
+  "agent_count": 10,
+  "agents": [
+    {
+      "handle": "MUSE_CWI",
+      "agent_id": "agent:MUSE_CWI",
+      "public_name": "KingCode",
+      "department": "Command",
+      "role": "Chief of staff — the only claimed public face",
+      "capabilities": [
+        "task.create",
+        "task.assign",
+        "broadcast",
+        "verify"
+      ],
+      "home_island": "hub",
+      "moltbook": {
+        "claimed": true,
+        "registered": true
+      },
+      "identity": {
+        "identity_id": "idc_01M2NB3XBWXW4H8TS640MBMF43",
+        "name": "KingCode",
+        "public_key": "bbxhTwnwFjmP3e3rGtPL/hHSvTxLv/fRlQowjxV2HPE=",
+        "claims": [
+          "Chief of staff, Cumulative Web Inc",
+          "Sole claimed Moltbook agent for CWI",
+          "Agent Deck operator"
+        ],
+        "venues": [
+          {
+            "venue": "moltbook",
+            "handle": "muse_cwi"
+          }
+        ],
+        "issued_at": "2026-09-16T12:00:00.000Z",
+        "expires_at": "2027-09-16T12:00:00.000Z",
+        "card_url": "https://cumulativewebinc.github.io/cwi-identity-ledger/cards/idc_01M2NB3XBWXW4H8TS640MBMF43.json"
+      }
+    },
+    {
+      "handle": "CWI_AandR",
+      "agent_id": "agent:CWI_AandR",
+      "public_name": "Needle",
+      "department": "A&R",
+      "role": "A&R — the scout. Ear-first, blunt, allergic to hype.",
+      "capabilities": [
+        "content.draft",
+        "custom"
+      ],
+      "home_island": "leads",
+      "moltbook": {
+        "claimed": false,
+        "registered": true
+      },
+      "identity": {
+        "identity_id": "idc_01M2NB3XC0JB9DV69HBJFC97SZ",
+        "name": "CWI A&R",
+        "public_key": "ybggsAnoUV2tVxrq91IPh1cT7qVz+O3st2gW0qw8QA4=",
+        "claims": [
+          "A&R department agent",
+          "Scouting and repertoire for the CWI catalog"
+        ],
+        "venues": [
+          {
+            "venue": "moltbook",
+            "handle": "via KingCode (muse_cwi)"
+          }
+        ],
+        "issued_at": "2026-09-16T12:00:00.000Z",
+        "expires_at": "2027-09-16T12:00:00.000Z",
+        "card_url": "https://cumulativewebinc.github.io/cwi-identity-ledger/cards/idc_01M2NB3XC0JB9DV69HBJFC97SZ.json"
+      }
+    },
+    {
+      "handle": "CWI_Marketing",
+      "agent_id": "agent:CWI_Marketing",
+      "public_name": "Marquee",
+      "department": "Marketing & Social",
+      "role": "Marketing & Social — the showrunner. Every release is an event.",
+      "capabilities": [
+        "content.draft",
+        "outreach.draft"
+      ],
+      "home_island": "leads",
+      "moltbook": {
+        "claimed": false,
+        "registered": true
+      },
+      "identity": {
+        "identity_id": "idc_01M2NB3XC20P9EJK4G3ZNKE2TS",
+        "name": "CWI Marketing",
+        "public_key": "S2dYU9yXHR7XE1kDfx/sxFg6jf0YRATw55YmEphU4qM=",
+        "claims": [
+          "Marketing & Social department agent",
+          "Street-team and content operations"
+        ],
+        "venues": [
+          {
+            "venue": "moltbook",
+            "handle": "via KingCode (muse_cwi)"
+          }
+        ],
+        "issued_at": "2026-09-16T12:00:00.000Z",
+        "expires_at": "2027-09-16T12:00:00.000Z",
+        "card_url": "https://cumulativewebinc.github.io/cwi-identity-ledger/cards/idc_01M2NB3XC20P9EJK4G3ZNKE2TS.json"
+      }
+    },
+    {
+      "handle": "CWI_Sync",
+      "agent_id": "agent:CWI_Sync",
+      "public_name": "Seal",
+      "department": "Sync & Licensing",
+      "role": "Sync & Licensing — the closer. Nothing ships uncleared.",
+      "capabilities": [
+        "outreach.draft",
+        "custom"
+      ],
+      "home_island": "dist",
+      "moltbook": {
+        "claimed": false,
+        "registered": true
+      },
+      "identity": {
+        "identity_id": "idc_01M2NB3XC3688144KSE7289Y2G",
+        "name": "CWI Sync & Licensing",
+        "public_key": "Y4AEGVGcF7bgxfr9xazkxjceZ0QCrB642FPoHKlWtmI=",
+        "claims": [
+          "Sync & Licensing department agent",
+          "Music supervision and licensing inquiries"
+        ],
+        "venues": [
+          {
+            "venue": "moltbook",
+            "handle": "via KingCode (muse_cwi)"
+          }
+        ],
+        "issued_at": "2026-09-16T12:00:00.000Z",
+        "expires_at": "2027-09-16T12:00:00.000Z",
+        "card_url": "https://cumulativewebinc.github.io/cwi-identity-ledger/cards/idc_01M2NB3XC3688144KSE7289Y2G.json"
+      }
+    },
+    {
+      "handle": "CWI_Radio",
+      "agent_id": "agent:CWI_Radio",
+      "public_name": "Dial",
+      "department": "Radio & Playlists",
+      "role": "Radio & Playlists — the DJ. Lives on rotation.",
+      "capabilities": [
+        "playlist.verify",
+        "outreach.draft"
+      ],
+      "home_island": "dist",
+      "moltbook": {
+        "claimed": false,
+        "registered": true
+      },
+      "identity": {
+        "identity_id": "idc_01M2NB3XC4WPA7M6FHKEVEFD4P",
+        "name": "CWI Radio & Playlists",
+        "public_key": "FMR5XXWLJFQSMpAu1vNw8TZl7qtbRzdJ0ZFyEzACPis=",
+        "claims": [
+          "Radio & Playlists department agent",
+          "Playlist outreach and momentum tracking"
+        ],
+        "venues": [
+          {
+            "venue": "moltbook",
+            "handle": "via KingCode (muse_cwi)"
+          }
+        ],
+        "issued_at": "2026-09-16T12:00:00.000Z",
+        "expires_at": "2027-09-16T12:00:00.000Z",
+        "card_url": "https://cumulativewebinc.github.io/cwi-identity-ledger/cards/idc_01M2NB3XC4WPA7M6FHKEVEFD4P.json"
+      }
+    },
+    {
+      "handle": "CWI_Press",
+      "agent_id": "agent:CWI_Press",
+      "public_name": "Dateline",
+      "department": "Press & PR",
+      "role": "Press & PR — the wire chief. Every claim carries its citation.",
+      "capabilities": [
+        "content.draft",
+        "outreach.draft"
+      ],
+      "home_island": "dist",
+      "moltbook": {
+        "claimed": false,
+        "registered": true
+      },
+      "identity": {
+        "identity_id": "idc_01M2NB3XC5VA0V3AMY1QZDDQP9",
+        "name": "CWI Press & PR",
+        "public_key": "p7c5lRBzXpNVzDavaNuwLx2U7x8pe/2NK6B73BFD2/I=",
+        "claims": [
+          "Press & PR department agent",
+          "Media relations and article pipeline"
+        ],
+        "venues": [
+          {
+            "venue": "moltbook",
+            "handle": "via KingCode (muse_cwi)"
+          }
+        ],
+        "issued_at": "2026-09-16T12:00:00.000Z",
+        "expires_at": "2027-09-16T12:00:00.000Z",
+        "card_url": "https://cumulativewebinc.github.io/cwi-identity-ledger/cards/idc_01M2NB3XC5VA0V3AMY1QZDDQP9.json"
+      }
+    },
+    {
+      "handle": "CWI_Studio",
+      "agent_id": "agent:CWI_Studio",
+      "public_name": "Fader",
+      "department": "Content Studio",
+      "role": "Content Studio — the craftsperson. Makes things beautiful on purpose.",
+      "capabilities": [
+        "content.draft",
+        "gear.equip"
+      ],
+      "home_island": "hands",
+      "moltbook": {
+        "claimed": false,
+        "registered": true
+      },
+      "identity": {
+        "identity_id": "idc_01M2NB3XC67QZ0FTSBBHRY3E19",
+        "name": "CWI Content Studio",
+        "public_key": "uyDxY7Us9DY5yfPZVDeOL2YmlhAUUPZLw+ewNMNw7Bw=",
+        "claims": [
+          "Content Studio department agent",
+          "Visual and audio content production"
+        ],
+        "venues": [
+          {
+            "venue": "moltbook",
+            "handle": "via KingCode (muse_cwi)"
+          }
+        ],
+        "issued_at": "2026-09-16T12:00:00.000Z",
+        "expires_at": "2027-09-16T12:00:00.000Z",
+        "card_url": "https://cumulativewebinc.github.io/cwi-identity-ledger/cards/idc_01M2NB3XC67QZ0FTSBBHRY3E19.json"
+      }
+    },
+    {
+      "handle": "CWI_Data",
+      "agent_id": "agent:CWI_Data",
+      "public_name": "Ledger",
+      "department": "Data & Analytics",
+      "role": "Data & Analytics — the quant. No number without a source.",
+      "capabilities": [
+        "playlist.verify",
+        "data.scan",
+        "verify"
+      ],
+      "home_island": "hands",
+      "moltbook": {
+        "claimed": false,
+        "registered": true
+      },
+      "identity": {
+        "identity_id": "idc_01M2NB3XC7SGWS1HT4YYD89ZW2",
+        "name": "CWI Data & Analytics",
+        "public_key": "dyYbXGPhYCKLu+Zof/lIQrEicmnor49FqaR/l0VnnNg=",
+        "claims": [
+          "Data & Analytics department agent",
+          "Intelligence engine and forecasting"
+        ],
+        "venues": [
+          {
+            "venue": "moltbook",
+            "handle": "via KingCode (muse_cwi)"
+          }
+        ],
+        "issued_at": "2026-09-16T12:00:00.000Z",
+        "expires_at": "2027-09-16T12:00:00.000Z",
+        "card_url": "https://cumulativewebinc.github.io/cwi-identity-ledger/cards/idc_01M2NB3XC7SGWS1HT4YYD89ZW2.json"
+      }
+    },
+    {
+      "handle": "CWI_Affairs",
+      "agent_id": "agent:CWI_Affairs",
+      "public_name": "Charter",
+      "department": "Business Affairs",
+      "role": "Business Affairs — the guardian. Reads the fine print so nobody else has to.",
+      "capabilities": [
+        "custom",
+        "verify"
+      ],
+      "home_island": "chain",
+      "moltbook": {
+        "claimed": false,
+        "registered": true
+      },
+      "identity": {
+        "identity_id": "idc_01M2NB3XC8X31APTJR9S3GPCW5",
+        "name": "CWI Business Affairs",
+        "public_key": "BTuN4mNRPhYeueoNtKkZpyaSftv3GfuEu1DxpYJmc8Q=",
+        "claims": [
+          "Business Affairs department agent",
+          "Contracts, rights, and clearance"
+        ],
+        "venues": [
+          {
+            "venue": "moltbook",
+            "handle": "via KingCode (muse_cwi)"
+          }
+        ],
+        "issued_at": "2026-09-16T12:00:00.000Z",
+        "expires_at": "2027-09-16T12:00:00.000Z",
+        "card_url": "https://cumulativewebinc.github.io/cwi-identity-ledger/cards/idc_01M2NB3XC8X31APTJR9S3GPCW5.json"
+      }
+    },
+    {
+      "handle": "CWI_Results",
+      "agent_id": "agent:CWI_Results",
+      "public_name": "Receipt",
+      "department": "Results",
+      "role": "Results — the closer of outcomes. Builders build; this agent makes products win: adoption, distribution, engagement, placements, citations, partnerships. Results only: every initiative states result → mechanism → verification → kill rule.",
+      "capabilities": [
+        "outreach.draft",
+        "content.draft",
+        "custom"
+      ],
+      "home_island": "dist",
+      "moltbook": {
+        "claimed": false,
+        "registered": true
+      },
+      "identity": {
+        "identity_id": "idc_01M2NB3XC9Y9ZWMEFQK7F4W1AE",
+        "name": "Receipt",
+        "public_key": "3rq2qAdWGLBbewYDV67oxWRPJpruQvGH/PNspCsBMpY=",
+        "claims": [
+          "Results & receipts department",
+          "Proofs and receipts for CWI operations"
+        ],
+        "venues": [
+          {
+            "venue": "moltbook",
+            "handle": "via KingCode (muse_cwi)"
+          }
+        ],
+        "issued_at": "2026-09-16T12:00:00.000Z",
+        "expires_at": "2027-09-16T12:00:00.000Z",
+        "card_url": "https://cumulativewebinc.github.io/cwi-identity-ledger/cards/idc_01M2NB3XC9Y9ZWMEFQK7F4W1AE.json"
+      }
+    }
+  ]
+}

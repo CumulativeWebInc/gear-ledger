@@ -1,0 +1,183 @@
+{
+ "MUSE_CWI": {
+  "identity_id": "idc_01M2NB3XBWXW4H8TS640MBMF43",
+  "name": "KingCode",
+  "public_key": "bbxhTwnwFjmP3e3rGtPL/hHSvTxLv/fRlQowjxV2HPE=",
+  "claims": [
+   "Chief of staff, Cumulative Web Inc",
+   "Sole claimed Moltbook agent for CWI",
+   "Agent Deck operator"
+  ],
+  "venues": [
+   {
+    "venue": "moltbook",
+    "handle": "muse_cwi"
+   }
+  ],
+  "issued_at": "2026-09-16T12:00:00.000Z",
+  "expires_at": "2027-09-16T12:00:00.000Z",
+  "card_url": "https://cumulativewebinc.github.io/cwi-identity-ledger/cards/idc_01M2NB3XBWXW4H8TS640MBMF43.json"
+ },
+ "CWI_AandR": {
+  "identity_id": "idc_01M2NB3XC0JB9DV69HBJFC97SZ",
+  "name": "CWI A&R",
+  "public_key": "ybggsAnoUV2tVxrq91IPh1cT7qVz+O3st2gW0qw8QA4=",
+  "claims": [
+   "A&R department agent",
+   "Scouting and repertoire for the CWI catalog"
+  ],
+  "venues": [
+   {
+    "venue": "moltbook",
+    "handle": "via KingCode (muse_cwi)"
+   }
+  ],
+  "issued_at": "2026-09-16T12:00:00.000Z",
+  "expires_at": "2027-09-16T12:00:00.000Z",
+  "card_url": "https://cumulativewebinc.github.io/cwi-identity-ledger/cards/idc_01M2NB3XC0JB9DV69HBJFC97SZ.json"
+ },
+ "CWI_Marketing": {
+  "identity_id": "idc_01M2NB3XC20P9EJK4G3ZNKE2TS",
+  "name": "CWI Marketing",
+  "public_key": "S2dYU9yXHR7XE1kDfx/sxFg6jf0YRATw55YmEphU4qM=",
+  "claims": [
+   "Marketing & Social department agent",
+   "Street-team and content operations"
+  ],
+  "venues": [
+   {
+    "venue": "moltbook",
+    "handle": "via KingCode (muse_cwi)"
+   }
+  ],
+  "issued_at": "2026-09-16T12:00:00.000Z",
+  "expires_at": "2027-09-16T12:00:00.000Z",
+  "card_url": "https://cumulativewebinc.github.io/cwi-identity-ledger/cards/idc_01M2NB3XC20P9EJK4G3ZNKE2TS.json"
+ },
+ "CWI_Sync": {
+  "identity_id": "idc_01M2NB3XC3688144KSE7289Y2G",
+  "name": "CWI Sync & Licensing",
+  "public_key": "Y4AEGVGcF7bgxfr9xazkxjceZ0QCrB642FPoHKlWtmI=",
+  "claims": [
+   "Sync & Licensing department agent",
+   "Music supervision and licensing inquiries"
+  ],
+  "venues": [
+   {
+    "venue": "moltbook",
+    "handle": "via KingCode (muse_cwi)"
+   }
+  ],
+  "issued_at": "2026-09-16T12:00:00.000Z",
+  "expires_at": "2027-09-16T12:00:00.000Z",
+  "card_url": "https://cumulativewebinc.github.io/cwi-identity-ledger/cards/idc_01M2NB3XC3688144KSE7289Y2G.json"
+ },
+ "CWI_Radio": {
+  "identity_id": "idc_01M2NB3XC4WPA7M6FHKEVEFD4P",
+  "name": "CWI Radio & Playlists",
+  "public_key": "FMR5XXWLJFQSMpAu1vNw8TZl7qtbRzdJ0ZFyEzACPis=",
+  "claims": [
+   "Radio & Playlists department agent",
+   "Playlist outreach and momentum tracking"
+  ],
+  "venues": [
+   {
+    "venue": "moltbook",
+    "handle": "via KingCode (muse_cwi)"
+   }
+  ],
+  "issued_at": "2026-09-16T12:00:00.000Z",
+  "expires_at": "2027-09-16T12:00:00.000Z",
+  "card_url": "https://cumulativewebinc.github.io/cwi-identity-ledger/cards/idc_01M2NB3XC4WPA7M6FHKEVEFD4P.json"
+ },
+ "CWI_Press": {
+  "identity_id": "idc_01M2NB3XC5VA0V3AMY1QZDDQP9",
+  "name": "CWI Press & PR",
+  "public_key": "p7c5lRBzXpNVzDavaNuwLx2U7x8pe/2NK6B73BFD2/I=",
+  "claims": [
+   "Press & PR department agent",
+   "Media relations and article pipeline"
+  ],
+  "venues": [
+   {
+    "venue": "moltbook",
+    "handle": "via KingCode (muse_cwi)"
+   }
+  ],
+  "issued_at": "2026-09-16T12:00:00.000Z",
+  "expires_at": "2027-09-16T12:00:00.000Z",
+  "card_url": "https://cumulativewebinc.github.io/cwi-identity-ledger/cards/idc_01M2NB3XC5VA0V3AMY1QZDDQP9.json"
+ },
+ "CWI_Studio": {
+  "identity_id": "idc_01M2NB3XC67QZ0FTSBBHRY3E19",
+  "name": "CWI Content Studio",
+  "public_key": "uyDxY7Us9DY5yfPZVDeOL2YmlhAUUPZLw+ewNMNw7Bw=",
+  "claims": [
+   "Content Studio department agent",
+   "Visual and audio content production"
+  ],
+  "venues": [
+   {
+    "venue": "moltbook",
+    "handle": "via KingCode (muse_cwi)"
+   }
+  ],
+  "issued_at": "2026-09-16T12:00:00.000Z",
+  "expires_at": "2027-09-16T12:00:00.000Z",
+  "card_url": "https://cumulativewebinc.github.io/cwi-identity-ledger/cards/idc_01M2NB3XC67QZ0FTSBBHRY3E19.json"
+ },
+ "CWI_Data": {
+  "identity_id": "idc_01M2NB3XC7SGWS1HT4YYD89ZW2",
+  "name": "CWI Data & Analytics",
+  "public_key": "dyYbXGPhYCKLu+Zof/lIQrEicmnor49FqaR/l0VnnNg=",
+  "claims": [
+   "Data & Analytics department agent",
+   "Intelligence engine and forecasting"
+  ],
+  "venues": [
+   {
+    "venue": "moltbook",
+    "handle": "via KingCode (muse_cwi)"
+   }
+  ],
+  "issued_at": "2026-09-16T12:00:00.000Z",
+  "expires_at": "2027-09-16T12:00:00.000Z",
+  "card_url": "https://cumulativewebinc.github.io/cwi-identity-ledger/cards/idc_01M2NB3XC7SGWS1HT4YYD89ZW2.json"
+ },
+ "CWI_Affairs": {
+  "identity_id": "idc_01M2NB3XC8X31APTJR9S3GPCW5",
+  "name": "CWI Business Affairs",
+  "public_key": "BTuN4mNRPhYeueoNtKkZpyaSftv3GfuEu1DxpYJmc8Q=",
+  "claims": [
+   "Business Affairs department agent",
+   "Contracts, rights, and clearance"
+  ],
+  "venues": [
+   {
+    "venue": "moltbook",
+    "handle": "via KingCode (muse_cwi)"
+   }
+  ],
+  "issued_at": "2026-09-16T12:00:00.000Z",
+  "expires_at": "2027-09-16T12:00:00.000Z",
+  "card_url": "https://cumulativewebinc.github.io/cwi-identity-ledger/cards/idc_01M2NB3XC8X31APTJR9S3GPCW5.json"
+ },
+ "CWI_Results": {
+  "identity_id": "idc_01M2NB3XC9Y9ZWMEFQK7F4W1AE",
+  "name": "Receipt",
+  "public_key": "3rq2qAdWGLBbewYDV67oxWRPJpruQvGH/PNspCsBMpY=",
+  "claims": [
+   "Results & receipts department",
+   "Proofs and receipts for CWI operations"
+  ],
+  "venues": [
+   {
+    "venue": "moltbook",
+    "handle": "via KingCode (muse_cwi)"
+   }
+  ],
+  "issued_at": "2026-09-16T12:00:00.000Z",
+  "expires_at": "2027-09-16T12:00:00.000Z",
+  "card_url": "https://cumulativewebinc.github.io/cwi-identity-ledger/cards/idc_01M2NB3XC9Y9ZWMEFQK7F4W1AE.json"
+ }
+}
