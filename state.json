@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 1446,
-  "updated_at": "2026-09-17T10:04:03.371Z",
+  "version": 1447,
+  "updated_at": "2026-09-17T10:06:40.852Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -189,6 +189,28 @@
       },
       "status": "active",
       "seed": false
+    },
+    {
+      "agent_id": "agent:CWI_Athena",
+      "handle": "CWI_Athena",
+      "public_name": "Athena",
+      "role": "Apex reasoning & build authority — quantitative learner, strategist, next-level software builder",
+      "department": "Reasoning",
+      "capabilities": [
+        "task.create",
+        "task.claim",
+        "build",
+        "deploy",
+        "verify",
+        "research"
+      ],
+      "home_island": "hub",
+      "status": "active",
+      "seed": false,
+      "moltbook": {
+        "registered": false,
+        "claimed": false
+      }
     }
   ],
   "tasks": [
