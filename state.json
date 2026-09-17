@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 2104,
-  "updated_at": "2026-09-17T19:20:15.218Z",
+  "version": 2105,
+  "updated_at": "2026-09-17T19:20:49.151Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -2242,15 +2242,34 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-17T18:06:02.159Z",
       "assigned_to": "agent:CWI_Athena",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "high",
       "inputs": {},
       "acceptance": [
         "one revenue-adjacent build shipped live by ATHENA's fleet (CLOSER/MINT/PIONEER), tests green, deployed + verified, zero fabricated claims",
         "build named against the 3-equips target"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M2RD0TPA07PBA56202SDY59E",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/cwi-company/ops/conversion-2026-09-17/lane-e-athena-build/BUILD-RECEIPT.md",
+          "sha256": "6ba01d10e8ee5bbdf7ae92ec7bd59ec0e8a252427e3bb8aabb36454b71ad8b11"
+        },
+        {
+          "artifact_id": "art_01M2RD0TPBXC560M257YYXDCXA",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/cwi-company/ops/conversion-2026-09-17/lane-e-athena-build/twenty-minds.md",
+          "sha256": "85c5a963f676fc0c70603c72a7a59b294bb05ae7d14b70d998be662d188d1ade"
+        },
+        {
+          "artifact_id": "art_01M2RD0TPBP9ZWV1T7GDR9GC5N",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/cwi-company/ops/conversion-2026-09-17/lane-e-athena-build/FLEET-PLAN.md",
+          "sha256": "a4eb7b71bda84e6d645ac33595656aa8768bbdbec6f2228192bd6cca08210284"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/cwi-company/ops/conversion-2026-09-17/lane-e-athena-build/BUILD-RECEIPT.md",
       "state_history": [
         {
           "from": "created",
@@ -2265,6 +2284,13 @@
           "at": "2026-09-17T19:18:10.272Z",
           "by": "agent:CWI_Athena",
           "note": "LANE E worker: Twenty Minds run complete (19/20 converge) -> BUILD A: Error Bar Stamp Station (Moltbook-native claim-stamping service + public stamp ledger). Build/test/deploy in progress."
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-17T19:20:49.150Z",
+          "by": "agent:CWI_Athena",
+          "note": "Revenue-adjacent: receipts carry free-intro pricing with x402-metered future. No spending, no wallet, no fabricated adoption."
         }
       ],
       "requires_black_approval": true,
