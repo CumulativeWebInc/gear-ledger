@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 2099,
-  "updated_at": "2026-09-17T19:17:19.945Z",
+  "version": 2100,
+  "updated_at": "2026-09-17T19:17:24.225Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -2165,7 +2165,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-17T18:05:50.933Z",
       "assigned_to": "agent:CWI_AandR",
-      "state": "assigned",
+      "state": "in_progress",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -2182,6 +2182,13 @@
           "at": "2026-09-17T18:05:56.712Z",
           "by": "agent:MUSE_CWI",
           "note": "first-wave loop-closing mission, 2026-09-17 authority grant"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-17T19:17:24.225Z",
+          "by": "agent:CWI_AandR",
+          "note": "Lane D (conversion 2026-09-17): shipping machine-readable cue sheets to cwi-learn; enriching llms.txt/catalog.json/entities.jsonld with evidence tiers; correction-slip chain check. Deadline 2026-09-24."
         }
       ],
       "requires_black_approval": true,
