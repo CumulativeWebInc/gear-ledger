@@ -385,9 +385,14 @@ export function opPresenceHeartbeat(agent, status = 'online', taskId = null, not
   if (!/^agent:[A-Za-z0-9_]+$/.test(agent)) throw new LedgerError('presence.bad_agent', `bad agent: ${agent}`, null, 400);
   const doc = casMutateState(`presence heartbeat ${agent} ${status}`, (d) => {
     assertRegistered(d, agent);
-    d.presence[agent] = { status, at: now(), current_task_id: taskId, note: note || 'ops heartbeat (10-min cron)' };
+    // null taskId = "no change": preserve the existing live-task pointer.
+    // The pointer is cleared only by an explicit empty-string --task "".
+    const prev = d.presence[agent] || {};
+    const keep = (taskId === null || taskId === undefined) ? (prev.current_task_id || null) : (taskId === '' ? null : taskId);
+    d.presence[agent] = { status, at: now(), current_task_id: keep, note: note || prev.note || 'ops heartbeat (10-min cron)' };
   });
-  const evt = appendEvent('agent.presence', agent, { agent_id: agent, status, current_task_id: taskId, note: note || 'ops heartbeat (10-min cron)' });
+  const cur = doc.presence[agent].current_task_id;
+  const evt = appendEvent('agent.presence', agent, { agent_id: agent, status, current_task_id: cur, note: note || 'ops heartbeat (10-min cron)' });
   return { agent_id: agent, status, event_id: evt.event_id, version: doc.version };
 }
 
@@ -459,7 +464,7 @@ function main() {
     } else if (cmd === 'task' && sub === 'cancel') out = opTaskTransition(positional[0], 'cancelled', need(a, 'by'), { reason: need(a, 'reason') });
     else if (cmd === 'task' && sub === 'fail') out = opTaskTransition(positional[0], 'failed', need(a, 'by'), { reason: need(a, 'reason') });
     else if (cmd === 'event' && sub === 'append') out = opEventAppend(need(a, 'event'), need(a, 'actor'), JSON.parse(a['data-json'] || '{}'));
-    else if (cmd === 'presence' && sub === 'heartbeat') out = opPresenceHeartbeat(need(a, 'agent'), a.status || 'online', a.task || null, a.note || null);
+    else if (cmd === 'presence' && sub === 'heartbeat') out = opPresenceHeartbeat(need(a, 'agent'), a.status || 'online', ('task' in a ? a.task : null), a.note || null);
     else if (cmd === 'approval' && sub === 'seal') out = opApprovalSeal({ exactCopyPath: need(a, 'exact-copy'), scopes: need(a, 'scope'), taskId: need(a, 'task'), surface: a.surface || 'owner-console', expiresAt: a['expires-at'] || null });
     else if (cmd === 'state' && sub === 'get') out = readState().doc;
     else if (cmd === 'state' && sub === 'version') { const { doc, sha } = readState(); out = { version: doc.version, updated_at: doc.updated_at, sha, tasks: doc.tasks.length }; }
