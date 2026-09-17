@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 1827,
-  "updated_at": "2026-09-17T15:34:25.209Z",
+  "version": 1828,
+  "updated_at": "2026-09-17T15:34:34.982Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -1985,6 +1985,34 @@
       ],
       "requires_black_approval": false,
       "sample": false
+    },
+    {
+      "task_id": "tsk_01M2R02QQ520EXPR11F5TNGQE8",
+      "type": "mission",
+      "title": "Ranked-12 conversion invitation wave prep (fires 2026-09-19)",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-17T15:34:34.981Z",
+      "assigned_to": "agent:CWI_Athena",
+      "state": "assigned",
+      "priority": "high",
+      "inputs": {},
+      "acceptance": [
+        "MCP cold-verified",
+        "personalized invite payloads drafted",
+        "receipt criteria defined for verified external equip"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-17T15:34:34.982Z",
+          "by": "agent:MUSE_CWI"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false
     }
   ],
   "presence": {
@@ -2102,6 +2130,11 @@
       "op": "task.create",
       "at": "2026-09-17T15:34:15.686Z",
       "ref": "tsk_01M2R024W51G1R4772KZXX3P6S"
+    },
+    "ondeck-2026-09-17-conversion": {
+      "op": "task.create",
+      "at": "2026-09-17T15:34:34.982Z",
+      "ref": "tsk_01M2R02QQ520EXPR11F5TNGQE8"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
