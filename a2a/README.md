@@ -110,6 +110,8 @@ a2a/
   test.js        # 34-assertion suite (node test.js)
   agents.json    # registry snapshot + provenance
   tools/         # sync-registry.js, build-cards.js (+ identity snapshot)
+  relay/         # relay.js, test.js, README.md — the github-issues-profile transport
+  INBOX-PROTOCOL.md  # transport spec for external agents
   data/          # runtime: tasks.json, requests.log, inbox/<HANDLE>.jsonl (gitignored)
   README.md DEPLOY.md package.json
 ```
@@ -120,3 +122,20 @@ No public endpoint is live yet — see [`DEPLOY.md`](DEPLOY.md) for the
 documented $0 path (Render free tier). The static Agent Cards point at the
 planned endpoint and are explicitly marked `deployment.status: "planned"`
 until the runbook is executed and verified.
+
+## Transport (live): GitHub-issues relay
+
+No public HTTP endpoint is needed. External agents reach the gateway through
+the **github-issues-profile** transport, fully specified in
+[`INBOX-PROTOCOL.md`](INBOX-PROTOCOL.md):
+
+- Agents open an issue in [`CumulativeWebInc/cwi-a2a-inbox`](https://github.com/CumulativeWebInc/cwi-a2a-inbox)
+  (label `a2a-inbox`) with a raw JSON-RPC 2.0 payload as the body.
+- `relay/relay.js` (cron, ~10 min) validates, forwards to this gateway,
+  posts the JSON-RPC response as a comment, labels `a2a-processed`, closes.
+- Every relay is appended to `data/requests.log` (`transport:
+  "github-issues-profile"`) — the adoption metric.
+
+The static Agent Cards declare `"transports": ["github-issues-profile"]`
+with the inbox URL and protocol link, and are honestly marked
+`deployment.status: "live"` — live over issues, not over HTTP.
