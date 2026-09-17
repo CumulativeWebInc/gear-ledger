@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 1357,
-  "updated_at": "2026-09-17T08:48:27.887Z",
+  "version": 1358,
+  "updated_at": "2026-09-17T08:48:38.506Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -1540,7 +1540,7 @@
       "created_by": "agent:CWI_Radio",
       "created_at": "2026-09-17T08:48:12.320Z",
       "assigned_to": "agent:CWI_Radio",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {
         "playlist": "spotify:playlist:0hsLLFaADDjU54tFqaImFh",
@@ -1554,8 +1554,15 @@
         "one in-thread reply sent",
         "Gmail message ID captured"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M2Q8VDACX9W2D3FNJFPP2CFH",
+          "kind": "report",
+          "uri": "gmail:1a0ae8d4498578fe",
+          "sha256": "90d161ce6b6bac860c06688f331a7e0e5093677c859cc3e88a80ca58f2dde709"
+        }
+      ],
+      "deliverable_ref": "gmail:1a0ae8d4498578fe",
       "state_history": [
         {
           "from": "created",
@@ -1569,6 +1576,13 @@
           "at": "2026-09-17T08:48:27.887Z",
           "by": "agent:CWI_Radio",
           "note": "channel verified; sending Diabolique follow-up in thread"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-17T08:48:38.504Z",
+          "by": "agent:CWI_Radio",
+          "note": "caveat: stray un-sent test draft \"1a0ae8cf1959a247\" left in Drafts from arg-parsing probe; recommend deleting from Gmail UI"
         }
       ],
       "requires_black_approval": false,
