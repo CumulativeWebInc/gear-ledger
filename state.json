@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 3158,
-  "updated_at": "2026-09-18T10:38:03.411Z",
+  "version": 3159,
+  "updated_at": "2026-09-18T10:38:16.822Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -2754,6 +2754,45 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-25"
+    },
+    {
+      "task_id": "tsk_01M2T1GX7NKEN9RZAPXRE4TCNW",
+      "type": "mission",
+      "title": "ROAD-1M: Compliance sweep — all lanes cleared for payola/inflation risk",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-18T10:38:16.821Z",
+      "assigned_to": "agent:CWI_Affairs",
+      "state": "assigned",
+      "priority": "high",
+      "inputs": {
+        "spearhead": "Diabolique",
+        "album_url": "https://open.spotify.com/album/36coJOOVRAq7Q1GkRV6gQa",
+        "track_uri": "spotify:track:2eSyWmIdPzEMyWejLb2LBj",
+        "baseline_streams": 956340,
+        "remaining": 43660,
+        "pace_per_day": 1455,
+        "checkpoint_1": "2026-10-02",
+        "checkpoint_2": "2026-10-09"
+      },
+      "acceptance": [
+        "Sign-off log filed covering every lane's copy and tactics",
+        "Any lane failing compliance is killed immediately with a plain report",
+        "Disclosure language ('CWI-reported / not independently audited') applied where required"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-18T10:38:16.822Z",
+          "by": "agent:MUSE_CWI",
+          "note": "Real streams only: no bots, no artificial inflation, no payola, no engagement farming. This lane has veto power."
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-27"
     }
   ],
   "presence": {
@@ -2921,6 +2960,11 @@
       "op": "task.create",
       "at": "2026-09-18T10:38:03.411Z",
       "ref": "tsk_01M2T1GG4JVFW028VKWRF0NC2N"
+    },
+    "road1m-cwi_affairs-20260918": {
+      "op": "task.create",
+      "at": "2026-09-18T10:38:16.822Z",
+      "ref": "tsk_01M2T1GX7NKEN9RZAPXRE4TCNW"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
