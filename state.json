@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 3173,
-  "updated_at": "2026-09-18T10:50:16.575Z",
+  "version": 3174,
+  "updated_at": "2026-09-18T10:50:38.232Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -2879,8 +2879,8 @@
       "title": "cwi-voice-bridge 1.0.0: playout-buffer fix for AI voice agents",
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-18T10:50:16.574Z",
-      "assigned_to": null,
-      "state": "created",
+      "assigned_to": "agent:MUSE_CWI",
+      "state": "assigned",
       "priority": "normal",
       "inputs": {
         "repo": "https://github.com/CumulativeWebInc/cwi-voice-bridge",
@@ -2894,7 +2894,15 @@
       ],
       "artifacts": [],
       "deliverable_ref": "https://github.com/CumulativeWebInc/cwi-voice-bridge",
-      "state_history": [],
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-18T10:50:38.230Z",
+          "by": "agent:MUSE_CWI",
+          "note": "build executed in this session"
+        }
+      ],
       "requires_black_approval": true,
       "sample": false
     }
