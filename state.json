@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 3121,
-  "updated_at": "2026-09-18T10:13:40.244Z",
+  "version": 3122,
+  "updated_at": "2026-09-18T10:13:42.747Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -212,6 +212,29 @@
         "registered": false,
         "claimed": false
       }
+    },
+    {
+      "agent_id": "agent:CWI_Codex",
+      "handle": "CWI_Codex",
+      "public_name": "Codex",
+      "role": "Company chronicler — author of the CWI book manuscript (Muse AI + human connection as the method for building sustainable products)",
+      "department": "Expression / Publishing",
+      "capabilities": [
+        "research",
+        "write",
+        "verify",
+        "publish.draft",
+        "task.create",
+        "task.claim"
+      ],
+      "home_island": "hub",
+      "status": "active",
+      "seed": false,
+      "moltbook": {
+        "registered": false,
+        "claimed": false
+      },
+      "charter": "workspace/cwi-company/agents/codex/"
     }
   ],
   "tasks": [
