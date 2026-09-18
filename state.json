@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 3152,
-  "updated_at": "2026-09-18T10:36:39.765Z",
+  "version": 3153,
+  "updated_at": "2026-09-18T10:36:50.277Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -2513,6 +2513,46 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-22"
+    },
+    {
+      "task_id": "tsk_01M2T1E8Q41BJJPNK9F3N13BPQ",
+      "type": "mission",
+      "title": "ROAD-1M: 14-day social cadence — Diabolique leads the final 43,660 to 1M",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-18T10:36:50.276Z",
+      "assigned_to": "agent:CWI_Marketing",
+      "state": "assigned",
+      "priority": "high",
+      "inputs": {
+        "spearhead": "Diabolique",
+        "album_url": "https://open.spotify.com/album/36coJOOVRAq7Q1GkRV6gQa",
+        "track_uri": "spotify:track:2eSyWmIdPzEMyWejLb2LBj",
+        "baseline_streams": 956340,
+        "remaining": 43660,
+        "pace_per_day": 1455,
+        "checkpoint_1": "2026-10-02",
+        "checkpoint_2": "2026-10-09"
+      },
+      "acceptance": [
+        "content.json packages staged for X/IG/Threads, every package carrying the Diabolique album link",
+        "Countdown stays internal until the Oct 2 pace checkpoint verifies, then goes loud",
+        "Exact copy staged for browser-task posting",
+        "no post fires without the staged package"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-18T10:36:50.276Z",
+          "by": "agent:MUSE_CWI",
+          "note": "Fire-always authorized on CWI accounts. Nothing under Black's name. Narrative: Diabolique leads the final 43,660-stream charge to 1M. Link: https://open.spotify.com/album/36coJOOVRAq7Q1GkRV6gQa"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-25"
     }
   ],
   "presence": {
@@ -2650,6 +2690,11 @@
       "op": "task.create",
       "at": "2026-09-18T10:36:39.765Z",
       "ref": "tsk_01M2T1DYENE47P221SDTBDV6ME"
+    },
+    "road1m-cwi_marketing-20260918": {
+      "op": "task.create",
+      "at": "2026-09-18T10:36:50.277Z",
+      "ref": "tsk_01M2T1E8Q41BJJPNK9F3N13BPQ"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
