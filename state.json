@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 3150,
-  "updated_at": "2026-09-18T10:33:55.130Z",
+  "version": 3151,
+  "updated_at": "2026-09-18T10:36:30.051Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -2432,6 +2432,47 @@
       ],
       "requires_black_approval": false,
       "sample": false
+    },
+    {
+      "task_id": "tsk_01M2T1DMZ3BSGKYEEXFCS23FKZ",
+      "type": "mission",
+      "title": "ROAD-1M: Mission command — verified 1,000,000 crossing",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-18T10:36:30.051Z",
+      "assigned_to": "agent:MUSE_CWI",
+      "state": "assigned",
+      "priority": "high",
+      "inputs": {
+        "spearhead": "Diabolique",
+        "album_url": "https://open.spotify.com/album/36coJOOVRAq7Q1GkRV6gQa",
+        "track_uri": "spotify:track:2eSyWmIdPzEMyWejLb2LBj",
+        "baseline_streams": 956340,
+        "remaining": 43660,
+        "pace_per_day": 1455,
+        "checkpoint_1": "2026-10-02",
+        "checkpoint_2": "2026-10-09"
+      },
+      "acceptance": [
+        "Mission kill rule posted (1,455/day",
+        "checkpoints Oct 2 / Oct 9)",
+        "Checkpoint reviews run Oct 2 and Oct 9 with plain reports",
+        "Final count verified by fresh Spotify for Artists evidence only",
+        "Only verified numbers reported upward — zeros stay inside the machine"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-18T10:36:30.051Z",
+          "by": "agent:MUSE_CWI",
+          "note": "Black's directive 2026-09-18: all agents except CODEX close the final 43,660 streams (baseline 956,340, verified 2026-09-17). Diabolique is the spearhead: https://open.spotify.com/album/36coJOOVRAq7Q1GkRV6gQa"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-10-18"
     }
   ],
   "presence": {
@@ -2559,6 +2600,11 @@
       "op": "task.create",
       "at": "2026-09-18T09:48:59.456Z",
       "ref": "tsk_01M2SYPN5ZEYQD9ECG95KFZCAH"
+    },
+    "road1m-muse_cwi-20260918": {
+      "op": "task.create",
+      "at": "2026-09-18T10:36:30.051Z",
+      "ref": "tsk_01M2T1DMZ3BSGKYEEXFCS23FKZ"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
