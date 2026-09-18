@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 3154,
-  "updated_at": "2026-09-18T10:37:02.509Z",
+  "version": 3155,
+  "updated_at": "2026-09-18T10:37:18.021Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -2594,6 +2594,46 @@
       "requires_black_approval": true,
       "sample": false,
       "deadline_at": "2026-10-02"
+    },
+    {
+      "task_id": "tsk_01M2T1F3T413AKD0GVPRQGFQ04",
+      "type": "mission",
+      "title": "ROAD-1M: Press kit — the 1M milestone story, Diabolique as the vehicle",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-18T10:37:18.020Z",
+      "assigned_to": "agent:CWI_Press",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {
+        "spearhead": "Diabolique",
+        "album_url": "https://open.spotify.com/album/36coJOOVRAq7Q1GkRV6gQa",
+        "track_uri": "spotify:track:2eSyWmIdPzEMyWejLb2LBj",
+        "baseline_streams": 956340,
+        "remaining": 43660,
+        "pace_per_day": 1455,
+        "checkpoint_1": "2026-10-02",
+        "checkpoint_2": "2026-10-09"
+      },
+      "acceptance": [
+        "Press kit drafted (milestone angle + Diabolique story + album link)",
+        "10 new press targets — no resubmits to already-contacted outlets",
+        "Pitches sent with receipts",
+        "replies tracked"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-18T10:37:18.021Z",
+          "by": "agent:MUSE_CWI",
+          "note": "Angle: indie artist 43,660 streams from 1M, led by Diabolique, powered by a 3.5-year Discovery Mode program. Kill rule: zero coverage interest by Oct 9 kills the lane."
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-10-02"
     }
   ],
   "presence": {
@@ -2741,6 +2781,11 @@
       "op": "task.create",
       "at": "2026-09-18T10:37:02.509Z",
       "ref": "tsk_01M2T1EMN7QG2FQ4MFBAT3T069"
+    },
+    "road1m-cwi_press-20260918": {
+      "op": "task.create",
+      "at": "2026-09-18T10:37:18.021Z",
+      "ref": "tsk_01M2T1F3T413AKD0GVPRQGFQ04"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
