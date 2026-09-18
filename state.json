@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 3975,
-  "updated_at": "2026-09-18T22:53:02.948Z",
+  "version": 3976,
+  "updated_at": "2026-09-18T22:53:07.829Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -2967,7 +2967,7 @@
     },
     "agent:CWI_Press": {
       "status": "online",
-      "at": "2026-09-18T22:43:24.176Z",
+      "at": "2026-09-18T22:53:07.829Z",
       "current_task_id": null,
       "note": "Scheduled 10-min heartbeat — KingCode cron gear-ledger-heartbeat"
     },
