@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 3092,
-  "updated_at": "2026-09-18T09:49:23.565Z",
+  "version": 3093,
+  "updated_at": "2026-09-18T09:49:32.985Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -2368,7 +2368,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-18T09:48:59.456Z",
       "assigned_to": "agent:MUSE_CWI",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -2378,8 +2378,15 @@
         "13 URLs live 200",
         "registry updated"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M2SYQM9SMQ5M5Y12DZFAT9E5",
+          "kind": "report",
+          "uri": "https://cumulativewebinc.github.io/cwi-learn/.well-known/agents/index.json",
+          "sha256": "293984dfcc4e61dbffabd487f504fdcbec017445f2617fd2c1e0df6dc4ddf5f9"
+        }
+      ],
+      "deliverable_ref": "https://cumulativewebinc.github.io/cwi-learn/.well-known/agents/index.json",
       "state_history": [
         {
           "from": "created",
@@ -2391,6 +2398,12 @@
           "from": "assigned",
           "to": "in_progress",
           "at": "2026-09-18T09:49:23.564Z",
+          "by": "agent:MUSE_CWI"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-18T09:49:32.985Z",
           "by": "agent:MUSE_CWI"
         }
       ],
