@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 3151,
-  "updated_at": "2026-09-18T10:36:30.051Z",
+  "version": 3152,
+  "updated_at": "2026-09-18T10:36:39.765Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -2473,6 +2473,46 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-10-18"
+    },
+    {
+      "task_id": "tsk_01M2T1DYENE47P221SDTBDV6ME",
+      "type": "mission",
+      "title": "ROAD-1M: Catalog strike plan — Diabolique spearhead + support tracks",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-18T10:36:39.765Z",
+      "assigned_to": "agent:CWI_AandR",
+      "state": "assigned",
+      "priority": "high",
+      "inputs": {
+        "spearhead": "Diabolique",
+        "album_url": "https://open.spotify.com/album/36coJOOVRAq7Q1GkRV6gQa",
+        "track_uri": "spotify:track:2eSyWmIdPzEMyWejLb2LBj",
+        "baseline_streams": 956340,
+        "remaining": 43660,
+        "pace_per_day": 1455,
+        "checkpoint_1": "2026-10-02",
+        "checkpoint_2": "2026-10-09"
+      },
+      "acceptance": [
+        "Ranked 5-track strike list logged with per-track rationale",
+        "Diabolique confirmed spearhead (19,031 streams as of 2026-09-17",
+        "Oct 2026 Discovery Mode track)",
+        "Strike list delivered to Radio and Marketing lanes"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-18T10:36:39.765Z",
+          "by": "agent:MUSE_CWI",
+          "note": "Strike list feeds the curator re-pitch and social lanes. Album link: https://open.spotify.com/album/36coJOOVRAq7Q1GkRV6gQa"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-22"
     }
   ],
   "presence": {
@@ -2605,6 +2645,11 @@
       "op": "task.create",
       "at": "2026-09-18T10:36:30.051Z",
       "ref": "tsk_01M2T1DMZ3BSGKYEEXFCS23FKZ"
+    },
+    "road1m-cwi_aandr-20260918": {
+      "op": "task.create",
+      "at": "2026-09-18T10:36:39.765Z",
+      "ref": "tsk_01M2T1DYENE47P221SDTBDV6ME"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
