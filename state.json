@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 4939,
-  "updated_at": "2026-09-19T13:13:06.846Z",
+  "version": 4940,
+  "updated_at": "2026-09-19T13:13:14.357Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -2949,7 +2949,7 @@
     },
     "agent:CWI_Radio": {
       "status": "online",
-      "at": "2026-09-19T13:03:30.831Z",
+      "at": "2026-09-19T13:13:14.356Z",
       "current_task_id": null,
       "note": "Scheduled 10-min heartbeat — gear-ledger-heartbeat cron"
     },
