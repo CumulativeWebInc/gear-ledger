@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 8957,
-  "updated_at": "2026-09-21T22:34:39.372Z",
+  "version": 8958,
+  "updated_at": "2026-09-21T22:42:50.997Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -3077,6 +3077,27 @@
       ],
       "requires_black_approval": true,
       "sample": false
+    },
+    {
+      "task_id": "tsk_01M3325SFN11TY27D9VHMMPDKY",
+      "type": "build",
+      "title": "TAG CITY takeover Phase 1: forensic spec from Black's key art",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-21T22:42:50.997Z",
+      "assigned_to": null,
+      "state": "created",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "FORENSIC-SPEC.md written with form-first part decomposition",
+        "KINGCODE-TAKEOVER.md records new chain of command",
+        "locked reference is Black's 2026-09-21 18:40 EDT key art"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [],
+      "requires_black_approval": true,
+      "sample": false
     }
   ],
   "presence": {
@@ -3306,6 +3327,11 @@
       "op": "task.create",
       "at": "2026-09-18T10:50:16.575Z",
       "ref": "tsk_01M2T26W3Y1VW2HYTFQN4F4BPV"
+    },
+    "tagcity-p1-2026-09-21": {
+      "op": "task.create",
+      "at": "2026-09-21T22:42:50.997Z",
+      "ref": "tsk_01M3325SFN11TY27D9VHMMPDKY"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
