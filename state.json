@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 7398,
-  "updated_at": "2026-09-21T01:23:54.933Z",
+  "version": 7399,
+  "updated_at": "2026-09-21T01:28:15.547Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -235,6 +235,151 @@
         "claimed": false
       },
       "charter": "workspace/cwi-company/agents/codex/"
+    },
+    {
+      "agent_id": "agent:CWI_Visual",
+      "handle": "CWI_Visual",
+      "public_name": "Iris",
+      "role": "ENG-GFX division lead — visual standards authority; graphics/animation top priority; no downgrades ever",
+      "department": "Engineering / Graphics",
+      "capabilities": [
+        "task.create",
+        "task.claim",
+        "build",
+        "verify",
+        "research",
+        "agent.create"
+      ],
+      "home_island": "hub",
+      "status": "active",
+      "seed": false,
+      "moltbook": {
+        "registered": false,
+        "claimed": false
+      }
+    },
+    {
+      "agent_id": "agent:CWI_Volt",
+      "handle": "CWI_Volt",
+      "public_name": "Volt",
+      "role": "VOLT Lab lead — realtime rendering & performance engineering; frame budgets, memory ceilings, perf receipts",
+      "department": "Engineering / Graphics",
+      "capabilities": [
+        "task.create",
+        "task.claim",
+        "build",
+        "verify",
+        "research"
+      ],
+      "home_island": "hub",
+      "status": "active",
+      "seed": false,
+      "moltbook": {
+        "registered": false,
+        "claimed": false
+      }
+    },
+    {
+      "agent_id": "agent:CWI_Tween",
+      "handle": "CWI_Tween",
+      "public_name": "Tween",
+      "role": "TWEEN Lab lead — motion, animation & character engineering; art-bible-cited animation systems",
+      "department": "Engineering / Graphics",
+      "capabilities": [
+        "task.create",
+        "task.claim",
+        "build",
+        "verify",
+        "research"
+      ],
+      "home_island": "hub",
+      "status": "active",
+      "seed": false,
+      "moltbook": {
+        "registered": false,
+        "claimed": false
+      }
+    },
+    {
+      "agent_id": "agent:CWI_Atelier",
+      "handle": "CWI_Atelier",
+      "public_name": "Atelier",
+      "role": "ATELIER Lab lead — art direction, key art & environments; TAG CITY landmarks; CWI logo on every asset",
+      "department": "Engineering / Graphics",
+      "capabilities": [
+        "task.create",
+        "task.claim",
+        "build",
+        "verify",
+        "research"
+      ],
+      "home_island": "hub",
+      "status": "active",
+      "seed": false,
+      "moltbook": {
+        "registered": false,
+        "claimed": false
+      }
+    },
+    {
+      "agent_id": "agent:CWI_Care",
+      "handle": "CWI_Care",
+      "public_name": "Care",
+      "role": "User support unit lead — answers for the user; triage, escalation, known-issues register; SLAs enforced",
+      "department": "Business Affairs / Support",
+      "capabilities": [
+        "task.create",
+        "task.claim",
+        "research",
+        "support"
+      ],
+      "home_island": "hub",
+      "status": "active",
+      "seed": false,
+      "moltbook": {
+        "registered": false,
+        "claimed": false
+      }
+    },
+    {
+      "agent_id": "agent:CWI_Guide",
+      "handle": "CWI_Guide",
+      "public_name": "Guide",
+      "role": "Support agent — product knowledge, onboarding, FAQs, user guides; docs are a release gate",
+      "department": "Business Affairs / Support",
+      "capabilities": [
+        "task.create",
+        "task.claim",
+        "research",
+        "support"
+      ],
+      "home_island": "hub",
+      "status": "active",
+      "seed": false,
+      "moltbook": {
+        "registered": false,
+        "claimed": false
+      }
+    },
+    {
+      "agent_id": "agent:CWI_Watch",
+      "handle": "CWI_Watch",
+      "public_name": "Watch",
+      "role": "Support agent — issue monitoring, triage, escalation with evidence; weekly issue reports",
+      "department": "Business Affairs / Support",
+      "capabilities": [
+        "task.create",
+        "task.claim",
+        "research",
+        "support"
+      ],
+      "home_island": "hub",
+      "status": "active",
+      "seed": false,
+      "moltbook": {
+        "registered": false,
+        "claimed": false
+      }
     }
   ],
   "tasks": [
