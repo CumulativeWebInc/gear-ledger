@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 8959,
-  "updated_at": "2026-09-21T22:42:56.359Z",
+  "version": 8960,
+  "updated_at": "2026-09-21T22:43:01.846Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -3122,6 +3122,33 @@
       "state_history": [],
       "requires_black_approval": true,
       "sample": false
+    },
+    {
+      "task_id": "tsk_01M332642NHCEHGSDK6HF508HC",
+      "type": "build",
+      "title": "TAG CITY takeover Phase 3: game scene from key art (alley, drone, murals, signs)",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-21T22:43:01.845Z",
+      "assigned_to": null,
+      "state": "created",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "scene modules in rebuild/stage-scene",
+        "drone modeled with spinning rotors + red eye + spotlight",
+        "NO EXIT + UPTOWN neon signs",
+        "gold crown + pink skull murals",
+        "wet reflective street",
+        "rain",
+        "mist anchors at both nozzles",
+        "CWI seal in-frame",
+        "in-engine screenshots side-by-side vs key art"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [],
+      "requires_black_approval": true,
+      "sample": false
     }
   ],
   "presence": {
@@ -3361,6 +3388,11 @@
       "op": "task.create",
       "at": "2026-09-21T22:42:56.359Z",
       "ref": "tsk_01M3325YQ46J6A7T7NMM6GZ8SR"
+    },
+    "tagcity-p3-2026-09-21": {
+      "op": "task.create",
+      "at": "2026-09-21T22:43:01.846Z",
+      "ref": "tsk_01M332642NHCEHGSDK6HF508HC"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
