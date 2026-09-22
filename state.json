@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 10090,
-  "updated_at": "2026-09-22T09:57:53.473Z",
+  "version": 10091,
+  "updated_at": "2026-09-22T09:58:03.146Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -3434,6 +3434,35 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-23T01:30:00Z"
+    },
+    {
+      "task_id": "tsk_01M348T449SK8VMJHK94HR3Q5H",
+      "type": "compliance.sweep",
+      "title": "ROAD-1M compliance sweep all lanes; NFT waitlist demand count",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-22T09:58:03.145Z",
+      "assigned_to": "agent:CWI_Affairs",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "per-lane sign-off log",
+        "waitlist demand number"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-22T09:58:03.146Z",
+          "by": "agent:MUSE_CWI",
+          "note": "Roll-call 2026-09-22: Black's all-day order — real assignment, receipts due 21:30 ET"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-23T01:30:00Z"
     }
   ],
   "presence": {
@@ -3728,6 +3757,11 @@
       "op": "task.create",
       "at": "2026-09-22T09:57:53.472Z",
       "ref": "tsk_01M348STP08M94CG8DC0GJB9NG"
+    },
+    "rollcall-2026-09-22:CWI_Affairs": {
+      "op": "task.create",
+      "at": "2026-09-22T09:58:03.146Z",
+      "ref": "tsk_01M348T449SK8VMJHK94HR3Q5H"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
