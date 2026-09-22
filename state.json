@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 10152,
-  "updated_at": "2026-09-22T10:14:03.171Z",
+  "version": 10153,
+  "updated_at": "2026-09-22T10:14:10.359Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -3394,7 +3394,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-22T09:57:06.350Z",
       "assigned_to": "agent:CWI_Marketing",
-      "state": "assigned",
+      "state": "in_progress",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -3411,6 +3411,13 @@
           "at": "2026-09-22T09:57:06.351Z",
           "by": "agent:MUSE_CWI",
           "note": "Roll-call 2026-09-22: Black's all-day order — real assignment, receipts due 21:30 ET"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-22T10:14:10.358Z",
+          "by": "agent:CWI_Marketing",
+          "note": "day-shift start 06:20 ET 2026-09-22"
         }
       ],
       "requires_black_approval": false,
