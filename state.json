@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 11714,
-  "updated_at": "2026-09-22T19:45:20.245Z",
+  "version": 11715,
+  "updated_at": "2026-09-22T19:45:28.211Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -6955,6 +6955,37 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-22T19:00:00-04:00"
+    },
+    {
+      "task_id": "tsk_01M35ADQ4JZ0SSGEEA26GF77TG",
+      "type": "ops",
+      "title": "No-downgrade matrix entry on Tween's new sizepass GLB (612,604 bytes): re-count skin joints (flag if still 706 = export-shape issue unresolved), tris/draws; verdict vs ship hero.glb; cross-check Tween verification log; measured numbers only",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-22T19:45:28.210Z",
+      "assigned_to": "agent:CWI_Volt",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "named result delivered per brief",
+        "measured evidence on disk",
+        "honest zero where no result",
+        "kill rule: no deliverable by 19:00 ET -> close and record blocker"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-22T19:45:28.211Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-22-1540; round-7 follow-on from round-6 receipts"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-22T19:00:00-04:00"
     }
   ],
   "presence": {
@@ -7553,6 +7584,11 @@
       "op": "task.create",
       "at": "2026-09-22T19:45:20.245Z",
       "ref": "tsk_01M35ADFBN4512A6WZ6Y43ED6N"
+    },
+    "sweep-2026-09-22-1540-volt": {
+      "op": "task.create",
+      "at": "2026-09-22T19:45:28.211Z",
+      "ref": "tsk_01M35ADQ4JZ0SSGEEA26GF77TG"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
