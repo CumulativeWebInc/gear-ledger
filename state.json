@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 11505,
-  "updated_at": "2026-09-22T18:44:24.894Z",
+  "version": 11506,
+  "updated_at": "2026-09-22T18:48:11.415Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -6457,6 +6457,37 @@
       "requires_black_approval": true,
       "sample": false,
       "deadline_at": "2026-09-22T17:00:00-04:00"
+    },
+    {
+      "task_id": "tsk_01M3574TWPN4DXCDGW2ZHE9BY5",
+      "type": "ops",
+      "title": "Visual-gate round 7: verdict dossier on Atelier round-6 fix-pass re-renders (GUITAR/SHRED reframed, CASSETTE SIDE A spacing fix) vs round-5 baselines; 8-metric deltas per proof; NEON_TURNTABLE SP IN gap defect carried; synthetic-only; nothing to Blacks eye until Iris PASS",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-22T18:48:11.415Z",
+      "assigned_to": "agent:CWI_Visual",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "dossier written with per-proof PASS/CONDITIONAL verdict vs locked key art",
+        "8-metric deltas on every proof",
+        "re-render sha256 diffs vs round-5 baselines verified",
+        "synthetic-only attested"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-22T18:48:11.415Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-22; round-5 follow-on"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-22T18:00:00-04:00"
     }
   ],
   "presence": {
@@ -7000,6 +7031,11 @@
       "op": "task.create",
       "at": "2026-09-22T17:55:36.803Z",
       "ref": "tsk_01M3544J726MV0DTGYNE60S63D"
+    },
+    "sweep-2026-09-22-1440-visual": {
+      "op": "task.create",
+      "at": "2026-09-22T18:48:11.415Z",
+      "ref": "tsk_01M3574TWPN4DXCDGW2ZHE9BY5"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
