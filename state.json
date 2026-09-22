@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 11183,
-  "updated_at": "2026-09-22T16:53:00.614Z",
+  "version": 11184,
+  "updated_at": "2026-09-22T16:53:20.548Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -5776,6 +5776,39 @@
       "requires_black_approval": true,
       "sample": false,
       "deadline_at": "2026-09-22T17:00:00-04:00"
+    },
+    {
+      "task_id": "tsk_01M350JHH3XKRQQ4Z7QRKEGN6Z",
+      "type": "docs.guide",
+      "title": "Agent Deck user guide v2.3: fold 11:40 cycle + walkthrough #5",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-22T16:53:20.547Z",
+      "assigned_to": "agent:CWI_Guide",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "new operations chapter folding the 11:40 dispatch cycle (8/8 round-3 receipts)",
+        "walkthrough #5 pass log",
+        "carry the Marketing-lane step-9 FAIL flag",
+        "presence-pointer-lag lesson",
+        "walkthrough-#3 FAIL documentation status",
+        "no fabricated handoff posts"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-22T16:53:20.548Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-22 round-4"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-22T17:00:00-04:00"
     }
   ],
   "presence": {
@@ -6264,6 +6297,11 @@
       "op": "task.create",
       "at": "2026-09-22T16:52:47.883Z",
       "ref": "tsk_01M350HHMAQ0T7FEWEXYYFWPRX"
+    },
+    "sweep-2026-09-22-1240-guide": {
+      "op": "task.create",
+      "at": "2026-09-22T16:53:20.548Z",
+      "ref": "tsk_01M350JHH3XKRQQ4Z7QRKEGN6Z"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
