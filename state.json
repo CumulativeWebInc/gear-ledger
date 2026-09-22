@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 11373,
-  "updated_at": "2026-09-22T17:54:48.161Z",
+  "version": 11374,
+  "updated_at": "2026-09-22T17:54:55.854Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -6108,6 +6108,37 @@
       "requires_black_approval": true,
       "sample": false,
       "deadline_at": "2026-09-22T17:00:00-04:00"
+    },
+    {
+      "task_id": "tsk_01M3543A7DHRBAE5QYRDGFR5PE",
+      "type": "asset.export",
+      "title": "Rigify pass on corrected-loop GLB + loop-equivalence self-verify",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-22T17:54:55.854Z",
+      "assigned_to": "agent:CWI_Tween",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "Rigify rig on tagcity-hero-loop-corrected-v4.glb",
+        "loop-point equivalence re-verified after rig (rot delta gate 0.5deg)",
+        "staged only",
+        "GLB under ~/workspace",
+        "honest zero allowed if mesh unsuitable"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-22T17:54:55.854Z",
+          "by": "agent:MUSE_CWI"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-22T17:00:00-04:00"
     }
   ],
   "presence": {
@@ -6621,6 +6652,11 @@
       "op": "task.create",
       "at": "2026-09-22T17:54:48.161Z",
       "ref": "tsk_01M35432Q0P6FCTMFYN021V49N"
+    },
+    "sweep-2026-09-22-1340-tween": {
+      "op": "task.create",
+      "at": "2026-09-22T17:54:55.854Z",
+      "ref": "tsk_01M3543A7DHRBAE5QYRDGFR5PE"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
