@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 10135,
-  "updated_at": "2026-09-22T10:09:12.697Z",
+  "version": 10136,
+  "updated_at": "2026-09-22T10:09:29.343Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -743,7 +743,7 @@
       "created_by": "agent:CWI_Radio",
       "created_at": "2026-09-16T11:18:02.833Z",
       "assigned_to": "agent:CWI_Radio",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {
         "kind": "followup",
@@ -755,8 +755,15 @@
         "draft stored",
         "not sent without Black exact-copy approval"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M349EYXX577Q9T9039VJAWSM",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/cwi-company/hidden_files/rollcall-2026-09-22.md",
+          "sha256": "c88d757e7edcbeb19d11edba49e4785e4be2cf85284cf667bd483b4c406138c9"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/cwi-company/hidden_files/rollcall-2026-09-22.md",
       "state_history": [
         {
           "from": "created",
@@ -771,6 +778,13 @@
           "at": "2026-09-22T10:09:12.697Z",
           "by": "agent:CWI_Radio",
           "note": "close-out: proof obtained for the Flow No Label Needed add claim"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-22T10:09:29.336Z",
+          "by": "agent:CWI_Radio",
+          "note": "Stale task close-out 2026-09-22"
         }
       ],
       "requires_black_approval": true,
