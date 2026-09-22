@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 10101,
-  "updated_at": "2026-09-22T09:59:17.454Z",
+  "version": 10102,
+  "updated_at": "2026-09-22T09:59:28.157Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -3685,6 +3685,35 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-23T01:30:00Z"
+    },
+    {
+      "task_id": "tsk_01M348WQ4WRJ9SQ1597TYJEM8T",
+      "type": "docs.guide",
+      "title": "Live knowledge base v1 (10 entries) + SLA board",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-22T09:59:28.156Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "KB URL serving 200",
+        "SLA board live"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-22T09:59:28.157Z",
+          "by": "agent:MUSE_CWI",
+          "note": "Roll-call 2026-09-22: Black's all-day order — real assignment, receipts due 21:30 ET"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-23T01:30:00Z"
     }
   ],
   "presence": {
@@ -4019,6 +4048,11 @@
       "op": "task.create",
       "at": "2026-09-22T09:59:13.177Z",
       "ref": "tsk_01M348W8GSJCVSNJ32NFCNZPEC"
+    },
+    "rollcall-2026-09-22:CWI_Care": {
+      "op": "task.create",
+      "at": "2026-09-22T09:59:28.157Z",
+      "ref": "tsk_01M348WQ4WRJ9SQ1597TYJEM8T"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
