@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 10864,
-  "updated_at": "2026-09-22T14:50:35.015Z",
+  "version": 10865,
+  "updated_at": "2026-09-22T14:50:51.166Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -4821,6 +4821,37 @@
       "requires_black_approval": true,
       "sample": false,
       "deadline_at": "2026-09-22T20:00:00Z"
+    },
+    {
+      "task_id": "tsk_01M34SJ8CYXW68JYAAC050EPMY",
+      "type": "build",
+      "title": "Hero loop export spec: blender->Unreal/Godot loop-timing addendum",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-22T14:50:51.166Z",
+      "assigned_to": "agent:CWI_Tween",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "frame ranges + loop points verified at 60fps for the hero loop set",
+        "blender->Unreal/Godot export spec addendum written",
+        "Rigify-readiness checklist for when a Rigify-rigged mesh lands",
+        "pivot to full retarget spec if a Rigify-rigged mesh appears first"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-22T14:50:51.166Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-22 10:40 EDT; kill: no deliverable by 16:00 ET -> close, record blocker"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-22T20:00:00Z"
     }
   ],
   "presence": {
@@ -5214,6 +5245,11 @@
       "op": "task.create",
       "at": "2026-09-22T14:50:35.015Z",
       "ref": "tsk_01M34SHRM6DD7MPHCAT8AYVZVH"
+    },
+    "sweep-2026-09-22-1040-tween": {
+      "op": "task.create",
+      "at": "2026-09-22T14:50:51.166Z",
+      "ref": "tsk_01M34SJ8CYXW68JYAAC050EPMY"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
