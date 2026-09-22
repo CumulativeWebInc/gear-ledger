@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 10684,
-  "updated_at": "2026-09-22T13:45:39.509Z",
+  "version": 10685,
+  "updated_at": "2026-09-22T13:45:47.606Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -4417,6 +4417,27 @@
         "PASS/FAIL per target measured on current best candidate mesh",
         "Report on disk",
         "harness green on test asset"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [],
+      "requires_black_approval": true,
+      "sample": false
+    },
+    {
+      "task_id": "tsk_01M34NV4ANBTF7A598KQP7BW3C",
+      "type": "build.asset",
+      "title": "Apply three-loop set (idle/walk/spray) to synthetic hero mesh - Rigify-compatible retarget",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-22T13:45:47.605Z",
+      "assigned_to": null,
+      "state": "created",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "Updated H.264 test clip in tagcity hidden_files/tween with verified 60fps loop timing",
+        "Rigify-compatible retarget spec note (no Mixamo dependency)",
+        "Spec-only flagged honestly if no mesh available"
       ],
       "artifacts": [],
       "deliverable_ref": null,
