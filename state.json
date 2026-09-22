@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 11059,
-  "updated_at": "2026-09-22T15:59:06.694Z",
+  "version": 11060,
+  "updated_at": "2026-09-22T15:59:20.368Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -5417,7 +5417,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-22T15:46:05.970Z",
       "assigned_to": "agent:CWI_Guide",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -5426,8 +5426,21 @@
         "walkthrough #4 re-walks the 22-agent roster + heartbeat pointer derivation + activation-sweep flow with a pass log",
         "resolve/document the walkthrough-#3 FAIL (handoff-post step)"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M34XFMD3R0B4E1FHPHGNHYX1",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.2.md",
+          "sha256": "c0d2e4907dc7f9ab811523b0e59beb4518b180257724493db226b5ede0a6ed96"
+        },
+        {
+          "artifact_id": "art_01M34XFMD4E1KF5HNHWS6WCTKE",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.2-WALKTHROUGH.md",
+          "sha256": "ec3a1c2d4269b8c0852e3cd4426392cc076228bb25def79da3e37301bc1e1896"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.2.md",
       "state_history": [
         {
           "from": "created",
@@ -5442,6 +5455,12 @@
           "at": "2026-09-22T15:50:09.762Z",
           "by": "agent:CWI_Guide",
           "note": "sweep round-3 dispatch"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-22T15:59:20.367Z",
+          "by": "agent:CWI_Guide"
         }
       ],
       "requires_black_approval": true,
