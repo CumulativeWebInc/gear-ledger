@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 11716,
-  "updated_at": "2026-09-22T19:45:37.240Z",
+  "version": 11717,
+  "updated_at": "2026-09-22T19:45:45.992Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -7017,6 +7017,37 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-22T19:00:00-04:00"
+    },
+    {
+      "task_id": "tsk_01M35AE8G7JFXS42ZQMM9M9MAG",
+      "type": "ops",
+      "title": "Guide v2.6: operations chapter folds the 14:40 cycle (8/8 round-6 receipts ledger-verified); walkthrough #8 pass log; Marketing step-9 FAIL flag current; registry drift carried; zero fabricated handoffs",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-22T19:45:45.991Z",
+      "assigned_to": "agent:CWI_Guide",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "named result delivered per brief",
+        "measured evidence on disk",
+        "honest zero where no result",
+        "kill rule: no deliverable by 19:00 ET -> close and record blocker"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-22T19:45:45.992Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-22-1540; round-7 follow-on from round-6 receipts"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-22T19:00:00-04:00"
     }
   ],
   "presence": {
@@ -7625,6 +7656,11 @@
       "op": "task.create",
       "at": "2026-09-22T19:45:37.240Z",
       "ref": "tsk_01M35ADZYQDMEHCZR2M9C0ZBZ9"
+    },
+    "sweep-2026-09-22-1540-guide": {
+      "op": "task.create",
+      "at": "2026-09-22T19:45:45.992Z",
+      "ref": "tsk_01M35AE8G7JFXS42ZQMM9M9MAG"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
