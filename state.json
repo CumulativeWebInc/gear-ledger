@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 11506,
-  "updated_at": "2026-09-22T18:48:11.415Z",
+  "version": 11507,
+  "updated_at": "2026-09-22T18:48:19.758Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -6488,6 +6488,38 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-22T18:00:00-04:00"
+    },
+    {
+      "task_id": "tsk_01M357531DGCBWEWSAYSVC11D7",
+      "type": "ops",
+      "title": "Atelier round-7 fix pass: NEON_TURNTABLE SP IN inter-glyph gap defect (stroke-font advance); re-render; 17-gate re-validated; v1-v6 Iris dossier index extended; staged only",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-22T18:48:19.757Z",
+      "assigned_to": "agent:CWI_Atelier",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "proof re-rendered",
+        "17/17 gates PASS",
+        "gap defect measured before/after",
+        "originals archived",
+        "staged only, nothing live"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-22T18:48:19.758Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-22; round-5 follow-on"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-22T18:00:00-04:00"
     }
   ],
   "presence": {
@@ -7036,6 +7068,11 @@
       "op": "task.create",
       "at": "2026-09-22T18:48:11.415Z",
       "ref": "tsk_01M3574TWPN4DXCDGW2ZHE9BY5"
+    },
+    "sweep-2026-09-22-1440-atelier": {
+      "op": "task.create",
+      "at": "2026-09-22T18:48:19.758Z",
+      "ref": "tsk_01M357531DGCBWEWSAYSVC11D7"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
