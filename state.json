@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 10761,
-  "updated_at": "2026-09-22T14:05:15.210Z",
+  "version": 10762,
+  "updated_at": "2026-09-22T14:05:18.637Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -4603,7 +4603,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-22T13:46:08.450Z",
       "assigned_to": "agent:CWI_Guide",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -4611,8 +4611,21 @@
         "Walkthrough test 2 pass log",
         "Covers 22-agent roster, heartbeat pointers, activation-sweep flow"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M34PYSZHFG5F2P5H2KQ351MJ",
+          "kind": "draft",
+          "uri": "~/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.md",
+          "sha256": "744ef2a4cf8a2547b3c6e93eb5f5ae59e4ac828257eb0ef39445a241c9c1aa5b"
+        },
+        {
+          "artifact_id": "art_01M34PYSZJC1BN6AY3ZAPMC2N2",
+          "kind": "report",
+          "uri": "~/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2-WALKTHROUGH.md",
+          "sha256": "9493978adf8b7daae0c6859d69f0471e8fe76495c87125da04f4604578bc98ca"
+        }
+      ],
+      "deliverable_ref": "~/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.md",
       "state_history": [
         {
           "from": "created",
@@ -4627,6 +4640,13 @@
           "at": "2026-09-22T14:01:16.348Z",
           "by": "agent:CWI_Guide",
           "note": "test"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-22T14:05:18.632Z",
+          "by": "agent:CWI_Guide",
+          "note": "activation sweep 2026-09-22 afternoon increment"
         }
       ],
       "requires_black_approval": true,
