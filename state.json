@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 11020,
-  "updated_at": "2026-09-22T15:45:10.528Z",
+  "version": 11021,
+  "updated_at": "2026-09-22T15:45:24.055Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -5255,6 +5255,37 @@
       "requires_black_approval": true,
       "sample": false,
       "deadline_at": "2026-09-22T17:00:00-04:00"
+    },
+    {
+      "task_id": "tsk_01M34WP4JPJYF9H9FX14FSFFGF",
+      "type": "build",
+      "title": "Rebuild hero loop clip with loop-isolated actions + corrected 193-283 spray range, re-verify 60fps timing",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-22T15:45:24.054Z",
+      "assigned_to": "agent:CWI_Tween",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "apply round-2 findings: rebuild hero loop clip with loop-isolated actions restoring boundary keys (idle f121, walk f193) and the corrected spray range 193-283 (not the truncated 1-frame-short render)",
+        "fresh 60fps loop verification (decode all frames, zero timing drift, SSIM loop continuity)",
+        "Rigify-retarget path stays honestly DEFERRED-PENDING-MESH if no Rigify-rigged mesh exists (Mixamo stays rejected)",
+        "test clip + verification log in goals/tag-city-3d-rebuild/hidden_files/tween/"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-22T15:45:24.055Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-22 11:40 EDT"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-22T17:00:00-04:00"
     }
   ],
   "presence": {
@@ -5688,6 +5719,11 @@
       "op": "task.create",
       "at": "2026-09-22T15:45:05.286Z",
       "ref": "tsk_01M34WNJ85E6Z6XT9EBZTDSX0M"
+    },
+    "sweep-2026-09-22-1140-tween": {
+      "op": "task.create",
+      "at": "2026-09-22T15:45:24.055Z",
+      "ref": "tsk_01M34WP4JPJYF9H9FX14FSFFGF"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
