@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 10540,
-  "updated_at": "2026-09-22T12:47:33.355Z",
+  "version": 10541,
+  "updated_at": "2026-09-22T12:47:41.572Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -4033,15 +4033,28 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-22T09:59:28.156Z",
       "assigned_to": "agent:CWI_Care",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
         "KB URL serving 200",
         "SLA board live"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M34JGHJS7K2VMS8Q4FXG2SEK",
+          "kind": "report",
+          "uri": "https://cumulativewebinc.github.io/cwi-support-kb/",
+          "sha256": "3863506740afe98e2b86babcad4c1eab923b29e79a79c286975e8f4d0fbc5c00"
+        },
+        {
+          "artifact_id": "art_01M34JGHJVYY7SS46G1J29S447",
+          "kind": "report",
+          "uri": "https://cumulativewebinc.github.io/cwi-support-kb/sla.html",
+          "sha256": "13b79f583c46eeb1f146875dc70afde6ef14b7779a1f1e20419a7ba078642b92"
+        }
+      ],
+      "deliverable_ref": "https://cumulativewebinc.github.io/cwi-support-kb/",
       "state_history": [
         {
           "from": "created",
@@ -4056,6 +4069,13 @@
           "at": "2026-09-22T12:41:08.250Z",
           "by": "agent:CWI_Care",
           "note": "activation sweep 2026-09-22 — work started"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-22T12:47:41.572Z",
+          "by": "agent:CWI_Care",
+          "note": "verified-live 2026-09-22; push: repo CumulativeWebInc/cwi-support-kb via Contents API (3 files: index.html, sla.html, kb.json)"
         }
       ],
       "requires_black_approval": false,
