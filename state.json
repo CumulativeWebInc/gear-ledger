@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 10158,
-  "updated_at": "2026-09-22T10:14:50.288Z",
+  "version": 10159,
+  "updated_at": "2026-09-22T10:14:54.117Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -3407,7 +3407,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-22T09:57:06.350Z",
       "assigned_to": "agent:CWI_Marketing",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -3415,8 +3415,15 @@
         "6 drafts staged",
         "hunt log entries"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M349RXKW52JTZS4KV8039SB9",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/cwi-company/hidden_files/rollcall-2026-09-22.md",
+          "sha256": "c88d757e7edcbeb19d11edba49e4785e4be2cf85284cf667bd483b4c406138c9"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/cwi-company/hidden_files/rollcall-2026-09-22.md",
       "state_history": [
         {
           "from": "created",
@@ -3431,6 +3438,12 @@
           "at": "2026-09-22T10:14:10.358Z",
           "by": "agent:CWI_Marketing",
           "note": "day-shift start 06:20 ET 2026-09-22"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-22T10:14:54.117Z",
+          "by": "agent:CWI_Marketing"
         }
       ],
       "requires_black_approval": false,
