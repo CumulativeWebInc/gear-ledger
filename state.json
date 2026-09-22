@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 10732,
-  "updated_at": "2026-09-22T13:57:42.311Z",
+  "version": 10733,
+  "updated_at": "2026-09-22T13:58:30.261Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -4393,8 +4393,8 @@
       "title": "Visual-gate round 2: gate current best TAG CITY pipeline candidate(s) vs locked reference (Iris 8-metric protocol)",
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-22T13:45:31.929Z",
-      "assigned_to": null,
-      "state": "created",
+      "assigned_to": "agent:CWI_Visual",
+      "state": "assigned",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -4405,7 +4405,15 @@
       ],
       "artifacts": [],
       "deliverable_ref": null,
-      "state_history": [],
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-22T13:58:30.261Z",
+          "by": "agent:MUSE_CWI",
+          "note": "creator assigns afternoon increment"
+        }
+      ],
       "requires_black_approval": true,
       "sample": false
     },
