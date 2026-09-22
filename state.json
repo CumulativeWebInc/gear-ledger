@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 11239,
-  "updated_at": "2026-09-22T17:10:42.962Z",
+  "version": 11240,
+  "updated_at": "2026-09-22T17:11:48.346Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -5855,7 +5855,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-22T16:53:20.547Z",
       "assigned_to": "agent:CWI_Guide",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -5866,8 +5866,21 @@
         "walkthrough-#3 FAIL documentation status",
         "no fabricated handoff posts"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M351M9SN5357HZYQ2JWPB26T",
+          "kind": "report",
+          "uri": "AGENT-DECK-USER-GUIDE-v2.3.md",
+          "sha256": "7390147fcd458e5950569bb11ae1c6765974d35ee73ba2b8951875ef175cb903"
+        },
+        {
+          "artifact_id": "art_01M351M9SSGPSANQ343TKC2T03",
+          "kind": "report",
+          "uri": "AGENT-DECK-USER-GUIDE-v2.3-WALKTHROUGH.md",
+          "sha256": "cb6def2c0aaa282006d01ed4bc0389d44a61af93bb7b6286e7f40a6d80ed63be"
+        }
+      ],
+      "deliverable_ref": "AGENT-DECK-USER-GUIDE-v2.3.md",
       "state_history": [
         {
           "from": "created",
@@ -5882,6 +5895,12 @@
           "at": "2026-09-22T16:58:09.705Z",
           "by": "agent:CWI_Guide",
           "note": "activation sweep 2026-09-22"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-22T17:11:48.344Z",
+          "by": "agent:CWI_Guide"
         }
       ],
       "requires_black_approval": true,
