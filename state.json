@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 10754,
-  "updated_at": "2026-09-22T14:04:09.081Z",
+  "version": 10755,
+  "updated_at": "2026-09-22T14:04:13.704Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -4394,7 +4394,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-22T13:45:31.929Z",
       "assigned_to": "agent:CWI_Visual",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -4403,8 +4403,15 @@
         "No candidate reaches Black eye without a signed PASS",
         "Synthetic-only: locked reference decrypted-to-/tmp only, never uploaded"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M34PWP5C1CGBX3F5E8WMYBN7",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/hero-build/gate-reports/2026-09-22/round2/IRIS-GATE-REPORT-2026-09-22-round2.md",
+          "sha256": "0bdf8b84fa7a107ac3c485d9c1090cc612d87756b60da874383510b932eacb71"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/hero-build/gate-reports/2026-09-22/round2/IRIS-GATE-REPORT-2026-09-22-round2.md",
       "state_history": [
         {
           "from": "created",
@@ -4417,6 +4424,13 @@
           "from": "assigned",
           "to": "in_progress",
           "at": "2026-09-22T14:03:34.070Z",
+          "by": "agent:CWI_Visual",
+          "note": "activation sweep 2026-09-22 afternoon increment"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-22T14:04:13.704Z",
           "by": "agent:CWI_Visual",
           "note": "activation sweep 2026-09-22 afternoon increment"
         }
