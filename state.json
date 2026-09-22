@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 10091,
-  "updated_at": "2026-09-22T09:58:03.146Z",
+  "version": 10092,
+  "updated_at": "2026-09-22T09:58:12.765Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -3463,6 +3463,35 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-23T01:30:00Z"
+    },
+    {
+      "task_id": "tsk_01M348TDGXQ9CDSCQQBQYM9WJN",
+      "type": "verification.playbook",
+      "title": "Verification playbook v1 (what counts as verified 1M) + fresh distribution-stats pull",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-22T09:58:12.765Z",
+      "assigned_to": "agent:CWI_Results",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "playbook file on disk",
+        "dashboard JSON on disk"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-22T09:58:12.765Z",
+          "by": "agent:MUSE_CWI",
+          "note": "Roll-call 2026-09-22: Black's all-day order — real assignment, receipts due 21:30 ET"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-23T01:30:00Z"
     }
   ],
   "presence": {
@@ -3762,6 +3791,11 @@
       "op": "task.create",
       "at": "2026-09-22T09:58:03.146Z",
       "ref": "tsk_01M348T449SK8VMJHK94HR3Q5H"
+    },
+    "rollcall-2026-09-22:CWI_Results": {
+      "op": "task.create",
+      "at": "2026-09-22T09:58:12.765Z",
+      "ref": "tsk_01M348TDGXQ9CDSCQQBQYM9WJN"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
