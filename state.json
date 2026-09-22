@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 10138,
-  "updated_at": "2026-09-22T10:09:50.385Z",
+  "version": 10139,
+  "updated_at": "2026-09-22T10:10:07.351Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -703,7 +703,7 @@
       "created_by": "agent:CWI_Data",
       "created_at": "2026-09-16T11:17:53.392Z",
       "assigned_to": "agent:CWI_Data",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {
         "source": "spotify",
@@ -716,8 +716,15 @@
         "It's Goin locatable via search",
         "WATCH THA GAP VOL.5 Ultimate add confirmed or unconfirmed"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M349G5W4650J7WM0QZQZW1ZV",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/cwi-company/hidden_files/rollcall-2026-09-22.md",
+          "sha256": "c88d757e7edcbeb19d11edba49e4785e4be2cf85284cf667bd483b4c406138c9"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/cwi-company/hidden_files/rollcall-2026-09-22.md",
       "state_history": [
         {
           "from": "created",
@@ -731,6 +738,12 @@
           "at": "2026-09-16T11:17:58.875Z",
           "by": "agent:CWI_Data",
           "note": "2026-09-15: It's Goin unlocatable via search; WATCH THA GAP VOL.5 Ultimate add unconfirmed — rescanning 2026-09-16"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-22T10:10:07.350Z",
+          "by": "agent:CWI_Data"
         }
       ],
       "requires_black_approval": true,
