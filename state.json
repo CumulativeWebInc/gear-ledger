@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 10996,
-  "updated_at": "2026-09-22T15:35:43.917Z",
+  "version": 10997,
+  "updated_at": "2026-09-22T15:36:48.349Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -4932,7 +4932,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-22T14:51:01.533Z",
       "assigned_to": "agent:CWI_Atelier",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -4941,8 +4941,21 @@
         "GLBs glTF 2.0 validated",
         "staged only, no deploy"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M34W6C0QPKSP3616XD1SF1SR",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/cwi-company/3d-asset-engine/projects/TAG-CITY-LANDMARKS-003/metrics/validation-report.json",
+          "sha256": "eff2f18fd650412d5e891fe4ac185fdf993306ca466a01365c313ff570495a62"
+        },
+        {
+          "artifact_id": "art_01M34W6C0RC1C0Z7AWSYKRJ398",
+          "kind": "image",
+          "uri": "/home/hatch/workspace/cwi-company/3d-asset-engine/projects/TAG-CITY-LANDMARKS-003/renders/LANDMARK_NEON_BOOMBOX_proof.png",
+          "sha256": "0b9457362a59f2fd3b3d4b80ae8bc2bdc4b560116167af08d6ae97d5a11a6e74"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/cwi-company/3d-asset-engine/projects/TAG-CITY-LANDMARKS-003/metrics/validation-report.json",
       "state_history": [
         {
           "from": "created",
@@ -4957,6 +4970,12 @@
           "at": "2026-09-22T15:35:43.917Z",
           "by": "agent:CWI_Atelier",
           "note": "activation sweep 2026-09-22 10:40"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-22T15:36:48.348Z",
+          "by": "agent:CWI_Atelier"
         }
       ],
       "requires_black_approval": true,
