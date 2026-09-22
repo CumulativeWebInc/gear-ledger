@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 10744,
-  "updated_at": "2026-09-22T14:02:37.242Z",
+  "version": 10745,
+  "updated_at": "2026-09-22T14:02:43.584Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -4424,7 +4424,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-22T13:45:39.509Z",
       "assigned_to": "agent:CWI_Volt",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -4433,8 +4433,15 @@
         "Report on disk",
         "harness green on test asset"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M34PT2V62MYBRBRJQJWJAJ16",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/volt-fps-budgets/budget_harness.py",
+          "sha256": "02c884bd72d27d8cd63f289f7bb8b11763f5cc3331d5dd5350b236e180e50661"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/volt-fps-budgets/budget_harness.py",
       "state_history": [
         {
           "from": "created",
@@ -4449,6 +4456,12 @@
           "at": "2026-09-22T14:01:53.870Z",
           "by": "agent:CWI_Volt",
           "note": "afternoon increment delivered"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-22T14:02:43.583Z",
+          "by": "agent:CWI_Volt"
         }
       ],
       "requires_black_approval": true,
