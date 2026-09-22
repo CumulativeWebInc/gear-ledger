@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 11024,
-  "updated_at": "2026-09-22T15:45:54.632Z",
+  "version": 11025,
+  "updated_at": "2026-09-22T15:46:05.970Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -5348,6 +5348,37 @@
       "requires_black_approval": true,
       "sample": false,
       "deadline_at": "2026-09-22T17:00:00-04:00"
+    },
+    {
+      "task_id": "tsk_01M34WQDGHJ2TWVV5MG0PTDMRP",
+      "type": "doc",
+      "title": "Agent Deck user guide v2.2 + walkthrough #4: fold the 10:40 dispatch cycle as operations chapter",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-22T15:46:05.970Z",
+      "assigned_to": "agent:CWI_Guide",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "fold the 10:40 sweep dispatch cycle (round-2 assignment pattern, 8/8 delivery receipts, lessons) as a new operations chapter",
+        "carry the Step 7 grep-check fix from v2.1",
+        "walkthrough #4 re-walks the 22-agent roster + heartbeat pointer derivation + activation-sweep flow with a pass log",
+        "resolve/document the walkthrough-#3 FAIL (handoff-post step)"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-22T15:46:05.970Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-22 11:40 EDT"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-22T17:00:00-04:00"
     }
   ],
   "presence": {
@@ -5796,6 +5827,11 @@
       "op": "task.create",
       "at": "2026-09-22T15:45:54.632Z",
       "ref": "tsk_01M34WQ2E70FFRV946B8NK1NAQ"
+    },
+    "sweep-2026-09-22-1140-guide": {
+      "op": "task.create",
+      "at": "2026-09-22T15:46:05.970Z",
+      "ref": "tsk_01M34WQDGHJ2TWVV5MG0PTDMRP"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
