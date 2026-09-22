@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 11374,
-  "updated_at": "2026-09-22T17:54:55.854Z",
+  "version": 11375,
+  "updated_at": "2026-09-22T17:55:03.916Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -6139,6 +6139,37 @@
       "requires_black_approval": true,
       "sample": false,
       "deadline_at": "2026-09-22T17:00:00-04:00"
+    },
+    {
+      "task_id": "tsk_01M3543J3BDSXY4ZB4H7BPMZ8P",
+      "type": "asset.fix",
+      "title": "Atelier round-6: fix pass on 2 CONDITIONAL v4 proofs + v1-v5 Iris dossier index",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-22T17:55:03.915Z",
+      "assigned_to": "agent:CWI_Atelier",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "GUITAR/SHRED proof-camera framing defect fixed and re-rendered",
+        "CASSETTE SIDE A glyph spacing fixed and re-rendered",
+        "4 v5 proofs untouched",
+        "v1-v5 Iris sign-off dossier index assembled",
+        "staged only"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-22T17:55:03.916Z",
+          "by": "agent:MUSE_CWI"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-22T17:00:00-04:00"
     }
   ],
   "presence": {
@@ -6657,6 +6688,11 @@
       "op": "task.create",
       "at": "2026-09-22T17:54:55.854Z",
       "ref": "tsk_01M3543A7DHRBAE5QYRDGFR5PE"
+    },
+    "sweep-2026-09-22-1340-atelier": {
+      "op": "task.create",
+      "at": "2026-09-22T17:55:03.916Z",
+      "ref": "tsk_01M3543J3BDSXY4ZB4H7BPMZ8P"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
