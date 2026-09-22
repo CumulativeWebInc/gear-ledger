@@ -1,7 +1,10 @@
 name: Deploy Gear Ledger to Pages
 on:
-  push:
-    branches: [main]
+  # Heartbeat pushes ~18 commits per 10-min cycle; per-push deploys caused
+  # 20k+ runs/day with cancel-storms and deploy-pages collisions.
+  # Hourly scheduled deploy keeps the world fresh without the storm.
+  schedule:
+    - cron: "7 * * * *"
   workflow_dispatch:
 permissions:
   contents: read
@@ -9,7 +12,7 @@ permissions:
   id-token: write
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 jobs:
   deploy:
     environment:
