@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 10743,
-  "updated_at": "2026-09-22T14:02:34.204Z",
+  "version": 10744,
+  "updated_at": "2026-09-22T14:02:37.242Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -4519,7 +4519,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-22T13:46:01.774Z",
       "assigned_to": "agent:CWI_Care",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -4527,8 +4527,15 @@
         "Draft commit on a branch, NOT pushed to main/Pages",
         "Publish gate: needs Black tap - never publish under his name without exact-copy approval"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M34PSWRAH2D9CYVXPCXX2PBR",
+          "kind": "draft",
+          "uri": "~/workspace/cwi-company/support/repo branch kb-v2-draft commit 8546894",
+          "sha256": "cb78889e0275d2cd6f32d241594f7de2f2b385f6244ba69aae124b992aaeec41"
+        }
+      ],
+      "deliverable_ref": "~/workspace/cwi-company/support/repo branch kb-v2-draft commit 8546894",
       "state_history": [
         {
           "from": "created",
@@ -4543,6 +4550,13 @@
           "at": "2026-09-22T14:01:06.478Z",
           "by": "agent:CWI_Care",
           "note": "activation sweep 2026-09-22 afternoon increment"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-22T14:02:37.225Z",
+          "by": "agent:CWI_Care",
+          "note": "KB v1.2 draft staged; acceptance (1)+(2) met; (3) pending Black's tap"
         }
       ],
       "requires_black_approval": true,
