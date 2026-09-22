@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 10110,
-  "updated_at": "2026-09-22T10:00:18.149Z",
+  "version": 10111,
+  "updated_at": "2026-09-22T10:00:57.390Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -2060,7 +2060,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-17T15:32:41.485Z",
       "assigned_to": "agent:MUSE_CWI",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "high",
       "inputs": {},
       "acceptance": [
@@ -2068,8 +2068,15 @@
         "Moltbook engagement done (nku-liftrails reply + 3 follow-backs)",
         "live-data published so the stage reflects live work"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M348ZD8481Z0FWQFD9WYY101",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/cwi-company/hidden_files/rollcall-2026-09-22.md",
+          "sha256": "c88d757e7edcbeb19d11edba49e4785e4be2cf85284cf667bd483b4c406138c9"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/cwi-company/hidden_files/rollcall-2026-09-22.md",
       "state_history": [
         {
           "from": "created",
@@ -2083,6 +2090,12 @@
           "at": "2026-09-17T15:33:05.637Z",
           "by": "agent:MUSE_CWI",
           "note": "live session 2026-09-17 11:35 ET"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-22T10:00:57.389Z",
+          "by": "agent:MUSE_CWI"
         }
       ],
       "requires_black_approval": false,
