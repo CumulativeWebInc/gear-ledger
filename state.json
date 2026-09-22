@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 11051,
-  "updated_at": "2026-09-22T15:55:34.465Z",
+  "version": 11052,
+  "updated_at": "2026-09-22T15:55:37.841Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -5355,15 +5355,22 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-22T15:45:54.631Z",
       "assigned_to": "agent:CWI_Care",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
         ">=5 new KB entries covering: the 8 round-2 sweep deliveries with receipts, Atelier backgrounded-transition ledger-hygiene lesson, Visual locked-reference passphrase-source gap, Results LOG-GAP lesson (cross-check ledger not the log), MINT re-armed kill trigger",
         "branch only, no publish (Black's publish tap still holds)"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M34X8RFZB19K62S1ZJXHWJ75",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/kb-v2.2-entry-list-2026-09-22.md",
+          "sha256": "516e0948d42862ac6f35661d82945f0120f192865b605b3b9d28b228ab16a6a0"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/kb-v2.2-entry-list-2026-09-22.md",
       "state_history": [
         {
           "from": "created",
@@ -5378,6 +5385,12 @@
           "at": "2026-09-22T15:50:06.874Z",
           "by": "agent:CWI_Care",
           "note": "sweep round-3 dispatch"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-22T15:55:37.841Z",
+          "by": "agent:CWI_Care"
         }
       ],
       "requires_black_approval": true,
