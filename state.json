@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 10169,
-  "updated_at": "2026-09-22T10:25:29.200Z",
+  "version": 10170,
+  "updated_at": "2026-09-22T10:25:41.420Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -4004,6 +4004,38 @@
       "requires_black_approval": true,
       "sample": false,
       "deadline_at": "2026-09-23T04:00:00Z"
+    },
+    {
+      "task_id": "tsk_01M34ACQHAGYJXSR9T1MNDS98A",
+      "type": "build",
+      "title": "MINT $0 revenue systems 2026-09-22 — visualizer pipeline on verified mappings + Sync Pack form",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-22T10:25:41.418Z",
+      "assigned_to": "agent:CWI_Athena_MINT",
+      "state": "assigned",
+      "priority": "high",
+      "inputs": {},
+      "acceptance": [
+        "artwork manifest audit complete, only verified mappings used",
+        "visualizer-clip pipeline builds on verified mappings only",
+        "$0 Sync Pack interest form staged with machine-readable content.json",
+        "Twenty Minds run before any launch commitment",
+        "no launch without Black's clearance"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-22T10:25:41.420Z",
+          "by": "agent:MUSE_CWI",
+          "note": "Kill rule: any mapping not verifiable against the manifest is excluded, never shipped. Never call the catalog one-stop or pre-cleared. Carve-outs absolute."
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-23T04:00:00Z"
     }
   ],
   "presence": {
@@ -4359,6 +4391,11 @@
       "op": "task.create",
       "at": "2026-09-22T10:25:29.200Z",
       "ref": "tsk_01M34ACBKFW69MCWR68SPGYSKJ"
+    },
+    "mint-day2-2026-09-22": {
+      "op": "task.create",
+      "at": "2026-09-22T10:25:41.420Z",
+      "ref": "tsk_01M34ACQHAGYJXSR9T1MNDS98A"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
