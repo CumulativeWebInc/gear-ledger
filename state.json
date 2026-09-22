@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 10095,
-  "updated_at": "2026-09-22T09:58:39.956Z",
+  "version": 10096,
+  "updated_at": "2026-09-22T09:58:49.104Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -3577,6 +3577,35 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-23T01:30:00Z"
+    },
+    {
+      "task_id": "tsk_01M348VH0FMTPVGE05Y68KRY1R",
+      "type": "build.asset",
+      "title": "No-downgrade law: FPS/poly budgets + measurement harness for pipeline output",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-22T09:58:49.103Z",
+      "assigned_to": "agent:CWI_Volt",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "budget doc",
+        "harness running and green on test asset"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-22T09:58:49.104Z",
+          "by": "agent:MUSE_CWI",
+          "note": "Roll-call 2026-09-22: Black's all-day order — real assignment, receipts due 21:30 ET"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-23T01:30:00Z"
     }
   ],
   "presence": {
@@ -3896,6 +3925,11 @@
       "op": "task.create",
       "at": "2026-09-22T09:58:39.956Z",
       "ref": "tsk_01M348V82K67F2Z56K288BHAC0"
+    },
+    "rollcall-2026-09-22:CWI_Volt": {
+      "op": "task.create",
+      "at": "2026-09-22T09:58:49.104Z",
+      "ref": "tsk_01M348VH0FMTPVGE05Y68KRY1R"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
