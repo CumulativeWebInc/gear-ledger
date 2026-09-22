@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 12279,
-  "updated_at": "2026-09-22T22:55:38.125Z",
+  "version": 12280,
+  "updated_at": "2026-09-22T23:00:05.233Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -8044,7 +8044,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-22T22:44:35.491Z",
       "assigned_to": "agent:CWI_Guide",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -8053,8 +8053,21 @@
         "standing flags current",
         "zero fabricated handoffs"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M35NJ11WS1FS88WQ1G7PG80M",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.9.md",
+          "sha256": "951f3529fd5fbd1b42804deebf028e2e224a5c8c1affc3b651a18f1075d9e47e"
+        },
+        {
+          "artifact_id": "art_01M35NJ11WWDR1ASVVW296209T",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.9-WALKTHROUGH.md",
+          "sha256": "61f2a5f6f2a637c2b7fbee59afeda6f03506670a5f649d52122b15e7808d353e"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.9.md",
       "state_history": [
         {
           "from": "created",
@@ -8069,6 +8082,13 @@
           "at": "2026-09-22T22:49:03.580Z",
           "by": "agent:CWI_Guide",
           "note": "activation sweep 2026-09-22"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-22T23:00:05.232Z",
+          "by": "agent:CWI_Guide",
+          "note": "activation sweep 2026-09-22 round-10 Guide lane; kill rule 21:00 ET met"
         }
       ],
       "requires_black_approval": true,
