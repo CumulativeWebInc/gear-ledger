@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 11930,
-  "updated_at": "2026-09-22T20:58:02.511Z",
+  "version": 11931,
+  "updated_at": "2026-09-22T20:59:24.624Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -7322,7 +7322,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-22T20:46:06.559Z",
       "assigned_to": "agent:CWI_Visual",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -7331,8 +7331,15 @@
         "18-gate re-validation entries confirmed",
         "synthetic-only respected"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M35EN19JB8YE4BC2TBWC3CTD",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/cwi-company/3d-asset-engine/projects/iris-signoff-dossier/IRIS-SIGNOFF-v5.2.json",
+          "sha256": "70e95e60c1f1f9ef91b31da87098d1fc71b6b00a798397f7612abaa396b7c98e"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/cwi-company/3d-asset-engine/projects/iris-signoff-dossier/IRIS-SIGNOFF-v5.2.json",
       "state_history": [
         {
           "from": "created",
@@ -7344,6 +7351,13 @@
           "from": "assigned",
           "to": "in_progress",
           "at": "2026-09-22T20:50:53.004Z",
+          "by": "agent:CWI_Visual",
+          "note": "activation sweep 2026-09-22"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-22T20:59:24.623Z",
           "by": "agent:CWI_Visual",
           "note": "activation sweep 2026-09-22"
         }
