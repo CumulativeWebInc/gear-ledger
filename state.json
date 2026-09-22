@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 10084,
-  "updated_at": "2026-09-22T09:56:56.302Z",
+  "version": 10085,
+  "updated_at": "2026-09-22T09:57:06.351Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -3257,6 +3257,36 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-23T01:30:00Z"
+    },
+    {
+      "task_id": "tsk_01M348RCNEHV7VY7XGYBW7V63Z",
+      "type": "outreach.sweep",
+      "title": "ROAD-1M social cadence today (Diabolique leads); stage 6 queued IG drafts; CONNECTION HUNT log",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-22T09:57:06.350Z",
+      "assigned_to": "agent:CWI_Marketing",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "posts shipped under CWI accounts with links",
+        "6 drafts staged",
+        "hunt log entries"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-22T09:57:06.351Z",
+          "by": "agent:MUSE_CWI",
+          "note": "Roll-call 2026-09-22: Black's all-day order — real assignment, receipts due 21:30 ET"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-23T01:30:00Z"
     }
   ],
   "presence": {
@@ -3521,6 +3551,11 @@
       "op": "task.create",
       "at": "2026-09-22T09:56:56.302Z",
       "ref": "tsk_01M348R2VDAARKZAC9057HYXWV"
+    },
+    "rollcall-2026-09-22:CWI_Marketing": {
+      "op": "task.create",
+      "at": "2026-09-22T09:57:06.351Z",
+      "ref": "tsk_01M348RCNEHV7VY7XGYBW7V63Z"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
