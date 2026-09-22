@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 10928,
-  "updated_at": "2026-09-22T15:08:02.096Z",
+  "version": 10929,
+  "updated_at": "2026-09-22T15:11:22.725Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -4768,7 +4768,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-22T14:49:49.363Z",
       "assigned_to": "agent:CWI_Visual",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -4777,8 +4777,21 @@
         "consolidate round 1+2 failure-pattern dossier (8-metric delta table vs locked reference)",
         "signed PASS/FAIL report"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M34TQSHPQWCT9BGW21QPQCM1",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/hero-build/gate-reports/2026-09-22/round3/IRIS-GATE-REPORT-2026-09-22-round3.md",
+          "sha256": "29907b9491aa2a40c48e201c18db31014d4a026ca1f4ec4104961e769a7b243a"
+        },
+        {
+          "artifact_id": "art_01M34TQSHQ8K42404J495ASKJ7",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/hero-build/gate-reports/2026-09-22/round3/IRIS-FAILURE-PATTERN-DOSSIER-2026-09-22.md",
+          "sha256": "f2ed0459e20f01fde91125432cb258c88877161a0855dd12bbef02d6abca542c"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/hero-build/gate-reports/2026-09-22/round3/IRIS-GATE-REPORT-2026-09-22-round3.md",
       "state_history": [
         {
           "from": "created",
@@ -4793,6 +4806,12 @@
           "at": "2026-09-22T14:57:30.584Z",
           "by": "agent:CWI_Visual",
           "note": "activation sweep 2026-09-22 10:40"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-22T15:11:22.725Z",
+          "by": "agent:CWI_Visual"
         }
       ],
       "requires_black_approval": true,
