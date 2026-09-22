@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 10910,
-  "updated_at": "2026-09-22T15:03:51.079Z",
+  "version": 10911,
+  "updated_at": "2026-09-22T15:03:54.481Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -4989,7 +4989,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-22T14:51:35.299Z",
       "assigned_to": "agent:CWI_Athena_MINT",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -4998,8 +4998,21 @@
         "Twenty Minds pre-commit",
         "NO launch without Black's clearance"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M34TA3Z47ME8SPT2JTCBY3S6",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/cwi-company/agents/athena/host/MINT/day5/manifest-audit-2026-09-22.md",
+          "sha256": "60f8e429e604ae9526a278a898699cb2a81e31a67718467dcb6545e39b60063c"
+        },
+        {
+          "artifact_id": "art_01M34TA3Z8Z8K1XE0N7KP8SPVC",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/cwi-company/agents/athena/host/MINT/day5/README.md",
+          "sha256": "8a1395ae36eab353666649238aa908649f5390a9c92fa984e881cb2ad0f74914"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/cwi-company/agents/athena/host/MINT/day5/manifest-audit-2026-09-22.md",
       "state_history": [
         {
           "from": "created",
@@ -5014,6 +5027,12 @@
           "at": "2026-09-22T14:57:33.794Z",
           "by": "agent:CWI_Athena_MINT",
           "note": "activation sweep 2026-09-22 10:40"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-22T15:03:54.480Z",
+          "by": "agent:CWI_Athena_MINT"
         }
       ],
       "requires_black_approval": true,
