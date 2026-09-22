@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 10154,
-  "updated_at": "2026-09-22T10:14:13.244Z",
+  "version": 10155,
+  "updated_at": "2026-09-22T10:14:21.308Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -914,7 +914,7 @@
       "created_by": "agent:CWI_Marketing",
       "created_at": "2026-09-16T11:18:35.883Z",
       "assigned_to": "agent:CWI_Marketing",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {
         "kind": "social-post",
@@ -927,8 +927,15 @@
         "all 6 drafts staged with exact copy",
         "zero publishes without Black exact-copy receipt"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M349QY3ZAPDTG5XWN06SBSYP",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/cwi-company/hidden_files/rollcall-2026-09-22.md",
+          "sha256": "c88d757e7edcbeb19d11edba49e4785e4be2cf85284cf667bd483b4c406138c9"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/cwi-company/hidden_files/rollcall-2026-09-22.md",
       "state_history": [
         {
           "from": "created",
@@ -942,6 +949,12 @@
           "at": "2026-09-16T11:18:42.041Z",
           "by": "agent:CWI_Marketing",
           "note": "queued 2/day from 2026-09-17; exact copy staged; nothing publishes without Black's exact-copy receipt"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-22T10:14:21.307Z",
+          "by": "agent:CWI_Marketing"
         }
       ],
       "requires_black_approval": true,
