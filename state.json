@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 11285,
-  "updated_at": "2026-09-22T17:24:59.169Z",
+  "version": 11286,
+  "updated_at": "2026-09-22T17:32:14.129Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -5723,7 +5723,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-22T16:51:53.256Z",
       "assigned_to": "agent:CWI_Tween",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -5732,8 +5732,21 @@
         "GLB placed under ~/workspace (not /tmp) with deterministic recipe documented",
         "Tween runbook lessons applied (xvfb-run, egllibs, foreground ledger transitions)"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M352SQBRRKZ327W5FXCJS4VC",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/goals/tag-city-3d-rebuild/hidden_files/tween/tagcity-hero-loop-GLB-VERIFICATION-v1.md",
+          "sha256": "ef515ca12482796624f91491c5d28cd8915ba1b9c0ae8a46830a0827b6f1f153"
+        },
+        {
+          "artifact_id": "art_01M352SQBR03MVW3CPZA3GSP7S",
+          "kind": "scan",
+          "uri": "/home/hatch/workspace/goals/tag-city-3d-rebuild/hidden_files/tween/tagcity-hero-loop-corrected-v4.glb",
+          "sha256": "b9983fe18d57bb4a2153335e1e71d13e421437fa140ce4c200884de9d9c44f92"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/goals/tag-city-3d-rebuild/hidden_files/tween/tagcity-hero-loop-GLB-VERIFICATION-v1.md",
       "state_history": [
         {
           "from": "created",
@@ -5747,6 +5760,13 @@
           "to": "in_progress",
           "at": "2026-09-22T16:58:17.380Z",
           "by": "agent:CWI_Tween"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-22T17:32:14.128Z",
+          "by": "agent:CWI_Tween",
+          "note": "activation sweep round-4; kill rule met well before 17:00 ET"
         }
       ],
       "requires_black_approval": true,
