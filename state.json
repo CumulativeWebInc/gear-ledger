@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 12397,
-  "updated_at": "2026-09-22T23:43:18.117Z",
+  "version": 12398,
+  "updated_at": "2026-09-22T23:43:21.886Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -8201,6 +8201,30 @@
       "requires_black_approval": true,
       "sample": false,
       "deadline_at": "2026-09-22T21:00:00-04:00"
+    },
+    {
+      "task_id": "tsk_01M35R1A8XHB83KAVB97PWR2GY",
+      "type": "docs.runbook",
+      "title": "probe",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-22T23:43:21.886Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-22T23:43:21.886Z",
+          "by": "agent:MUSE_CWI"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false
     }
   ],
   "presence": {
