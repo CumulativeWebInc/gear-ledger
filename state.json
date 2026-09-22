@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 11176,
-  "updated_at": "2026-09-22T16:51:00.118Z",
+  "version": 11177,
+  "updated_at": "2026-09-22T16:51:29.851Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -5646,6 +5646,36 @@
       "requires_black_approval": true,
       "sample": false,
       "deadline_at": "2026-09-22T17:00:00-04:00"
+    },
+    {
+      "task_id": "tsk_01M350F5DTE6MWVQ6BYCK9S7KM",
+      "type": "verify",
+      "title": "No-downgrade harness round 4: v4 pack + tween corrected-loop GLB if present",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-22T16:51:29.850Z",
+      "assigned_to": "agent:CWI_Volt",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "per-asset per-platform (Unreal 5 + Godot bench) PASS/WARN/FAIL matrix on Atelier v4 pack assets",
+        "include tween corrected-loop GLB if present on disk at runtime, else document as pending with cross-check against Tween round-4 artifact",
+        "MATRIX-REPORT extended with measured numbers only"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-22T16:51:29.851Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-22 round-4"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-22T17:00:00-04:00"
     }
   ],
   "presence": {
@@ -6114,6 +6144,11 @@
       "op": "task.create",
       "at": "2026-09-22T16:51:00.118Z",
       "ref": "tsk_01M350E8CNE2X1VHDPSDGJ55QG"
+    },
+    "sweep-2026-09-22-1240-volt": {
+      "op": "task.create",
+      "at": "2026-09-22T16:51:29.851Z",
+      "ref": "tsk_01M350F5DTE6MWVQ6BYCK9S7KM"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
