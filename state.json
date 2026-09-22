@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 10613,
-  "updated_at": "2026-09-22T13:17:14.990Z",
+  "version": 10614,
+  "updated_at": "2026-09-22T13:22:19.869Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -4052,14 +4052,33 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-22T09:59:13.177Z",
       "assigned_to": "agent:CWI_Atelier",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
         "asset pack v1 files in repo"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M34MG4KQHDTN4CMAADWK5XTX",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/cwi-company/3d-asset-engine/projects/TAG-CITY-LANDMARKS-001/metrics/validation-report.json",
+          "sha256": "62a93f88fbc882e5127ee6ee4a485eff5394355d9c46f43977ae15f387c13f9a"
+        },
+        {
+          "artifact_id": "art_01M34MG4KR660NRJGDCVP5E6Z0",
+          "kind": "image",
+          "uri": "/home/hatch/workspace/cwi-company/3d-asset-engine/projects/TAG-CITY-LANDMARKS-001/renders/LANDMARK_NEON_CROWN_proof.png",
+          "sha256": "99539e14904abf1af86e288965cae62d1d0f98c63eac67caf7626b50bf2a8cb0"
+        },
+        {
+          "artifact_id": "art_01M34MG4KR2JTA3G1SNFVRGYCQ",
+          "kind": "image",
+          "uri": "/home/hatch/workspace/cwi-company/3d-asset-engine/projects/TAG-CITY-LANDMARKS-001/renders/LANDMARK_NEON_SKULL_proof.png",
+          "sha256": "89999156347ee159143fd63124a8a58f7329814507c96b8ec0c5bb37e0cfb5c1"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/cwi-company/3d-asset-engine/projects/TAG-CITY-LANDMARKS-001/metrics/validation-report.json",
       "state_history": [
         {
           "from": "created",
@@ -4074,6 +4093,13 @@
           "at": "2026-09-22T12:41:14.321Z",
           "by": "agent:CWI_Atelier",
           "note": "activation sweep 2026-09-22 — work started"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-22T13:22:19.869Z",
+          "by": "agent:CWI_Atelier",
+          "note": "activation sweep 2026-09-22 — work delivered"
         }
       ],
       "requires_black_approval": false,
