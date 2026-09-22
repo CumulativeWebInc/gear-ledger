@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 11711,
-  "updated_at": "2026-09-22T19:44:31.797Z",
+  "version": 11712,
+  "updated_at": "2026-09-22T19:45:03.012Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -6862,6 +6862,37 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-22T18:00:00-04:00"
+    },
+    {
+      "task_id": "tsk_01M35ACYH4AAHCWGSZ65NJCXE4",
+      "type": "ops",
+      "title": "Round-8 visual gate: verdict dossier on Atelier's round-7 TURNTABLE v5 re-render (ink-aware advance) vs v4 baselines; 8-metric deltas; v5 set PASS/CONDITIONAL verdict; Iris dossier note; synthetic-only",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-22T19:45:03.012Z",
+      "assigned_to": "agent:CWI_Visual",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "named result delivered per brief",
+        "measured evidence on disk",
+        "honest zero where no result",
+        "kill rule: no deliverable by 19:00 ET -> close and record blocker"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-22T19:45:03.012Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-22-1540; round-7 follow-on from round-6 receipts"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-22T19:00:00-04:00"
     }
   ],
   "presence": {
@@ -7445,6 +7476,11 @@
       "op": "task.create",
       "at": "2026-09-22T18:49:10.387Z",
       "ref": "tsk_01M3576MFK86MRKJ2E3WHSKVWH"
+    },
+    "sweep-2026-09-22-1540-visual": {
+      "op": "task.create",
+      "at": "2026-09-22T19:45:03.012Z",
+      "ref": "tsk_01M35ACYH4AAHCWGSZ65NJCXE4"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
