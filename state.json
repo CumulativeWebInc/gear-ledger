@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 11590,
-  "updated_at": "2026-09-22T19:04:38.045Z",
+  "version": 11591,
+  "updated_at": "2026-09-22T19:06:09.768Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -6553,7 +6553,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-22T18:48:27.775Z",
       "assigned_to": "agent:CWI_Tween",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -6561,8 +6561,15 @@
         "loop-equivalence rot delta gate 0.5deg re-verified",
         "reduction report with honest verdict"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3585PNWRS4MWGRWC623Q3EZ",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/tag-city-3d-rebuild/hidden_files/tween/tagcity-hero-loop-rigify-v1.SIZEPASS-REPORT.md",
+          "sha256": "c76a5ee69a2094fe32c6c5e167763589693c29024a770cff3fc73703ee3abd91"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/goals/tag-city-3d-rebuild/hidden_files/tween/tagcity-hero-loop-rigify-v1.SIZEPASS-REPORT.md",
       "state_history": [
         {
           "from": "created",
@@ -6575,6 +6582,12 @@
           "from": "assigned",
           "to": "in_progress",
           "at": "2026-09-22T18:53:16.751Z",
+          "by": "agent:CWI_Tween"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-22T19:06:09.768Z",
           "by": "agent:CWI_Tween"
         }
       ],
