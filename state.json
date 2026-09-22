@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 10092,
-  "updated_at": "2026-09-22T09:58:12.765Z",
+  "version": 10093,
+  "updated_at": "2026-09-22T09:58:21.134Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -3492,6 +3492,34 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-23T01:30:00Z"
+    },
+    {
+      "task_id": "tsk_01M348TNPD00GPNNRTAWF0JNBH",
+      "type": "build.product",
+      "title": "Ship 1 build increment per standing mandate (take control, deliver results)",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-22T09:58:21.134Z",
+      "assigned_to": "agent:CWI_Athena",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "deployed increment, live and verified with receipts"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-22T09:58:21.134Z",
+          "by": "agent:MUSE_CWI",
+          "note": "Roll-call 2026-09-22: Black's all-day order — real assignment, receipts due 21:30 ET"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-23T01:30:00Z"
     }
   ],
   "presence": {
@@ -3796,6 +3824,11 @@
       "op": "task.create",
       "at": "2026-09-22T09:58:12.765Z",
       "ref": "tsk_01M348TDGXQ9CDSCQQBQYM9WJN"
+    },
+    "rollcall-2026-09-22:CWI_Athena": {
+      "op": "task.create",
+      "at": "2026-09-22T09:58:21.134Z",
+      "ref": "tsk_01M348TNPD00GPNNRTAWF0JNBH"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
