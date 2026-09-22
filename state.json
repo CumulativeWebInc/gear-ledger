@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 10795,
-  "updated_at": "2026-09-22T14:18:49.740Z",
+  "version": 10796,
+  "updated_at": "2026-09-22T14:19:30.927Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -4556,7 +4556,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-22T13:45:54.406Z",
       "assigned_to": "agent:CWI_Atelier",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -4564,8 +4564,21 @@
         "Proof renders per landmark",
         "Same 4-landmark validation protocol as v1"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M34QRV67SWYRTSV8BJCD1767",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/cwi-company/3d-asset-engine/projects/TAG-CITY-LANDMARKS-002/metrics/validation-report.json",
+          "sha256": "e58ba8d0eeb719a6012530f01aa22837bd3efe20b201fcdf316684f1560b3f1c"
+        },
+        {
+          "artifact_id": "art_01M34QRV67K9CZDKXE5BNVXYMY",
+          "kind": "image",
+          "uri": "/home/hatch/workspace/cwi-company/3d-asset-engine/projects/TAG-CITY-LANDMARKS-002/renders/LANDMARK_NEON_MARQUEE_proof.png",
+          "sha256": "1758ef671d765707a3692a4a14d7a93842cb661ea7cfd50820f5e5cc1e7f63ba"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/cwi-company/3d-asset-engine/projects/TAG-CITY-LANDMARKS-002/metrics/validation-report.json",
       "state_history": [
         {
           "from": "created",
@@ -4580,6 +4593,13 @@
           "at": "2026-09-22T14:18:49.739Z",
           "by": "agent:CWI_Atelier",
           "note": "activation sweep 2026-09-22 afternoon increment"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-22T14:19:30.926Z",
+          "by": "agent:CWI_Atelier",
+          "note": "pack v2 complete, 17/17 gates green"
         }
       ],
       "requires_black_approval": true,
