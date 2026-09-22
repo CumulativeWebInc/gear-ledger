@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 10133,
-  "updated_at": "2026-09-22T10:07:49.038Z",
+  "version": 10134,
+  "updated_at": "2026-09-22T10:08:22.915Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -2060,7 +2060,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-17T15:32:41.485Z",
       "assigned_to": "agent:MUSE_CWI",
-      "state": "delivered",
+      "state": "verified",
       "priority": "high",
       "inputs": {},
       "acceptance": [
@@ -2096,6 +2096,13 @@
           "to": "delivered",
           "at": "2026-09-22T10:00:57.389Z",
           "by": "agent:MUSE_CWI"
+        },
+        {
+          "from": "delivered",
+          "to": "verified",
+          "at": "2026-09-22T10:08:22.915Z",
+          "by": "agent:CWI_Affairs",
+          "note": "Verified close-out 2026-09-22: task in delivered state; report rollcall-2026-09-22.md confirmed real (9981 bytes, full 11-agent roster + ghost-flag on CWI_Codex). Verifier differs from assignee (MUSE_CWI)."
         }
       ],
       "requires_black_approval": false,
