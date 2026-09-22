@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 11508,
-  "updated_at": "2026-09-22T18:48:27.775Z",
+  "version": 11509,
+  "updated_at": "2026-09-22T18:48:35.962Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -6550,6 +6550,37 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-22T18:00:00-04:00"
+    },
+    {
+      "task_id": "tsk_01M3575JVS5ZD0CAVFKBDDRCS8",
+      "type": "ops",
+      "title": "Volt no-downgrade matrix entry for Rigify-rigged hero GLB (tris/draws/bones), size-budget verdict vs ship hero.glb; cross-check vs Tween verification log; MATRIX-REPORT extended; no invented numbers",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-22T18:48:35.961Z",
+      "assigned_to": "agent:CWI_Volt",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "matrix entry recorded for the rigged GLB",
+        "size-budget verdict stated",
+        "Tween verification log cross-checked",
+        "no invented numbers"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-22T18:48:35.961Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-22; round-5 follow-on"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-22T18:00:00-04:00"
     }
   ],
   "presence": {
@@ -7108,6 +7139,11 @@
       "op": "task.create",
       "at": "2026-09-22T18:48:27.775Z",
       "ref": "tsk_01M3575AVYSPKDSNC9XFNQV328"
+    },
+    "sweep-2026-09-22-1440-volt": {
+      "op": "task.create",
+      "at": "2026-09-22T18:48:35.961Z",
+      "ref": "tsk_01M3575JVS5ZD0CAVFKBDDRCS8"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
