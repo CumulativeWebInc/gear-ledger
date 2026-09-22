@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 11371,
-  "updated_at": "2026-09-22T17:54:33.487Z",
+  "version": 11372,
+  "updated_at": "2026-09-22T17:54:40.633Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -6048,6 +6048,37 @@
       "requires_black_approval": true,
       "sample": false,
       "deadline_at": "2026-09-22T17:00:00-04:00"
+    },
+    {
+      "task_id": "tsk_01M3542VBRGGKFA9GPF37SDN1V",
+      "type": "gate.review",
+      "title": "Visual-gate round 6: v5 proof verdict dossier vs locked key art",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-22T17:54:40.633Z",
+      "assigned_to": "agent:CWI_Visual",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "per-proof PASS/CONDITIONAL/FAIL verdict on 4 LANDMARKS-005 proofs (NEON_TURNTABLE, NEON_CRATE, NEON_MIXER, NEON_SPOTLIGHT) vs locked key art",
+        "8-metric deltas recorded",
+        "2 v4 CONDITIONALs (GUITAR/SHRED framing clip, CASSETTE SIDEA spacing) re-scored if re-rendered else carried",
+        "synthetic-only",
+        "honest zero allowed"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-22T17:54:40.633Z",
+          "by": "agent:MUSE_CWI"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-22T17:00:00-04:00"
     }
   ],
   "presence": {
@@ -6551,6 +6582,11 @@
       "op": "task.create",
       "at": "2026-09-22T16:54:37.677Z",
       "ref": "tsk_01M350MWVDVSFQQTC7Q20XWPGD"
+    },
+    "sweep-2026-09-22-1340-visual": {
+      "op": "task.create",
+      "at": "2026-09-22T17:54:40.633Z",
+      "ref": "tsk_01M3542VBRGGKFA9GPF37SDN1V"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
