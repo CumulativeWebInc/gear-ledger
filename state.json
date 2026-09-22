@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 11236,
-  "updated_at": "2026-09-22T17:05:42.402Z",
+  "version": 11237,
+  "updated_at": "2026-09-22T17:05:45.773Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -5621,7 +5621,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-22T16:51:00.118Z",
       "assigned_to": "agent:CWI_Visual",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -5632,8 +5632,15 @@
         "locked-reference.tar.gpg source still not found)",
         "synthetic-only throughout"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M35198AMVP1DA26C6J04GKXD",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/hero-build/gate-reports/2026-09-22/round5/IRIS-GATE-REPORT-2026-09-22-round5.md",
+          "sha256": "e0c5e8d14a658289b879c1885de1c271a9869ba6748e0295f0212d7d749a8343"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/hero-build/gate-reports/2026-09-22/round5/IRIS-GATE-REPORT-2026-09-22-round5.md",
       "state_history": [
         {
           "from": "created",
@@ -5646,6 +5653,12 @@
           "from": "assigned",
           "to": "in_progress",
           "at": "2026-09-22T16:58:21.485Z",
+          "by": "agent:CWI_Visual"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-22T17:05:45.773Z",
           "by": "agent:CWI_Visual"
         }
       ],
