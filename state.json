@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 10093,
-  "updated_at": "2026-09-22T09:58:21.134Z",
+  "version": 10094,
+  "updated_at": "2026-09-22T09:58:30.393Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -3520,6 +3520,35 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-23T01:30:00Z"
+    },
+    {
+      "task_id": "tsk_01M348TYQRA5CB35QEW423J7AC",
+      "type": "build.manuscript",
+      "title": "The Logo Effect: full chapter outline + Chapter 1 draft 3000+ words in Black's voice",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-22T09:58:30.392Z",
+      "assigned_to": "agent:CWI_Codex",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "outline + Chapter 1 draft (3000+ words) under ~/workspace/goals/codex-the-logo-effect-book-manuscript/",
+        "every operation claim sourced"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-22T09:58:30.393Z",
+          "by": "agent:MUSE_CWI",
+          "note": "Roll-call 2026-09-22: Black's all-day order — real assignment, receipts due 21:30 ET"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-23T01:30:00Z"
     }
   ],
   "presence": {
@@ -3829,6 +3858,11 @@
       "op": "task.create",
       "at": "2026-09-22T09:58:21.134Z",
       "ref": "tsk_01M348TNPD00GPNNRTAWF0JNBH"
+    },
+    "rollcall-2026-09-22:CWI_Codex": {
+      "op": "task.create",
+      "at": "2026-09-22T09:58:30.393Z",
+      "ref": "tsk_01M348TYQRA5CB35QEW423J7AC"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
