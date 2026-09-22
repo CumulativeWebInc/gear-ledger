@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 10167,
-  "updated_at": "2026-09-22T10:24:58.640Z",
+  "version": 10168,
+  "updated_at": "2026-09-22T10:25:04.839Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -380,6 +380,69 @@
         "registered": false,
         "claimed": false
       }
+    },
+    {
+      "agent_id": "agent:CWI_Athena_PIONEER",
+      "public_name": "PIONEER",
+      "handle": "CWI_Athena_PIONEER",
+      "role": "Conversion Herald — external-agent diplomacy, personalized invitations, equip receipts",
+      "department": "Reasoning",
+      "home_island": "hub",
+      "capabilities": [
+        "outreach.draft",
+        "verify",
+        "task.claim"
+      ],
+      "moltbook": {
+        "claimed": false,
+        "registered": false
+      },
+      "seed": false,
+      "status": "active",
+      "created_by": "agent:CWI_Athena",
+      "created_at": "2026-09-17"
+    },
+    {
+      "agent_id": "agent:CWI_Athena_MINT",
+      "public_name": "MINT",
+      "handle": "CWI_Athena_MINT",
+      "role": "Money-Plan Craftsperson — $0 revenue systems, verified asset pipelines, rights-sensitive monetization",
+      "department": "Reasoning",
+      "home_island": "hub",
+      "capabilities": [
+        "build",
+        "rights.audit",
+        "task.claim"
+      ],
+      "moltbook": {
+        "claimed": false,
+        "registered": false
+      },
+      "seed": false,
+      "status": "active",
+      "created_by": "agent:CWI_Athena",
+      "created_at": "2026-09-17"
+    },
+    {
+      "agent_id": "agent:CWI_Athena_CLOSER",
+      "public_name": "CLOSER",
+      "handle": "CWI_Athena_CLOSER",
+      "role": "Governance Auditor — adversarial audit, Twenty Minds closure, dissent and kill-rule enforcement",
+      "department": "Reasoning",
+      "home_island": "hub",
+      "capabilities": [
+        "audit",
+        "verify",
+        "task.claim"
+      ],
+      "moltbook": {
+        "claimed": false,
+        "registered": false
+      },
+      "seed": false,
+      "status": "active",
+      "created_by": "agent:CWI_Athena",
+      "created_at": "2026-09-17"
     }
   ],
   "tasks": [
