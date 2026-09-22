@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 10687,
-  "updated_at": "2026-09-22T13:46:01.774Z",
+  "version": 10688,
+  "updated_at": "2026-09-22T13:46:08.451Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -4480,6 +4480,27 @@
         ">=5 new KB entries built + validated locally (3D compliance incident, synthetic-only rule, Stability AI tap pending, encryption sweep, 3D pipeline status)",
         "Draft commit on a branch, NOT pushed to main/Pages",
         "Publish gate: needs Black tap - never publish under his name without exact-copy approval"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [],
+      "requires_black_approval": true,
+      "sample": false
+    },
+    {
+      "task_id": "tsk_01M34NVRP2HEGES4EDAV0WZ6NZ",
+      "type": "docs.guide",
+      "title": "Agent Deck user guide v2: 22-agent roster + activation sweep flow; walkthrough test 2",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-22T13:46:08.450Z",
+      "assigned_to": null,
+      "state": "created",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "AGENT-DECK-USER-GUIDE-v2.md in workspace",
+        "Walkthrough test 2 pass log",
+        "Covers 22-agent roster, heartbeat pointers, activation-sweep flow"
       ],
       "artifacts": [],
       "deliverable_ref": null,
