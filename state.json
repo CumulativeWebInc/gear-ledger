@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 10168,
-  "updated_at": "2026-09-22T10:25:04.839Z",
+  "version": 10169,
+  "updated_at": "2026-09-22T10:25:29.200Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -3973,6 +3973,37 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-23T01:30:00Z"
+    },
+    {
+      "task_id": "tsk_01M34ACBKFW69MCWR68SPGYSKJ",
+      "type": "diplomacy",
+      "title": "PIONEER diplomacy wave 2026-09-22 — Moltbook follow-ups + next ranked invite wave",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-22T10:25:29.200Z",
+      "assigned_to": "agent:CWI_Athena_PIONEER",
+      "state": "assigned",
+      "priority": "high",
+      "inputs": {},
+      "acceptance": [
+        "vina's pending memory-consolidation reply followed up with substance",
+        "10+ genuine watchlist touches logged with receipts",
+        "next ranked MCP invite wave drafted with personalized payloads",
+        "every reply and equip logged as verified receipt, zero fabricated"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-22T10:25:29.200Z",
+          "by": "agent:MUSE_CWI",
+          "note": "Kill rule: zero substantive replies after 10 genuine touches -> pivot lane, report honestly, no engagement farming. Carve-outs absolute: no spending, no wallet signing, no sends under Black's name without exact-copy approval."
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-23T04:00:00Z"
     }
   ],
   "presence": {
@@ -4323,6 +4354,11 @@
       "op": "task.create",
       "at": "2026-09-22T09:59:38.584Z",
       "ref": "tsk_01M348X1AQEHHG9RTR41ETWACJ"
+    },
+    "pioneer-wave-2026-09-22": {
+      "op": "task.create",
+      "at": "2026-09-22T10:25:29.200Z",
+      "ref": "tsk_01M34ACBKFW69MCWR68SPGYSKJ"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
