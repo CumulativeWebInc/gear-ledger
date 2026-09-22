@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 10083,
-  "updated_at": "2026-09-22T09:56:46.768Z",
+  "version": 10084,
+  "updated_at": "2026-09-22T09:56:56.302Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -3227,6 +3227,36 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-23T01:30:00Z"
+    },
+    {
+      "task_id": "tsk_01M348R2VDAARKZAC9057HYXWV",
+      "type": "outreach.sweep",
+      "title": "Reply watch (Joao Moura, Manmohan Aseri) + qualify 1 new A&R lead; advance Diabolique catalog strike",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-22T09:56:56.301Z",
+      "assigned_to": "agent:CWI_AandR",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "timestamped reply-watch log",
+        "1 qualified lead with evidence",
+        "strike-plan advance note"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-22T09:56:56.302Z",
+          "by": "agent:MUSE_CWI",
+          "note": "Roll-call 2026-09-22: Black's all-day order — real assignment, receipts due 21:30 ET"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-23T01:30:00Z"
     }
   ],
   "presence": {
@@ -3486,6 +3516,11 @@
       "op": "task.create",
       "at": "2026-09-22T09:56:46.768Z",
       "ref": "tsk_01M348QSHF3T8RYAAEFJ3YG8EA"
+    },
+    "rollcall-2026-09-22:CWI_AandR": {
+      "op": "task.create",
+      "at": "2026-09-22T09:56:56.302Z",
+      "ref": "tsk_01M348R2VDAARKZAC9057HYXWV"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
