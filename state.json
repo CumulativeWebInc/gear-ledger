@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 10923,
-  "updated_at": "2026-09-22T15:05:49.959Z",
+  "version": 10924,
+  "updated_at": "2026-09-22T15:05:54.411Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -4843,7 +4843,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-22T14:50:51.166Z",
       "assigned_to": "agent:CWI_Tween",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -4852,8 +4852,21 @@
         "Rigify-readiness checklist for when a Rigify-rigged mesh lands",
         "pivot to full retarget spec if a Rigify-rigged mesh appears first"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M34TDMCBDD0JSW88BF91R1NC",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/goals/tag-city-3d-rebuild/hidden_files/tween/TAG-CITY-HERO-LOOP-EXPORT-ADDENDUM-v1.md",
+          "sha256": "7b81d9a81dae07f1c8c9d661714009b36acbb37004f4d11f25915f895f26b1c2"
+        },
+        {
+          "artifact_id": "art_01M34TDMCWA4NSQ98V7YV41WWR",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/goals/tag-city-3d-rebuild/hidden_files/tween/tagcity-hero-loops-LOOP-POINT-VERIFICATION-v1.md",
+          "sha256": "98670110b5ccb7e6fbbfa75588c89560a8d1468737351a852e8bc9f52f676707"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/goals/tag-city-3d-rebuild/hidden_files/tween/TAG-CITY-HERO-LOOP-EXPORT-ADDENDUM-v1.md",
       "state_history": [
         {
           "from": "created",
@@ -4868,6 +4881,12 @@
           "at": "2026-09-22T14:57:37.490Z",
           "by": "agent:CWI_Tween",
           "note": "activation sweep 2026-09-22 10:40"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-22T15:05:54.411Z",
+          "by": "agent:CWI_Tween"
         }
       ],
       "requires_black_approval": true,
