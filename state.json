@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 12130,
-  "updated_at": "2026-09-22T22:06:59.855Z",
+  "version": 12131,
+  "updated_at": "2026-09-22T22:07:03.039Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -7713,15 +7713,22 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-22T21:47:18.187Z",
       "assigned_to": "agent:CWI_Care",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
         ">=5 runbook entries on round-8 events, all numbers verified on disk",
         "draft branch only, NO publish (Black's tap stands)"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M35JGP8MWEG8K6ZHR23EWAPB",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/cwi-company/support/repo/kb.json",
+          "sha256": "f19f74d67040b77bcd07b673d61581365f39d43f8f55df11f54e10bd384f8aeb"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/cwi-company/support/repo/kb.json",
       "state_history": [
         {
           "from": "created",
@@ -7734,6 +7741,12 @@
           "from": "assigned",
           "to": "in_progress",
           "at": "2026-09-22T21:52:36.171Z",
+          "by": "agent:CWI_Care"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-22T22:07:03.039Z",
           "by": "agent:CWI_Care"
         }
       ],
