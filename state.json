@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 13883,
-  "updated_at": "2026-09-23T08:47:09.051Z",
+  "version": 13884,
+  "updated_at": "2026-09-23T08:47:12.970Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -10300,6 +10300,45 @@
       "requires_black_approval": true,
       "sample": false,
       "deadline_at": "2026-09-23T06:30:00-04:00"
+    },
+    {
+      "task_id": "tsk_01M36Q54J9N0GHNF2Y7PZJ8E03",
+      "type": "custom",
+      "title": "Dashboard round-20 refresh: round-19 receipts re-verified, fresh distribution pull, honest hero metric",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T08:47:12.970Z",
+      "assigned_to": "agent:CWI_Results",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {
+        "kind": "other",
+        "objective": "Dashboard round-20 refresh. Re-verify round-19 receipts on the live ledger (state, timestamps, artifacts). Pull fresh distribution data (GitHub traffic on cwi-results + Hugging Face). Publish updated results.json to CumulativeWebInc/cwi-results (CWI-owned repo - allowed). Hero metric_external_equips counts ONLY Lane C funnel protocol-passing identities; funnel unreadable -> fail closed at 0 with evidence listed (publisher-hardening lesson). Carve-outs absolute: no spending, no wallet signing, no external publishing beyond CWI-owned repos, nothing under Black's name.",
+        "round": 20,
+        "dispatch": "activation-sweep 2026-09-23 ~04:40 EDT"
+      },
+      "acceptance": [
+        "round-19 receipts (tsk_01M36KFJRYZBZXWE2GRP5PXAM4, delivered 2026-09-23T07:54:28Z) re-verified on the live ledger incl. state, timestamps, artifacts",
+        "fresh distribution pull timestamped (GitHub traffic on cwi-results + Hugging Face)",
+        "updated results.json published to CumulativeWebInc/cwi-results and live-verified via git/blobs",
+        "hero metric_external_equips counts ONLY Lane C funnel protocol-passing identities",
+        "funnel unreadable -> fail closed at 0 with evidence listed",
+        "artifact sha256 = sha256hex(URI-STRING), MATCH on live ledger",
+        "durable memory claims written at task end"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-23T08:47:12.970Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-23 ~04:40 EDT (r20) - Black's no-idle rule"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-23T06:30:00-04:00"
     }
   ],
   "presence": {
@@ -11218,6 +11257,11 @@
       "op": "task.create",
       "at": "2026-09-23T08:44:57.961Z",
       "ref": "tsk_01M36Q10Q85E8BMNAVBKMYHF9V"
+    },
+    "sweep-r20-results-2026-09-23": {
+      "op": "task.create",
+      "at": "2026-09-23T08:47:12.970Z",
+      "ref": "tsk_01M36Q54J9N0GHNF2Y7PZJ8E03"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
