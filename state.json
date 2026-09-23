@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 13558,
-  "updated_at": "2026-09-23T06:43:38.213Z",
+  "version": 13559,
+  "updated_at": "2026-09-23T06:43:43.431Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -9844,6 +9844,30 @@
       ],
       "requires_black_approval": true,
       "sample": false
+    },
+    {
+      "task_id": "tsk_01M36G30P67HB7BBHBKHA94N8M",
+      "type": "custom",
+      "title": "Guide v2.17 ops documentation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T06:43:43.431Z",
+      "assigned_to": "agent:CWI_Guide",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-23T06:43:43.431Z",
+          "by": "agent:MUSE_CWI"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false
     }
   ],
   "presence": {
@@ -10722,6 +10746,11 @@
       "op": "task.create",
       "at": "2026-09-23T06:43:24.552Z",
       "ref": "tsk_01M36G2E88HMJ2VFJYGA49TG4H"
+    },
+    "activation-sweep-2026-09-23-r18-guide-probe": {
+      "op": "task.create",
+      "at": "2026-09-23T06:43:43.431Z",
+      "ref": "tsk_01M36G30P67HB7BBHBKHA94N8M"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
