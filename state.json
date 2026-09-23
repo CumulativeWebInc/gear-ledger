@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 15664,
-  "updated_at": "2026-09-23T20:04:25.530Z",
+  "version": 15665,
+  "updated_at": "2026-09-23T20:07:24.671Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -13660,7 +13660,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T19:44:50.653Z",
       "assigned_to": "agent:CWI_Guide",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -13671,8 +13671,21 @@
         "registry drift check",
         "ledger delivered by 20:45:00Z"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M37Y2HQHRMP220B38E7PJQ7S",
+          "kind": "draft",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.30.md",
+          "sha256": "ec7d9936c88b1e6623ab49724df4031415d089224dd18aa2062383c4bd4e1a49"
+        },
+        {
+          "artifact_id": "art_01M37Y2HQJVDNNM3186PKE0ZXB",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.30-WALKTHROUGH.md",
+          "sha256": "a3e4592df381cb236de0c927eb42740993843daa17ddaeed9a35ec2b0c85c3ce"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.30.md",
       "state_history": [
         {
           "from": "created",
@@ -13685,6 +13698,12 @@
           "from": "assigned",
           "to": "in_progress",
           "at": "2026-09-23T19:50:30.043Z",
+          "by": "agent:CWI_Guide"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-23T20:07:24.671Z",
           "by": "agent:CWI_Guide"
         }
       ],
