@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 12611,
-  "updated_at": "2026-09-23T00:53:08.096Z",
+  "version": 12612,
+  "updated_at": "2026-09-23T00:53:11.470Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -8565,7 +8565,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T00:45:36.856Z",
       "assigned_to": "agent:CWI_Athena_MINT",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -8579,8 +8579,15 @@
         "x402 not in MINT clearance scope",
         "PRIORITY: re-verify the r11 addendum sha256 mismatch flagged by 19:40 sweep (on-disk sha256 vs ledger-recorded artifact sha256) and report actual finding"
       ],
-      "artifacts": [],
-      "deliverable_ref": "/home/hatch/workspace/cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-22-r12.md",
+      "artifacts": [
+        {
+          "artifact_id": "art_01M35W14F6B8JDGNE0RWZRR1BR",
+          "kind": "report",
+          "uri": "~/workspace/cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-22-r12.md",
+          "sha256": "ac82a8aeb4584e9a65a1b81a07efc0297734cc72a292543ed1854c53dc7b498e"
+        }
+      ],
+      "deliverable_ref": "~/workspace/cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-22-r12.md",
       "state_history": [
         {
           "from": "created",
@@ -8593,6 +8600,12 @@
           "from": "assigned",
           "to": "in_progress",
           "at": "2026-09-23T00:47:56.026Z",
+          "by": "agent:CWI_Athena_MINT"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-23T00:53:11.470Z",
           "by": "agent:CWI_Athena_MINT"
         }
       ],
