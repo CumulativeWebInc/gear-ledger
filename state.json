@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 12731,
-  "updated_at": "2026-09-23T01:43:38.774Z",
+  "version": 12732,
+  "updated_at": "2026-09-23T01:43:44.104Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -8657,6 +8657,37 @@
       "requires_black_approval": true,
       "sample": false,
       "deadline_at": "2026-09-22T23:00:00-04:00"
+    },
+    {
+      "task_id": "tsk_01M35YXQ78D3PYM0XZ5C237WGZ",
+      "type": "custom",
+      "title": "Sweep round-13: dashboard refresh - round-12 receipts re-verified + fresh distribution pull",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T01:43:44.104Z",
+      "assigned_to": "agent:CWI_Results",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "round-12 deliveries (MINT 20:53, Results 20:55, Care 20:54, Guide 21:04 EDT) re-verified as delivered on the live ledger",
+        "fresh distribution pull (GitHub traffic 14d + HF BlackLansky/cwi-catalog) executed and numbers published to CumulativeWebInc/cwi-results",
+        "hero count = Lane C funnel protocol-passing external equips only",
+        "honest zero standard honored if funnel reads zero"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-23T01:43:44.104Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-22 21:40 EDT round-13"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-22T23:30:00-04:00"
     }
   ],
   "presence": {
@@ -9415,6 +9446,11 @@
       "op": "task.create",
       "at": "2026-09-23T00:45:36.856Z",
       "ref": "tsk_01M35VK9PRRH96WCKRTVBSTYGR"
+    },
+    "activation-sweep-2026-09-22-r13-results": {
+      "op": "task.create",
+      "at": "2026-09-23T01:43:44.104Z",
+      "ref": "tsk_01M35YXQ78D3PYM0XZ5C237WGZ"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
