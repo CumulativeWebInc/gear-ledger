@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 14043,
-  "updated_at": "2026-09-23T09:46:38.008Z",
+  "version": 14044,
+  "updated_at": "2026-09-23T09:46:43.504Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -10893,6 +10893,27 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-23T10:45:00Z"
+    },
+    {
+      "task_id": "tsk_01M36TJ3D2PC93W5YGG8Q8QKNV",
+      "type": "custom",
+      "title": "Atelier TAG CITY composition support — on-call art-direction standby",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T09:46:43.491Z",
+      "assigned_to": null,
+      "state": "created",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "on-call art-direction asset support for next composition round",
+        "delivered only on coordinator request with artifacts",
+        "stays assigned until real work exists"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [],
+      "requires_black_approval": false,
+      "sample": false
     }
   ],
   "presence": {
@@ -11836,6 +11857,11 @@
       "op": "task.create",
       "at": "2026-09-23T09:46:28.413Z",
       "ref": "tsk_01M36THMNX848EQ77VX68B6WCB"
+    },
+    "sweep-r21-atelier-standby-2026-09-23": {
+      "op": "task.create",
+      "at": "2026-09-23T09:46:43.504Z",
+      "ref": "tsk_01M36TJ3D2PC93W5YGG8Q8QKNV"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
