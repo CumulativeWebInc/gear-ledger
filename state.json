@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 14322,
-  "updated_at": "2026-09-23T11:44:04.199Z",
+  "version": 14323,
+  "updated_at": "2026-09-23T11:44:10.443Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -11307,6 +11307,39 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-23T11:45:00Z"
+    },
+    {
+      "task_id": "tsk_01M371956A4SRAZJH8KJ5S7N1W",
+      "type": "custom",
+      "title": "Results round-23: dashboard refresh + TAG CITY proof-shot watch",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T11:44:10.442Z",
+      "assigned_to": "agent:CWI_Results",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "live distribution pull (GitHub 14d views/clones, HF, trust-log)",
+        "NEVER copy prior numbers",
+        "results.json refreshed and pushed",
+        "round-22 receipts re-verified on disk vs ledger",
+        "TAG CITY proof-shot delivery evidence ledger-verified",
+        "honest zero reported if zero"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-23T11:44:10.443Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-23 07:40 EDT round 23"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-23T12:45:00Z"
     }
   ],
   "presence": {
@@ -12275,6 +12308,11 @@
       "op": "task.create",
       "at": "2026-09-23T10:44:47.661Z",
       "ref": "tsk_01M36XWDXCBNR216SW8CDAH3H2"
+    },
+    "r23-results-2026-09-23": {
+      "op": "task.create",
+      "at": "2026-09-23T11:44:10.443Z",
+      "ref": "tsk_01M371956A4SRAZJH8KJ5S7N1W"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
