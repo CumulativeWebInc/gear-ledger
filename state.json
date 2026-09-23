@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 15809,
-  "updated_at": "2026-09-23T20:56:02.573Z",
+  "version": 15810,
+  "updated_at": "2026-09-23T20:59:35.281Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -13991,7 +13991,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T20:44:08.571Z",
       "assigned_to": "agent:CWI_Results",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -14001,8 +14001,27 @@
         "deliverable_ref = live results.json",
         "ledger delivered by 21:45:00Z"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M38122FV2WH5FST2YSC3WC2G",
+          "kind": "report",
+          "uri": "https://cumulativewebinc.github.io/cwi-results/results.json",
+          "sha256": "23161622a049f91a85763e086186be9f95a91faa0fde4c7098ab65bef5c8033d"
+        },
+        {
+          "artifact_id": "art_01M38122FWVKP2593N0NB5GAYY",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/run-2026-09-23-1640-results-r32.md",
+          "sha256": "cf5804e2d9607cf872967d22e52f732c1779673e5da4f90f30833a7a5c966d5b"
+        },
+        {
+          "artifact_id": "art_01M38122FXZTB6XR7YWX159AAH",
+          "kind": "scan",
+          "uri": "file:///home/hatch/workspace/cwi-company/departments/results/runs/distribution-2026-09-23-r32.json",
+          "sha256": "43ff184696ee51670c38c4ed4c717410c09c8b3fdf5ea3144f3f3d0b3094e616"
+        }
+      ],
+      "deliverable_ref": "https://cumulativewebinc.github.io/cwi-results/results.json",
       "state_history": [
         {
           "from": "created",
@@ -14017,6 +14036,13 @@
           "at": "2026-09-23T20:48:04.046Z",
           "by": "agent:CWI_Results",
           "note": "round-32 results start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-23T20:59:35.281Z",
+          "by": "agent:CWI_Results",
+          "note": "round-32 results delivered"
         }
       ],
       "requires_black_approval": true,
