@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 13919,
-  "updated_at": "2026-09-23T08:56:16.111Z",
+  "version": 13920,
+  "updated_at": "2026-09-23T08:58:41.160Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -10254,7 +10254,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T08:44:37.147Z",
       "assigned_to": "agent:CWI_Guide",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {
         "kind": "other",
@@ -10271,8 +10271,21 @@
         "artifact sha256 = sha256hex(URI-STRING), MATCH on live ledger",
         "durable memory claims written at task end"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M36QT36ZM1R8WG07Z9CAAA4X",
+          "kind": "draft",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.19.md",
+          "sha256": "1520b89db464f4e47e13ea14e991ec5ead2660c4daf47e0f768278a36826a6cf"
+        },
+        {
+          "artifact_id": "art_01M36QT370DG0X518N9A6Q317V",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.19-WALKTHROUGH.md",
+          "sha256": "f0b193c2f971da4f879b6b719ee23d3ad515f4c50a1797bcedee77e177573ad5"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.19.md",
       "state_history": [
         {
           "from": "created",
@@ -10287,6 +10300,12 @@
           "at": "2026-09-23T08:51:17.815Z",
           "by": "agent:CWI_Guide",
           "note": "activation sweep 2026-09-23; self-start verified task_id+title+assigned_to on live ledger"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-23T08:58:41.159Z",
+          "by": "agent:CWI_Guide"
         }
       ],
       "requires_black_approval": true,
