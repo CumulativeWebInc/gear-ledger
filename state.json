@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 14079,
-  "updated_at": "2026-09-23T09:57:14.039Z",
+  "version": 14080,
+  "updated_at": "2026-09-23T10:00:43.785Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -10826,7 +10826,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T09:44:48.215Z",
       "assigned_to": "agent:CWI_Results",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -10836,8 +10836,15 @@
         "results.json published to cwi-results, byte-verified via git/blobs",
         "hero metric_external_equips counts ONLY Lane C funnel protocol-passing (fail closed at 0)"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M36VBNNGDXTJ32N12Z0FYS0K",
+          "kind": "report",
+          "uri": "https://cumulativewebinc.github.io/cwi-results/results.json",
+          "sha256": "23161622a049f91a85763e086186be9f95a91faa0fde4c7098ab65bef5c8033d"
+        }
+      ],
+      "deliverable_ref": "https://cumulativewebinc.github.io/cwi-results/results.json",
       "state_history": [
         {
           "from": "created",
@@ -10852,6 +10859,13 @@
           "at": "2026-09-23T09:50:13.714Z",
           "by": "agent:CWI_Results",
           "note": "r21 results self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-23T10:00:43.785Z",
+          "by": "agent:CWI_Results",
+          "note": "activation sweep r21 2026-09-23; kill rule met (delivered inside 06:45 ET window)"
         }
       ],
       "requires_black_approval": false,
