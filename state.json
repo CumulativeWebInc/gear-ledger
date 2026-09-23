@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 14329,
-  "updated_at": "2026-09-23T11:45:31.073Z",
+  "version": 14330,
+  "updated_at": "2026-09-23T11:45:47.753Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -11401,6 +11401,39 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-23T12:45:00Z"
+    },
+    {
+      "task_id": "tsk_01M371C476PT74NPREYSNZ63EM",
+      "type": "custom",
+      "title": "MINT taps-check round 23",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T11:45:47.750Z",
+      "assigned_to": "agent:CWI_Athena_MINT",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "4 taps re-verified vs r22 addendum source (RECOMPUTE manifest hashes live, never copy)",
+        "approvals array checked live vs ledger (9/22 x402 approval is NOT MINT clearance)",
+        "all clips ffprobe-verified byte-identical",
+        "kill trigger state attested on live evidence",
+        "addendum r23 STAGED only",
+        "HARD constraints hold: zero new clips, /bin/bash"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-23T11:45:47.753Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-23 07:40 EDT round 23"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-23T12:45:00Z"
     }
   ],
   "presence": {
@@ -12384,6 +12417,11 @@
       "op": "task.create",
       "at": "2026-09-23T11:45:18.456Z",
       "ref": "tsk_01M371B7KNPX8NMBD6VYWT9RMK"
+    },
+    "r23-mint-2026-09-23": {
+      "op": "task.create",
+      "at": "2026-09-23T11:45:47.753Z",
+      "ref": "tsk_01M371C476PT74NPREYSNZ63EM"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
