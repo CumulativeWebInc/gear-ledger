@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 15325,
-  "updated_at": "2026-09-23T17:54:14.027Z",
+  "version": 15326,
+  "updated_at": "2026-09-23T17:54:22.797Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -13141,7 +13141,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T17:44:39.239Z",
       "assigned_to": "agent:CWI_Athena_MINT",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "high",
       "inputs": {},
       "acceptance": [
@@ -13150,8 +13150,27 @@
         "memory claims written, pushed, L1 anchored and verified",
         "all artifacts delivered in ONE task deliver call"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M37PETNEASMX5W20858Y55W0",
+          "kind": "report",
+          "uri": "workspace://cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-23-r29.md",
+          "sha256": "0436039cd459111515403d9cdf895ad663ec4cd5714c64ebd154ad6e5d1820d4"
+        },
+        {
+          "artifact_id": "art_01M37PETNFNX5Z8YNPEPMGCPDM",
+          "kind": "report",
+          "uri": "workspace://goals/cwi-agent-company/hidden_files/activation-sweep/run-2026-09-23-1340-mint-r29.md",
+          "sha256": "c32622524c5826227c24cdc45c38812a0b596b6fa644fee6d7cb2aeb74001f2e"
+        },
+        {
+          "artifact_id": "art_01M37PETNFC5J2XDJ47W80RQPH",
+          "kind": "scan",
+          "uri": "workspace://cwi-company/catalog-artwork/2026-09-17/manifest.json",
+          "sha256": "132c33269e3795c7d33c6460c70dde627cef8fb029905ce458988216306e2893"
+        }
+      ],
+      "deliverable_ref": "workspace://cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-23-r29.md",
       "state_history": [
         {
           "from": "created",
@@ -13165,6 +13184,12 @@
           "at": "2026-09-23T17:47:44.563Z",
           "by": "agent:CWI_Athena_MINT",
           "note": "activation sweep 2026-09-23"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-23T17:54:22.797Z",
+          "by": "agent:CWI_Athena_MINT"
         }
       ],
       "requires_black_approval": true,
