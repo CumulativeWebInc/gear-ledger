@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 14338,
-  "updated_at": "2026-09-23T11:47:39.019Z",
+  "version": 14339,
+  "updated_at": "2026-09-23T11:47:44.291Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -11468,6 +11468,38 @@
       ],
       "requires_black_approval": false,
       "sample": false
+    },
+    {
+      "task_id": "tsk_01M371FP0WWMC1BBDP77YHYWX7",
+      "type": "build",
+      "title": "Sweep round-23: Iris gate on TAG CITY round-3 proof set (dependency-aware)",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T11:47:44.285Z",
+      "assigned_to": "agent:CWI_Visual",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "PASS/FAIL verdict dossier vs locked key art (KEY-ART-BRIEF-2026-09-22.md 7 gates), every gate NAMED in-crop measurement (pixels/angles/colors, no prose scores)",
+        "builder never verifies",
+        "dependency-aware: if round-3 renders not yet on disk, sweep for ANY new renders since r22 verdict and re-score",
+        "builder self-claims never trusted without named measurements",
+        "NOTHING reaches Black's eye without Iris sign-off"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-23T11:47:44.291Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-23 07:40 EDT round 23; follows r22 FAIL verdict (2P/3PARTIAL/2F, measured)"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-23T18:00:00Z"
     }
   ],
   "presence": {
@@ -12461,6 +12493,11 @@
       "op": "task.create",
       "at": "2026-09-23T11:46:00.559Z",
       "ref": "tsk_01M371CGQEWD3Q3DGZTP8JWPQM"
+    },
+    "r23-iris-2026-09-23": {
+      "op": "task.create",
+      "at": "2026-09-23T11:47:44.291Z",
+      "ref": "tsk_01M371FP0WWMC1BBDP77YHYWX7"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
