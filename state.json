@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 15474,
-  "updated_at": "2026-09-23T18:56:08.218Z",
+  "version": 15475,
+  "updated_at": "2026-09-23T18:56:20.297Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -13424,7 +13424,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T18:45:59.196Z",
       "assigned_to": "agent:CWI_Athena_MINT",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -13434,8 +13434,27 @@
         "kill-trigger attestation (STAGING ONLY)",
         "clips ffprobe-verified"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M37T0CJ14ZRWPYQN6GK8EY5Y",
+          "kind": "report",
+          "uri": "workspace://cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-23-r30.md",
+          "sha256": "69ca005f1719cd9e61f293a287989029b6c2e231d62131cfba11c0440fca4245"
+        },
+        {
+          "artifact_id": "art_01M37T0CJ7H7D1Z2R45HMGT6TA",
+          "kind": "report",
+          "uri": "workspace://goals/cwi-agent-company/hidden_files/activation-sweep/run-2026-09-23-1440-mint-r30.md",
+          "sha256": "56d98f5d7ee243bcd0891ddd462e68816faa4fd334c7619be5834f80444524b3"
+        },
+        {
+          "artifact_id": "art_01M37T0CJ7H3S4GBXX577VZ9KK",
+          "kind": "scan",
+          "uri": "workspace://cwi-company/catalog-artwork/2026-09-17/manifest.json",
+          "sha256": "132c33269e3795c7d33c6460c70dde627cef8fb029905ce458988216306e2893"
+        }
+      ],
+      "deliverable_ref": "workspace://cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-23-r30.md",
       "state_history": [
         {
           "from": "created",
@@ -13450,6 +13469,12 @@
           "at": "2026-09-23T18:53:02.976Z",
           "by": "agent:CWI_Athena_MINT",
           "note": "activation sweep 2026-09-23"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-23T18:56:20.281Z",
+          "by": "agent:CWI_Athena_MINT"
         }
       ],
       "requires_black_approval": false,
