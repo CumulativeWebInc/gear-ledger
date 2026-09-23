@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 13432,
-  "updated_at": "2026-09-23T05:49:33.150Z",
+  "version": 13433,
+  "updated_at": "2026-09-23T05:49:48.697Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -9652,7 +9652,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T05:44:28.443Z",
       "assigned_to": "agent:CWI_Athena_MINT",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -9665,8 +9665,15 @@
         "Addendum r17 staged",
         "Kill trigger note: no day-6 batching until Black clears day-3/day-4 launch"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M36D08GXB7FT0XKZHBG828AT",
+          "kind": "report",
+          "uri": "~/workspace/cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-23-r17.md",
+          "sha256": "dc937edbd4a973c284482175a68b982b3acf461010ec46e539e9947fb9bafcc4"
+        }
+      ],
+      "deliverable_ref": "~/workspace/cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-23-r17.md",
       "state_history": [
         {
           "from": "created",
@@ -9679,6 +9686,12 @@
           "from": "assigned",
           "to": "in_progress",
           "at": "2026-09-23T05:46:54.956Z",
+          "by": "agent:CWI_Athena_MINT"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-23T05:49:48.697Z",
           "by": "agent:CWI_Athena_MINT"
         }
       ],
