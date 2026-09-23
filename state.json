@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 16308,
-  "updated_at": "2026-09-23T23:44:09.226Z",
+  "version": 16309,
+  "updated_at": "2026-09-23T23:44:29.039Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -14830,6 +14830,37 @@
       "requires_black_approval": true,
       "sample": false,
       "deadline_at": "2026-09-24T00:45:00Z"
+    },
+    {
+      "task_id": "tsk_01M38AG2VEP4HJXP2N6V4W22T4",
+      "type": "custom",
+      "title": "Sweep round-35: taps-check r35 + kill-trigger attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T23:44:29.038Z",
+      "assigned_to": "agent:CWI_Athena_MINT",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "taps manifest recomputed live, chain unbroken r6->r35",
+        "approvals empty verified",
+        "8/8 clips ffprobe byte-identical",
+        "kill trigger attestation delivered on ledger"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-23T23:44:29.039Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-23 round-35"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-24T00:45:00Z"
     }
   ],
   "presence": {
@@ -16118,6 +16149,11 @@
       "op": "task.create",
       "at": "2026-09-23T23:44:09.226Z",
       "ref": "tsk_01M38AFFG9Y1Z9407F97JZFWYV"
+    },
+    "sweep-r35-mint-2026-09-23": {
+      "op": "task.create",
+      "at": "2026-09-23T23:44:29.039Z",
+      "ref": "tsk_01M38AG2VEP4HJXP2N6V4W22T4"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
