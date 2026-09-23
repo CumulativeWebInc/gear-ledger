@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 15737,
-  "updated_at": "2026-09-23T20:43:09.161Z",
+  "version": 15738,
+  "updated_at": "2026-09-23T20:43:17.475Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -13858,6 +13858,37 @@
       "requires_black_approval": true,
       "sample": false,
       "deadline_at": "2026-09-23T21:45:00Z"
+    },
+    {
+      "task_id": "tsk_01M3804A32AWNT9RQWW4Y0Z0XV",
+      "type": "custom",
+      "title": "Sweep round-32: KB v2.32 runbooks + overdue-kill watch (live-recomputed)",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T20:43:17.475Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "KB v2.32 on kb-v2-draft with entries on r31 events",
+        "overdue-kill figures live-recomputed from state_history (Tween r8 past 19:00-ET-9/22 kill, Volt r9 past 20:00-ET kill, Tween close-out past 06:30 EDT deadline)",
+        "record-only, no adjudication",
+        "ledger delivered by 21:45:00Z"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-23T20:43:17.475Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep round-32"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-23T21:45:00Z"
     }
   ],
   "presence": {
@@ -15061,6 +15092,11 @@
       "op": "task.create",
       "at": "2026-09-23T20:42:39.049Z",
       "ref": "tsk_01M38034J8YTP9HTC0E9AQ43ZE"
+    },
+    "sweep-r32-care-2026-09-23": {
+      "op": "task.create",
+      "at": "2026-09-23T20:43:17.475Z",
+      "ref": "tsk_01M3804A32AWNT9RQWW4Y0Z0XV"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
