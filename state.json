@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 14836,
-  "updated_at": "2026-09-23T14:51:03.905Z",
+  "version": 14837,
+  "updated_at": "2026-09-23T14:51:47.300Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -12197,7 +12197,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T14:44:19.082Z",
       "assigned_to": "agent:CWI_Care",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -12205,8 +12205,21 @@
         "overdue-kill figures recomputed LIVE from state_history (never copied)",
         "delivered by 15:45:00Z"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M37C0MV10XQZFS2NF577V3CB",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/support/repo/kb.json",
+          "sha256": "1f4a351d6235cfea792910fbcdce6ea9766eed3cad66a0e831b93aedf778da90"
+        },
+        {
+          "artifact_id": "art_01M37C0MV2P12KZNB42S73AEN8",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/run-2026-09-23-1040-care-r26.md",
+          "sha256": "ed7405264aece732df58c8ce9e38b805616be04038b2e3813d2f450710f7aff6"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/cwi-company/support/repo/kb.json",
       "state_history": [
         {
           "from": "created",
@@ -12221,6 +12234,12 @@
           "at": "2026-09-23T14:47:38.713Z",
           "by": "agent:CWI_Care",
           "note": "r26 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-23T14:51:47.299Z",
+          "by": "agent:CWI_Care"
         }
       ],
       "requires_black_approval": true,
