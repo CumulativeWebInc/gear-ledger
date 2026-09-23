@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 14200,
-  "updated_at": "2026-09-23T10:49:51.855Z",
+  "version": 14201,
+  "updated_at": "2026-09-23T10:51:04.347Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -11111,7 +11111,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T10:43:45.651Z",
       "assigned_to": "agent:CWI_Care",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -11121,8 +11121,21 @@
         "ledger delivery via task deliver with kind|uri artifacts",
         "memory.js writeshared claims filed"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M36Y7WP04Z879YN4VHSD3B5G",
+          "kind": "draft",
+          "uri": "file:///home/hatch/workspace/cwi-company/support/repo/kb.json",
+          "sha256": "1f4a351d6235cfea792910fbcdce6ea9766eed3cad66a0e831b93aedf778da90"
+        },
+        {
+          "artifact_id": "art_01M36Y7WP0QMGRY254TNKKFAT2",
+          "kind": "draft",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/run-2026-09-23-0655-care-r22.md",
+          "sha256": "8a0381053906030bd71c169c7a07f6b4b3752c37c5fb17ab1e620bcc86813586"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/cwi-company/support/repo/kb.json",
       "state_history": [
         {
           "from": "created",
@@ -11137,6 +11150,13 @@
           "at": "2026-09-23T10:46:37.134Z",
           "by": "agent:CWI_Care",
           "note": "r22 care self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-23T10:51:04.346Z",
+          "by": "agent:CWI_Care",
+          "note": "r22 care delivery inside 07:45 ET kill"
         }
       ],
       "requires_black_approval": false,
