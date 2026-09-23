@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 14513,
-  "updated_at": "2026-09-23T12:49:15.117Z",
+  "version": 14514,
+  "updated_at": "2026-09-23T12:49:20.249Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -11772,7 +11772,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T12:45:23.569Z",
       "assigned_to": "agent:CWI_Visual",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -11781,8 +11781,15 @@
         "nothing to Black's eye without Iris sign-off",
         "delivered via task deliver --by <URN> with kind|uri artifact + --report before 18:00:00Z"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M375058N1RXSVTKSPJA8X08M",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/goals/tag-city-3d-rebuild/hidden_files/composition/IRIS-WATCH-R24-2026-09-23.md",
+          "sha256": "48eb0f96a4ba00e2f6c7773951be801c372c7933886984aaeeb0a03b54400ab3"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/goals/tag-city-3d-rebuild/hidden_files/composition/IRIS-WATCH-R24-2026-09-23.md",
       "state_history": [
         {
           "from": "created",
@@ -11797,6 +11804,12 @@
           "at": "2026-09-23T12:47:26.739Z",
           "by": "agent:CWI_Visual",
           "note": "r24 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-23T12:49:20.249Z",
+          "by": "agent:CWI_Visual"
         }
       ],
       "requires_black_approval": true,
