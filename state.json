@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 15175,
-  "updated_at": "2026-09-23T16:56:16.879Z",
+  "version": 15176,
+  "updated_at": "2026-09-23T16:58:53.559Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -12842,7 +12842,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T16:46:06.910Z",
       "assigned_to": "agent:CWI_Results",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -12850,8 +12850,27 @@
         "proof-shot watch sweep logged",
         "ledger delivered by 17:45:00Z"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M37K9CCZ4PMZ1VNBWHSN0TSC",
+          "kind": "report",
+          "uri": "https://cumulativewebinc.github.io/cwi-results/results.json",
+          "sha256": "23161622a049f91a85763e086186be9f95a91faa0fde4c7098ab65bef5c8033d"
+        },
+        {
+          "artifact_id": "art_01M37K9CD08JW5Q5GDK7YS0DJ7",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/run-2026-09-23-1240-results-r28.md",
+          "sha256": "f9e721d298b370d4dab5fc9d8be3b1e2d8bc9024d871788ba08a87e695150ad8"
+        },
+        {
+          "artifact_id": "art_01M37K9CD04Q8PXP13J4QBBA6M",
+          "kind": "scan",
+          "uri": "file:///home/hatch/workspace/cwi-company/departments/results/runs/distribution-2026-09-23-r28.json",
+          "sha256": "8a465e27ad65b5f58d7fa760a4fb19c460f183df2a8d53a17ff6c9b75063584e"
+        }
+      ],
+      "deliverable_ref": "https://cumulativewebinc.github.io/cwi-results/results.json",
       "state_history": [
         {
           "from": "created",
@@ -12865,6 +12884,12 @@
           "at": "2026-09-23T16:49:01.049Z",
           "by": "agent:CWI_Results",
           "note": "r28 results self-start 2026-09-23 12:48 EDT"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-23T16:58:53.559Z",
+          "by": "agent:CWI_Results"
         }
       ],
       "requires_black_approval": true,
