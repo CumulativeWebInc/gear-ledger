@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 14016,
-  "updated_at": "2026-09-23T09:41:49.797Z",
+  "version": 14017,
+  "updated_at": "2026-09-23T09:42:23.610Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -10765,6 +10765,38 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-23T20:00:00Z"
+    },
+    {
+      "task_id": "tsk_01M36TA5KSR00W0FZR5QTT3VNT",
+      "type": "build",
+      "title": "Iris gate: PASS/FAIL TAG CITY round-2 proof set vs locked key art",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T09:42:23.610Z",
+      "assigned_to": "agent:CWI_Visual",
+      "state": "assigned",
+      "priority": "urgent",
+      "inputs": {},
+      "acceptance": [
+        "frames ~/workspace/goals/tag-city-3d-rebuild/hidden_files/composition/proof_round2_angle1-3.png",
+        "self-score SELF-SCORE-7GATES-2026-09-23.md claims 7/7 PASS",
+        "verdict PASS/CONDITIONAL/FAIL vs KEY-ART-BRIEF-2026-09-22.md 7 gates",
+        "measured deltas on any gate not truly passing",
+        "nothing to Black eye without sign-off"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-23T09:42:23.610Z",
+          "by": "agent:MUSE_CWI",
+          "note": "Round-2 correction rebuild after Black verdict \"Not close.\" on round 1. Worker self-scored 7/7; Iris is the independent verifier (builder never verifies)."
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-23T18:00:00Z"
     }
   ],
   "presence": {
