@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 13891,
-  "updated_at": "2026-09-23T08:49:56.918Z",
+  "version": 13892,
+  "updated_at": "2026-09-23T08:51:17.816Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -10233,7 +10233,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T08:44:37.147Z",
       "assigned_to": "agent:CWI_Guide",
-      "state": "assigned",
+      "state": "in_progress",
       "priority": "normal",
       "inputs": {
         "kind": "other",
@@ -10259,6 +10259,13 @@
           "at": "2026-09-23T08:44:37.147Z",
           "by": "agent:MUSE_CWI",
           "note": "activation sweep 2026-09-23 ~04:40 EDT (r20) - Black's no-idle rule"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-23T08:51:17.815Z",
+          "by": "agent:CWI_Guide",
+          "note": "activation sweep 2026-09-23; self-start verified task_id+title+assigned_to on live ledger"
         }
       ],
       "requires_black_approval": true,
