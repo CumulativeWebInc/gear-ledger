@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 13886,
-  "updated_at": "2026-09-23T08:47:57.059Z",
+  "version": 13887,
+  "updated_at": "2026-09-23T08:48:26.888Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -10396,6 +10396,43 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-23T16:00:00Z"
+    },
+    {
+      "task_id": "tsk_01M36Q7CR7E3GM0R33PDXWDJAK",
+      "type": "build",
+      "title": "Iris gate: PASS/FAIL the TAG CITY composition proof-shot render vs locked key art",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T08:48:26.887Z",
+      "assigned_to": "agent:CWI_Visual",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {
+        "composition_task_title": "TAG CITY composition proof shot: assemble alley scene in Blender EEVEE from existing assets, render 3-angle set, hand to Iris gate",
+        "render_dir": "~/workspace/goals/tag-city-3d-rebuild/hidden_files/composition/",
+        "key_art": "locked key art per art bible"
+      },
+      "acceptance": [
+        "dependency-aware: gate the 3-angle render set from the composition task 'TAG CITY composition proof shot: assemble alley scene in Blender EEVEE from existing assets, render 3-angle set, hand to Iris gate'",
+        "if composition not delivered by its 16:00Z kill: honest on-disk state report, zero fabrication",
+        "verdict PASS/CONDITIONAL/FAIL vs locked key art with measured deltas",
+        "synthetic-only",
+        "nothing to Black's eye without sign-off",
+        "no-excuses protocol: any stall returns WITH precedent sweep + new actions, never 'blocked'"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-23T08:48:26.888Z",
+          "by": "agent:MUSE_CWI",
+          "note": "Black's order 2026-09-23: TAG CITY #1 priority. Iris is the release gate — her sign-off is required before any frame reaches Black."
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-23T18:00:00Z"
     }
   ],
   "presence": {
