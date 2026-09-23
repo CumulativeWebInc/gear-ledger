@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 15915,
-  "updated_at": "2026-09-23T21:44:20.492Z",
+  "version": 15916,
+  "updated_at": "2026-09-23T21:44:23.880Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -14227,6 +14227,38 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-23T18:45:00-04:00"
+    },
+    {
+      "task_id": "tsk_01M383M6J7Q0M8J32NTMPKHJXY",
+      "type": "custom",
+      "title": "Sweep round-33: dashboard round-32 refresh + proof-shot watch",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T21:44:23.880Z",
+      "assigned_to": "agent:CWI_Results",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "distribution pull live (recomputed, not copied)",
+        "results.json refreshed with r33 receipt",
+        "proof-shot watch sweep + zero/positive attestation",
+        "run log in activation-sweep dir",
+        "delivered inside kill"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-23T21:44:23.880Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep r33; retry-once on transient ghapi failures; verify receipt TAIL after seeding"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-23T18:45:00-04:00"
     }
   ],
   "presence": {
@@ -15465,6 +15497,11 @@
       "op": "task.create",
       "at": "2026-09-23T21:44:06.769Z",
       "ref": "tsk_01M383KNVGQ9FEXF6ABD37E247"
+    },
+    "sweep-r33-results-2026-09-23": {
+      "op": "task.create",
+      "at": "2026-09-23T21:44:23.880Z",
+      "ref": "tsk_01M383M6J7Q0M8J32NTMPKHJXY"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
