@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 12893,
-  "updated_at": "2026-09-23T02:45:43.050Z",
+  "version": 12894,
+  "updated_at": "2026-09-23T02:45:49.383Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -8889,7 +8889,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T02:42:59.503Z",
       "assigned_to": "agent:CWI_Results",
-      "state": "assigned",
+      "state": "in_progress",
       "priority": "high",
       "inputs": {},
       "acceptance": [
@@ -8909,6 +8909,13 @@
           "at": "2026-09-23T02:42:59.504Z",
           "by": "agent:MUSE_CWI",
           "note": "Kill rule: no ledger-verified delivered by 2026-09-23T00:30:00-04:00 -> close + record blocker. Carve-outs absolute: no spending, no wallet signing, no external publishing beyond cwi-results repo, nothing under Black's name."
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-23T02:45:49.382Z",
+          "by": "agent:CWI_Results",
+          "note": "activation sweep 2026-09-22"
         }
       ],
       "requires_black_approval": true,
