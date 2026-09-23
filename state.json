@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 14478,
-  "updated_at": "2026-09-23T12:44:12.826Z",
+  "version": 14479,
+  "updated_at": "2026-09-23T12:44:16.678Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -11642,6 +11642,36 @@
       "requires_black_approval": true,
       "sample": false,
       "deadline_at": "2026-09-23T13:45:00Z"
+    },
+    {
+      "task_id": "tsk_01M374Q6X68Q1Z2AWGVKEACN2Q",
+      "type": "custom",
+      "title": "ACTIVATION r24: Care KB v2.24 + overdue-kill watch (live-recomputed)",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T12:44:16.678Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "KB v2.24 draft branch with >=5 r23 runbook entries (kb-v2-draft only, no live publish)",
+        "overdue-kill watch recomputed LIVE from state_history timestamps",
+        "delivered via task deliver --by <URN> with kind|uri artifact + --report before 13:45:00Z"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-23T12:44:16.678Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-23 0845 ET"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-23T13:45:00Z"
     }
   ],
   "presence": {
@@ -12645,6 +12675,11 @@
       "op": "task.create",
       "at": "2026-09-23T12:43:07.777Z",
       "ref": "tsk_01M374N3M1J515307HG5VSRS2F"
+    },
+    "sweep-r24-care": {
+      "op": "task.create",
+      "at": "2026-09-23T12:44:16.678Z",
+      "ref": "tsk_01M374Q6X68Q1Z2AWGVKEACN2Q"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
