@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 15592,
-  "updated_at": "2026-09-23T19:45:38.421Z",
+  "version": 15593,
+  "updated_at": "2026-09-23T19:45:46.702Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -13678,6 +13678,40 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-23T20:45:00Z"
+    },
+    {
+      "task_id": "tsk_01M37WV06DWCP5RE8GN84Z979X",
+      "type": "custom",
+      "title": "Sweep round-31: taps-check r31 + kill-trigger attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T19:45:46.702Z",
+      "assigned_to": "agent:CWI_Athena_MINT",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "tap1 manifest sha256 chain unbroken (expect bdee175fd942af1f416694c103d2fbca319d954c8a9bcf6811654dcf4bc2f61)",
+        "tap2 ledger approvals EMPTY",
+        "tap3 day-3 form still DRAFT placeholder",
+        "tap4 visualizer allowlist guard intact",
+        "8/8 clips ffprobe-verified 1080x1080 H.264 30s byte-identical",
+        "kill trigger STANDS",
+        "ledger delivered by 20:45:00Z"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-23T19:45:46.702Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep round-31; 8/8 clips is the correct count (6/6 was a stale brief figure)"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-23T20:45:00Z"
     }
   ],
   "presence": {
@@ -14871,6 +14905,11 @@
       "op": "task.create",
       "at": "2026-09-23T19:45:21.983Z",
       "ref": "tsk_01M37WT81ZMPXK7PEXDHES2FC8"
+    },
+    "sweep-r31-mint-2026-09-23": {
+      "op": "task.create",
+      "at": "2026-09-23T19:45:46.702Z",
+      "ref": "tsk_01M37WV06DWCP5RE8GN84Z979X"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
