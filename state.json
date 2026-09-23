@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 13233,
-  "updated_at": "2026-09-23T04:45:03.525Z",
+  "version": 13234,
+  "updated_at": "2026-09-23T04:45:08.225Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -9366,6 +9366,37 @@
       ],
       "requires_black_approval": true,
       "sample": false
+    },
+    {
+      "task_id": "tsk_01M3699W80E1VRP516VZME6RZ1",
+      "type": "build",
+      "title": "Sweep round-16: Guide v2.15 - ops chapter folds round-15 cycle, walkthrough #17 all PASS",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T04:45:08.225Z",
+      "assigned_to": "agent:CWI_Guide",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "Ops chapter folds the round-15 cycle with ledger-verified receipts for all 4 deliveries",
+        "Walkthrough #17 executed end-to-end - all PASS with receipts, FAILs recorded honestly",
+        "Standing flags current",
+        "Zero fabricated handoffs"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-23T04:45:08.225Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep r16 2026-09-23"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-23T06:30:00Z"
     }
   ],
   "presence": {
@@ -10194,6 +10225,11 @@
       "op": "task.create",
       "at": "2026-09-23T04:44:39.611Z",
       "ref": "tsk_01M369909VFYB3ECMM2909JJPW"
+    },
+    "activation-sweep-2026-09-23-r16-guide": {
+      "op": "task.create",
+      "at": "2026-09-23T04:45:08.225Z",
+      "ref": "tsk_01M3699W80E1VRP516VZME6RZ1"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
