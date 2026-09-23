@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 16116,
-  "updated_at": "2026-09-23T22:44:55.129Z",
+  "version": 16117,
+  "updated_at": "2026-09-23T22:45:15.092Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -14561,6 +14561,38 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-23T19:45:00-04:00"
+    },
+    {
+      "task_id": "tsk_01M3873M66MH3C46E90Q321N2R",
+      "type": "custom",
+      "title": "Sweep round-34: taps-check r34 + kill-trigger attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T22:45:15.091Z",
+      "assigned_to": "agent:CWI_Athena_MINT",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "4/4 taps recomputed live (manifest sha256 chain, approvals scan, form guard, allowlist guard)",
+        "8/8 clips ffprobe-verified byte-identical",
+        "zero-new-clips scan",
+        "kill-trigger attestation",
+        "delivered inside kill"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-23T22:45:15.092Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep round-34 dispatch"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-23T19:45:00-04:00"
     }
   ],
   "presence": {
@@ -15829,6 +15861,11 @@
       "op": "task.create",
       "at": "2026-09-23T22:44:43.951Z",
       "ref": "tsk_01M3872NS53XQ3VFFD9YNJNSPJ"
+    },
+    "sweep-r34-mint-2026-09-23": {
+      "op": "task.create",
+      "at": "2026-09-23T22:45:15.092Z",
+      "ref": "tsk_01M3873M66MH3C46E90Q321N2R"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
