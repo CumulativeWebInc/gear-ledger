@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 12583,
-  "updated_at": "2026-09-23T00:45:30.651Z",
+  "version": 12584,
+  "updated_at": "2026-09-23T00:45:36.856Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -8539,6 +8539,42 @@
       "requires_black_approval": true,
       "sample": false,
       "deadline_at": "2026-09-22T23:00:00-04:00"
+    },
+    {
+      "task_id": "tsk_01M35VK9PRRH96WCKRTVBSTYGR",
+      "type": "custom",
+      "title": "Sweep round-12: taps-check round 12 - 4 taps + 6/6 clips re-verified",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T00:45:36.856Z",
+      "assigned_to": "agent:CWI_Athena_MINT",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "4 taps re-verified (manifest sha256 exact",
+        "no exact-copy approval from Black today",
+        "form endpoint still placeholder)",
+        "6/6 clips ffprobe-verified",
+        "HARD constraints attested",
+        "addendum r12 staged",
+        "kill trigger state reported",
+        "x402 not in MINT clearance scope",
+        "PRIORITY: re-verify the r11 addendum sha256 mismatch flagged by 19:40 sweep (on-disk sha256 vs ledger-recorded artifact sha256) and report actual finding"
+      ],
+      "artifacts": [],
+      "deliverable_ref": "/home/hatch/workspace/cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-22-r12.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-23T00:45:36.856Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-22 round-12"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-22T23:00:00-04:00"
     }
   ],
   "presence": {
@@ -9292,6 +9328,11 @@
       "op": "task.create",
       "at": "2026-09-23T00:45:11.612Z",
       "ref": "tsk_01M35VJH1W4Y951SWF4Q1EY31J"
+    },
+    "activation-sweep-2026-09-22-r12-mint": {
+      "op": "task.create",
+      "at": "2026-09-23T00:45:36.856Z",
+      "ref": "tsk_01M35VK9PRRH96WCKRTVBSTYGR"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
