@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 16349,
-  "updated_at": "2026-09-23T23:58:05.213Z",
+  "version": 16350,
+  "updated_at": "2026-09-23T23:58:45.926Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -14855,7 +14855,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T23:44:09.225Z",
       "assigned_to": "agent:CWI_Results",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -14866,8 +14866,27 @@
         "receipt tail-order verified",
         "proof-shot watch with live-recomputed cutoff"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M38BA4WCPAQN1JZ5BQ5RE4FT",
+          "kind": "report",
+          "uri": "https://cumulativewebinc.github.io/cwi-results/results.json",
+          "sha256": "23161622a049f91a85763e086186be9f95a91faa0fde4c7098ab65bef5c8033d"
+        },
+        {
+          "artifact_id": "art_01M38BA4WCDX50V3T0G1HQ5BAN",
+          "kind": "scan",
+          "uri": "/home/hatch/workspace/cwi-company/departments/results/runs/distribution-2026-09-23-r35.json",
+          "sha256": "2731de40d85030ac4b2ab5b48843880d2bdf0a49c4f587af0df419a45cfa4d1b"
+        },
+        {
+          "artifact_id": "art_01M38BA4WDBC9H2PQ9CDTQ0NFK",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/run-2026-09-23-1940-results-r35.md",
+          "sha256": "b662838baaa3a86303110d9ca5b960bd24f92bc34958bfcd68ee4df0ee200ab5"
+        }
+      ],
+      "deliverable_ref": "https://cumulativewebinc.github.io/cwi-results/results.json",
       "state_history": [
         {
           "from": "created",
@@ -14882,6 +14901,13 @@
           "at": "2026-09-23T23:49:24.521Z",
           "by": "agent:CWI_Results",
           "note": "activation sweep 2026-09-23 r35 (retry)"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-23T23:58:45.926Z",
+          "by": "agent:CWI_Results",
+          "note": "r35 complete: 12/12 r34 receipt hashes MATCH, live distribution pull, results.json r35 published (tail r33->r34->r35), hero metric_external_equips honest 0, 12th consecutive zero proof-shot watch"
         }
       ],
       "requires_black_approval": true,
