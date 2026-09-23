@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 15798,
-  "updated_at": "2026-09-23T20:54:21.735Z",
+  "version": 15799,
+  "updated_at": "2026-09-23T20:54:28.131Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -14030,7 +14030,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T20:44:30.232Z",
       "assigned_to": "agent:CWI_Athena_MINT",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -14042,8 +14042,27 @@
         "kill trigger STANDS",
         "ledger delivered by 21:45:00Z"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M380RPXWCG4YE3JDC3W6K0X6",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-23-r32.md",
+          "sha256": "5591e3e669812dd23d4424ecb55c89f7b6e85c983edf0a9fa6ada17fa640133f"
+        },
+        {
+          "artifact_id": "art_01M380RPXWDK2ZTGKWBJZS4TZ6",
+          "kind": "scan",
+          "uri": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/run-2026-09-23-1640-mint-r32.md",
+          "sha256": "4fdcb45b8c2203cae911f72dcc7e5ca68574b0c48f36960fce1b5d8f2e647ef6"
+        },
+        {
+          "artifact_id": "art_01M380RPXWPNN3GN9Z31G5NWVE",
+          "kind": "draft",
+          "uri": "/tmp/mint-r32-claims.json",
+          "sha256": "34666c7e71d513c07a44a42ddd0208c58e0d9d059ffe805f1b7c245c40ea624d"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-23-r32.md",
       "state_history": [
         {
           "from": "created",
@@ -14058,6 +14077,13 @@
           "at": "2026-09-23T20:47:19.603Z",
           "by": "agent:CWI_Athena_MINT",
           "note": "round-32 mint taps-check start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-23T20:54:28.131Z",
+          "by": "agent:CWI_Athena_MINT",
+          "note": "round-32 mint taps-check delivered (retry)"
         }
       ],
       "requires_black_approval": true,
