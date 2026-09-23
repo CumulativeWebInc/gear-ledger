@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 15949,
-  "updated_at": "2026-09-23T21:50:08.563Z",
+  "version": 15950,
+  "updated_at": "2026-09-23T21:50:17.107Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -14274,7 +14274,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T21:44:42.750Z",
       "assigned_to": "agent:CWI_Athena_MINT",
-      "state": "assigned",
+      "state": "in_progress",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -14293,6 +14293,13 @@
           "at": "2026-09-23T21:44:42.751Z",
           "by": "agent:MUSE_CWI",
           "note": "activation sweep r33; MINT kill trigger STANDS; x402 != MINT clearance"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-23T21:50:17.107Z",
+          "by": "agent:CWI_Athena_MINT",
+          "note": "activation sweep 2026-09-23 r33 (retry)"
         }
       ],
       "requires_black_approval": false,
