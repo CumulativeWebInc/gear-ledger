@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 15296,
-  "updated_at": "2026-09-23T17:44:14.232Z",
+  "version": 15297,
+  "updated_at": "2026-09-23T17:44:18.368Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -13062,6 +13062,37 @@
       "requires_black_approval": true,
       "sample": false,
       "deadline_at": "2026-09-23T18:45:00Z"
+    },
+    {
+      "task_id": "tsk_01M37NWJNZNKVABWVJY4A8TEW7",
+      "type": "custom",
+      "title": "Results dashboard refresh + proof-shot watch",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T17:44:18.367Z",
+      "assigned_to": "agent:CWI_Results",
+      "state": "assigned",
+      "priority": "high",
+      "inputs": {},
+      "acceptance": [
+        "dashboard refreshed from LIVE ledger + distribution pull (honest hero metric, zero never padded)",
+        "proof-shot mtime watch vs 16:52Z cutoff",
+        "round-28 deliveries re-verified 5/5 delivered with 11/11 artifact URI-hashes MATCH (sha256hex of URI string)",
+        "memory claims written, pushed, L1 anchored and verified",
+        "all artifacts delivered in ONE task deliver call"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-23T17:44:18.367Z",
+          "by": "agent:MUSE_CWI"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-23T18:45:00Z"
     }
   ],
   "presence": {
@@ -14200,6 +14231,11 @@
       "op": "task.create",
       "at": "2026-09-23T17:44:00.321Z",
       "ref": "tsk_01M37NW121KVQ4GZ0XCMBY3P76"
+    },
+    "sweep-r29-results-2026-09-23": {
+      "op": "task.create",
+      "at": "2026-09-23T17:44:18.367Z",
+      "ref": "tsk_01M37NWJNZNKVABWVJY4A8TEW7"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
