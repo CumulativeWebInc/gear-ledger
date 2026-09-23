@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 16107,
-  "updated_at": "2026-09-23T22:43:10.793Z",
+  "version": 16108,
+  "updated_at": "2026-09-23T22:43:17.380Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -14439,6 +14439,37 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-23T18:45:00-04:00"
+    },
+    {
+      "task_id": "tsk_01M3870183JY26ABEQ5WSZ7HA0",
+      "type": "custom",
+      "title": "Sweep round-34: Iris round-11 watch — new-proof sweep + gate attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T22:43:17.379Z",
+      "assigned_to": "agent:CWI_Visual",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "mtime sweep of build lanes + workspace-wide vs live-recomputed cutoff",
+        "zero/positive finding attested vs r29 FINAL verdict FAIL 2/3/2",
+        "run log in activation-sweep dir",
+        "delivered inside kill"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-23T22:43:17.380Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep round-34 dispatch"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-23T19:45:00-04:00"
     }
   ],
   "presence": {
@@ -15687,6 +15718,11 @@
       "op": "task.create",
       "at": "2026-09-23T21:44:42.751Z",
       "ref": "tsk_01M383MRZYHTJV3KMHV0QHXDF1"
+    },
+    "sweep-r34-visual-2026-09-23": {
+      "op": "task.create",
+      "at": "2026-09-23T22:43:17.380Z",
+      "ref": "tsk_01M3870183JY26ABEQ5WSZ7HA0"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
