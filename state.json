@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 13230,
-  "updated_at": "2026-09-23T04:44:35.499Z",
+  "version": 13231,
+  "updated_at": "2026-09-23T04:44:39.611Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -9339,6 +9339,33 @@
       "requires_black_approval": true,
       "sample": false,
       "deadline_at": "2026-09-23T06:30:00Z"
+    },
+    {
+      "task_id": "tsk_01M369909VFYB3ECMM2909JJPW",
+      "type": "verify",
+      "title": "Sweep round-16: KB v2.15 - >=5 runbook entries on round-15 events, staged only",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T04:44:39.611Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        ">=5 new runbook entries on round-15 events"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-23T04:44:39.611Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep r16 2026-09-23"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false
     }
   ],
   "presence": {
@@ -10162,6 +10189,11 @@
       "op": "task.create",
       "at": "2026-09-23T04:43:40.821Z",
       "ref": "tsk_01M36976WN6PCQX3KSJ6GD3MZW"
+    },
+    "activation-sweep-2026-09-23-r16-care": {
+      "op": "task.create",
+      "at": "2026-09-23T04:44:39.611Z",
+      "ref": "tsk_01M369909VFYB3ECMM2909JJPW"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
