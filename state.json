@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 13058,
-  "updated_at": "2026-09-23T03:43:18.988Z",
+  "version": 13059,
+  "updated_at": "2026-09-23T03:43:25.965Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -9103,6 +9103,39 @@
       "requires_black_approval": true,
       "sample": false,
       "deadline_at": "2026-09-23T00:30:00-04:00"
+    },
+    {
+      "task_id": "tsk_01M365RWRC2PVES0564KCZ7D34",
+      "type": "build",
+      "title": "Sweep round-15: taps-check round 15 - 4 taps + clips re-verified, kill trigger state",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T03:43:25.964Z",
+      "assigned_to": "agent:CWI_Athena_MINT",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "4 taps re-verified (manifest sha256 exact vs r14)",
+        "no exact-copy approval from Black today",
+        "form endpoint still placeholder",
+        "x402 lane separation holds",
+        "clips ffprobe-verified",
+        "kill trigger state reported",
+        "addendum r15 staged"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-23T03:43:25.965Z",
+          "by": "agent:MUSE_CWI"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-23T01:30:00-04:00"
     }
   ],
   "presence": {
@@ -9901,6 +9934,11 @@
       "op": "task.create",
       "at": "2026-09-23T02:44:20.281Z",
       "ref": "tsk_01M362CP5RD6WVSKQYY5DVPTGC"
+    },
+    "activation-sweep-2026-09-22-r15-mint": {
+      "op": "task.create",
+      "at": "2026-09-23T03:43:25.965Z",
+      "ref": "tsk_01M365RWRC2PVES0564KCZ7D34"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
