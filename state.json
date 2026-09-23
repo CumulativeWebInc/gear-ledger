@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 12944,
-  "updated_at": "2026-09-23T02:53:03.675Z",
+  "version": 12945,
+  "updated_at": "2026-09-23T02:53:09.180Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -8889,7 +8889,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T02:42:59.503Z",
       "assigned_to": "agent:CWI_Results",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "high",
       "inputs": {},
       "acceptance": [
@@ -8900,8 +8900,15 @@
         "results.json published to CumulativeWebInc/cwi-results with metric_external_equips",
         "all numbers verified, nothing fabricated"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M362WSJ3JQ6GJ9Z6BFHNRNF5",
+          "kind": "report",
+          "uri": "https://github.com/CumulativeWebInc/cwi-results/blob/main/results.json",
+          "sha256": "551ea16838ec2e53a93130753e9116ad83fe2f83e91aabde1a059b5183cc0ed0"
+        }
+      ],
+      "deliverable_ref": "https://github.com/CumulativeWebInc/cwi-results/blob/main/results.json",
       "state_history": [
         {
           "from": "created",
@@ -8916,6 +8923,12 @@
           "at": "2026-09-23T02:45:49.382Z",
           "by": "agent:CWI_Results",
           "note": "activation sweep 2026-09-22"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-23T02:53:09.179Z",
+          "by": "agent:CWI_Results"
         }
       ],
       "requires_black_approval": true,
