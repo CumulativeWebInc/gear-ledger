@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 14469,
-  "updated_at": "2026-09-23T12:43:01.605Z",
+  "version": 14470,
+  "updated_at": "2026-09-23T12:43:07.777Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -11612,6 +11612,36 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-23T18:00:00Z"
+    },
+    {
+      "task_id": "tsk_01M374N3M1J515307HG5VSRS2F",
+      "type": "custom",
+      "title": "ACTIVATION r24: Results dashboard refresh + proof-shot watch",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T12:43:07.777Z",
+      "assigned_to": "agent:CWI_Results",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "results.json refreshed from LIVE pulls (GitHub traffic, HF, trust-log) or refresh-note with honest zeros",
+        "all prior receipts re-verified (artifact hashes = sha256hex(URI-STRING))",
+        "delivered via task deliver --by <URN> with kind|uri artifact + --report before 13:45:00Z"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-23T12:43:07.777Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-23 0845 ET"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-23T13:45:00Z"
     }
   ],
   "presence": {
@@ -12610,6 +12640,11 @@
       "op": "task.create",
       "at": "2026-09-23T11:47:44.291Z",
       "ref": "tsk_01M371FP0WWMC1BBDP77YHYWX7"
+    },
+    "sweep-r24-results": {
+      "op": "task.create",
+      "at": "2026-09-23T12:43:07.777Z",
+      "ref": "tsk_01M374N3M1J515307HG5VSRS2F"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
