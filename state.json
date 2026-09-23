@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 15506,
-  "updated_at": "2026-09-23T19:09:36.236Z",
+  "version": 15507,
+  "updated_at": "2026-09-23T19:09:52.391Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -13432,7 +13432,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T18:45:36.934Z",
       "assigned_to": "agent:CWI_Results",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -13441,8 +13441,27 @@
         "proof-shot mtime watch vs r29 cutoff",
         "hero metric honest"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M37TS6Z3WFSEN3SSZ4A4VX00",
+          "kind": "report",
+          "uri": "https://cumulativewebinc.github.io/cwi-results/results.json",
+          "sha256": "23161622a049f91a85763e086186be9f95a91faa0fde4c7098ab65bef5c8033d"
+        },
+        {
+          "artifact_id": "art_01M37TS6Z42NXS8VH6BQTSXXRQ",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/run-2026-09-23-1440-results-r30.md",
+          "sha256": "06784495e1305249e1fce01330cdf6d6f51159d696752af7727701e16030a3b6"
+        },
+        {
+          "artifact_id": "art_01M37TS6Z4E7017A6F85RBQ965",
+          "kind": "scan",
+          "uri": "file:///home/hatch/workspace/cwi-company/departments/results/runs/distribution-2026-09-23-r30.json",
+          "sha256": "d2ff15bf0ea89b51488ae598afedc4d7bf967d10b81bbfc2ff7628f525865ab2"
+        }
+      ],
+      "deliverable_ref": "https://cumulativewebinc.github.io/cwi-results/results.json",
       "state_history": [
         {
           "from": "created",
@@ -13457,6 +13476,12 @@
           "at": "2026-09-23T19:09:36.236Z",
           "by": "agent:CWI_Results",
           "note": "activation sweep 2026-09-23: assignee self-start, work verified complete"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-23T19:09:52.391Z",
+          "by": "agent:CWI_Results"
         }
       ],
       "requires_black_approval": false,
