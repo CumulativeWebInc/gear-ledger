@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 15286,
-  "updated_at": "2026-09-23T17:43:11.349Z",
+  "version": 15287,
+  "updated_at": "2026-09-23T17:43:15.679Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -12973,6 +12973,36 @@
       ],
       "requires_black_approval": true,
       "sample": false
+    },
+    {
+      "task_id": "tsk_01M37NTNEZ7B6QSBYT7D6K97S4",
+      "type": "build",
+      "title": "Iris r29 — 14:00 ET verdict on the round-2 TAG CITY proof set",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T17:43:15.679Z",
+      "assigned_to": "agent:CWI_Visual",
+      "state": "assigned",
+      "priority": "high",
+      "inputs": {},
+      "acceptance": [
+        "mtime sweep vs 16:52Z cutoff — zero new TAG CITY proof media, or any new media fully gated by the 8-metric dossier BEFORE any verdict",
+        "verdict attestation memo (PASS/FAIL per Iris's 7 gates) written to goals/tag-city-3d-rebuild/hidden_files/composition/",
+        "memory claims written, pushed to GitHub, L1 offchain-anchored and verified",
+        "all artifacts delivered in ONE task deliver call"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-23T17:43:15.679Z",
+          "by": "agent:MUSE_CWI"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-23T18:45:00Z"
     }
   ],
   "presence": {
@@ -14096,6 +14126,11 @@
       "op": "task.create",
       "at": "2026-09-23T16:46:30.242Z",
       "ref": "tsk_01M37JJQV2TM5EPWKFN6AYEXCV"
+    },
+    "sweep-r29-visual-2026-09-23": {
+      "op": "task.create",
+      "at": "2026-09-23T17:43:15.679Z",
+      "ref": "tsk_01M37NTNEZ7B6QSBYT7D6K97S4"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
