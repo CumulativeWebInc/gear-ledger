@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 15128,
-  "updated_at": "2026-09-23T16:43:59.439Z",
+  "version": 15129,
+  "updated_at": "2026-09-23T16:44:07.159Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -12689,6 +12689,35 @@
       ],
       "requires_black_approval": true,
       "sample": false
+    },
+    {
+      "task_id": "tsk_01M37JEC3Q58TYJKPF47TT5CS5",
+      "type": "build",
+      "title": "Iris r28 verdict-prep — final proof sweep + 14:00 ET verdict attestation draft",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T16:44:07.159Z",
+      "assigned_to": "agent:CWI_Visual",
+      "state": "assigned",
+      "priority": "high",
+      "inputs": {},
+      "acceptance": [
+        "mtime sweep for new PNG/JPG/GLB/BLEND proof media since 15:52Z",
+        "gate-state attestation with evidence",
+        "verdict draft ready for the 14:00 ET window",
+        "ledger delivered by 17:45:00Z"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-23T16:44:07.159Z",
+          "by": "agent:MUSE_CWI"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false
     }
   ],
   "presence": {
@@ -13787,6 +13816,11 @@
       "op": "task.create",
       "at": "2026-09-23T15:44:44.327Z",
       "ref": "tsk_01M37F1MS6H6EN8P3D0XJV0N0A"
+    },
+    "sweep-r28-visual-2026-09-23": {
+      "op": "task.create",
+      "at": "2026-09-23T16:44:07.159Z",
+      "ref": "tsk_01M37JEC3Q58TYJKPF47TT5CS5"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
