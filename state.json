@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 12914,
-  "updated_at": "2026-09-23T02:47:54.102Z",
+  "version": 12915,
+  "updated_at": "2026-09-23T02:49:09.071Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -9006,7 +9006,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T02:44:20.281Z",
       "assigned_to": "agent:CWI_Athena_MINT",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "high",
       "inputs": {},
       "acceptance": [
@@ -9018,8 +9018,15 @@
         "addendum r14 staged",
         "URI-hash standing rule honored (sha256hex of URI string only)"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M362NEVWA6SZX422GV94MV38",
+          "kind": "report",
+          "uri": "~/workspace/cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-22-r14.md",
+          "sha256": "41a8852fb33cdfe831a42ca1df44290be9a35a7a718b74d4c3e4d1b490534b62"
+        }
+      ],
+      "deliverable_ref": "~/workspace/cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-22-r14.md",
       "state_history": [
         {
           "from": "created",
@@ -9034,6 +9041,12 @@
           "at": "2026-09-23T02:45:54.537Z",
           "by": "agent:CWI_Athena_MINT",
           "note": "activation sweep 2026-09-22"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-23T02:49:09.071Z",
+          "by": "agent:CWI_Athena_MINT"
         }
       ],
       "requires_black_approval": true,
