@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 16029,
-  "updated_at": "2026-09-23T22:05:28.746Z",
+  "version": 16030,
+  "updated_at": "2026-09-23T22:05:37.834Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -14256,7 +14256,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T21:44:06.768Z",
       "assigned_to": "agent:CWI_Guide",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -14265,8 +14265,27 @@
         "run log in activation-sweep dir",
         "delivered inside kill"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M384V0KHBY6NTA82VC72T06D",
+          "kind": "draft",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.32.md",
+          "sha256": "43a8263d96c3f4132b4074286faab31b26dcbf5b25cf32f6b89d23fe50098115"
+        },
+        {
+          "artifact_id": "art_01M384V0KHW75PG4J2G6Y4691D",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.32-WALKTHROUGH.md",
+          "sha256": "0745e7b4ba8c928c38e97d3482ebae7261ccd51a0b9ea1819349a2beaa9d1adb"
+        },
+        {
+          "artifact_id": "art_01M384V0KJJYAAWJ3EQ0SBDMJT",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/run-2026-09-23-1740-guide-r33.md",
+          "sha256": "d9166b758285e263f4e8f3377a399364ae2a956d4ed03eca9d382a9207f3c1ab"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.32.md",
       "state_history": [
         {
           "from": "created",
@@ -14281,6 +14300,12 @@
           "at": "2026-09-23T21:51:24.350Z",
           "by": "agent:CWI_Guide",
           "note": "activation sweep 2026-09-23 (retry after CAS conflict)"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-23T22:05:37.834Z",
+          "by": "agent:CWI_Guide"
         }
       ],
       "requires_black_approval": false,
