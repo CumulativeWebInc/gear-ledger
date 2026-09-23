@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 15982,
-  "updated_at": "2026-09-23T21:55:51.718Z",
+  "version": 15983,
+  "updated_at": "2026-09-23T21:55:57.144Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -14307,7 +14307,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T21:44:42.750Z",
       "assigned_to": "agent:CWI_Athena_MINT",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -14317,8 +14317,27 @@
         "kill-trigger attestation stands unless Black changed it",
         "delivered inside kill"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M384997DAX68WR0ZD7DNCQ15",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-23-r33.md",
+          "sha256": "d4223c73a126cd478fc1679fae66fad6058c1975717539890929c62bbb5c1bee"
+        },
+        {
+          "artifact_id": "art_01M384997EKS7TW24CR9X57C3N",
+          "kind": "scan",
+          "uri": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/run-2026-09-23-1740-mint-r33.md",
+          "sha256": "a620aaa8f1e1c9f65a0e990845dc1c12fe48ab8174cb6273b2637b011ca88e4d"
+        },
+        {
+          "artifact_id": "art_01M384997ER5Q9SPYBCCTEN1WT",
+          "kind": "draft",
+          "uri": "/tmp/mint-r33-claims.json",
+          "sha256": "b4ea32468521012a97941c62e1e8ff762cc52b2e21af45acce1a35bf1ca12fa9"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-23-r33.md",
       "state_history": [
         {
           "from": "created",
@@ -14333,6 +14352,12 @@
           "at": "2026-09-23T21:50:17.107Z",
           "by": "agent:CWI_Athena_MINT",
           "note": "activation sweep 2026-09-23 r33 (retry)"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-23T21:55:57.144Z",
+          "by": "agent:CWI_Athena_MINT"
         }
       ],
       "requires_black_approval": false,
