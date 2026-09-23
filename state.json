@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 13694,
-  "updated_at": "2026-09-23T07:42:51.404Z",
+  "version": 13695,
+  "updated_at": "2026-09-23T07:43:00.894Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -9959,6 +9959,37 @@
       ],
       "requires_black_approval": true,
       "sample": false
+    },
+    {
+      "task_id": "tsk_01M36KFJRYZBZXWE2GRP5PXAM4",
+      "type": "data.scan",
+      "title": "Dashboard round-19 refresh: round-18 receipts re-verified + fresh distribution pull",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T07:43:00.894Z",
+      "assigned_to": "agent:CWI_Results",
+      "state": "assigned",
+      "priority": "high",
+      "inputs": {},
+      "acceptance": [
+        "results.json published to CumulativeWebInc/cwi-results with round-18 receipts re-verified on live ledger",
+        "fresh GitHub traffic + Hugging Face pull",
+        "hero metric_external_equips counts ONLY Lane C funnel protocol-passing identities (funnel unreadable -> fail closed, zero, evidence listed)",
+        "artifact sha256 = sha256hex(URI-STRING)"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-23T07:43:00.894Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-23; kill rule: no ledger-verified delivered by 2026-09-23T05:30:00-04:00 -> close task and record blocker; carve-outs absolute"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-23T05:30:00-04:00"
     }
   ],
   "presence": {
@@ -10842,6 +10873,11 @@
       "op": "task.create",
       "at": "2026-09-23T06:43:43.431Z",
       "ref": "tsk_01M36G30P67HB7BBHBKHA94N8M"
+    },
+    "activation-sweep-r19-results-20260923": {
+      "op": "task.create",
+      "at": "2026-09-23T07:43:00.894Z",
+      "ref": "tsk_01M36KFJRYZBZXWE2GRP5PXAM4"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
