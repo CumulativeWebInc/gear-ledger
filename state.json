@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 15975,
-  "updated_at": "2026-09-23T21:54:39.752Z",
+  "version": 15976,
+  "updated_at": "2026-09-23T21:54:44.476Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -14142,7 +14142,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T21:43:29.203Z",
       "assigned_to": "agent:CWI_Visual",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -14151,8 +14151,21 @@
         "run log in activation-sweep dir",
         "delivered inside kill"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M38471VTSWSJEFNNWFMNFTK1",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/goals/tag-city-3d-rebuild/hidden_files/composition/IRIS-WATCH-R33-2026-09-23.md",
+          "sha256": "b9790ae160f95a84ca503d171845624673996fb78f47a8d566732d18bd2d0dec"
+        },
+        {
+          "artifact_id": "art_01M38471VTT9TEFP62FCAW0R3B",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/run-2026-09-23-1740-visual-r33.md",
+          "sha256": "ae98ffa18e2ded7bc3387e83998dee29ec379a0de9e214d2440628cce0eaec66"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/goals/tag-city-3d-rebuild/hidden_files/composition/IRIS-WATCH-R33-2026-09-23.md",
       "state_history": [
         {
           "from": "created",
@@ -14167,6 +14180,12 @@
           "at": "2026-09-23T21:50:36.770Z",
           "by": "agent:CWI_Visual",
           "note": "activation sweep 2026-09-23"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-23T21:54:44.475Z",
+          "by": "agent:CWI_Visual"
         }
       ],
       "requires_black_approval": false,
