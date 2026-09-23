@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 13415,
-  "updated_at": "2026-09-23T05:43:55.770Z",
+  "version": 13416,
+  "updated_at": "2026-09-23T05:43:59.842Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -9552,6 +9552,36 @@
       "requires_black_approval": true,
       "sample": false,
       "deadline_at": "2026-09-23T03:30:00-04:00"
+    },
+    {
+      "task_id": "tsk_01M36CNN31VKASKWXKFXR4648H",
+      "type": "content.draft",
+      "title": "Sweep round-17: KB v2.16 - >=5 runbook entries on round-16 events, staged only",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T05:43:59.841Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        ">=5 new runbook entries on round-16 events (4 deliveries with live states/timestamps + overdue-kill watch at live re-read - Atelier r8 tsk_01M35DX2RMAN322QYQZZ1WW6NK, Tween r8 tsk_01M35DXCGJTDRK67AJW3XTBPS9, Visual r9 tsk_01M35HCYF2SM22E0HCETCESP0F, Volt r9 tsk_01M35HFP40KWZ1TN93MX3NNCPA still in_progress, ~7h+ past deadline, cancel authority creator-or-Black, no adjudication)",
+        "All numbers verified on disk + live ledger",
+        "Draft branch only - NO publish (no-publish tap stands)"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-23T05:43:59.842Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep round-17 dispatch, 2026-09-23 01:40 EDT"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-23T03:30:00-04:00"
     }
   ],
   "presence": {
@@ -10395,6 +10425,11 @@
       "op": "task.create",
       "at": "2026-09-23T05:43:42.404Z",
       "ref": "tsk_01M36CN423VJ8PYTZDR49H88Z7"
+    },
+    "activation-sweep-2026-09-23-r17-care": {
+      "op": "task.create",
+      "at": "2026-09-23T05:43:59.842Z",
+      "ref": "tsk_01M36CNN31VKASKWXKFXR4648H"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
