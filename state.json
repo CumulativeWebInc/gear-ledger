@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 14835,
-  "updated_at": "2026-09-23T14:50:33.749Z",
+  "version": 14836,
+  "updated_at": "2026-09-23T14:51:03.905Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -12139,7 +12139,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T14:44:06.522Z",
       "assigned_to": "agent:CWI_Visual",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "high",
       "inputs": {},
       "acceptance": [
@@ -12148,8 +12148,21 @@
         "watch note delivered by 15:45:00Z",
         "NOTHING reaches Black's eye without Iris sign-off"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M37BZAHNSTDEQEGCDWNBQHEN",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/tag-city-3d-rebuild/hidden_files/composition/IRIS-WATCH-R26-2026-09-23.md",
+          "sha256": "1fff336e1d3eb063019a48e886bb4a35a53c9576a368fe94d86adefc07e9c388"
+        },
+        {
+          "artifact_id": "art_01M37BZAHPS772TESCWMYT7B9V",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/run-2026-09-23-1040-visual-r26.md",
+          "sha256": "225a41f89cfe595698511f86ac02025f0b2217268c34e0b974e61258a67657c0"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/goals/tag-city-3d-rebuild/hidden_files/composition/IRIS-WATCH-R26-2026-09-23.md",
       "state_history": [
         {
           "from": "created",
@@ -12164,6 +12177,13 @@
           "at": "2026-09-23T14:47:53.272Z",
           "by": "agent:CWI_Visual",
           "note": "r26 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-23T14:51:03.904Z",
+          "by": "agent:CWI_Visual",
+          "note": "r26 delivered with margin vs 15:45Z kill"
         }
       ],
       "requires_black_approval": true,
