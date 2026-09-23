@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 14834,
-  "updated_at": "2026-09-23T14:48:07.834Z",
+  "version": 14835,
+  "updated_at": "2026-09-23T14:50:33.749Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -12289,7 +12289,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T14:45:13.522Z",
       "assigned_to": "agent:CWI_Athena_MINT",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -12299,8 +12299,15 @@
         "HARD: zero new clips, zero batching, zero launch, zero external posts",
         "delivered by 15:45:00Z"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M37BYCZ7H89ZTJJCVGDWSP9V",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-23-r26.md",
+          "sha256": "fa215cf91e7b2676de33af5421a233246dcf516507b710803d0dffdb0c5197d9"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-23-r26.md",
       "state_history": [
         {
           "from": "created",
@@ -12315,6 +12322,12 @@
           "at": "2026-09-23T14:48:07.834Z",
           "by": "agent:CWI_Athena_MINT",
           "note": "r26 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-23T14:50:33.749Z",
+          "by": "agent:CWI_Athena_MINT"
         }
       ],
       "requires_black_approval": true,
