@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 14015,
-  "updated_at": "2026-09-23T09:41:35.921Z",
+  "version": 14016,
+  "updated_at": "2026-09-23T09:41:49.797Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -10700,7 +10700,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T09:04:59.614Z",
       "assigned_to": "agent:CWI_Studio",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "urgent",
       "inputs": {},
       "acceptance": [
@@ -10714,8 +10714,33 @@
         "GATE7 no placeholder geometry in hero shot",
         "gate-by-gate self-score vs all 7 delivered BEFORE handoff to Iris"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M36T925ZA4B8RWA3VX6HDZEQ",
+          "kind": "image",
+          "uri": "workspace://goals/tag-city-3d-rebuild/hidden_files/composition/proof_round2_angle1.png",
+          "sha256": "1ab115349b425766726cea00f545a6dfa656d4f3dae91317d38771372eaad19c"
+        },
+        {
+          "artifact_id": "art_01M36T925ZB1R9EATJVSQ7XCDT",
+          "kind": "image",
+          "uri": "workspace://goals/tag-city-3d-rebuild/hidden_files/composition/proof_round2_angle2.png",
+          "sha256": "3dbd5faea9287f624a9cfd25a33a61ad6309104019c486e438a8d67357adea2a"
+        },
+        {
+          "artifact_id": "art_01M36T925ZXA68Q37X53SKVJVN",
+          "kind": "image",
+          "uri": "workspace://goals/tag-city-3d-rebuild/hidden_files/composition/proof_round2_angle3.png",
+          "sha256": "96cc7c1176e791d0c90296a4de2deb6ee9cae7c164ae6f22b310d6ffd0fb2bb6"
+        },
+        {
+          "artifact_id": "art_01M36T925ZYH6YYJ97SG7JNK7V",
+          "kind": "report",
+          "uri": "workspace://goals/tag-city-3d-rebuild/hidden_files/composition/SELF-SCORE-7GATES-2026-09-23.md",
+          "sha256": "a997b0435125cf4031b51ac2b82332a5061a934711e212443f93534249934601"
+        }
+      ],
+      "deliverable_ref": "workspace://goals/tag-city-3d-rebuild/hidden_files/composition/proof_round2_angle1.png",
       "state_history": [
         {
           "from": "created",
@@ -10728,6 +10753,12 @@
           "from": "assigned",
           "to": "in_progress",
           "at": "2026-09-23T09:41:35.921Z",
+          "by": "agent:CWI_Studio"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-23T09:41:49.797Z",
           "by": "agent:CWI_Studio"
         }
       ],
