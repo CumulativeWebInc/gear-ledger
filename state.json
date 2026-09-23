@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 15290,
-  "updated_at": "2026-09-23T17:43:36.278Z",
+  "version": 15291,
+  "updated_at": "2026-09-23T17:43:40.828Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -13003,6 +13003,36 @@
       "requires_black_approval": true,
       "sample": false,
       "deadline_at": "2026-09-23T18:45:00Z"
+    },
+    {
+      "task_id": "tsk_01M37NVE0VNBP5FW9THK6D0B42",
+      "type": "custom",
+      "title": "KB v2.29 runbooks + overdue-kill watch (live-recomputed)",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T17:43:40.827Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "assigned",
+      "priority": "high",
+      "inputs": {},
+      "acceptance": [
+        "≥5 new runbook entries RB-190+ on round-28 events, committed to kb.json on the kb-v2-draft branch only (main untouched)",
+        "overdue-kill figures recomputed LIVE from ledger state_history timestamps at check time — never copied from a prior log",
+        "memory claims written, pushed, L1 anchored and verified",
+        "all artifacts delivered in ONE task deliver call"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-23T17:43:40.828Z",
+          "by": "agent:MUSE_CWI"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-23T18:45:00Z"
     }
   ],
   "presence": {
@@ -14131,6 +14161,11 @@
       "op": "task.create",
       "at": "2026-09-23T17:43:15.679Z",
       "ref": "tsk_01M37NTNEZ7B6QSBYT7D6K97S4"
+    },
+    "sweep-r29-care-2026-09-23": {
+      "op": "task.create",
+      "at": "2026-09-23T17:43:40.828Z",
+      "ref": "tsk_01M37NVE0VNBP5FW9THK6D0B42"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
