@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 15481,
-  "updated_at": "2026-09-23T18:57:42.708Z",
+  "version": 15482,
+  "updated_at": "2026-09-23T18:58:17.989Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -13318,7 +13318,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T18:44:11.445Z",
       "assigned_to": "agent:CWI_Care",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -13326,8 +13326,21 @@
         "draft branch only, main untouched",
         "overdue-kill figures recomputed live from ledger state_history, never copied"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M37T3Z8QK5W79RNX260Y0H7M",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/support/repo/kb.json",
+          "sha256": "1f4a351d6235cfea792910fbcdce6ea9766eed3cad66a0e831b93aedf778da90"
+        },
+        {
+          "artifact_id": "art_01M37T3Z8VJQ65QGXZFKSZFZ48",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/run-2026-09-23-1440-care-r30.md",
+          "sha256": "e0515c2b08c8517a606333e0d517dc32f731be57cc5982238d398cb445eafcbd"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/cwi-company/support/repo/kb.json",
       "state_history": [
         {
           "from": "created",
@@ -13342,6 +13355,13 @@
           "at": "2026-09-23T18:53:15.126Z",
           "by": "agent:CWI_Care",
           "note": "activation sweep 2026-09-23 r30: KB v2.30 + overdue-kill watch"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-23T18:58:17.988Z",
+          "by": "agent:CWI_Care",
+          "note": "activation sweep r30"
         }
       ],
       "requires_black_approval": false,
