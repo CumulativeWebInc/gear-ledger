@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 15910,
-  "updated_at": "2026-09-23T21:43:43.995Z",
+  "version": 15911,
+  "updated_at": "2026-09-23T21:43:47.547Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -14165,6 +14165,37 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-23T18:45:00-04:00"
+    },
+    {
+      "task_id": "tsk_01M383K32TPE815M3W9GJG8EVA",
+      "type": "custom",
+      "title": "Sweep round-33: KB v2.33 runbooks + overdue-kill watch (live-recomputed)",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T21:43:47.546Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "KB v2.33 draft branch has >=5 new runbook entries on r32 events",
+        "overdue-kill figures recomputed live from ledger state_history, never copied",
+        "run log in activation-sweep dir",
+        "delivered inside kill"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-23T21:43:47.547Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep r33; KB draft-only, no live publish, no merge"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-23T18:45:00-04:00"
     }
   ],
   "presence": {
@@ -15393,6 +15424,11 @@
       "op": "task.create",
       "at": "2026-09-23T21:43:29.203Z",
       "ref": "tsk_01M383JH5K8G8XFRB4C9JXRE57"
+    },
+    "sweep-r33-care-2026-09-23": {
+      "op": "task.create",
+      "at": "2026-09-23T21:43:47.547Z",
+      "ref": "tsk_01M383K32TPE815M3W9GJG8EVA"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
