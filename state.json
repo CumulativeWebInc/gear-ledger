@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 13884,
-  "updated_at": "2026-09-23T08:47:12.970Z",
+  "version": 13885,
+  "updated_at": "2026-09-23T08:47:43.189Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -7768,7 +7768,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-22T21:47:22.978Z",
       "assigned_to": "agent:CWI_Visual",
-      "state": "in_progress",
+      "state": "cancelled",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -7793,6 +7793,13 @@
           "to": "in_progress",
           "at": "2026-09-22T21:52:39.094Z",
           "by": "agent:CWI_Visual"
+        },
+        {
+          "from": "in_progress",
+          "to": "cancelled",
+          "at": "2026-09-23T08:47:43.189Z",
+          "by": "agent:MUSE_CWI",
+          "note": "Kill-rule adjudication 2026-09-23 05:01 EDT: 20:00 ET 9/22 kill tripped ~9h with no output. Dependency Atelier r8 (tsk_01M35DX2RMAN322QYQZZ1WW6NK) cancelled in the same adjudication for zero output — gate purpose moot. Per in-between doctrine, change the actions: Iris re-dispatched to gate the TAG CITY composition proof-shot render (new task) instead of a dead round's dossier."
         }
       ],
       "requires_black_approval": true,
