@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 14039,
-  "updated_at": "2026-09-23T09:46:07.544Z",
+  "version": 14040,
+  "updated_at": "2026-09-23T09:46:14.343Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -10844,6 +10844,29 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-23T10:45:00Z"
+    },
+    {
+      "task_id": "tsk_01M36TH6Y52BPZK1G318200M7Y",
+      "type": "content.draft",
+      "title": "Guide round-21: Guide v2.20 ops chapter + walkthrough #22",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T09:46:14.343Z",
+      "assigned_to": null,
+      "state": "created",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "ops chapter folds round-20 cycle with ledger-verified receipts",
+        "walkthrough #22 all PASS with receipts",
+        "standing flags current",
+        "zero fabricated handoffs"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-23T10:45:00Z"
     }
   ],
   "presence": {
@@ -11777,6 +11800,11 @@
       "op": "task.create",
       "at": "2026-09-23T09:45:59.595Z",
       "ref": "tsk_01M36TGRHAPW1SFVWT0FBFX9G8"
+    },
+    "sweep-r21-guide-2026-09-23": {
+      "op": "task.create",
+      "at": "2026-09-23T09:46:14.343Z",
+      "ref": "tsk_01M36TH6Y52BPZK1G318200M7Y"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
