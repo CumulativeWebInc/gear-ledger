@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 14172,
-  "updated_at": "2026-09-23T10:42:52.754Z",
+  "version": 14173,
+  "updated_at": "2026-09-23T10:43:02.422Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -11064,6 +11064,38 @@
       ],
       "requires_black_approval": false,
       "sample": false
+    },
+    {
+      "task_id": "tsk_01M36XS74NAEBZ1XNTHE5T4SQP",
+      "type": "custom",
+      "title": "Results round-22: dashboard refresh + TAG CITY proof-shot watch",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T10:43:02.421Z",
+      "assigned_to": "agent:CWI_Results",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "results.json refreshed from a live distribution pull (GitHub traffic, HF, trust-log claims)",
+        "honest zero stated plainly if verified zero",
+        "TAG CITY round-2 proof-shot delivery evidence noted",
+        "ledger delivery via task deliver with kind|uri artifacts",
+        "memory.js writeshared claims filed"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-23T10:43:02.422Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep r22 2026-09-23"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-23T11:45:00Z"
     }
   ],
   "presence": {
@@ -12012,6 +12044,11 @@
       "op": "task.create",
       "at": "2026-09-23T09:46:43.504Z",
       "ref": "tsk_01M36TJ3D2PC93W5YGG8Q8QKNV"
+    },
+    "sweep-r22-results": {
+      "op": "task.create",
+      "at": "2026-09-23T10:43:02.422Z",
+      "ref": "tsk_01M36XS74NAEBZ1XNTHE5T4SQP"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
