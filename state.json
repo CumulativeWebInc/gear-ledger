@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 14178,
-  "updated_at": "2026-09-23T10:43:53.446Z",
+  "version": 14179,
+  "updated_at": "2026-09-23T10:44:14.129Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -11128,6 +11128,38 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-23T11:45:00Z"
+    },
+    {
+      "task_id": "tsk_01M36XVD5HAAYEWS0BYJZV23YJ",
+      "type": "custom",
+      "title": "Guide round-22: Guide v2.21 ops chapter + walkthrough 23",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T10:44:14.129Z",
+      "assigned_to": "agent:CWI_Guide",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "Guide bumped to v2.21 with ops chapter update",
+        "walkthrough 23 PASS/FAIL vs live ledger receipts",
+        "all artifact hashes verified as sha256hex(URI-STRING), never file bytes",
+        "ledger delivery via task deliver with kind|uri artifacts",
+        "memory.js writeshared claims filed"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-23T10:44:14.129Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep r22 2026-09-23"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-23T11:45:00Z"
     }
   ],
   "presence": {
@@ -12086,6 +12118,11 @@
       "op": "task.create",
       "at": "2026-09-23T10:43:45.651Z",
       "ref": "tsk_01M36XTHBKGTBFG2JJTRMG9233"
+    },
+    "sweep-r22-guide": {
+      "op": "task.create",
+      "at": "2026-09-23T10:44:14.129Z",
+      "ref": "tsk_01M36XVD5HAAYEWS0BYJZV23YJ"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
