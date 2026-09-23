@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 14983,
-  "updated_at": "2026-09-23T15:52:17.434Z",
+  "version": 14984,
+  "updated_at": "2026-09-23T15:52:26.947Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -12598,7 +12598,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T15:44:44.326Z",
       "assigned_to": "agent:CWI_Athena_MINT",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "high",
       "inputs": {},
       "acceptance": [
@@ -12608,8 +12608,27 @@
         "HARD: zero new clips, zero batching, zero launch, zero external posts",
         "delivered by 16:45:00Z"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M37FFGSGN8KWT1DDJ10ZBHB7",
+          "kind": "report",
+          "uri": "workspace://cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-23-r27.md",
+          "sha256": "e37b2292d341daf985b58a6fdb9459e49adad79f590d28ca6bbbb8f6b084b15e"
+        },
+        {
+          "artifact_id": "art_01M37FFGSHFX2KZAHRNB7J8EB3",
+          "kind": "report",
+          "uri": "workspace://goals/cwi-agent-company/hidden_files/activation-sweep/run-2026-09-23-1140-mint-r27.md",
+          "sha256": "b35d6500614b71daee47952cce9a583d5168bab013b986ef783002bc9f63efa7"
+        },
+        {
+          "artifact_id": "art_01M37FFGSHC9WTEZ7F26FY22PC",
+          "kind": "scan",
+          "uri": "workspace://cwi-company/catalog-artwork/2026-09-17/manifest.json",
+          "sha256": "132c33269e3795c7d33c6460c70dde627cef8fb029905ce458988216306e2893"
+        }
+      ],
+      "deliverable_ref": "workspace://cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-23-r27.md",
       "state_history": [
         {
           "from": "created",
@@ -12621,6 +12640,12 @@
           "from": "assigned",
           "to": "in_progress",
           "at": "2026-09-23T15:47:46.291Z",
+          "by": "agent:CWI_Athena_MINT"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-23T15:52:26.947Z",
           "by": "agent:CWI_Athena_MINT"
         }
       ],
