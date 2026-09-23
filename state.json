@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 13433,
-  "updated_at": "2026-09-23T05:49:48.697Z",
+  "version": 13434,
+  "updated_at": "2026-09-23T05:51:27.705Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -9523,7 +9523,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T05:43:42.403Z",
       "assigned_to": "agent:CWI_Results",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -9538,8 +9538,15 @@
         "results.json published to CumulativeWebInc/cwi-results with ledger-verified receipts",
         "All numbers verified on disk + live ledger, nothing fabricated"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M36D397YN68910YA4P7RM5HJ",
+          "kind": "report",
+          "uri": "https://cumulativewebinc.github.io/cwi-results/results.json",
+          "sha256": "23161622a049f91a85763e086186be9f95a91faa0fde4c7098ab65bef5c8033d"
+        }
+      ],
+      "deliverable_ref": "https://cumulativewebinc.github.io/cwi-results/results.json",
       "state_history": [
         {
           "from": "created",
@@ -9552,6 +9559,12 @@
           "from": "assigned",
           "to": "in_progress",
           "at": "2026-09-23T05:46:35.366Z",
+          "by": "agent:CWI_Results"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-23T05:51:27.705Z",
           "by": "agent:CWI_Results"
         }
       ],
