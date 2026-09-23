@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 14483,
-  "updated_at": "2026-09-23T12:44:49.700Z",
+  "version": 14484,
+  "updated_at": "2026-09-23T12:45:05.138Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -11703,6 +11703,39 @@
       "requires_black_approval": true,
       "sample": false,
       "deadline_at": "2026-09-23T13:45:00Z"
+    },
+    {
+      "task_id": "tsk_01M374RP7HD2BYZ7SYVEKRCWMJ",
+      "type": "custom",
+      "title": "ACTIVATION r24: MINT taps-check + kill-trigger attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T12:45:05.137Z",
+      "assigned_to": "agent:CWI_Athena_MINT",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "4/4 taps re-verified (hashes recomputed live, never copied)",
+        "approvals array checked live",
+        "8/8 clips ffprobe-verified",
+        "addendum r24 staged",
+        "HARD: zero new clips, /bin/bash, no publishing",
+        "delivered via task deliver --by <URN> with kind|uri artifact + --report before 13:45:00Z"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-23T12:45:05.138Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-23 0845 ET"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-23T13:45:00Z"
     }
   ],
   "presence": {
@@ -12716,6 +12749,11 @@
       "op": "task.create",
       "at": "2026-09-23T12:44:37.292Z",
       "ref": "tsk_01M374QV1BXQXK5EZQRBBQE32R"
+    },
+    "sweep-r24-mint": {
+      "op": "task.create",
+      "at": "2026-09-23T12:45:05.138Z",
+      "ref": "tsk_01M374RP7HD2BYZ7SYVEKRCWMJ"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
