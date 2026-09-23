@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 15150,
-  "updated_at": "2026-09-23T16:51:22.242Z",
+  "version": 15151,
+  "updated_at": "2026-09-23T16:52:19.566Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -12733,7 +12733,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T16:44:42.129Z",
       "assigned_to": "agent:CWI_Care",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -12741,8 +12741,21 @@
         "new runbook entries for lessons since v2.27",
         "ledger delivered by 17:45:00Z"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M37JXAVH2CPMM8HC0JPKJ8ZD",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/support/repo/kb.json",
+          "sha256": "1f4a351d6235cfea792910fbcdce6ea9766eed3cad66a0e831b93aedf778da90"
+        },
+        {
+          "artifact_id": "art_01M37JXAVJ2E93V2P3MSN0KCXR",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/run-2026-09-23-1240-care-r28.md",
+          "sha256": "e2af13fc5765f8e25bc6266856e501b836c557ac8d22eb074c5c49549a38849a"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/cwi-company/support/repo/kb.json",
       "state_history": [
         {
           "from": "created",
@@ -12756,6 +12769,12 @@
           "at": "2026-09-23T16:49:30.007Z",
           "by": "agent:CWI_Care",
           "note": "activation sweep 2026-09-23"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-23T16:52:19.566Z",
+          "by": "agent:CWI_Care"
         }
       ],
       "requires_black_approval": true,
