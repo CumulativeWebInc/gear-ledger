@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 12868,
-  "updated_at": "2026-09-23T02:42:55.122Z",
+  "version": 12869,
+  "updated_at": "2026-09-23T02:42:59.504Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -8881,6 +8881,39 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-22T23:30:00-04:00"
+    },
+    {
+      "task_id": "tsk_01M362A79FX166M762XFRF334D",
+      "type": "build",
+      "title": "Sweep round-14: dashboard refresh - round-13 receipts re-verified + fresh distribution pull",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T02:42:59.503Z",
+      "assigned_to": "agent:CWI_Results",
+      "state": "assigned",
+      "priority": "high",
+      "inputs": {},
+      "acceptance": [
+        "round-13 receipts (Results/Care/Guide/MINT deliveries) re-verified on live ledger",
+        "fresh distribution pull (GitHub traffic + HF download counts)",
+        "honest hero count (Lane C funnel protocol-passing equips only",
+        "honest zero honored)",
+        "results.json published to CumulativeWebInc/cwi-results with metric_external_equips",
+        "all numbers verified, nothing fabricated"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-23T02:42:59.504Z",
+          "by": "agent:MUSE_CWI",
+          "note": "Kill rule: no ledger-verified delivered by 2026-09-23T00:30:00-04:00 -> close + record blocker. Carve-outs absolute: no spending, no wallet signing, no external publishing beyond cwi-results repo, nothing under Black's name."
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-23T00:30:00-04:00"
     }
   ],
   "presence": {
@@ -9659,6 +9692,11 @@
       "op": "task.create",
       "at": "2026-09-23T01:45:02.888Z",
       "ref": "tsk_01M35Z04582ATNPJFAS057F9YG"
+    },
+    "activation-sweep-2026-09-22-r14-results": {
+      "op": "task.create",
+      "at": "2026-09-23T02:42:59.504Z",
+      "ref": "tsk_01M362A79FX166M762XFRF334D"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
