@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 14051,
-  "updated_at": "2026-09-23T09:49:44.450Z",
+  "version": 14052,
+  "updated_at": "2026-09-23T09:49:52.710Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -10602,7 +10602,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T09:04:10.849Z",
       "assigned_to": "agent:CWI_Visual",
-      "state": "assigned",
+      "state": "in_progress",
       "priority": "urgent",
       "inputs": {},
       "acceptance": [
@@ -10622,6 +10622,13 @@
           "at": "2026-09-23T09:04:10.850Z",
           "by": "agent:MUSE_CWI",
           "note": "Binding: Black rejected the 3-angle proof set pre-gate. Prior gate task tsk_01M36Q7CR7E3GM0R33PDXWDJAK cancelled as moot. This task produces the WHY: measured deltas vs the 7 checkable gates in the brief."
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-23T09:49:52.710Z",
+          "by": "agent:CWI_Visual",
+          "note": "r21 visual self-start"
         }
       ],
       "requires_black_approval": false,
