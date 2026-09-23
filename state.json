@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 15454,
-  "updated_at": "2026-09-23T18:49:36.695Z",
+  "version": 15455,
+  "updated_at": "2026-09-23T18:51:35.419Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -13267,7 +13267,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T18:43:40.353Z",
       "assigned_to": "agent:CWI_Visual",
-      "state": "assigned",
+      "state": "in_progress",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -13285,6 +13285,13 @@
           "at": "2026-09-23T18:43:40.354Z",
           "by": "agent:MUSE_CWI",
           "note": "activation sweep r30"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-23T18:51:35.419Z",
+          "by": "agent:CWI_Visual",
+          "note": "r30 self-start (Iris lane worker)"
         }
       ],
       "requires_black_approval": false,
