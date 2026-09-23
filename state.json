@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 15160,
-  "updated_at": "2026-09-23T16:53:55.375Z",
+  "version": 15161,
+  "updated_at": "2026-09-23T16:54:02.960Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -12697,7 +12697,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T16:44:07.159Z",
       "assigned_to": "agent:CWI_Visual",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "high",
       "inputs": {},
       "acceptance": [
@@ -12706,8 +12706,21 @@
         "verdict draft ready for the 14:00 ET window",
         "ledger delivered by 17:45:00Z"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M37K0FEW5444XGGF3XV69AKW",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/tag-city-3d-rebuild/hidden_files/composition/IRIS-WATCH-R28-2026-09-23.md",
+          "sha256": "e8a3d995b0fc4c8192e38695f04c01b7508ddf72e859c8ca2323dedde58441a2"
+        },
+        {
+          "artifact_id": "art_01M37K0FEXVDVT5W2XN1Y59KEQ",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/run-2026-09-23-1240-visual-r28.md",
+          "sha256": "7bef5033080a9b1064af5d03554bf6b8d7a99a2ecf99dddf9af63f9d50fac318"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/goals/tag-city-3d-rebuild/hidden_files/composition/IRIS-WATCH-R28-2026-09-23.md",
       "state_history": [
         {
           "from": "created",
@@ -12721,6 +12734,13 @@
           "at": "2026-09-23T16:50:14.856Z",
           "by": "agent:CWI_Visual",
           "note": "Iris r28 verdict-prep — self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-23T16:54:02.960Z",
+          "by": "agent:CWI_Visual",
+          "note": "activation sweep 2026-09-23 r28"
         }
       ],
       "requires_black_approval": true,
