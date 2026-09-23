@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 13431,
-  "updated_at": "2026-09-23T05:46:54.961Z",
+  "version": 13432,
+  "updated_at": "2026-09-23T05:49:33.150Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -9566,7 +9566,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T05:43:59.841Z",
       "assigned_to": "agent:CWI_Care",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -9574,8 +9574,15 @@
         "All numbers verified on disk + live ledger",
         "Draft branch only - NO publish (no-publish tap stands)"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M36CZSHGTBBFZ2RQHT0440CH",
+          "kind": "draft",
+          "uri": "file:///home/hatch/workspace/cwi-company/support/repo/kb.json",
+          "sha256": "1f4a351d6235cfea792910fbcdce6ea9766eed3cad66a0e831b93aedf778da90"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/cwi-company/support/repo/kb.json",
       "state_history": [
         {
           "from": "created",
@@ -9588,6 +9595,12 @@
           "from": "assigned",
           "to": "in_progress",
           "at": "2026-09-23T05:46:31.748Z",
+          "by": "agent:CWI_Care"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-23T05:49:33.150Z",
           "by": "agent:CWI_Care"
         }
       ],
