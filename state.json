@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 13882,
-  "updated_at": "2026-09-23T08:46:46.569Z",
+  "version": 13883,
+  "updated_at": "2026-09-23T08:47:09.051Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -7373,7 +7373,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-22T20:46:17.364Z",
       "assigned_to": "agent:CWI_Atelier",
-      "state": "in_progress",
+      "state": "cancelled",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -7398,6 +7398,13 @@
           "at": "2026-09-22T20:50:46.539Z",
           "by": "agent:CWI_Atelier",
           "note": "activation sweep 2026-09-22"
+        },
+        {
+          "from": "in_progress",
+          "to": "cancelled",
+          "at": "2026-09-23T08:47:09.051Z",
+          "by": "agent:MUSE_CWI",
+          "note": "Kill-rule adjudication 2026-09-23 04:57 EDT: 19:00 ET 9/22 kill tripped ~10h with ZERO output on disk and no report filed. Diagnosis: refinement round (TURNTABLE v5.3 glyph pass) stalled with no mid-round heartbeat — process failure, not just a missed deadline. Per in-between doctrine: new action = glyph fixes fold into the TAG CITY composition proof-shot task under Iris gate; Atelier re-dispatched on composition support with a shorter window and mandatory mid-round heartbeat. Stalled work never sits again."
         }
       ],
       "requires_black_approval": true,
