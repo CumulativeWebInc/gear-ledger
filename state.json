@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 12743,
-  "updated_at": "2026-09-23T01:44:56.541Z",
+  "version": 12744,
+  "updated_at": "2026-09-23T01:44:59.338Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -8720,6 +8720,37 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-22T23:30:00-04:00"
+    },
+    {
+      "task_id": "tsk_01M35Z00PARSQ0K0W5CK5VQD64",
+      "type": "content.draft",
+      "title": "Sweep round-13: Guide v2.12 + walkthrough #14",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T01:44:59.338Z",
+      "assigned_to": "agent:CWI_Guide",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "ops chapter folds the 20:40 round-12 cycle with receipts ledger-verified",
+        "walkthrough #14 executed, all PASS with receipts (any FAIL recorded honestly, none fabricated)",
+        "standing flags current (URI-hash rule, unfired Atelier/Tween r8 and Visual/Volt r9 kills)",
+        "zero fabricated handoffs"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-23T01:44:59.338Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-22 21:40 EDT round-13"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-22T23:30:00-04:00"
     }
   ],
   "presence": {
@@ -9488,6 +9519,11 @@
       "op": "task.create",
       "at": "2026-09-23T01:44:56.541Z",
       "ref": "tsk_01M35YZXYWXY74AZ1Q3C7G70TM"
+    },
+    "activation-sweep-2026-09-22-r13-guide": {
+      "op": "task.create",
+      "at": "2026-09-23T01:44:59.338Z",
+      "ref": "tsk_01M35Z00PARSQ0K0W5CK5VQD64"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
