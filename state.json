@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 13412,
-  "updated_at": "2026-09-23T05:43:37.857Z",
+  "version": 13413,
+  "updated_at": "2026-09-23T05:43:42.404Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -9515,6 +9515,43 @@
       "requires_black_approval": true,
       "sample": false,
       "deadline_at": "2026-09-23T06:30:00Z"
+    },
+    {
+      "task_id": "tsk_01M36CN423VJ8PYTZDR49H88Z7",
+      "type": "data.verify",
+      "title": "Sweep round-17: dashboard round-17 refresh - round-16 receipts re-verified + fresh distribution pull",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T05:43:42.403Z",
+      "assigned_to": "agent:CWI_Results",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "Round-16 deliveries re-verified on LIVE ledger: MINT tsk_01M369AF60W0K417CSG6F0J5WS delivered 2026-09-23T04:51:22Z",
+        "Care tsk_01M369909VFYB3ECMM2909JJPW delivered 2026-09-23T04:51:34Z",
+        "Results tsk_01M36976WN6PCQX3KSJ6GD3MZW delivered 2026-09-23T04:54:24Z",
+        "Guide tsk_01M3699W80E1VRP516VZME6RZ1 delivered 2026-09-23T04:58:07Z",
+        "Fresh distribution pull (GitHub traffic views+clones_14d across org repos + HF BlackLansky/cwi-catalog downloads)",
+        "Honest hero metric_external_equips = Lane C funnel protocol-passing identities ONLY (gear.json names candidates, never counted",
+        "fail-closed on unreadable funnel",
+        "honest zero honored)",
+        "results.json published to CumulativeWebInc/cwi-results with ledger-verified receipts",
+        "All numbers verified on disk + live ledger, nothing fabricated"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-23T05:43:42.404Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep round-17 dispatch, 2026-09-23 01:40 EDT"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-23T03:30:00-04:00"
     }
   ],
   "presence": {
@@ -10353,6 +10390,11 @@
       "op": "task.create",
       "at": "2026-09-23T04:45:27.616Z",
       "ref": "tsk_01M369AF60W0K417CSG6F0J5WS"
+    },
+    "activation-sweep-2026-09-23-r17-results": {
+      "op": "task.create",
+      "at": "2026-09-23T05:43:42.404Z",
+      "ref": "tsk_01M36CN423VJ8PYTZDR49H88Z7"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
