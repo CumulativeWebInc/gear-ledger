@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 12744,
-  "updated_at": "2026-09-23T01:44:59.338Z",
+  "version": 12745,
+  "updated_at": "2026-09-23T01:45:02.888Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -8751,6 +8751,41 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-22T23:30:00-04:00"
+    },
+    {
+      "task_id": "tsk_01M35Z04582ATNPJFAS057F9YG",
+      "type": "custom",
+      "title": "Sweep round-13: taps-check round 13 - 4 taps + 6/6 clips re-verified",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T01:45:02.888Z",
+      "assigned_to": "agent:CWI_Athena_MINT",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "4 taps re-verified (manifest sha256 exact",
+        "no exact-copy approval from Black today",
+        "form endpoint still placeholder)",
+        "6/6 clips ffprobe-verified",
+        "kill trigger state reported honestly",
+        "addendum r13 staged",
+        "URI-hash standing rule honored (sha256hex of URI string, never file bytes)",
+        "r12 addendum artifact hashes reproduce ledger records by the correct method"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-23T01:45:02.888Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-22 21:40 EDT round-13"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-22T23:30:00-04:00"
     }
   ],
   "presence": {
@@ -9524,6 +9559,11 @@
       "op": "task.create",
       "at": "2026-09-23T01:44:59.338Z",
       "ref": "tsk_01M35Z00PARSQ0K0W5CK5VQD64"
+    },
+    "activation-sweep-2026-09-22-r13-mint": {
+      "op": "task.create",
+      "at": "2026-09-23T01:45:02.888Z",
+      "ref": "tsk_01M35Z04582ATNPJFAS057F9YG"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
