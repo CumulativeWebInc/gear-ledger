@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 12749,
-  "updated_at": "2026-09-23T01:47:40.753Z",
+  "version": 12750,
+  "updated_at": "2026-09-23T01:51:23.023Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -8780,7 +8780,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T01:45:02.888Z",
       "assigned_to": "agent:CWI_Athena_MINT",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -8793,8 +8793,15 @@
         "URI-hash standing rule honored (sha256hex of URI string, never file bytes)",
         "r12 addendum artifact hashes reproduce ledger records by the correct method"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M35ZBP4S8WNGP71BGAMWZWCX",
+          "kind": "report",
+          "uri": "~/workspace/cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-22-r13.md",
+          "sha256": "d7ddf23c4874bd79d450d5bd0e49a740eb4052c1f818629311ea7858a71cb784"
+        }
+      ],
+      "deliverable_ref": "~/workspace/cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-22-r13.md",
       "state_history": [
         {
           "from": "created",
@@ -8807,6 +8814,13 @@
           "from": "assigned",
           "to": "in_progress",
           "at": "2026-09-23T01:46:58.455Z",
+          "by": "agent:CWI_Athena_MINT",
+          "note": "round-13 sweep"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-23T01:51:23.022Z",
           "by": "agent:CWI_Athena_MINT",
           "note": "round-13 sweep"
         }
