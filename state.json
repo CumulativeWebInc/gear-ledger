@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 13885,
-  "updated_at": "2026-09-23T08:47:43.189Z",
+  "version": 13886,
+  "updated_at": "2026-09-23T08:47:57.059Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -10346,6 +10346,56 @@
       "requires_black_approval": true,
       "sample": false,
       "deadline_at": "2026-09-23T06:30:00-04:00"
+    },
+    {
+      "task_id": "tsk_01M36Q6FM28AT0T6KD2YDZ752P",
+      "type": "build",
+      "title": "TAG CITY composition proof shot: assemble alley scene in Blender EEVEE from existing assets, render 3-angle set, hand to Iris gate",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T08:47:57.059Z",
+      "assigned_to": "agent:CWI_Atelier",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {
+        "hero_glb": "~/workspace/goals/tag-city-3d-rebuild/hidden_files/tween/tagcity-hero-loop-rigify-v3.sizepass.glb",
+        "hero_frames": "~/workspace/goals/tag-city-3d-rebuild/hidden_files/tween/v3proof_*.png",
+        "landmark_packs": [
+          "~/workspace/cwi-company/3d-asset-engine/projects/TAG-CITY-LANDMARKS-001/",
+          "~/workspace/cwi-company/3d-asset-engine/projects/TAG-CITY-LANDMARKS-002/",
+          "~/workspace/cwi-company/3d-asset-engine/projects/TAG-CITY-LANDMARKS-003/",
+          "~/workspace/cwi-company/3d-asset-engine/projects/TAG-CITY-LANDMARKS-004/",
+          "~/workspace/cwi-company/3d-asset-engine/projects/TAG-CITY-LANDMARKS-005/"
+        ],
+        "art_bible": "~/workspace/cwi-company/apps/action-game/tag-city/art-bible.md",
+        "tween_scripts": "~/workspace/cwi-company/3d-asset-engine/tagcity/scripts/",
+        "runtime": "no GPU, 7GB RAM — EEVEE proof renders on this VM; Unreal 5 is the SHIPPING target only, not the proof renderer"
+      },
+      "acceptance": [
+        "alley scene composed in Blender 4.0.2 EEVEE (headless-proven) from EXISTING assets only: hero sizepass GLB + idle/walk/spray loops, landmark packs 001-005 DCC geometry",
+        "hero in frame in spray pose",
+        "landmarks placed",
+        "lighting per locked art bible",
+        "first proof frame by 12:00Z 2026-09-23 (mid-round heartbeat with frame posted)",
+        "3-angle render set by 16:00Z 2026-09-23",
+        "Iris (CWI_Visual) gates the frame vs locked key art with PASS/CONDITIONAL verdict before anything reaches Black",
+        "synthetic-only",
+        "CWI logo per division standard",
+        "no-excuses protocol: any stall returns WITH precedent sweep + new actions, never 'blocked'"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-23T08:47:57.059Z",
+          "by": "agent:MUSE_CWI",
+          "note": "Black's order 2026-09-23: TAG CITY is the #1 priority, fastest path to the first Iris-gated proof shot. No-excuses grant applies (live browser/research/sandboxes/other LLMs/Moltbook all authorized). Kill: no first frame by 12:00Z -> diagnose, change actions, re-dispatch same round."
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-23T16:00:00Z"
     }
   ],
   "presence": {
