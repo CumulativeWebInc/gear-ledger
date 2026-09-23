@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 13701,
-  "updated_at": "2026-09-23T07:43:51.786Z",
+  "version": 13702,
+  "updated_at": "2026-09-23T07:44:01.392Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -10020,6 +10020,37 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-23T05:30:00-04:00"
+    },
+    {
+      "task_id": "tsk_01M36KHDVFJ7GEFCM4JNQ6GM7A",
+      "type": "content.draft",
+      "title": "Guide v2.18: ops chapter folds round-18 cycle with ledger-verified receipts",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T07:44:01.392Z",
+      "assigned_to": "agent:CWI_Guide",
+      "state": "assigned",
+      "priority": "high",
+      "inputs": {},
+      "acceptance": [
+        "Guide v2.18 ops chapter folds the round-18 cycle with ledger-verified receipts for all 4 round-18 deliveries",
+        "walkthrough #20 runs ALL PASS with receipts (any FAIL recorded honestly, zero fabricated handoffs)",
+        "standing flags current (MINT kill trigger state, overdue-kill watch elapsed recomputed live from state_history)",
+        "no fabricated content anywhere"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-23T07:44:01.392Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-23; kill rule: no ledger-verified delivered by 2026-09-23T05:30:00-04:00 -> close task and record blocker; carve-outs absolute"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-23T05:30:00-04:00"
     }
   ],
   "presence": {
@@ -10913,6 +10944,11 @@
       "op": "task.create",
       "at": "2026-09-23T07:43:37.213Z",
       "ref": "tsk_01M36KGP7XNSQK9GDZP156K8FE"
+    },
+    "activation-sweep-r19-guide-20260923": {
+      "op": "task.create",
+      "at": "2026-09-23T07:44:01.392Z",
+      "ref": "tsk_01M36KHDVFJ7GEFCM4JNQ6GM7A"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
