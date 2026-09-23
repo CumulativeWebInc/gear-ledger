@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 13917,
-  "updated_at": "2026-09-23T08:56:00.802Z",
+  "version": 13918,
+  "updated_at": "2026-09-23T08:56:08.417Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -10409,7 +10409,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T08:47:57.059Z",
       "assigned_to": "agent:CWI_Atelier",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {
         "hero_glb": "~/workspace/goals/tag-city-3d-rebuild/hidden_files/tween/tagcity-hero-loop-rigify-v3.sizepass.glb",
@@ -10437,8 +10437,27 @@
         "CWI logo per division standard",
         "no-excuses protocol: any stall returns WITH precedent sweep + new actions, never 'blocked'"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M36QNE3R99AXQGJNY5DEFDP9",
+          "kind": "image",
+          "uri": "workspace://goals/tag-city-3d-rebuild/hidden_files/composition/proof_angle1.png",
+          "sha256": "fe60948e603972ee5cf89ed38b509a67179cf34ebadbbf663fc9b42453a1d22e"
+        },
+        {
+          "artifact_id": "art_01M36QNE3SFFPAKN8N1N610B4W",
+          "kind": "image",
+          "uri": "workspace://goals/tag-city-3d-rebuild/hidden_files/composition/proof_angle2.png",
+          "sha256": "ec25ae4b8b0f5256da4f505a5b8098480c65372c517d8a32def692e2c5c7db7b"
+        },
+        {
+          "artifact_id": "art_01M36QNE3T2YHX1163MRMGH72T",
+          "kind": "image",
+          "uri": "workspace://goals/tag-city-3d-rebuild/hidden_files/composition/proof_angle3.png",
+          "sha256": "9456f1fcbc6be12fbcfa8b30e6e7b761f6adca6c38fac25ea56843f12ce2ef5e"
+        }
+      ],
+      "deliverable_ref": "workspace://goals/tag-city-3d-rebuild/hidden_files/composition/proof_angle1.png",
       "state_history": [
         {
           "from": "created",
@@ -10453,6 +10472,12 @@
           "at": "2026-09-23T08:48:35.540Z",
           "by": "agent:CWI_Atelier",
           "note": "Atelier composition crew started 04:48 EDT. First proof frame target 12:00Z; 3-angle set by 16:00Z."
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-23T08:56:08.416Z",
+          "by": "agent:CWI_Atelier"
         }
       ],
       "requires_black_approval": false,
