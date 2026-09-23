@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 14176,
-  "updated_at": "2026-09-23T10:43:42.155Z",
+  "version": 14177,
+  "updated_at": "2026-09-23T10:43:45.651Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -11096,6 +11096,38 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-23T11:45:00Z"
+    },
+    {
+      "task_id": "tsk_01M36XTHBKGTBFG2JJTRMG9233",
+      "type": "custom",
+      "title": "Care round-22: KB v2.21 runbooks + overdue-kill watch",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T10:43:45.651Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "KB bumped to v2.21 on a draft branch only, no publish",
+        "new runbooks for r22 findings",
+        "overdue-kill watch RECOMPUTED LIVE from ledger state_history timestamps -- never copy elapsed figures from prior logs",
+        "ledger delivery via task deliver with kind|uri artifacts",
+        "memory.js writeshared claims filed"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-23T10:43:45.651Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep r22 2026-09-23"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-23T11:45:00Z"
     }
   ],
   "presence": {
@@ -12049,6 +12081,11 @@
       "op": "task.create",
       "at": "2026-09-23T10:43:02.422Z",
       "ref": "tsk_01M36XS74NAEBZ1XNTHE5T4SQP"
+    },
+    "sweep-r22-care": {
+      "op": "task.create",
+      "at": "2026-09-23T10:43:45.651Z",
+      "ref": "tsk_01M36XTHBKGTBFG2JJTRMG9233"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
