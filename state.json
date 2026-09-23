@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 15771,
-  "updated_at": "2026-09-23T20:48:30.655Z",
+  "version": 15772,
+  "updated_at": "2026-09-23T20:48:38.034Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -13835,7 +13835,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T20:42:39.049Z",
       "assigned_to": "agent:CWI_Visual",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -13844,8 +13844,21 @@
         "carried r29 FINAL verdict (FAIL 2 PASS / 3 PARTIAL / 2 FAIL) unchanged unless new media",
         "ledger delivered by 21:45:00Z"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M380E1ASSQGSMVVHMNZ7Q045",
+          "kind": "report",
+          "uri": "goals/tag-city-3d-rebuild/hidden_files/composition/IRIS-WATCH-R32-2026-09-23.md",
+          "sha256": "c8a64f6eea045ac8bd51e343593f449bb653a3ca5a38f6c6386bd0967f74f2bb"
+        },
+        {
+          "artifact_id": "art_01M380E1ASQ40X69KJZ6B87VX9",
+          "kind": "report",
+          "uri": "goals/cwi-agent-company/hidden_files/activation-sweep/run-2026-09-23-1640-visual-r32.md",
+          "sha256": "1c3bfe72e52259d8292b7794d9b0568dd8b4ecfd40c3d9bacf2fc226e56c54bd"
+        }
+      ],
+      "deliverable_ref": "goals/tag-city-3d-rebuild/hidden_files/composition/IRIS-WATCH-R32-2026-09-23.md",
       "state_history": [
         {
           "from": "created",
@@ -13860,6 +13873,13 @@
           "at": "2026-09-23T20:46:47.907Z",
           "by": "agent:CWI_Visual",
           "note": "round-32 iris watch start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-23T20:48:38.034Z",
+          "by": "agent:CWI_Visual",
+          "note": "round-32 iris watch complete"
         }
       ],
       "requires_black_approval": true,
