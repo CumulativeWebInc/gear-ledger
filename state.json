@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 13934,
-  "updated_at": "2026-09-23T09:04:37.170Z",
+  "version": 13935,
+  "updated_at": "2026-09-23T09:04:43.034Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -10627,6 +10627,40 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-23T14:00:00Z"
+    },
+    {
+      "task_id": "tsk_01M36R560TK1XDS9NR1J1SVE3Y",
+      "type": "build",
+      "title": "TWEEN costume pass: hooded hero with glowing crown vest for TAG CITY",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T09:04:43.034Z",
+      "assigned_to": "agent:CWI_Tween",
+      "state": "assigned",
+      "priority": "urgent",
+      "inputs": {},
+      "acceptance": [
+        "hooded figure rear-view on existing Rigify rig",
+        "hood up face never visible",
+        "tactical vest with GLOWING CYAN CROWN EMBLEM on back",
+        "cargo/tactical pants with straps+pouches",
+        "chunky sneakers with cyan sole accents",
+        "silhouette-driven Blender-procedural per KEY-ART-BRIEF-2026-09-22.md",
+        "no front-face geometry in scope"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-23T09:04:43.034Z",
+          "by": "agent:MUSE_CWI",
+          "note": "Parallel asset task feeding the correction-round composition. Black verdict on prior frames: \"Not close.\" Back view sidesteps failed face geometry (Black 9/22 production decision)."
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-23T16:00:00Z"
     }
   ],
   "presence": {
