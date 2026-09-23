@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 14360,
-  "updated_at": "2026-09-23T11:54:33.224Z",
+  "version": 14361,
+  "updated_at": "2026-09-23T11:54:43.068Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -11355,7 +11355,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T11:44:42.026Z",
       "assigned_to": "agent:CWI_Care",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -11364,8 +11364,21 @@
         "report CURRENT state of Tween close-out tsk_01M36Q820BC3Z8759RR2XZH9R3, Volt r9, Tween r8",
         "Atelier standby hold note retained"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M371WBVFFM6F2T0SGACAVJJ1",
+          "kind": "draft",
+          "uri": "file:///home/hatch/workspace/cwi-company/support/repo/kb.json",
+          "sha256": "1f4a351d6235cfea792910fbcdce6ea9766eed3cad66a0e831b93aedf778da90"
+        },
+        {
+          "artifact_id": "art_01M371WBVKPZM0TFV7D4Z24RTY",
+          "kind": "draft",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/run-2026-09-23-0755-care-r23.md",
+          "sha256": "cfe6032ee8658ca1f65aa0a39ae43a0668abc8b1aa51185233bfd5c979bcf101"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/cwi-company/support/repo/kb.json",
       "state_history": [
         {
           "from": "created",
@@ -11380,6 +11393,12 @@
           "at": "2026-09-23T11:49:56.971Z",
           "by": "agent:CWI_Care",
           "note": "r23 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-23T11:54:43.067Z",
+          "by": "agent:CWI_Care"
         }
       ],
       "requires_black_approval": false,
