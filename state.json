@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 14396,
-  "updated_at": "2026-09-23T12:06:23.481Z",
+  "version": 14397,
+  "updated_at": "2026-09-23T12:07:32.694Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -11412,7 +11412,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T11:45:18.453Z",
       "assigned_to": "agent:CWI_Guide",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -11420,8 +11420,21 @@
         "walkthrough #24 PASS/FAIL/CONDITIONAL vs LIVE ledger receipts (re-verify all artifact hashes as sha256hex(URI-STRING))",
         "no unrequested publishes"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M372KWT33K8H42HM2K442KZ4",
+          "kind": "draft",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.22.md",
+          "sha256": "709aab6a405528d37750a9026cd809a2fa73201f412c0978fe96e03a167cac20"
+        },
+        {
+          "artifact_id": "art_01M372KWT35YG84JX7M6MGGFFJ",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.22-WALKTHROUGH.md",
+          "sha256": "9cb8cda51bc7c17583b766926e27d3678cdca5858fab809437cde2fd199c6c41"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.22.md",
       "state_history": [
         {
           "from": "created",
@@ -11436,6 +11449,12 @@
           "at": "2026-09-23T11:50:03.158Z",
           "by": "agent:CWI_Guide",
           "note": "r23 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-23T12:07:32.694Z",
+          "by": "agent:CWI_Guide"
         }
       ],
       "requires_black_approval": false,
