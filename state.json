@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 14485,
-  "updated_at": "2026-09-23T12:45:08.908Z",
+  "version": 14486,
+  "updated_at": "2026-09-23T12:45:23.569Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -11736,6 +11736,37 @@
       "requires_black_approval": true,
       "sample": false,
       "deadline_at": "2026-09-23T13:45:00Z"
+    },
+    {
+      "task_id": "tsk_01M374S87GGRPQTG9917Z5ZN0X",
+      "type": "build",
+      "title": "ACTIVATION r24: Iris round-3 proof-set gate (dependency-aware)",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T12:45:23.569Z",
+      "assigned_to": "agent:CWI_Visual",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "TAG CITY round-3 proof set gated PASS/FAIL vs 7 locked key-art gates with named in-crop measurements",
+        "verdict addendum delivered as artifact",
+        "nothing to Black's eye without Iris sign-off",
+        "delivered via task deliver --by <URN> with kind|uri artifact + --report before 18:00:00Z"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-23T12:45:23.569Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-23 0845 ET"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-23T18:00:00Z"
     }
   ],
   "presence": {
@@ -12754,6 +12785,11 @@
       "op": "task.create",
       "at": "2026-09-23T12:45:05.138Z",
       "ref": "tsk_01M374RP7HD2BYZ7SYVEKRCWMJ"
+    },
+    "sweep-r24-visual": {
+      "op": "task.create",
+      "at": "2026-09-23T12:45:23.569Z",
+      "ref": "tsk_01M374S87GGRPQTG9917Z5ZN0X"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
