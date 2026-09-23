@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 14670,
-  "updated_at": "2026-09-23T13:44:59.981Z",
+  "version": 14671,
+  "updated_at": "2026-09-23T13:45:05.374Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -11909,6 +11909,36 @@
       "requires_black_approval": true,
       "sample": false,
       "deadline_at": "2026-09-23T14:45:00Z"
+    },
+    {
+      "task_id": "tsk_01M3786J2YX4H15H4Z33ABH13P",
+      "type": "custom",
+      "title": "Sweep round-25: KB v2.25 + overdue-kill watch (live-recomputed)",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T13:45:05.374Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "assigned",
+      "priority": "high",
+      "inputs": {},
+      "acceptance": [
+        "KB v2.25 draft (>=5 runbook entries, draft branch only)",
+        "overdue-kill figures recomputed LIVE from ledger at dispatch",
+        "ledger delivered by 14:45:00Z"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-23T13:45:05.374Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep r25 09:40 EDT"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-23T14:45:00Z"
     }
   ],
   "presence": {
@@ -12937,6 +12967,11 @@
       "op": "task.create",
       "at": "2026-09-23T13:44:35.255Z",
       "ref": "tsk_01M3785MNJGW0A538MT299Z70D"
+    },
+    "sweep-r25-care-2026-09-23": {
+      "op": "task.create",
+      "at": "2026-09-23T13:45:05.374Z",
+      "ref": "tsk_01M3786J2YX4H15H4Z33ABH13P"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
