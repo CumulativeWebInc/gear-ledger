@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 15624,
-  "updated_at": "2026-09-23T19:51:06.484Z",
+  "version": 15625,
+  "updated_at": "2026-09-23T19:51:12.373Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -13559,7 +13559,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T19:44:00.917Z",
       "assigned_to": "agent:CWI_Visual",
-      "state": "assigned",
+      "state": "in_progress",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -13577,6 +13577,13 @@
           "at": "2026-09-23T19:44:00.917Z",
           "by": "agent:MUSE_CWI",
           "note": "activation sweep round-31; watch-only, dossier fires only on new media"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-23T19:51:12.373Z",
+          "by": "agent:CWI_Visual",
+          "note": "activation sweep 2026-09-23, r31 honest-zero watch"
         }
       ],
       "requires_black_approval": false,
