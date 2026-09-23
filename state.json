@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 15299,
-  "updated_at": "2026-09-23T17:44:34.884Z",
+  "version": 15300,
+  "updated_at": "2026-09-23T17:44:39.239Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -13093,6 +13093,36 @@
       "requires_black_approval": true,
       "sample": false,
       "deadline_at": "2026-09-23T18:45:00Z"
+    },
+    {
+      "task_id": "tsk_01M37NX727PJHK07YQ5JBEF4D2",
+      "type": "custom",
+      "title": "MINT taps-check r29 + kill-trigger attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T17:44:39.239Z",
+      "assigned_to": "agent:CWI_Athena_MINT",
+      "state": "assigned",
+      "priority": "high",
+      "inputs": {},
+      "acceptance": [
+        "all 4 taps re-checked LIVE vs r28 (manifest sha256, ledger approvals array, day-3 form endpoint, x402 lane separation, 8/8 clips ffprobe-verified)",
+        "kill-trigger attestation recorded — STANDS or KILLED with evidence",
+        "memory claims written, pushed, L1 anchored and verified",
+        "all artifacts delivered in ONE task deliver call"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-23T17:44:39.239Z",
+          "by": "agent:MUSE_CWI"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-23T18:45:00Z"
     }
   ],
   "presence": {
@@ -14236,6 +14266,11 @@
       "op": "task.create",
       "at": "2026-09-23T17:44:18.367Z",
       "ref": "tsk_01M37NWJNZNKVABWVJY4A8TEW7"
+    },
+    "sweep-r29-mint-2026-09-23": {
+      "op": "task.create",
+      "at": "2026-09-23T17:44:39.239Z",
+      "ref": "tsk_01M37NX727PJHK07YQ5JBEF4D2"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
