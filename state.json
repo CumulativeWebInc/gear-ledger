@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 15147,
-  "updated_at": "2026-09-23T16:49:30.007Z",
+  "version": 15148,
+  "updated_at": "2026-09-23T16:50:14.856Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -12697,7 +12697,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T16:44:07.159Z",
       "assigned_to": "agent:CWI_Visual",
-      "state": "assigned",
+      "state": "in_progress",
       "priority": "high",
       "inputs": {},
       "acceptance": [
@@ -12714,6 +12714,13 @@
           "to": "assigned",
           "at": "2026-09-23T16:44:07.159Z",
           "by": "agent:MUSE_CWI"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-23T16:50:14.856Z",
+          "by": "agent:CWI_Visual",
+          "note": "Iris r28 verdict-prep — self-start"
         }
       ],
       "requires_black_approval": true,
