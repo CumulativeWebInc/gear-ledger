@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 14981,
-  "updated_at": "2026-09-23T15:48:02.301Z",
+  "version": 14982,
+  "updated_at": "2026-09-23T15:51:44.689Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -12418,7 +12418,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T15:43:46.497Z",
       "assigned_to": "agent:CWI_Visual",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "high",
       "inputs": {},
       "acceptance": [
@@ -12428,8 +12428,21 @@
         "NOTHING reaches Black's eye without Iris sign-off",
         "sweep-side pre-check at dispatch found ZERO new proof media since r26 cutoff"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M37FEDCZYYYVZTJ4D9BCFXNH",
+          "kind": "report",
+          "uri": "~/workspace/goals/tag-city-3d-rebuild/hidden_files/composition/IRIS-WATCH-R27-2026-09-23.md",
+          "sha256": "21445a7c7f13e994c12cd844e5645adb12cfa134f444d62cddd7e7485296ad26"
+        },
+        {
+          "artifact_id": "art_01M37FEDD09A1JV9DRRJG9D2GP",
+          "kind": "report",
+          "uri": "~/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/run-2026-09-23-1140-visual-r27.md",
+          "sha256": "51b1ad87b7eed87fc0ac3b74380816d6d584ff8d39015d0beacaa080e34f5dc3"
+        }
+      ],
+      "deliverable_ref": "~/workspace/goals/tag-city-3d-rebuild/hidden_files/composition/IRIS-WATCH-R27-2026-09-23.md",
       "state_history": [
         {
           "from": "created",
@@ -12443,6 +12456,12 @@
           "at": "2026-09-23T15:47:52.085Z",
           "by": "agent:CWI_Visual",
           "note": "round-27 activation sweep 2026-09-23"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-23T15:51:44.689Z",
+          "by": "agent:CWI_Visual"
         }
       ],
       "requires_black_approval": true,
