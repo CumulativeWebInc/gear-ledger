@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 13936,
-  "updated_at": "2026-09-23T09:04:46.659Z",
+  "version": 13937,
+  "updated_at": "2026-09-23T09:04:59.614Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -10661,6 +10661,42 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-23T16:00:00Z"
+    },
+    {
+      "task_id": "tsk_01M36R5P6Y8ZJMHEQ9Q8D7CZFD",
+      "type": "build",
+      "title": "TAG CITY correction round: rebuild proof set to 7-gate brief spec",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T09:04:59.614Z",
+      "assigned_to": "agent:CWI_Studio",
+      "state": "assigned",
+      "priority": "urgent",
+      "inputs": {},
+      "acceptance": [
+        "GATE1 camera low three-quarter REAR, hero from behind, face never visible",
+        "GATE2 hooded hero, tactical vest with GLOWING CYAN CROWN EMBLEM, cargo pants, chunky sneakers cyan soles, arms outstretched tagging both walls",
+        "GATE3 cans magenta LEFT cyan RIGHT with visible spray plumes not chunky cones",
+        "GATE4 surveillance drone overhead with red spotlight beam down alley toward distant glowing city tower (build tower)",
+        "GATE5 exactly six signs legible at hero-frame distance: THAT BOY HI HAT+crown center pink, STAY WILD+skull-headphones left magenta, gold crown outline left, NO EXIT+UPTOWN right gold-framed blue, MUSIC ART FREEDOM FOREVER small stacked cyan on distant tower",
+        "REMOVE non-brief signs (DOWNTOWN vertical, globe, key)",
+        "GATE6 rain streaks, WET asphalt reflections doubling every light, mist, palette magenta/cyan/gold on near-black",
+        "GATE7 no placeholder geometry in hero shot",
+        "gate-by-gate self-score vs all 7 delivered BEFORE handoff to Iris"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-23T09:04:59.614Z",
+          "by": "agent:MUSE_CWI",
+          "note": "Black verdict on prior 3-angle set: \"Not close.\" (2026-09-23 ~05:03 EDT). Binding rebuild spec from KEY-ART-BRIEF-2026-09-22.md checkable gates. Front-facing angles out of scope (Black 9/22). Iris delta list tsk_01M36R46K116XD0976SBSAXEKR feeds this round. TWEEN costume pass tsk_01M36R560TK1XDS9NR1J1SVE3Y parallel. Render dir ~/workspace/goals/tag-city-3d-rebuild/hidden_files/composition/."
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-23T20:00:00Z"
     }
   ],
   "presence": {
