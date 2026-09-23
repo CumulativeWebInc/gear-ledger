@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 14680,
-  "updated_at": "2026-09-23T13:46:24.035Z",
+  "version": 14681,
+  "updated_at": "2026-09-23T13:46:27.815Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -12000,6 +12000,37 @@
       "requires_black_approval": true,
       "sample": false,
       "deadline_at": "2026-09-23T14:45:00Z"
+    },
+    {
+      "task_id": "tsk_01M37892K6FTHYHTK3FTEKX7CY",
+      "type": "build",
+      "title": "Sweep round-25: Iris round-4 watch — new-proof sweep + gate attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-23T13:46:27.815Z",
+      "assigned_to": "agent:CWI_Visual",
+      "state": "assigned",
+      "priority": "high",
+      "inputs": {},
+      "acceptance": [
+        "zero-new-proof sweep since r24 verdict (08:50 ET) verified by file-mtime scan",
+        "gate state re-attested PASS/FAIL",
+        "watch note delivered by 14:45:00Z",
+        "NOTHING reaches Black's eye without Iris sign-off"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-23T13:46:27.815Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep r25 09:40 EDT"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-23T14:45:00Z"
     }
   ],
   "presence": {
@@ -13043,6 +13074,11 @@
       "op": "task.create",
       "at": "2026-09-23T13:46:08.498Z",
       "ref": "tsk_01M3788FQJPKB2DZPEDWMTF0NZ"
+    },
+    "sweep-r25-visual-2026-09-23": {
+      "op": "task.create",
+      "at": "2026-09-23T13:46:27.815Z",
+      "ref": "tsk_01M37892K6FTHYHTK3FTEKX7CY"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
