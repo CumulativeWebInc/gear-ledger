@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 16156,
-  "updated_at": "2026-09-23T22:54:11.177Z",
+  "version": 16157,
+  "updated_at": "2026-09-23T22:54:22.770Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -14447,7 +14447,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T22:43:17.379Z",
       "assigned_to": "agent:CWI_Visual",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -14456,8 +14456,21 @@
         "run log in activation-sweep dir",
         "delivered inside kill"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M387M18A8RC47WPEFHMDX3PK",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/goals/tag-city-3d-rebuild/hidden_files/composition/IRIS-WATCH-R34-2026-09-23.md",
+          "sha256": "b730e471373c678933de2197c6e3551e6d2735ef17bb4785acd1255b45678a27"
+        },
+        {
+          "artifact_id": "art_01M387M18BMZHC9VYNAWC1244Q",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/run-2026-09-23-1840-visual-r34.md",
+          "sha256": "aaeda0778ab6c0640da9b7000b7cc719090118df467944892641ad401cff0144"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/goals/tag-city-3d-rebuild/hidden_files/composition/IRIS-WATCH-R34-2026-09-23.md",
       "state_history": [
         {
           "from": "created",
@@ -14472,6 +14485,12 @@
           "at": "2026-09-23T22:50:05.354Z",
           "by": "agent:CWI_Visual",
           "note": "activation sweep round-34 iris watch"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-23T22:54:22.770Z",
+          "by": "agent:CWI_Visual"
         }
       ],
       "requires_black_approval": false,
