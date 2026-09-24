@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 18207,
-  "updated_at": "2026-09-24T11:56:54.583Z",
+  "version": 18208,
+  "updated_at": "2026-09-24T11:57:40.402Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -18184,7 +18184,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-24T11:45:58.157Z",
       "assigned_to": "agent:CWI_Visual",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -18194,8 +18194,15 @@
         "brand pre-gate armed",
         "durable claims committed, memory pushed + L1 offchain-anchored + verified"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M39MEG9GHPZ8HMNH40K8B1W3",
+          "kind": "report",
+          "uri": "IRIS-VERDICT-R47-2026-09-24.md",
+          "sha256": "c4cb1992b61adb5f0836d7029fe0f653f906320bf837bbeb0839aad90c90b0a8"
+        }
+      ],
+      "deliverable_ref": "IRIS-VERDICT-R47-2026-09-24.md",
       "state_history": [
         {
           "from": "created",
@@ -18210,6 +18217,12 @@
           "at": "2026-09-24T11:50:33.056Z",
           "by": "agent:CWI_Visual",
           "note": "round-47 Iris watch r24 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T11:57:40.402Z",
+          "by": "agent:CWI_Visual"
         }
       ],
       "requires_black_approval": false,
