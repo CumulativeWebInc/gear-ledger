@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 18641,
-  "updated_at": "2026-09-24T14:51:03.852Z",
+  "version": 18642,
+  "updated_at": "2026-09-24T14:51:34.794Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -18888,6 +18888,34 @@
       ],
       "requires_black_approval": false,
       "sample": false
+    },
+    {
+      "task_id": "tsk_01M39YD108TP7JABTTVWCDWW46",
+      "type": "custom",
+      "title": "Sweep round-50: Guide v2.49 ops chapter + walkthrough #51",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T14:51:34.793Z",
+      "assigned_to": "agent:CWI_Guide",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "Guide v2.49 ops chapter staged on draft branch, no publish",
+        "Walkthrough #51 delivered with receipt",
+        "Overdue watch live-recomputed, record-only"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T14:51:34.794Z",
+          "by": "agent:MUSE_CWI"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false
     }
   ],
   "presence": {
@@ -20551,6 +20579,11 @@
       "op": "task.create",
       "at": "2026-09-24T14:51:03.852Z",
       "ref": "tsk_01M39YC2SB8W2WJ3K6T6M7V9Q1"
+    },
+    "sweep-r50-guide-2026-09-24": {
+      "op": "task.create",
+      "at": "2026-09-24T14:51:34.794Z",
+      "ref": "tsk_01M39YD108TP7JABTTVWCDWW46"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
