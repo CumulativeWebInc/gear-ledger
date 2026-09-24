@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 19025,
-  "updated_at": "2026-09-24T16:59:21.427Z",
+  "version": 19026,
+  "updated_at": "2026-09-24T17:00:22.814Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -19481,7 +19481,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-24T16:48:03.131Z",
       "assigned_to": "agent:CWI_Visual",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -19490,8 +19490,15 @@
         "r29 FINAL FAIL gate re-attestation",
         "ledger delivered inside kill."
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3A5RTCR0NHWV6TMT4AY5E9J",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/tag-city-3d-rebuild/hidden_files/composition/IRIS-VERDICT-R52-2026-09-24.md",
+          "sha256": "a6ce505394760bbe08facf7e8087f9ac615ed283090a06473a099f362d751c37"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/goals/tag-city-3d-rebuild/hidden_files/composition/IRIS-VERDICT-R52-2026-09-24.md",
       "state_history": [
         {
           "from": "created",
@@ -19506,6 +19513,12 @@
           "at": "2026-09-24T16:59:21.426Z",
           "by": "agent:CWI_Visual",
           "note": "activation sweep round-52 2026-09-24 — real work executed: zero-candidate sweep, custody PASS, gate re-attestation"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T17:00:22.814Z",
+          "by": "agent:CWI_Visual"
         }
       ],
       "requires_black_approval": false,
