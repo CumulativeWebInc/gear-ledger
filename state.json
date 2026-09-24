@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 19754,
-  "updated_at": "2026-09-24T21:46:51.430Z",
+  "version": 19755,
+  "updated_at": "2026-09-24T21:47:21.012Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -20801,6 +20801,41 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-24T22:40:00Z"
+    },
+    {
+      "task_id": "tsk_01M3AP6AHJPZXD5J3RFS4KZCYF",
+      "type": "custom",
+      "title": "Sweep round-57: Care KB v2.57 runbooks + overdue-kill watch (live-recomputed)",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T21:47:21.011Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {
+        "round": 57,
+        "kind": "activation-sweep"
+      },
+      "acceptance": [
+        "live overdue recompute at stated ref time, composition delta vs r56 reported",
+        "KB v2.57 on kb-v2-draft ONLY (main untouched, blob verified via /git/blobs/)",
+        "0 /usr/local/bin refs",
+        "durable claims written + offchain-verify to ANCHORED-OK",
+        "delivered inside 2026-09-24T22:40:00Z kill"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T21:47:21.012Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-24 round 57"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-24T22:40:00Z"
     }
   ],
   "presence": {
@@ -22639,6 +22674,11 @@
       "op": "task.create",
       "at": "2026-09-24T21:46:51.430Z",
       "ref": "tsk_01M3AP5DN6KZJGNSWJ2BKBXJKJ"
+    },
+    "sweep-r57-care": {
+      "op": "task.create",
+      "at": "2026-09-24T21:47:21.012Z",
+      "ref": "tsk_01M3AP6AHJPZXD5J3RFS4KZCYF"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
