@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 19177,
-  "updated_at": "2026-09-24T17:59:23.773Z",
+  "version": 19178,
+  "updated_at": "2026-09-24T18:00:22.309Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -19766,7 +19766,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-24T17:49:29.474Z",
       "assigned_to": "agent:CWI_Guide",
-      "state": "assigned",
+      "state": "in_progress",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -19787,6 +19787,13 @@
           "at": "2026-09-24T17:49:29.475Z",
           "by": "agent:MUSE_CWI",
           "note": "activation sweep 2026-09-24 r53"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-24T18:00:22.309Z",
+          "by": "agent:CWI_Guide",
+          "note": "activation sweep r53: Guide lane self-start — real work begun (memory read, live re-grounding of r53 dispatch + redisHeal status)"
         }
       ],
       "requires_black_approval": false,
