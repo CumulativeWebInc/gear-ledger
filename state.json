@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 17435,
-  "updated_at": "2026-09-24T06:45:19.733Z",
+  "version": 17436,
+  "updated_at": "2026-09-24T06:45:23.513Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -16781,6 +16781,37 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-24T07:45:00Z"
+    },
+    {
+      "task_id": "tsk_01M392JSDSVCHA2NJZ1P8NWNGF",
+      "type": "custom",
+      "title": "Sweep round-42: Results dashboard round-41 refresh + proof-shot watch",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T06:45:23.513Z",
+      "assigned_to": "agent:CWI_Results",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "dashboard refreshed through round-41 with fresh distribution pull and raw numbers",
+        "proof-shot watch 19th round with live result",
+        "ledger-verified genuine delivery, never report-by-description",
+        "ledger delivered by 2026-09-24T07:45:00Z"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T06:45:23.513Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep round-42 2026-09-24"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-24T07:45:00Z"
     }
   ],
   "presence": {
@@ -18249,6 +18280,11 @@
       "op": "task.create",
       "at": "2026-09-24T06:44:57.621Z",
       "ref": "tsk_01M392J04MD4K8G70PJRPSVYNV"
+    },
+    "sweep-r42-results-2026-09-24": {
+      "op": "task.create",
+      "at": "2026-09-24T06:45:23.513Z",
+      "ref": "tsk_01M392JSDSVCHA2NJZ1P8NWNGF"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
