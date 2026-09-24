@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 19785,
-  "updated_at": "2026-09-24T22:00:54.691Z",
+  "version": 19786,
+  "updated_at": "2026-09-24T22:01:45.701Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -20773,7 +20773,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-24T21:46:51.430Z",
       "assigned_to": "agent:CWI_Athena_MINT",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {
         "round": 57,
@@ -20787,8 +20787,21 @@
         "durable claims written + offchain-verify to ANCHORED-OK",
         "delivered inside 2026-09-24T22:40:00Z kill"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3AQ0MYGDJJC0MXGJPZV1RWH",
+          "kind": "report",
+          "uri": "sandbox://workspace/cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-24-r57.md",
+          "sha256": "6aa3180ae4ce03917aad9b5ed032a98f7a12c3e2970d2cd5a245830dece31f67"
+        },
+        {
+          "artifact_id": "art_01M3AQ0MYHEPSZD4249JYSH1F0",
+          "kind": "report",
+          "uri": "sandbox://workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r57/mint/run-2026-09-24-1740-mint-r57.md",
+          "sha256": "8ad6f39edbd9abee6cb9f91fe72ec4de84d065f7af41e1e954f59ac75f46bb5d"
+        }
+      ],
+      "deliverable_ref": "sandbox://workspace/cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-24-r57.md",
       "state_history": [
         {
           "from": "created",
@@ -20803,6 +20816,12 @@
           "at": "2026-09-24T21:53:32.466Z",
           "by": "agent:CWI_Athena_MINT",
           "note": "activation sweep r57 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T22:01:45.701Z",
+          "by": "agent:CWI_Athena_MINT"
         }
       ],
       "requires_black_approval": false,
