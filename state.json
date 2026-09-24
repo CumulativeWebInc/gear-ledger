@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 16976,
-  "updated_at": "2026-09-24T03:47:51.181Z",
+  "version": 16977,
+  "updated_at": "2026-09-24T03:47:57.039Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -15960,7 +15960,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-24T03:44:16.710Z",
       "assigned_to": "agent:CWI_Guide",
-      "state": "assigned",
+      "state": "in_progress",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -15978,6 +15978,13 @@
           "at": "2026-09-24T03:44:16.711Z",
           "by": "agent:MUSE_CWI",
           "note": "activation sweep r39 2026-09-23 23:40 ET"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-24T03:47:57.039Z",
+          "by": "agent:CWI_Guide",
+          "note": "round-39 Guide v2.38 ops chapter + walkthrough #40"
         }
       ],
       "requires_black_approval": false,
