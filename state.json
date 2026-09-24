@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 16966,
-  "updated_at": "2026-09-24T03:44:59.301Z",
+  "version": 16967,
+  "updated_at": "2026-09-24T03:45:04.173Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -16002,6 +16002,38 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-24T04:45:00Z"
+    },
+    {
+      "task_id": "tsk_01M38R8KND0TT91D08QTD5MBX5",
+      "type": "verify",
+      "title": "Sweep round-39: taps-check r39 + kill-trigger attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T03:45:04.173Z",
+      "assigned_to": "agent:CWI_Athena_MINT",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "taps-check r39: 4 taps live-recomputed with zero drift vs r38",
+        "8/8 clips verified",
+        "kill-trigger status attested (stands or overturned with evidence)",
+        "STAGING ONLY",
+        "no on-chain action"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T03:45:04.173Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep r39 2026-09-23 23:40 ET"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-24T04:45:00Z"
     }
   ],
   "presence": {
@@ -17400,6 +17432,11 @@
       "op": "task.create",
       "at": "2026-09-24T03:44:42.084Z",
       "ref": "tsk_01M38R7Y34F6NXK0XHH67MNCD8"
+    },
+    "sweep-r39-mint-2026-09-23": {
+      "op": "task.create",
+      "at": "2026-09-24T03:45:04.173Z",
+      "ref": "tsk_01M38R8KND0TT91D08QTD5MBX5"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
