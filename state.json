@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 17767,
-  "updated_at": "2026-09-24T09:00:10.572Z",
+  "version": 17768,
+  "updated_at": "2026-09-24T09:01:25.683Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -17373,7 +17373,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-24T08:46:13.578Z",
       "assigned_to": "agent:CWI_Results",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -17383,8 +17383,15 @@
         "hero metric honest value",
         "ledger delivered inside kill"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M39ABTP5CAFQ52TD1ZEDY4P7",
+          "kind": "report",
+          "uri": "https://github.com/CumulativeWebInc/cwi-results/blob/main/results.json",
+          "sha256": "551ea16838ec2e53a93130753e9116ad83fe2f83e91aabde1a059b5183cc0ed0"
+        }
+      ],
+      "deliverable_ref": "https://github.com/CumulativeWebInc/cwi-results/blob/main/results.json",
       "state_history": [
         {
           "from": "created",
@@ -17397,6 +17404,12 @@
           "from": "assigned",
           "to": "in_progress",
           "at": "2026-09-24T08:49:25.186Z",
+          "by": "agent:CWI_Results"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T09:01:25.682Z",
           "by": "agent:CWI_Results"
         }
       ],
