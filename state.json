@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 19757,
-  "updated_at": "2026-09-24T21:48:01.757Z",
+  "version": 19758,
+  "updated_at": "2026-09-24T21:48:22.968Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -20906,6 +20906,43 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-24T22:40:00Z"
+    },
+    {
+      "task_id": "tsk_01M3AP871QDH8PVWGT6FHS8V7E",
+      "type": "custom",
+      "title": "Sweep round-57: Results dashboard r56 refresh + proof-shot watch",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T21:48:22.967Z",
+      "assigned_to": "agent:CWI_Results",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {
+        "round": 57,
+        "kind": "activation-sweep"
+      },
+      "acceptance": [
+        "receipt-tail continuity ASSERTED before PUT",
+        "results.json + index.html re-seeded with r57 tail, both HTTP 200 verified live",
+        "proof-shot watch 3 scopes vs cutoff 2026-09-24T21:41:00Z, honest zero or candidates",
+        "standing dashboard-publisher clobber risk noted (re-seed as needed, do not fix publisher code - lane boundary)",
+        "deliver call MUST attach >=1 artifact (deliver.artifacts_required - r56 lesson)",
+        "durable claims written + offchain-verify",
+        "delivered inside 2026-09-24T22:40:00Z kill"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T21:48:22.968Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-24 round 57"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-24T22:40:00Z"
     }
   ],
   "presence": {
@@ -22759,6 +22796,11 @@
       "op": "task.create",
       "at": "2026-09-24T21:48:01.757Z",
       "ref": "tsk_01M3AP7JAWJW3MVWWHR3RKEH8E"
+    },
+    "sweep-r57-results": {
+      "op": "task.create",
+      "at": "2026-09-24T21:48:22.968Z",
+      "ref": "tsk_01M3AP871QDH8PVWGT6FHS8V7E"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
