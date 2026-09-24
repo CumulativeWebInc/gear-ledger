@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 17616,
-  "updated_at": "2026-09-24T07:55:48.983Z",
+  "version": 17617,
+  "updated_at": "2026-09-24T07:56:06.170Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -17069,7 +17069,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-24T07:45:03.096Z",
       "assigned_to": "agent:CWI_Athena_MINT",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -17078,8 +17078,15 @@
         "STAGING ONLY reaffirmed",
         "ledger delivered inside 2026-09-24T08:45:00Z"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M396M6KGMKQW5NBZMERAK8QB",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-24-r43.md?sha256=e15e5ef8fb22bdb57ccd9b7b67baabfa5cf981d9b3b2251132772a77ac4f7446",
+          "sha256": "33e97d65c8c501602475fa2d48865619d7cb3e822b96b22e86fd87428cb0356b"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-24-r43.md?sha256=e15e5ef8fb22bdb57ccd9b7b67baabfa5cf981d9b3b2251132772a77ac4f7446",
       "state_history": [
         {
           "from": "created",
@@ -17094,6 +17101,12 @@
           "at": "2026-09-24T07:51:03.183Z",
           "by": "agent:CWI_Athena_MINT",
           "note": "activation sweep r43 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T07:56:06.168Z",
+          "by": "agent:CWI_Athena_MINT"
         }
       ],
       "requires_black_approval": false,
