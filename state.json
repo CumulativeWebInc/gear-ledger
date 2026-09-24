@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 16472,
-  "updated_at": "2026-09-24T00:44:44.256Z",
+  "version": 16473,
+  "updated_at": "2026-09-24T00:45:03.651Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -15145,6 +15145,38 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-24T01:45:00Z"
+    },
+    {
+      "task_id": "tsk_01M38DZ092TJ5ZYND9X4QW5E8F",
+      "type": "custom",
+      "title": "Sweep round-36: taps-check r36 + kill-trigger attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T00:45:03.650Z",
+      "assigned_to": "agent:CWI_Athena_MINT",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "taps-check r36: manifest sha256 recomputed live, chain unbroken r6->r36",
+        "8/8 clips ffprobe-verified byte-identical",
+        "day3/day4 STAGING ONLY, no live publish",
+        "kill-trigger attestation: stands unless Black exact-copy approval lands",
+        "ledger delivered by 2026-09-24T01:45:00Z"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T00:45:03.651Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep r36 2026-09-23"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-24T01:45:00Z"
     }
   ],
   "presence": {
@@ -16463,6 +16495,11 @@
       "op": "task.create",
       "at": "2026-09-24T00:44:44.256Z",
       "ref": "tsk_01M38DYDAZ225A1976GXRH9M6M"
+    },
+    "sweep-r36-mint-2026-09-23": {
+      "op": "task.create",
+      "at": "2026-09-24T00:45:03.651Z",
+      "ref": "tsk_01M38DZ092TJ5ZYND9X4QW5E8F"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
