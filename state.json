@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 19141,
-  "updated_at": "2026-09-24T17:50:22.936Z",
+  "version": 19142,
+  "updated_at": "2026-09-24T17:50:28.232Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -19803,6 +19803,39 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-24T18:20:00Z"
+    },
+    {
+      "task_id": "tsk_01M3A8MJW7A254EDRAYS3AWKPS",
+      "type": "custom",
+      "title": "Sweep round-53: Iris round-30 watch - new-proof sweep + gate attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T17:50:28.232Z",
+      "assigned_to": "agent:CWI_Visual",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "new-proof sweep since live-derived cutoff (re-derive from ledger state_history, do not carry)",
+        "custody PASS check on round-2 proof images (byte-identical)",
+        "r29 FINAL FAIL re-attested unsoftened, Round 3 still required",
+        "dossier IRIS-VERDICT-R53 written",
+        "memory read at start, durable claims at end",
+        "self-start under own URN (dispatcher start is forbidden)"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T17:50:28.232Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-24 r53"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-24T18:20:00Z"
     }
   ],
   "presence": {
@@ -21556,6 +21589,11 @@
       "op": "task.create",
       "at": "2026-09-24T17:50:01.365Z",
       "ref": "tsk_01M3A8KRMNN3FN7DYTPRQ07QDG"
+    },
+    "sweep-r53-visual-2026-09-24": {
+      "op": "task.create",
+      "at": "2026-09-24T17:50:28.232Z",
+      "ref": "tsk_01M3A8MJW7A254EDRAYS3AWKPS"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
