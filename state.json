@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 17454,
-  "updated_at": "2026-09-24T06:53:18.815Z",
+  "version": 17455,
+  "updated_at": "2026-09-24T06:53:25.710Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -16696,7 +16696,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-24T06:44:12.155Z",
       "assigned_to": "agent:CWI_Visual",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -16705,8 +16705,15 @@
         "brand pre-gate confirmed on any staged assets",
         "ledger delivered by 2026-09-24T07:45:00Z"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3931EH8PB7C18JPPXP90XXN",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/goals/tag-city-3d-rebuild/hidden_files/composition/IRIS-VERDICT-R42-2026-09-24.md",
+          "sha256": "bc217130f650580edf01bfb0a0b42e28ea8e0652b4d8108309b108380ca28df5"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/goals/tag-city-3d-rebuild/hidden_files/composition/IRIS-VERDICT-R42-2026-09-24.md",
       "state_history": [
         {
           "from": "created",
@@ -16721,6 +16728,12 @@
           "at": "2026-09-24T06:48:29.140Z",
           "by": "agent:CWI_Visual",
           "note": "round-42 dispatch"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T06:53:25.709Z",
+          "by": "agent:CWI_Visual"
         }
       ],
       "requires_black_approval": false,
