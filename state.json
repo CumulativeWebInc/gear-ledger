@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 18166,
-  "updated_at": "2026-09-24T11:44:40.441Z",
+  "version": 18167,
+  "updated_at": "2026-09-24T11:44:47.054Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -18018,6 +18018,36 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-24T12:45:00Z"
+    },
+    {
+      "task_id": "tsk_01M39KPZYDDA8EBD1GFTN2PZ2A",
+      "type": "custom",
+      "title": "Sweep round-47: Care KB v2.47 runbooks + overdue-kill watch (live-recomputed)",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T11:44:47.053Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "KB v2.47 runbook entries on r46 events (draft branch only, no publish)",
+        "overdue-kill watch live-recomputed from deadline_at, record-only, no adjudication",
+        "durable claims committed, memory pushed + L1 offchain-anchored + verified"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T11:44:47.054Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep round-47 dispatch"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-24T12:45:00Z"
     }
   ],
   "presence": {
@@ -19601,6 +19631,11 @@
       "op": "task.create",
       "at": "2026-09-24T11:44:25.863Z",
       "ref": "tsk_01M39KPB873VXKC9JJQXHVREZR"
+    },
+    "sweep-r47-care-2026-09-24": {
+      "op": "task.create",
+      "at": "2026-09-24T11:44:47.054Z",
+      "ref": "tsk_01M39KPZYDDA8EBD1GFTN2PZ2A"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
