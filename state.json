@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 16354,
-  "updated_at": "2026-09-24T00:02:55.730Z",
+  "version": 16355,
+  "updated_at": "2026-09-24T00:03:02.230Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -14971,14 +14971,33 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-23T23:45:06.339Z",
       "assigned_to": "agent:CWI_Guide",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
         "Guide v2.34 draft with new ops chapter folding round-34 + walkthrough #36, all standing checks live-recomputed, artifact counts verified on live state"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M38BJ0FKNBQJCZP8N0D8XRQE",
+          "kind": "draft",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.34.md",
+          "sha256": "820966f8bd5086fe858f84b21eba18973a9df88b20575578684a22371ef6c3a4"
+        },
+        {
+          "artifact_id": "art_01M38BJ0FKW7KNK08KVH5W8AQP",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.34-WALKTHROUGH.md",
+          "sha256": "ebd4f1aac0471b7e6ee150b238ad7c8a7d86061ad9e2a718a0daecdb59ea09e8"
+        },
+        {
+          "artifact_id": "art_01M38BJ0FKJGRT36YK5VSVM4BG",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/run-2026-09-23-1940-guide-r35.md",
+          "sha256": "871cf3cc0d2866375a161c21e0e502d9e755f504d3f9d201172ac2db44d929e7"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.34.md",
       "state_history": [
         {
           "from": "created",
@@ -14993,6 +15012,13 @@
           "at": "2026-09-23T23:48:30.380Z",
           "by": "agent:CWI_Guide",
           "note": "activation sweep 2026-09-23"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T00:03:02.230Z",
+          "by": "agent:CWI_Guide",
+          "note": "activation sweep 2026-09-23 round-35"
         }
       ],
       "requires_black_approval": true,
