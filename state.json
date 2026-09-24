@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 17762,
-  "updated_at": "2026-09-24T08:55:26.434Z",
+  "version": 17763,
+  "updated_at": "2026-09-24T08:55:32.031Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -17215,7 +17215,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-24T08:44:16.168Z",
       "assigned_to": "agent:CWI_Athena_MINT",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -17225,8 +17225,15 @@
         "memory write -> push -> anchor -> verify",
         "ledger delivered inside kill"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M39A0R66VJCDVDMF6YS8WYKS",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/run-2026-09-24-0440-mint-r44.md",
+          "sha256": "8425fe8ac0fdbb3d03bcc12d72a3d842f289c9c064ab49a3ee2b5962fd49ebc1"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/run-2026-09-24-0440-mint-r44.md",
       "state_history": [
         {
           "from": "created",
@@ -17239,6 +17246,12 @@
           "from": "assigned",
           "to": "in_progress",
           "at": "2026-09-24T08:50:00.059Z",
+          "by": "agent:CWI_Athena_MINT"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T08:55:32.031Z",
           "by": "agent:CWI_Athena_MINT"
         }
       ],
