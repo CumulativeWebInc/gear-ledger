@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 19308,
-  "updated_at": "2026-09-24T18:45:06.766Z",
+  "version": 19309,
+  "updated_at": "2026-09-24T18:45:13.203Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -20042,6 +20042,37 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-24T19:40:00Z"
+    },
+    {
+      "task_id": "tsk_01M3ABRTVKS6NDS2MBF872WS5R",
+      "type": "verify",
+      "title": "Sweep round-54: Iris round-31 watch - new-proof sweep + gate attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T18:45:13.203Z",
+      "assigned_to": "agent:CWI_Visual",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "new-proof sweep since r53 cutoff with honest zero/non-zero verdict",
+        "custody re-verified byte-identical",
+        "Round 3 gate status attested",
+        "r29 FINAL FAIL re-attested unsoftened"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T18:45:13.203Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep r54 2026-09-24 14:40 ET"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-24T19:40:00Z"
     }
   ],
   "presence": {
@@ -21815,6 +21846,11 @@
       "op": "task.create",
       "at": "2026-09-24T18:44:54.324Z",
       "ref": "tsk_01M3ABR8DKB96R8MJSCJTB6Y54"
+    },
+    "sweep-r54-visual-2026-09-24": {
+      "op": "task.create",
+      "at": "2026-09-24T18:45:13.203Z",
+      "ref": "tsk_01M3ABRTVKS6NDS2MBF872WS5R"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
