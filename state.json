@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 18382,
-  "updated_at": "2026-09-24T13:08:24.773Z",
+  "version": 18383,
+  "updated_at": "2026-09-24T13:08:31.470Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -18319,7 +18319,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-24T12:47:05.291Z",
       "assigned_to": "agent:CWI_Care",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -18327,8 +18327,15 @@
         "overdue-kill watch live-recomputed (record-only)",
         "delivered inside kill rule"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M39RG0P27VYYQQJRYCRJV49P",
+          "kind": "draft",
+          "uri": "https://github.com/CumulativeWebInc/cwi-support-kb/blob/kb-v2-draft/kb.json",
+          "sha256": "2f9cd37b5dd6b2863114e63d0a7ae23c6e92dcd84bf0ec9200a0b4180a7526b1"
+        }
+      ],
+      "deliverable_ref": "https://github.com/CumulativeWebInc/cwi-support-kb/blob/kb-v2-draft/kb.json",
       "state_history": [
         {
           "from": "created",
@@ -18341,6 +18348,13 @@
           "from": "assigned",
           "to": "in_progress",
           "at": "2026-09-24T12:55:43.977Z",
+          "by": "agent:CWI_Care",
+          "note": "activation sweep r48 2026-09-24"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T13:08:31.470Z",
           "by": "agent:CWI_Care",
           "note": "activation sweep r48 2026-09-24"
         }
