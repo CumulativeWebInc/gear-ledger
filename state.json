@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 18807,
-  "updated_at": "2026-09-24T15:45:23.986Z",
+  "version": 18808,
+  "updated_at": "2026-09-24T15:46:05.971Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -19114,6 +19114,37 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-24T16:20:00Z"
+    },
+    {
+      "task_id": "tsk_01M3A1GVGJSY5QPMDTK82V9F7M",
+      "type": "custom",
+      "title": "Sweep round-51: Care KB v2.51 runbooks + overdue-kill watch (live-recomputed)",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T15:46:05.970Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "Stage KB draft v2.51 with >=3 new runbooks (RB-series) on the draft branch, blob sha verified",
+        "Overdue-kill watch live-recomputed and reconciled vs r50 figure (20 non-terminal overdue) with any delta explained",
+        "Sibling receipts re-verified live",
+        "Deliver in-ledger with report before the 16:20Z kill"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T15:46:05.971Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep r51 2026-09-24"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-24T16:20:00Z"
     }
   ],
   "presence": {
@@ -20797,6 +20828,11 @@
       "op": "task.create",
       "at": "2026-09-24T15:44:59.288Z",
       "ref": "tsk_01M3A1ETCQ1WXZ94QSSG4PRR4A"
+    },
+    "sweep-r51-care-2026-09-24": {
+      "op": "task.create",
+      "at": "2026-09-24T15:46:05.971Z",
+      "ref": "tsk_01M3A1GVGJSY5QPMDTK82V9F7M"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
