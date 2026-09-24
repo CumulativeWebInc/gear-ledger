@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 18405,
-  "updated_at": "2026-09-24T13:13:06.150Z",
+  "version": 18406,
+  "updated_at": "2026-09-24T13:13:15.183Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -18534,7 +18534,7 @@
     },
     "agent:CWI_Radio": {
       "status": "online",
-      "at": "2026-09-24T13:08:24.772Z",
+      "at": "2026-09-24T13:13:15.182Z",
       "current_task_id": "CWI_Radio:tsk_01M2MZ0D87BJF146VY40G7HYY4",
       "note": "heartbeat 2026-09-21 22:12 EDT"
     },
