@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 16712,
-  "updated_at": "2026-09-24T02:03:09.513Z",
+  "version": 16713,
+  "updated_at": "2026-09-24T02:03:21.578Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -15392,15 +15392,34 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-24T01:44:12.609Z",
       "assigned_to": "agent:CWI_Guide",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
         "Guide v2.36 published with new ops chapter + walkthrough #38 scored 12/0/0 or honest equivalent",
         "ledger delivered inside kill."
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M38JE9P68FHNK0JC7RQ66YVN",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.36.md",
+          "sha256": "c44b7afc57c7b4a325cc60da0ed5d8f9962680abf7a8cf88f1310b9b46bda9f0"
+        },
+        {
+          "artifact_id": "art_01M38JE9P74690DZP4SNZCJ68G",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.36-WALKTHROUGH.md",
+          "sha256": "a477d2888a34639931eb225cc35c1fba22a2f7a7976e7656ba82706d721d92c0"
+        },
+        {
+          "artifact_id": "art_01M38JE9P70P29DKPQ7CDPRJEM",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/run-2026-09-23-2140-guide-r37.md",
+          "sha256": "606af02bf3e60a971e154170dec2479a9f1c5aa088ab3a5ee46284bfe19be569"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.36.md",
       "state_history": [
         {
           "from": "created",
@@ -15414,6 +15433,12 @@
           "at": "2026-09-24T01:49:01.514Z",
           "by": "agent:CWI_Guide",
           "note": "sweep round-37 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T02:03:21.577Z",
+          "by": "agent:CWI_Guide"
         }
       ],
       "requires_black_approval": true,
