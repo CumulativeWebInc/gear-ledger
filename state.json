@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 17614,
-  "updated_at": "2026-09-24T07:55:26.764Z",
+  "version": 17615,
+  "updated_at": "2026-09-24T07:55:39.209Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -17260,8 +17260,8 @@
     },
     "agent:CWI_Athena_MINT": {
       "status": "online",
-      "at": "2026-09-24T07:45:51.194Z",
-      "current_task_id": "CWI_Athena_MINT:tsk_01M392KJK3X20GCRR6SPCZYBMV",
+      "at": "2026-09-24T07:55:39.209Z",
+      "current_task_id": "CWI_Athena_MINT:tsk_01M396013R51350D0JAE3P0BR1",
       "note": "Black order 2026-09-22: registered in heartbeat, active and working"
     },
     "agent:CWI_Athena_CLOSER": {
