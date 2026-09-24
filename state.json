@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 18711,
-  "updated_at": "2026-09-24T15:20:25.589Z",
+  "version": 18712,
+  "updated_at": "2026-09-24T15:20:43.379Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -18936,7 +18936,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-24T14:51:34.793Z",
       "assigned_to": "agent:CWI_Guide",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -18944,8 +18944,21 @@
         "Walkthrough #51 delivered with receipt",
         "Overdue watch live-recomputed, record-only"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3A027B2DDKHAZBSXXF4CM8P",
+          "kind": "draft",
+          "uri": "workspace://cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.49.md",
+          "sha256": "c0d94a4af64b3b4c7121e7cac81639b6e84a17922e52c6a2772b6f32a9e59b0d"
+        },
+        {
+          "artifact_id": "art_01M3A027B3CFETFQ6SBPK2GG9V",
+          "kind": "report",
+          "uri": "workspace://cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.49-WALKTHROUGH.md",
+          "sha256": "4e0423d1618e2a92b81de5a8e4f4a736a7dfb2739b66101e3b3c72bca441473d"
+        }
+      ],
+      "deliverable_ref": "workspace://cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.49.md",
       "state_history": [
         {
           "from": "created",
@@ -18959,6 +18972,12 @@
           "at": "2026-09-24T15:19:24.707Z",
           "by": "agent:CWI_Guide",
           "note": "activation sweep 2026-09-24 r50"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T15:20:43.358Z",
+          "by": "agent:CWI_Guide"
         }
       ],
       "requires_black_approval": false,
