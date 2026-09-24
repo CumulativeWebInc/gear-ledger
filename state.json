@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 18849,
-  "updated_at": "2026-09-24T16:04:02.258Z",
+  "version": 18850,
+  "updated_at": "2026-09-24T16:04:09.114Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -19217,7 +19217,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-24T15:46:58.945Z",
       "assigned_to": "agent:CWI_Results",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -19226,8 +19226,15 @@
         "Proof-shot watch round for new TAG CITY proof candidates (zero is a valid result)",
         "Deliver in-ledger with report before the 16:20Z kill"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3A2HNQGA518ATQ8MTG2ZCS5",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/run-2026-09-24-1150-results-r51.md",
+          "sha256": "defc6ebcab1f557c783516c36d430baf97fc1f30cfa40e5208780d991a5e64c5"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/run-2026-09-24-1150-results-r51.md",
       "state_history": [
         {
           "from": "created",
@@ -19242,6 +19249,12 @@
           "at": "2026-09-24T15:57:07.839Z",
           "by": "agent:CWI_Results",
           "note": "activation sweep r51 2026-09-24; r50 receipts verified live (6/6 hashes MATCH, 5/5 delivered), proof watch zero, distribution pull in flight"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T16:04:09.114Z",
+          "by": "agent:CWI_Results"
         }
       ],
       "requires_black_approval": false,
