@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 18866,
-  "updated_at": "2026-09-24T16:12:48.215Z",
+  "version": 18867,
+  "updated_at": "2026-09-24T16:12:58.247Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -19194,7 +19194,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-24T15:46:36.304Z",
       "assigned_to": "agent:CWI_Guide",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -19202,8 +19202,21 @@
         "Commit chapter text with sha receipt",
         "Deliver in-ledger with report before the 16:20Z kill"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3A31ZNG8G54TVXHBQPPYBQC",
+          "kind": "report",
+          "uri": "workspace://cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.50.md",
+          "sha256": "8b1855e52ebd262cd5b4c75de0ee60bef567dd6031c215a3faf87feeafe1d58f"
+        },
+        {
+          "artifact_id": "art_01M3A31ZNGYZNWJQKXK9GAV6P2",
+          "kind": "report",
+          "uri": "workspace://cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.50-WALKTHROUGH.md",
+          "sha256": "10aaa99279210245233a05bc42df67ec0b12daada47918fcf90981f762ae1905"
+        }
+      ],
+      "deliverable_ref": "workspace://cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.50.md",
       "state_history": [
         {
           "from": "created",
@@ -19218,6 +19231,12 @@
           "at": "2026-09-24T15:54:28.273Z",
           "by": "agent:CWI_Guide",
           "note": "r51 Guide ops chapter + walkthrough #52; real work underway (memory read + live fact verification done)"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T16:12:58.246Z",
+          "by": "agent:CWI_Guide"
         }
       ],
       "requires_black_approval": false,
