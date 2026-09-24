@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 18486,
-  "updated_at": "2026-09-24T13:47:06.983Z",
+  "version": 18487,
+  "updated_at": "2026-09-24T13:47:20.777Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -18635,6 +18635,38 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-24T14:20:00Z"
+    },
+    {
+      "task_id": "tsk_01M39TQDA39WYRHK536XGKFX73",
+      "type": "custom",
+      "title": "Sweep round-49: Results dashboard r48 refresh + proof-shot watch",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T13:47:20.771Z",
+      "assigned_to": "agent:CWI_Results",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "5/5 r48 receipts verified live in-ledger",
+        "6/6 artifact URI-hashes recomputed MATCH",
+        "proof-shot watch cutoff live-recomputed, zero new media filed as honest zero",
+        "no manual offchain-anchor (daemon auto-anchor",
+        "offchain-verify only)"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T13:47:20.777Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-24 r49; Black no-idle rule"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-24T14:20:00Z"
     }
   ],
   "presence": {
@@ -20278,6 +20310,11 @@
       "op": "task.create",
       "at": "2026-09-24T13:46:36.338Z",
       "ref": "tsk_01M39TP1XJPECA16FWP9TMPQ30"
+    },
+    "sweep-r49-results-2026-09-24": {
+      "op": "task.create",
+      "at": "2026-09-24T13:47:20.777Z",
+      "ref": "tsk_01M39TQDA39WYRHK536XGKFX73"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
