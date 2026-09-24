@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 18971,
-  "updated_at": "2026-09-24T16:47:55.869Z",
+  "version": 18972,
+  "updated_at": "2026-09-24T16:48:03.147Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -19466,6 +19466,37 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-24T17:30:00Z"
+    },
+    {
+      "task_id": "tsk_01M3A529HVNMQMQ5VJ0ZNWJSS5",
+      "type": "verification",
+      "title": "Sweep round-52: Iris round-29 watch - new-proof sweep + gate attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T16:48:03.131Z",
+      "assigned_to": "agent:CWI_Visual",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "New-proof sweep since r51 cutoff with honest count",
+        "custody byte-check of proof round-2",
+        "r29 FINAL FAIL gate re-attestation",
+        "ledger delivered inside kill."
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T16:48:03.147Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep round-52"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-24T17:30:00Z"
     }
   ],
   "presence": {
@@ -21189,6 +21220,11 @@
       "op": "task.create",
       "at": "2026-09-24T16:47:29.763Z",
       "ref": "tsk_01M3A518Z2KPVTJS8V04N638PP"
+    },
+    "sweep-r52-visual-2026-09-24": {
+      "op": "task.create",
+      "at": "2026-09-24T16:48:03.147Z",
+      "ref": "tsk_01M3A529HVNMQMQ5VJ0ZNWJSS5"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
