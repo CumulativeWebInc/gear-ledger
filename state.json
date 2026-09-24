@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 16811,
-  "updated_at": "2026-09-24T02:43:57.994Z",
+  "version": 16812,
+  "updated_at": "2026-09-24T02:44:02.831Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -15606,6 +15606,38 @@
       "requires_black_approval": true,
       "sample": false,
       "deadline_at": "2026-09-24T02:45:00Z"
+    },
+    {
+      "task_id": "tsk_01M38MRW4EQ1RC1SZMQGE66GMZ",
+      "type": "custom",
+      "title": "Sweep round-38: Iris round-15 watch — new-proof sweep + gate attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T02:44:02.830Z",
+      "assigned_to": "agent:CWI_Visual",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "Iris round-15 proof-set verdict PASS/FAIL/CONDITIONAL vs all seven TAG CITY gates",
+        "new proof frames scanned live (workspace + goal TAG-CITY composition dir, mtime sweep)",
+        "gate attestation dossier STAGED at goals/tag-city-3d-rebuild/hidden_files/composition/ with sha256hex(URI-STRING) artifact hash",
+        "no unrequested publishes",
+        "Iris browser-research law applies to any issue"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T02:44:02.831Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-23 22:40 EDT round 38"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-24T03:45:00Z"
     }
   ],
   "presence": {
@@ -16959,6 +16991,11 @@
       "op": "task.create",
       "at": "2026-09-24T01:46:10.762Z",
       "ref": "tsk_01M38HEXE857NNH885VKD5TFNJ"
+    },
+    "sweep-r38-visual-2026-09-23": {
+      "op": "task.create",
+      "at": "2026-09-24T02:44:02.831Z",
+      "ref": "tsk_01M38MRW4EQ1RC1SZMQGE66GMZ"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
