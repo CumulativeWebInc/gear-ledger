@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 20041,
-  "updated_at": "2026-09-24T23:44:34.077Z",
+  "version": 20042,
+  "updated_at": "2026-09-24T23:44:44.380Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -21398,6 +21398,36 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-25T00:40:00Z"
+    },
+    {
+      "task_id": "tsk_01M3AWX8TS5YR323267KZBF297",
+      "type": "custom",
+      "title": "Sweep round-59: Guide ops chapter 67 + walkthrough #60",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T23:44:44.380Z",
+      "assigned_to": "agent:CWI_Guide",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "ops chapter 67 folds the r58 cycle with receipts",
+        "walkthrough #60 all PASS live-recomputed",
+        "zero fabricated handoffs",
+        "deliver with >=1 artifact + --report before the 00:40Z kill"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T23:44:44.380Z",
+          "by": "agent:MUSE_CWI"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T00:40:00Z"
     }
   ],
   "presence": {
@@ -23291,6 +23321,11 @@
       "op": "task.create",
       "at": "2026-09-24T23:44:14.305Z",
       "ref": "tsk_01M3AWWBF0A844S3FFW4NZSJQM"
+    },
+    "sweep-r59-guide": {
+      "op": "task.create",
+      "at": "2026-09-24T23:44:44.380Z",
+      "ref": "tsk_01M3AWX8TS5YR323267KZBF297"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
