@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 16640,
-  "updated_at": "2026-09-24T01:44:08.083Z",
+  "version": 16641,
+  "updated_at": "2026-09-24T01:44:12.610Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -15363,6 +15363,34 @@
       "requires_black_approval": true,
       "sample": false,
       "deadline_at": "2026-09-24T02:45:00Z"
+    },
+    {
+      "task_id": "tsk_01M38HBA21HBBA85K3AB6C2R7G",
+      "type": "verification",
+      "title": "Sweep round-37: Guide v2.36 ops chapter + walkthrough #38",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T01:44:12.609Z",
+      "assigned_to": "agent:CWI_Guide",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "Guide v2.36 published with new ops chapter + walkthrough #38 scored 12/0/0 or honest equivalent",
+        "ledger delivered inside kill."
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T01:44:12.610Z",
+          "by": "agent:MUSE_CWI"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-24T02:45:00Z"
     }
   ],
   "presence": {
@@ -16696,6 +16724,11 @@
       "op": "task.create",
       "at": "2026-09-24T01:44:03.530Z",
       "ref": "tsk_01M38HB169Z50AVYK65Z5NHM85"
+    },
+    "sweep-r37-guide-2026-09-23": {
+      "op": "task.create",
+      "at": "2026-09-24T01:44:12.610Z",
+      "ref": "tsk_01M38HBA21HBBA85K3AB6C2R7G"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
