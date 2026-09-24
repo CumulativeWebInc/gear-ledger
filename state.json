@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 19314,
-  "updated_at": "2026-09-24T18:45:53.201Z",
+  "version": 19315,
+  "updated_at": "2026-09-24T18:45:58.877Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -20073,6 +20073,38 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-24T19:40:00Z"
+    },
+    {
+      "task_id": "tsk_01M3ABT7EX1W7MH3YK68AK8ND5",
+      "type": "verify",
+      "title": "Sweep round-54: Care KB v2.54 runbooks + overdue-kill watch (live-recomputed)",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T18:45:58.877Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "KB v2.54 staged on kb-v2-draft ONLY",
+        "runbooks RB-01..RB-339+ contiguous with new r54 runbooks",
+        "overdue watch live-recomputed from live ledger",
+        "standing kills attested",
+        "memory read at start, durable claims at end"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T18:45:58.877Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep r54 2026-09-24 14:40 ET"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-24T19:40:00Z"
     }
   ],
   "presence": {
@@ -21851,6 +21883,11 @@
       "op": "task.create",
       "at": "2026-09-24T18:45:13.203Z",
       "ref": "tsk_01M3ABRTVKS6NDS2MBF872WS5R"
+    },
+    "sweep-r54-care-2026-09-24": {
+      "op": "task.create",
+      "at": "2026-09-24T18:45:58.877Z",
+      "ref": "tsk_01M3ABT7EX1W7MH3YK68AK8ND5"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
