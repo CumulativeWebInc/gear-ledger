@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 17580,
-  "updated_at": "2026-09-24T07:44:53.954Z",
+  "version": 17581,
+  "updated_at": "2026-09-24T07:45:03.096Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -17043,6 +17043,37 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-24T08:45:00Z"
+    },
+    {
+      "task_id": "tsk_01M396013R51350D0JAE3P0BR1",
+      "type": "custom",
+      "title": "Sweep round-43: MINT taps-check r43 + kill-trigger attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T07:45:03.096Z",
+      "assigned_to": "agent:CWI_Athena_MINT",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "all MINT taps live-recomputed (drift check vs r42)",
+        "kill-trigger status attested with executable evidence",
+        "STAGING ONLY reaffirmed",
+        "ledger delivered inside 2026-09-24T08:45:00Z"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T07:45:03.096Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-24 round-43"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-24T08:45:00Z"
     }
   ],
   "presence": {
@@ -18536,6 +18567,11 @@
       "op": "task.create",
       "at": "2026-09-24T07:44:36.736Z",
       "ref": "tsk_01M395Z7C0BD7YBEZHJE2XNXFC"
+    },
+    "sweep-r43-mint-2026-09-24": {
+      "op": "task.create",
+      "at": "2026-09-24T07:45:03.096Z",
+      "ref": "tsk_01M396013R51350D0JAE3P0BR1"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
