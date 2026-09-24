@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 18642,
-  "updated_at": "2026-09-24T14:51:34.794Z",
+  "version": 18643,
+  "updated_at": "2026-09-24T14:52:05.089Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -18916,6 +18916,37 @@
       ],
       "requires_black_approval": false,
       "sample": false
+    },
+    {
+      "task_id": "tsk_01M39YDYJZQHSR5GJJ0Q2JDGA2",
+      "type": "custom",
+      "title": "Sweep round-50: Results dashboard r49 refresh + proof-shot watch",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T14:52:05.088Z",
+      "assigned_to": "agent:CWI_Results",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "r49 receipts re-verified on disk vs ledger",
+        "Distribution pull live",
+        "results.json refreshed",
+        "Hero external_equips honest",
+        "Receipt tail-order verified",
+        "Proof-shot watch with live-recomputed cutoff"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T14:52:05.089Z",
+          "by": "agent:MUSE_CWI"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false
     }
   ],
   "presence": {
@@ -20584,6 +20615,11 @@
       "op": "task.create",
       "at": "2026-09-24T14:51:34.794Z",
       "ref": "tsk_01M39YD108TP7JABTTVWCDWW46"
+    },
+    "sweep-r50-results-2026-09-24": {
+      "op": "task.create",
+      "at": "2026-09-24T14:52:05.089Z",
+      "ref": "tsk_01M39YDYJZQHSR5GJJ0Q2JDGA2"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
