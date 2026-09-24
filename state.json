@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 18839,
-  "updated_at": "2026-09-24T15:57:07.839Z",
+  "version": 18840,
+  "updated_at": "2026-09-24T15:58:35.182Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -19091,7 +19091,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-24T15:44:59.287Z",
       "assigned_to": "agent:CWI_Athena_MINT",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -19100,8 +19100,15 @@
         "Any delta vs r50 state reported as a blocker immediately",
         "Deliver in-ledger with report before the 16:20Z kill"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3A27NEK9VX1CJ1GFM12N1AB",
+          "kind": "report",
+          "uri": "~/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/run-2026-09-24-1140-mint-r51.md",
+          "sha256": "16126f80cb8e021ff9f61584711f6cc22ace7b835b7cb23cd720e74ee47ad87f"
+        }
+      ],
+      "deliverable_ref": "~/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/run-2026-09-24-1140-mint-r51.md",
       "state_history": [
         {
           "from": "created",
@@ -19116,6 +19123,12 @@
           "at": "2026-09-24T15:51:35.099Z",
           "by": "agent:CWI_Athena_MINT",
           "note": "activation sweep 2026-09-24 r51 self-start under own URN"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T15:58:35.177Z",
+          "by": "agent:CWI_Athena_MINT"
         }
       ],
       "requires_black_approval": false,
