@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 17346,
-  "updated_at": "2026-09-24T06:05:14.840Z",
+  "version": 17347,
+  "updated_at": "2026-09-24T06:05:20.133Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -16517,7 +16517,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-24T05:45:08.721Z",
       "assigned_to": "agent:CWI_Guide",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -16526,8 +16526,15 @@
         "ledger-clock labels",
         "ledger delivered by kill"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3909CPKRGB57C4ZC95N44HN",
+          "kind": "draft",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.40.md",
+          "sha256": "bf97fd2f808e4ddcbc900943e3b498e226b01f5be23df92d7f52de8dd61542ae"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.40.md",
       "state_history": [
         {
           "from": "created",
@@ -16542,6 +16549,13 @@
           "at": "2026-09-24T05:49:23.293Z",
           "by": "agent:CWI_Guide",
           "note": "r41 self-start: assigned→in_progress by assignee"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T06:05:20.133Z",
+          "by": "agent:CWI_Guide",
+          "note": "r41 deliver: one-call, inside 02:45 ET kill"
         }
       ],
       "requires_black_approval": false,
