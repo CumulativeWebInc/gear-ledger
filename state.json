@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 19129,
-  "updated_at": "2026-09-24T17:48:25.735Z",
+  "version": 19130,
+  "updated_at": "2026-09-24T17:48:32.410Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -19668,6 +19668,42 @@
       ],
       "requires_black_approval": true,
       "sample": false
+    },
+    {
+      "task_id": "tsk_01M3A8H1RTXKSJCRW34FC9884K",
+      "type": "custom",
+      "title": "Sweep round-53: MINT taps-check r53 + kill-trigger attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T17:48:32.410Z",
+      "assigned_to": "agent:CWI_Athena_MINT",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "all four taps recomputed live with zero delta vs r52 (manifest dual-recompute MATCH",
+        "approvals list",
+        "day2/day3 forms action=# + DRAFT badge",
+        "guard live-test exit 1 REFUSE",
+        "clips byte-identical",
+        "new-media honest count)",
+        "kill-trigger attestation re-signed r53, STAGING ONLY",
+        "memory read at start, durable claims at end",
+        "self-start under own URN (dispatcher start is forbidden)"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T17:48:32.410Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-24 r53"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-24T18:20:00Z"
     }
   ],
   "presence": {
@@ -21401,6 +21437,11 @@
       "op": "task.create",
       "at": "2026-09-24T16:50:16.193Z",
       "ref": "tsk_01M3A56BFGHA9RVXENC46CRDYX"
+    },
+    "sweep-r53-mint-2026-09-24": {
+      "op": "task.create",
+      "at": "2026-09-24T17:48:32.410Z",
+      "ref": "tsk_01M3A8H1RTXKSJCRW34FC9884K"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
