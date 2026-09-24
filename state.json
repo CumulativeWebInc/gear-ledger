@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 16653,
-  "updated_at": "2026-09-24T01:46:06.420Z",
+  "version": 16654,
+  "updated_at": "2026-09-24T01:46:10.762Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -15449,6 +15449,31 @@
       "requires_black_approval": true,
       "sample": false,
       "deadline_at": "2026-09-24T02:45:00Z"
+    },
+    {
+      "task_id": "tsk_01M38HEXE857NNH885VKD5TFNJ",
+      "type": "verification",
+      "title": "Sweep round-37: KB v2.37 runbooks + overdue-kill watch (live-recomputed)",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T01:46:10.761Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T01:46:10.762Z",
+          "by": "agent:MUSE_CWI"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-24T02:45:00Z"
     }
   ],
   "presence": {
@@ -16797,6 +16822,11 @@
       "op": "task.create",
       "at": "2026-09-24T01:44:38.229Z",
       "ref": "tsk_01M38HC32N325HT3F4GWBGK4FH"
+    },
+    "sweep-r37-care-2026-09-23": {
+      "op": "task.create",
+      "at": "2026-09-24T01:46:10.762Z",
+      "ref": "tsk_01M38HEXE857NNH885VKD5TFNJ"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
