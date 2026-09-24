@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 18643,
-  "updated_at": "2026-09-24T14:52:05.089Z",
+  "version": 18644,
+  "updated_at": "2026-09-24T14:52:32.627Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -18947,6 +18947,35 @@
       ],
       "requires_black_approval": false,
       "sample": false
+    },
+    {
+      "task_id": "tsk_01M39YESFJ1N2HPRW6X3624XSE",
+      "type": "custom",
+      "title": "Sweep round-50: Iris round-27 watch - new-proof sweep + gate attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T14:52:32.626Z",
+      "assigned_to": "agent:CWI_Visual",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "New-proof sweep vs live-recomputed cutoff (r49 Visual delivered at in-ledger timestamp), 3 scopes",
+        "Honest count of new TAG CITY proof candidates",
+        "Round-2 custody byte-identity re-verified",
+        "Gate attestation r29 FINAL FAIL 2/3/2 STANDS"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T14:52:32.627Z",
+          "by": "agent:MUSE_CWI"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false
     }
   ],
   "presence": {
@@ -20620,6 +20649,11 @@
       "op": "task.create",
       "at": "2026-09-24T14:52:05.089Z",
       "ref": "tsk_01M39YDYJZQHSR5GJJ0Q2JDGA2"
+    },
+    "sweep-r50-visual-2026-09-24": {
+      "op": "task.create",
+      "at": "2026-09-24T14:52:32.627Z",
+      "ref": "tsk_01M39YESFJ1N2HPRW6X3624XSE"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
