@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 19460,
-  "updated_at": "2026-09-24T19:45:47.589Z",
+  "version": 19461,
+  "updated_at": "2026-09-24T19:45:59.229Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -20245,6 +20245,39 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-24T20:40:00Z"
+    },
+    {
+      "task_id": "tsk_01M3AF83DVG33R81QT15WHZX2K",
+      "type": "custom",
+      "title": "Sweep round-55: Care KB v2.55 runbooks + overdue-kill watch (live-recomputed)",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T19:45:59.228Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "live overdue recompute at run time",
+        "overdue composition proven vs r54",
+        "KB v2.55 runbooks contiguous (RB-01.. latest)",
+        "commit on kb-v2-draft ONLY, main untouched",
+        "offchain-verify ANCHORED-OK",
+        "JSONL fallback if log-task.js URN gap"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T19:45:59.228Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-24 r55"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-24T20:40:00Z"
     }
   ],
   "presence": {
@@ -22033,6 +22066,11 @@
       "op": "task.create",
       "at": "2026-09-24T19:45:47.589Z",
       "ref": "tsk_01M3AF7R2480C1HHZXGQ2CNCQK"
+    },
+    "sweep-r55-care-2026-09-24": {
+      "op": "task.create",
+      "at": "2026-09-24T19:45:59.229Z",
+      "ref": "tsk_01M3AF83DVG33R81QT15WHZX2K"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
