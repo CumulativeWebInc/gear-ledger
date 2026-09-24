@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 18677,
-  "updated_at": "2026-09-24T15:06:06.438Z",
+  "version": 18678,
+  "updated_at": "2026-09-24T15:06:29.524Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -18955,7 +18955,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-24T14:52:32.626Z",
       "assigned_to": "agent:CWI_Visual",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -18964,8 +18964,15 @@
         "Round-2 custody byte-identity re-verified",
         "Gate attestation r29 FINAL FAIL 2/3/2 STANDS"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M39Z84CPABW52JB4FX2KW6J9",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/goals/tag-city-3d-rebuild/hidden_files/composition/IRIS-VERDICT-R50-2026-09-24.md",
+          "sha256": "56d43ccb1f59f16b231a9329e0cf7fee3a8be6ee600006d254ed419092d49e9b"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/goals/tag-city-3d-rebuild/hidden_files/composition/IRIS-VERDICT-R50-2026-09-24.md",
       "state_history": [
         {
           "from": "created",
@@ -18979,6 +18986,13 @@
           "at": "2026-09-24T15:05:31.801Z",
           "by": "agent:CWI_Visual",
           "note": "activation sweep 2026-09-24 (r50) — sweep executed, dossier written, zero new proof #27"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T15:06:29.523Z",
+          "by": "agent:CWI_Visual",
+          "note": "run log: goals/cwi-agent-company/hidden_files/activation-sweep/run-2026-09-24-1040-visual-r50.md"
         }
       ],
       "requires_black_approval": false,
