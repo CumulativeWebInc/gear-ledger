@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 19135,
-  "updated_at": "2026-09-24T17:49:20.621Z",
+  "version": 19136,
+  "updated_at": "2026-09-24T17:49:29.475Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -19737,6 +19737,40 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-24T18:20:00Z"
+    },
+    {
+      "task_id": "tsk_01M3A8JSG27SP4CAZX3NT1W813",
+      "type": "custom",
+      "title": "Sweep round-53: Guide ops chapter + walkthrough #54",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T17:49:29.474Z",
+      "assigned_to": "agent:CWI_Guide",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "AGENT-DECK-USER-GUIDE v2.52 written (round-n law: r53 -> v2.52): new chapter on the 13:40 EDT sweep dispatch cycle with receipts",
+        "walkthrough #54",
+        "contiguous numbered sections verified",
+        "footer + changelog updated",
+        "redisHeal() latent-defect status re-read live",
+        "memory read at start, durable claims at end",
+        "self-start under own URN (dispatcher start is forbidden)"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T17:49:29.475Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-24 r53"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-24T18:20:00Z"
     }
   ],
   "presence": {
@@ -21480,6 +21514,11 @@
       "op": "task.create",
       "at": "2026-09-24T17:48:47.643Z",
       "ref": "tsk_01M3A8HGMS8GMZ9BDQJFS7EG2P"
+    },
+    "sweep-r53-guide-2026-09-24": {
+      "op": "task.create",
+      "at": "2026-09-24T17:49:29.475Z",
+      "ref": "tsk_01M3A8JSG27SP4CAZX3NT1W813"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
