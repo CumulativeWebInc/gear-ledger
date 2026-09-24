@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 17572,
-  "updated_at": "2026-09-24T07:43:47.051Z",
+  "version": 17573,
+  "updated_at": "2026-09-24T07:43:53.121Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -16983,6 +16983,36 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-24T08:45:00Z"
+    },
+    {
+      "task_id": "tsk_01M395XWS181HANSK8T6TZF227",
+      "type": "custom",
+      "title": "Sweep round-43: Care KB v2.43 runbooks + overdue-kill watch (live-recomputed)",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T07:43:53.121Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "Care KB advanced to v2.43 with new runbook entries, pushed via ghapi_put_file, byte-verified via /git/blobs",
+        "overdue-kill figures live-recomputed from ledger at dispatch (never copied from prior logs)",
+        "ledger delivered inside 2026-09-24T08:45:00Z"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T07:43:53.121Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-24 round-43"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-24T08:45:00Z"
     }
   ],
   "presence": {
@@ -18466,6 +18496,11 @@
       "op": "task.create",
       "at": "2026-09-24T07:42:57.755Z",
       "ref": "tsk_01M395W6PRG7DMBV3V8PNW52CM"
+    },
+    "sweep-r43-care-2026-09-24": {
+      "op": "task.create",
+      "at": "2026-09-24T07:43:53.121Z",
+      "ref": "tsk_01M395XWS181HANSK8T6TZF227"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
