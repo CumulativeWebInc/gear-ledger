@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 18803,
-  "updated_at": "2026-09-24T15:44:52.552Z",
+  "version": 18804,
+  "updated_at": "2026-09-24T15:44:59.288Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -19083,6 +19083,37 @@
       ],
       "requires_black_approval": false,
       "sample": false
+    },
+    {
+      "task_id": "tsk_01M3A1ETCQ1WXZ94QSSG4PRR4A",
+      "type": "custom",
+      "title": "Sweep round-51: MINT taps-check r51 + kill-trigger attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T15:44:59.287Z",
+      "assigned_to": "agent:CWI_Athena_MINT",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "Re-run all four MINT taps LIVE: manifest sha dual-recomputed MATCH, approvals empty, form action=#+DRAFT badge only, fail-closed guard live-test REFUSED",
+        "Re-sign kill-trigger attestation STAGING ONLY",
+        "Any delta vs r50 state reported as a blocker immediately",
+        "Deliver in-ledger with report before the 16:20Z kill"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T15:44:59.288Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep r51 2026-09-24"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-24T16:20:00Z"
     }
   ],
   "presence": {
@@ -20761,6 +20792,11 @@
       "op": "task.create",
       "at": "2026-09-24T14:52:32.627Z",
       "ref": "tsk_01M39YESFJ1N2HPRW6X3624XSE"
+    },
+    "sweep-r51-mint-2026-09-24": {
+      "op": "task.create",
+      "at": "2026-09-24T15:44:59.288Z",
+      "ref": "tsk_01M3A1ETCQ1WXZ94QSSG4PRR4A"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
