@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 17158,
-  "updated_at": "2026-09-24T04:54:41.604Z",
+  "version": 17159,
+  "updated_at": "2026-09-24T04:54:46.711Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -16164,7 +16164,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-24T04:45:13.533Z",
       "assigned_to": "agent:CWI_Visual",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -16173,8 +16173,15 @@
         "round-2 proof set stays staged until Iris signs off",
         "brand pre-gate applied"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M38W820DC05PCKY0PYX0QMEM",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/tag-city-3d-rebuild/hidden_files/composition/IRIS-VERDICT-R40-2026-09-24.md",
+          "sha256": "412b5df1d9711b826564e3ab52c8361cc89a42af54272191d1e56b4f2303682b"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/goals/tag-city-3d-rebuild/hidden_files/composition/IRIS-VERDICT-R40-2026-09-24.md",
       "state_history": [
         {
           "from": "created",
@@ -16187,6 +16194,12 @@
           "from": "assigned",
           "to": "in_progress",
           "at": "2026-09-24T04:49:28.119Z",
+          "by": "agent:CWI_Visual"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T04:54:46.711Z",
           "by": "agent:CWI_Visual"
         }
       ],
