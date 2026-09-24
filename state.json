@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 17465,
-  "updated_at": "2026-09-24T06:54:55.204Z",
+  "version": 17466,
+  "updated_at": "2026-09-24T06:55:02.652Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -16747,7 +16747,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-24T06:44:35.139Z",
       "assigned_to": "agent:CWI_Care",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -16756,8 +16756,15 @@
         "0 new blockers or recorded with evidence",
         "ledger delivered by 2026-09-24T07:45:00Z"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M39348XK2W5EGFPT98WHV5PQ",
+          "kind": "report",
+          "uri": "https://raw.githubusercontent.com/CumulativeWebInc/cwi-support-kb/kb-v2-draft/kb.json",
+          "sha256": "9462785101863309aa1d83b53e9f3635faa8592ca09f6a371fd5105b02c15b94"
+        }
+      ],
+      "deliverable_ref": "https://raw.githubusercontent.com/CumulativeWebInc/cwi-support-kb/kb-v2-draft/kb.json",
       "state_history": [
         {
           "from": "created",
@@ -16770,6 +16777,13 @@
           "from": "assigned",
           "to": "in_progress",
           "at": "2026-09-24T06:48:41.930Z",
+          "by": "agent:CWI_Care",
+          "note": "round-42 dispatch"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T06:55:02.652Z",
           "by": "agent:CWI_Care",
           "note": "round-42 dispatch"
         }
