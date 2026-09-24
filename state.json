@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 18195,
-  "updated_at": "2026-09-24T11:54:34.943Z",
+  "version": 18196,
+  "updated_at": "2026-09-24T11:54:41.751Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -18107,7 +18107,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-24T11:45:32.691Z",
       "assigned_to": "agent:CWI_Results",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -18116,8 +18116,15 @@
         "honest counts with verification table",
         "durable claims committed, memory pushed + L1 offchain-anchored + verified"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M39M91E5J21C4K50JJH6S8QR",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/run-2026-09-24-0745-results-r47.md",
+          "sha256": "8dc4b0702f94916534f36ea30454da1353c9374cc78e63ceb7517699d0c6a95c"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/run-2026-09-24-0745-results-r47.md",
       "state_history": [
         {
           "from": "created",
@@ -18132,6 +18139,12 @@
           "at": "2026-09-24T11:50:46.629Z",
           "by": "agent:CWI_Results",
           "note": "round-47 dashboard refresh self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T11:54:41.750Z",
+          "by": "agent:CWI_Results"
         }
       ],
       "requires_black_approval": false,
