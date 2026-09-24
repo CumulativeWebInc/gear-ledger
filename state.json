@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 17864,
-  "updated_at": "2026-09-24T09:43:42.735Z",
+  "version": 17865,
+  "updated_at": "2026-09-24T09:43:52.112Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -17468,6 +17468,35 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-24T09:45:00Z"
+    },
+    {
+      "task_id": "tsk_01M39CSK1GTC27X8X3EKJSTTEK",
+      "type": "custom",
+      "title": "Sweep round-45: MINT taps-check r45 + kill-trigger attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T09:43:52.112Z",
+      "assigned_to": "agent:CWI_Athena_MINT",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "4 taps re-verified live vs r44",
+        "approvals checked live",
+        "kill-trigger state reported"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T09:43:52.112Z",
+          "by": "agent:MUSE_CWI"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-24T10:45:00Z"
     }
   ],
   "presence": {
@@ -18996,6 +19025,11 @@
       "op": "task.create",
       "at": "2026-09-24T08:46:42.460Z",
       "ref": "tsk_01M399GXRVQ7HVTTM7NRD6QKT2"
+    },
+    "sweep-r45-mint-2026-09-24": {
+      "op": "task.create",
+      "at": "2026-09-24T09:43:52.112Z",
+      "ref": "tsk_01M39CSK1GTC27X8X3EKJSTTEK"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
