@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 19753,
-  "updated_at": "2026-09-24T21:45:14.999Z",
+  "version": 19754,
+  "updated_at": "2026-09-24T21:46:51.430Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -20765,6 +20765,42 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-24T21:40:00Z"
+    },
+    {
+      "task_id": "tsk_01M3AP5DN6KZJGNSWJ2BKBXJKJ",
+      "type": "custom",
+      "title": "Sweep round-57: MINT taps-check r57 + kill-trigger attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T21:46:51.430Z",
+      "assigned_to": "agent:CWI_Athena_MINT",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {
+        "round": 57,
+        "kind": "activation-sweep"
+      },
+      "acceptance": [
+        "4 taps re-checked vs r56, GREEN or drift reported with receipts",
+        "8/8 clips byte-identical or drift reported",
+        "kill-trigger attestation STANDS (STAGING ONLY, no on-chain action)",
+        "honest zeros internal",
+        "durable claims written + offchain-verify to ANCHORED-OK",
+        "delivered inside 2026-09-24T22:40:00Z kill"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T21:46:51.430Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-24 round 57"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-24T22:40:00Z"
     }
   ],
   "presence": {
@@ -22598,6 +22634,11 @@
       "op": "task.create",
       "at": "2026-09-24T20:49:36.534Z",
       "ref": "tsk_01M3AJWK8NR3MZPTJ9FN396ZKG"
+    },
+    "sweep-r57-mint": {
+      "op": "task.create",
+      "at": "2026-09-24T21:46:51.430Z",
+      "ref": "tsk_01M3AP5DN6KZJGNSWJ2BKBXJKJ"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
