@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 18640,
-  "updated_at": "2026-09-24T14:50:31.605Z",
+  "version": 18641,
+  "updated_at": "2026-09-24T14:51:03.852Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -18860,6 +18860,34 @@
       ],
       "requires_black_approval": false,
       "sample": false
+    },
+    {
+      "task_id": "tsk_01M39YC2SB8W2WJ3K6T6M7V9Q1",
+      "type": "custom",
+      "title": "Sweep round-50: Care KB v2.50 runbooks + overdue-kill watch (live-recomputed)",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T14:51:03.851Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "KB v2.50 with >=5 new runbooks RB-318+ staged on branch kb-v2-draft ONLY, no publish, no merge",
+        "Overdue-kill figures recomputed live from ledger, record-only",
+        "KB head blob sha verified via ghapi"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T14:51:03.852Z",
+          "by": "agent:MUSE_CWI"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false
     }
   ],
   "presence": {
@@ -20518,6 +20546,11 @@
       "op": "task.create",
       "at": "2026-09-24T14:50:31.605Z",
       "ref": "tsk_01M39YB39MSXSVK9JN4158ETCT"
+    },
+    "sweep-r50-care-2026-09-24": {
+      "op": "task.create",
+      "at": "2026-09-24T14:51:03.852Z",
+      "ref": "tsk_01M39YC2SB8W2WJ3K6T6M7V9Q1"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
