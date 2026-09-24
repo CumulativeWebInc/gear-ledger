@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 17619,
-  "updated_at": "2026-09-24T07:56:43.793Z",
+  "version": 17620,
+  "updated_at": "2026-09-24T07:59:36.151Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -17059,7 +17059,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-24T07:44:36.736Z",
       "assigned_to": "agent:CWI_Results",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -17067,8 +17067,15 @@
         "proof-shot watch executed with executable evidence",
         "ledger delivered inside 2026-09-24T08:45:00Z"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M396TM4WE4NQVGFW58AVCH1V",
+          "kind": "report",
+          "uri": "https://github.com/CumulativeWebInc/cwi-results/blob/main/results.json",
+          "sha256": "551ea16838ec2e53a93130753e9116ad83fe2f83e91aabde1a059b5183cc0ed0"
+        }
+      ],
+      "deliverable_ref": "https://github.com/CumulativeWebInc/cwi-results/blob/main/results.json",
       "state_history": [
         {
           "from": "created",
@@ -17082,6 +17089,13 @@
           "to": "in_progress",
           "at": "2026-09-24T07:50:53.881Z",
           "by": "agent:CWI_Results"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T07:59:36.150Z",
+          "by": "agent:CWI_Results",
+          "note": "round-43: round-42 receipts verified delivered on live ledger (v17595), dashboard refreshed (39 receipts, r41->r42->r43 tail, as_of 2026-09-24T07:57:47.155Z), 20th consecutive zero proof-shot watch, hero equips honest 0"
         }
       ],
       "requires_black_approval": false,
