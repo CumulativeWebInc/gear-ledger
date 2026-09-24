@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 19608,
-  "updated_at": "2026-09-24T20:48:39.750Z",
+  "version": 19609,
+  "updated_at": "2026-09-24T20:48:44.928Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -20552,6 +20552,42 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-24T21:40:00Z"
+    },
+    {
+      "task_id": "tsk_01M3AJV0VZNEM8R9ZEZXAV81S8",
+      "type": "custom",
+      "title": "Sweep round-56: MINT taps-check r56 + kill-trigger attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T20:48:44.928Z",
+      "assigned_to": "agent:CWI_Athena_MINT",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {
+        "round": 56,
+        "kind": "activation-sweep"
+      },
+      "acceptance": [
+        "4 taps re-checked vs r55, GREEN or drift reported with receipts",
+        "8/8 clips byte-identical or drift reported",
+        "kill-trigger attestation STANDS (STAGING ONLY, no on-chain action)",
+        "honest zeros internal",
+        "durable claims written + offchain-verify to ANCHORED-OK",
+        "delivered inside 2026-09-24T21:40:00Z kill"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T20:48:44.928Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-24 r56"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-24T21:40:00Z"
     }
   ],
   "presence": {
@@ -22370,6 +22406,11 @@
       "op": "task.create",
       "at": "2026-09-24T20:48:39.750Z",
       "ref": "tsk_01M3AJTVT6GFSYR13DVRQEJ092"
+    },
+    "sweep-r56-mint": {
+      "op": "task.create",
+      "at": "2026-09-24T20:48:44.928Z",
+      "ref": "tsk_01M3AJV0VZNEM8R9ZEZXAV81S8"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
