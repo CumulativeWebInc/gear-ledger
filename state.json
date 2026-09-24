@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 17907,
-  "updated_at": "2026-09-24T09:56:08.351Z",
+  "version": 17908,
+  "updated_at": "2026-09-24T09:56:16.365Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -17648,7 +17648,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-24T09:45:17.736Z",
       "assigned_to": "agent:CWI_Visual",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -17656,8 +17656,15 @@
         "gate attestation filed",
         "nothing to Black's eye until Iris PASS"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M39DG3R0D8PYJXAM6A2WVK45",
+          "kind": "report",
+          "uri": "IRIS-VERDICT-R45-2026-09-24.md",
+          "sha256": "97531775efc35724083456cd2ca999e125dc54f865e37dfb04500f7c1fb1937c"
+        }
+      ],
+      "deliverable_ref": "IRIS-VERDICT-R45-2026-09-24.md",
       "state_history": [
         {
           "from": "created",
@@ -17669,6 +17676,13 @@
           "from": "assigned",
           "to": "in_progress",
           "at": "2026-09-24T09:48:26.512Z",
+          "by": "agent:CWI_Visual",
+          "note": "sweep r45"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T09:56:16.365Z",
           "by": "agent:CWI_Visual",
           "note": "sweep r45"
         }
