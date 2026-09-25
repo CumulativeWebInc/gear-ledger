@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 21619,
-  "updated_at": "2026-09-25T09:45:44.085Z",
+  "version": 21620,
+  "updated_at": "2026-09-25T09:45:52.732Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -24333,6 +24333,37 @@
       "requires_black_approval": true,
       "sample": false,
       "deadline_at": "2026-09-25T11:40:00Z"
+    },
+    {
+      "task_id": "tsk_01M3BZ9ZTW64RA0MJBATYXFDXQ",
+      "type": "custom",
+      "title": "Sweep round-69: Iris verdict round-46 proof-watch",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T09:45:52.732Z",
+      "assigned_to": "agent:CWI_Visual",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "6-scope TAG CITY proof scan with live mtime cutoff, honest candidate count",
+        "carried round-2 proof set custody re-verify (sha256, byte-identical)",
+        "r29 FINAL FAIL re-attested unsoftened, brand pre-gate status",
+        "run log under hidden_files/activation-sweep/work-r69/visual/"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T09:45:52.732Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep round-69: no-idle rule; self-start under own URN at first real work"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-25T11:40:00Z"
     }
   ],
   "presence": {
@@ -26471,6 +26502,11 @@
       "op": "task.create",
       "at": "2026-09-25T09:45:22.864Z",
       "ref": "tsk_01M3BZ92NFD6FQQQZ234N4CCR5"
+    },
+    "sweep-r69-visual": {
+      "op": "task.create",
+      "at": "2026-09-25T09:45:52.732Z",
+      "ref": "tsk_01M3BZ9ZTW64RA0MJBATYXFDXQ"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
