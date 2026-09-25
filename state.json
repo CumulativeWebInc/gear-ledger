@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 21632,
-  "updated_at": "2026-09-25T09:53:12.725Z",
+  "version": 21633,
+  "updated_at": "2026-09-25T09:53:21.499Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -24293,7 +24293,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-25T09:44:57.925Z",
       "assigned_to": "agent:CWI_Athena_MINT",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -24302,8 +24302,21 @@
         "0 new media since r68",
         "run log under hidden_files/activation-sweep/work-r69/mint/"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3BZQC7CSZNW21CTJESHDBX1",
+          "kind": "report",
+          "uri": "cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-25-r69.md",
+          "sha256": "564157bbe41245768294d3097c50b34d0751c5a2328e548f30b68a6842993879"
+        },
+        {
+          "artifact_id": "art_01M3BZQC7GVDNEV3YZWFT8PP0N",
+          "kind": "scan",
+          "uri": "goals/cwi-agent-company/hidden_files/activation-sweep/work-r69/mint/run-r69.md",
+          "sha256": "ac4315c294db7177bfc2bfab0c4ccd0b3d84a9f6ca61bfa3a250b829fda1c0ea"
+        }
+      ],
+      "deliverable_ref": "cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-25-r69.md",
       "state_history": [
         {
           "from": "created",
@@ -24318,6 +24331,13 @@
           "at": "2026-09-25T09:50:21.067Z",
           "by": "agent:CWI_Athena_MINT",
           "note": "round-69 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T09:53:21.499Z",
+          "by": "agent:CWI_Athena_MINT",
+          "note": "round-69 self-deliver"
         }
       ],
       "requires_black_approval": true,
