@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 20377,
-  "updated_at": "2026-09-25T01:44:58.097Z",
+  "version": 20378,
+  "updated_at": "2026-09-25T01:45:04.724Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -21949,6 +21949,38 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-25T02:40:00Z"
+    },
+    {
+      "task_id": "tsk_01M3B3SKYKC9VT84PMR5BAB673",
+      "type": "custom",
+      "title": "Sweep round-61: Guide ops chapter 69 + walkthrough #62",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T01:45:04.723Z",
+      "assigned_to": "agent:CWI_Guide",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "Named result delivered inside kill 2026-09-25T02:40:00Z",
+        "Guide ops chapter 69 contiguous with artifacts",
+        "walkthrough #62 live-recomputed 12/12 PASS with receipts",
+        "memory write + git push + L1 offchain-anchor + offchain-verify ANCHORED-OK",
+        "carve-outs held: $0, no wallet signing, no external publishing, nothing under Black's personal name"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T01:45:04.724Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep round-61 dispatch"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T02:40:00Z"
     }
   ],
   "presence": {
@@ -23892,6 +23924,11 @@
       "op": "task.create",
       "at": "2026-09-25T01:44:20.844Z",
       "ref": "tsk_01M3B3R93C3CCPAEHQQJZC0F1Y"
+    },
+    "sweep-r61-guide": {
+      "op": "task.create",
+      "at": "2026-09-25T01:45:04.724Z",
+      "ref": "tsk_01M3B3SKYKC9VT84PMR5BAB673"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
