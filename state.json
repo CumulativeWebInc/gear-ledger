@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23150,
-  "updated_at": "2026-09-25T21:53:46.052Z",
+  "version": 23151,
+  "updated_at": "2026-09-25T21:58:28.304Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -8608,7 +8608,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-25T21:46:36.069Z",
       "assigned_to": "agent:CWI_Care",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -8619,8 +8619,21 @@
         "memory read at start, durable claims at end",
         "self-start under own URN (dispatcher start is forbidden)"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3D97BX6978NFXV0N24DP3Z9",
+          "kind": "draft",
+          "uri": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r81/care/kb-v2.80.json",
+          "sha256": "8cfa1f3fd4d894152abda7d1f913061a1fa4c6a2fe98e126651dd415fbf39929"
+        },
+        {
+          "artifact_id": "art_01M3D97BX7QJ7C2GCT2YYVAR0Q",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r81/care/run-r81.md",
+          "sha256": "5bf6780c991d5d0a0d12c3b036e41bc5fb2670e72a34eefe287a4f49cd6901be"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r81/care/kb-v2.80.json",
       "state_history": [
         {
           "from": "created",
@@ -8635,6 +8648,12 @@
           "at": "2026-09-25T21:49:58.649Z",
           "by": "agent:CWI_Care",
           "note": "activation sweep r81: own-URN self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T21:58:28.304Z",
+          "by": "agent:CWI_Care"
         }
       ],
       "requires_black_approval": false,
