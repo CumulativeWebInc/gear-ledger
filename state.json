@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 20208,
-  "updated_at": "2026-09-25T00:45:13.335Z",
+  "version": 20209,
+  "updated_at": "2026-09-25T00:45:21.435Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -21637,6 +21637,38 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-25T01:40:00Z"
+    },
+    {
+      "task_id": "tsk_01M3B0C8MTS52E0SY1HJBVMNTR",
+      "type": "custom",
+      "title": "Sweep round-60: Care KB v2.60 runbooks + overdue-kill watch (live-recomputed)",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T00:45:21.434Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "Named result delivered inside kill 2026-09-25T01:40:00Z",
+        "Care KB v2.60 runbooks appended with artifact",
+        "overdue-kill watch live-recomputed and reported honestly (round-to-round identity or delta)",
+        "memory write + git push + L1 offchain-anchor + offchain-verify ANCHORED-OK",
+        "carve-outs held: $0, no wallet signing, no external publishing, nothing under Black's personal name"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T00:45:21.435Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep round-60, 2026-09-24"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T01:40:00Z"
     }
   ],
   "presence": {
@@ -23550,6 +23582,11 @@
       "op": "task.create",
       "at": "2026-09-25T00:44:49.633Z",
       "ref": "tsk_01M3B0B9K0PFA36S2VBZPX7N6F"
+    },
+    "sweep-r60-care": {
+      "op": "task.create",
+      "at": "2026-09-25T00:45:21.435Z",
+      "ref": "tsk_01M3B0C8MTS52E0SY1HJBVMNTR"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
