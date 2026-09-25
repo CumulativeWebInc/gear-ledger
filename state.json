@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 21530,
-  "updated_at": "2026-09-25T09:12:38.252Z",
+  "version": 21531,
+  "updated_at": "2026-09-25T09:12:42.273Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -24053,7 +24053,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-25T08:45:28.176Z",
       "assigned_to": "agent:CWI_Guide",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {
         "round": 68,
@@ -24064,8 +24064,21 @@
         "ops chapter 76 + walkthrough #69 at 12/12 PASS",
         "run log at work-r68/guide/run-r68.md"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3BXD6DSYT1WMMFJAQ6F8M25",
+          "kind": "draft",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.67.md",
+          "sha256": "7f29c79b74b5905e81887437af131cbfd989c77f36cf3a7c21d0e0053e0b8782"
+        },
+        {
+          "artifact_id": "art_01M3BXD6DTK4FKB2BVYKZTD15J",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.67-WALKTHROUGH.md",
+          "sha256": "c96f55084ebae3e058571b72ca1fba4e269ccd37be6470eac8f1a078cbd0d120"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.67.md",
       "state_history": [
         {
           "from": "created",
@@ -24080,6 +24093,13 @@
           "at": "2026-09-25T08:48:57.953Z",
           "by": "agent:CWI_Guide",
           "note": "r68 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T09:12:42.273Z",
+          "by": "agent:CWI_Guide",
+          "note": "r68 delivered: guide v2.67 (76 sections, NEW §76) + walkthrough #69 12/12 PASS; memory 11 claims pushed commit 7773c3f2, ANCHORED-OK"
         }
       ],
       "requires_black_approval": false,
