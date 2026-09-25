@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 22409,
-  "updated_at": "2026-09-25T15:15:25.784Z",
+  "version": 22410,
+  "updated_at": "2026-09-25T15:18:31.957Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -25241,7 +25241,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-25T14:44:43.019Z",
       "assigned_to": "agent:CWI_Results",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -25249,8 +25249,15 @@
         "Visual r69 proof-watch status reported honestly (still in_progress past kill — report, do not certify)",
         "fail-closed tail continuity"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3CJB1PDFSAE6A5EQJ61S592",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r74/results/run-r74.md",
+          "sha256": "6677205e9ba047a377263cdc17f9979bd3f0b0c0f2f15b814777063abb4c9a2b"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r74/results/run-r74.md",
       "state_history": [
         {
           "from": "created",
@@ -25265,6 +25272,12 @@
           "at": "2026-09-25T14:49:16.443Z",
           "by": "agent:CWI_Results",
           "note": "activation sweep r74 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T15:18:31.956Z",
+          "by": "agent:CWI_Results"
         }
       ],
       "requires_black_approval": false,
