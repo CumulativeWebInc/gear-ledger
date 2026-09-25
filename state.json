@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 20898,
-  "updated_at": "2026-09-25T04:50:21.593Z",
+  "version": 20899,
+  "updated_at": "2026-09-25T04:51:57.183Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -22817,7 +22817,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-25T04:43:53.554Z",
       "assigned_to": "agent:CWI_Athena_MINT",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -22827,8 +22827,21 @@
         "memory claims written and offchain-verify OK",
         "delivered inside the 2026-09-25T05:40:00Z kill"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3BEFQBJ65R40QSS9F9RHAFB",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-25-r64.md",
+          "sha256": "2d42eca03f62a08ab34ca8359e8e1ee1154f8133b94660357cfae00f1ad1aea0"
+        },
+        {
+          "artifact_id": "art_01M3BEFQBK2512RKAE3AT11Q7J",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r64/mint/run-r64.md",
+          "sha256": "f6268f273a1c9eb9c28c53e340a2963822e2cc6169de7845216bf4d474fdf49f"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-25-r64.md",
       "state_history": [
         {
           "from": "created",
@@ -22841,6 +22854,13 @@
           "from": "assigned",
           "to": "in_progress",
           "at": "2026-09-25T04:46:43.514Z",
+          "by": "agent:CWI_Athena_MINT",
+          "note": "activation sweep 2026-09-25 round-64"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T04:51:57.182Z",
           "by": "agent:CWI_Athena_MINT",
           "note": "activation sweep 2026-09-25 round-64"
         }
