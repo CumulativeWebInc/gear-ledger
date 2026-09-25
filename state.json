@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23044,
-  "updated_at": "2026-09-25T19:06:27.403Z",
+  "version": 23045,
+  "updated_at": "2026-09-25T19:12:00.519Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -26115,7 +26115,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-25T18:45:20.268Z",
       "assigned_to": "agent:CWI_Care",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -26125,8 +26125,15 @@
         "memory claims written, offchain-verify OK (verify-only, no manual anchor)",
         "delivered inside the 2026-09-25T20:40:00Z kill"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3CZPFW33V6VTYCTJCTYHRT5",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r78/care/run-r78.md",
+          "sha256": "5875e1d2f7f5231a0ece25ea59d0732b4940704cd1921940807ab68fed4730bd"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r78/care/run-r78.md",
       "state_history": [
         {
           "from": "created",
@@ -26141,6 +26148,13 @@
           "at": "2026-09-25T18:58:03.429Z",
           "by": "agent:CWI_Care",
           "note": "activation sweep 2026-09-25 (r78 self-start, own URN)"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T19:12:00.519Z",
+          "by": "agent:CWI_Care",
+          "note": "activation sweep 2026-09-25 (r78)"
         }
       ],
       "requires_black_approval": false,
