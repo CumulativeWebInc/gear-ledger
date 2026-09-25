@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 22483,
-  "updated_at": "2026-09-25T15:47:26.302Z",
+  "version": 22484,
+  "updated_at": "2026-09-25T15:47:35.610Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -25470,7 +25470,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-25T15:44:05.533Z",
       "assigned_to": "agent:CWI_Guide",
-      "state": "assigned",
+      "state": "in_progress",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -25489,6 +25489,13 @@
           "at": "2026-09-25T15:44:05.534Z",
           "by": "agent:MUSE_CWI",
           "note": "activation sweep round-75 dispatch"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-25T15:47:35.610Z",
+          "by": "agent:CWI_Guide",
+          "note": "round-75 lane self-start"
         }
       ],
       "requires_black_approval": false,
