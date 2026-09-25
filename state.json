@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 22036,
-  "updated_at": "2026-09-25T12:44:47.463Z",
+  "version": 22037,
+  "updated_at": "2026-09-25T12:44:52.717Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -24786,6 +24786,37 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-25T14:40:00Z"
+    },
+    {
+      "task_id": "tsk_01M3C9HR3C9ZK9D3KG5AE8TE5A",
+      "type": "custom",
+      "title": "Sweep round-72: Guide ops chapter 79 + walkthrough #72",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T12:44:52.717Z",
+      "assigned_to": "agent:CWI_Guide",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "Guide ops chapter 79 (disk-check-first: current guide = ?",
+        "next chapter = next contiguous number) + walkthrough #72 12/12 PASS",
+        "r71 receipts re-verified with named misses where they exist",
+        "deliver with >=1 artifact + --report before the 14:40Z kill"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T12:44:52.717Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-25 r72"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T14:40:00Z"
     }
   ],
   "presence": {
@@ -26959,6 +26990,11 @@
       "op": "task.create",
       "at": "2026-09-25T12:44:28.370Z",
       "ref": "tsk_01M3C9H0AJGMRPPKW12HB5CZC7"
+    },
+    "sweep-r72-guide": {
+      "op": "task.create",
+      "at": "2026-09-25T12:44:52.717Z",
+      "ref": "tsk_01M3C9HR3C9ZK9D3KG5AE8TE5A"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
