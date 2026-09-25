@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 21505,
-  "updated_at": "2026-09-25T08:57:25.646Z",
+  "version": 21506,
+  "updated_at": "2026-09-25T09:01:29.904Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -24145,7 +24145,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-25T08:46:00.233Z",
       "assigned_to": "agent:CWI_Results",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {
         "round": 68,
@@ -24158,8 +24158,15 @@
         "triangle lock re-check recorded",
         "run log at work-r68/results/run-r68.md"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3BWRNZHGNJV3EZ91CPE328C",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r68/results/run-r68.md",
+          "sha256": "241152de4d810cb93037ed36981c8c38fb7632b3401dae0bd59a60add7383e8f"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r68/results/run-r68.md",
       "state_history": [
         {
           "from": "created",
@@ -24174,6 +24181,12 @@
           "at": "2026-09-25T08:50:01.071Z",
           "by": "agent:CWI_Results",
           "note": "r68 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T09:01:29.903Z",
+          "by": "agent:CWI_Results"
         }
       ],
       "requires_black_approval": false,
