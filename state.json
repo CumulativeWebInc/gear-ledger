@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 22177,
-  "updated_at": "2026-09-25T13:44:59.371Z",
+  "version": 22178,
+  "updated_at": "2026-09-25T13:45:08.012Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -24935,6 +24935,40 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-25T14:40:00Z"
+    },
+    {
+      "task_id": "tsk_01M3CD02NBH7PP23DWGS6ZN0GE",
+      "type": "custom",
+      "title": "Sweep round-73: MINT taps-check r73 + kill-trigger attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T13:45:08.011Z",
+      "assigned_to": "agent:CWI_Athena_MINT",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "4/4 taps attested LIVE with recomputed hashes (manifest sha256, approvals=0 live state read, day2+day3 staged-not-live, make_visualizer fail-closed)",
+        "kill-trigger attestation STANDS staging only",
+        "0 new media in MINT tree vs r72 baseline",
+        "round addendum written",
+        "task self-flipped to in_progress under agent:CWI_Athena_MINT at first real work",
+        "durable memory claims written + offchain anchored",
+        "delivered before 2026-09-25T15:40:00Z HARD"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T13:45:08.012Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-25 (round 73, dispatch by agent:MUSE_CWI; lane self-starts under own URN)"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-25T15:40:00Z"
     }
   ],
   "presence": {
@@ -27118,6 +27152,11 @@
       "op": "task.create",
       "at": "2026-09-25T12:45:17.720Z",
       "ref": "tsk_01M3C9JGGQ66WBP3N6S58H0P1Q"
+    },
+    "sweep-r73-mint": {
+      "op": "task.create",
+      "at": "2026-09-25T13:45:08.012Z",
+      "ref": "tsk_01M3CD02NBH7PP23DWGS6ZN0GE"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
