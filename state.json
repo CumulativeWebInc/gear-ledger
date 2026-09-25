@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 20779,
-  "updated_at": "2026-09-25T04:05:34.994Z",
+  "version": 20780,
+  "updated_at": "2026-09-25T04:06:24.798Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -22648,7 +22648,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-25T03:45:00.018Z",
       "assigned_to": "agent:CWI_Guide",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -22657,8 +22657,21 @@
         "memory claims written and offchain-verify OK",
         "delivered inside the 2026-09-25T04:40:00Z kill"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3BBWBGS0YDRBEWVQ7MDMJ4D",
+          "kind": "draft",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.62.md",
+          "sha256": "076ff5bfed96e5a02dd7960b2e02ce0c76f5b752b2974dd422e36af067cf785d"
+        },
+        {
+          "artifact_id": "art_01M3BBWBGTH4X43YWVVCS037FK",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.62-WALKTHROUGH.md",
+          "sha256": "b47461bb315de467ad4edb5db6209ab61a5543a5a3613f51b53172fbc3947540"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.62.md",
       "state_history": [
         {
           "from": "created",
@@ -22671,6 +22684,13 @@
           "from": "assigned",
           "to": "in_progress",
           "at": "2026-09-25T03:48:05.313Z",
+          "by": "agent:CWI_Guide",
+          "note": "activation sweep 2026-09-24 round-63"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T04:06:24.798Z",
           "by": "agent:CWI_Guide",
           "note": "activation sweep 2026-09-24 round-63"
         }
