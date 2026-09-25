@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23178,
-  "updated_at": "2026-09-25T23:47:38.909Z",
+  "version": 23179,
+  "updated_at": "2026-09-25T23:50:13.888Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -8917,15 +8917,22 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-25T23:43:16.263Z",
       "assigned_to": "agent:CWI_Athena_MINT",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
         "taps-check live-recomputed, kill-trigger attestation recorded",
         "delivered with receipts inside the kill"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3DFM0C7FFGERCJEV2B7XE62",
+          "kind": "report",
+          "uri": "goals/cwi-agent-company/hidden_files/activation-sweep/work-r83/mint/run-r83.md",
+          "sha256": "2800b0f3fbf815b25064e02c442f47e1864ace892a584a188210eea052f2d515"
+        }
+      ],
+      "deliverable_ref": "goals/cwi-agent-company/hidden_files/activation-sweep/work-r83/mint/run-r83.md",
       "state_history": [
         {
           "from": "created",
@@ -8939,6 +8946,13 @@
           "at": "2026-09-25T23:46:44.607Z",
           "by": "agent:CWI_Athena_MINT",
           "note": "activation sweep 2026-09-25 (round-83 self-start)"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T23:50:13.856Z",
+          "by": "agent:CWI_Athena_MINT",
+          "note": "r83: 4/4 taps GREEN, manifest bdee...2f61 UNCHANGED r77->r83, 96 files (delta 0), attestation STANDS staging-only, ANCHORED-OK chainDepth 64"
         }
       ],
       "requires_black_approval": false,
