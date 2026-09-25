@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23173,
-  "updated_at": "2026-09-25T23:43:16.264Z",
+  "version": 23174,
+  "updated_at": "2026-09-25T23:43:31.581Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -8937,6 +8937,35 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-26T01:50:00Z"
+    },
+    {
+      "task_id": "tsk_01M3DF7RQWA857HF045QC8NP2K",
+      "type": "custom",
+      "title": "Sweep round-83: Care KB v2.82 + overdue-kill watch recompute",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T23:43:31.580Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "KB v2.82 shipped on kb-v2-draft branch",
+        "overdue-kill watch live-recomputed",
+        "delivered with receipts inside the kill"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T23:43:31.581Z",
+          "by": "agent:MUSE_CWI"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-26T01:50:00Z"
     }
   ],
   "presence": {
@@ -11200,6 +11229,11 @@
       "op": "task.create",
       "at": "2026-09-25T23:43:16.264Z",
       "ref": "tsk_01M3DF79S7JMX4K2S0ZWSBHMFN"
+    },
+    "sweep-r83-care": {
+      "op": "task.create",
+      "at": "2026-09-25T23:43:31.581Z",
+      "ref": "tsk_01M3DF7RQWA857HF045QC8NP2K"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
