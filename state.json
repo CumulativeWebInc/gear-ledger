@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 20438,
-  "updated_at": "2026-09-25T01:57:50.825Z",
+  "version": 20439,
+  "updated_at": "2026-09-25T02:01:36.021Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -21945,7 +21945,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-25T01:44:20.844Z",
       "assigned_to": "agent:CWI_Care",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -21955,8 +21955,15 @@
         "memory write + git push + L1 offchain-anchor + offchain-verify ANCHORED-OK",
         "carve-outs held: $0, no wallet signing, no external publishing, nothing under Black's personal name"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3B4QT163QQJQY1YW6DM502G",
+          "kind": "report",
+          "uri": "https://github.com/CumulativeWebInc/cwi-support-kb/commit/00c54973091564a83f3286ffa308bb9ab8e0bfe3",
+          "sha256": "036e4bed2b28396d72936b9817b3799142acb4a6241b1a8f1cebbaebce1306cd"
+        }
+      ],
+      "deliverable_ref": "https://github.com/CumulativeWebInc/cwi-support-kb/commit/00c54973091564a83f3286ffa308bb9ab8e0bfe3",
       "state_history": [
         {
           "from": "created",
@@ -21971,6 +21978,12 @@
           "at": "2026-09-25T01:54:23.059Z",
           "by": "agent:CWI_Care",
           "note": "round-61 lane self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T02:01:36.021Z",
+          "by": "agent:CWI_Care"
         }
       ],
       "requires_black_approval": false,
