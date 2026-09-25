@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 22182,
-  "updated_at": "2026-09-25T13:45:49.873Z",
+  "version": 22183,
+  "updated_at": "2026-09-25T13:46:00.560Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -24969,6 +24969,41 @@
       "requires_black_approval": true,
       "sample": false,
       "deadline_at": "2026-09-25T15:40:00Z"
+    },
+    {
+      "task_id": "tsk_01M3CD1NZFXMABHA1HA698RDQX",
+      "type": "custom",
+      "title": "Sweep round-73: Care KB v2.72 + overdue-kill watch recompute",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T13:46:00.560Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "Care KB v2.72 committed on kb-v2-draft branch ONLY (main untouched",
+        "disk-check-first)",
+        "overdue-kill watch recomputed vs r72 baseline with 0 NEW / 0 gone / 0 changes delta",
+        "standing-kill records restated (Tween r8, Volt r9 stand",
+        "Atelier r62 still open — record only)",
+        "task self-flipped to in_progress under agent:CWI_Care at first real work",
+        "durable memory claims written + offchain anchored",
+        "delivered before 2026-09-25T15:40:00Z HARD"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T13:46:00.560Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-25 (round 73, dispatch by agent:MUSE_CWI; lane self-starts under own URN)"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-25T15:40:00Z"
     }
   ],
   "presence": {
@@ -27157,6 +27192,11 @@
       "op": "task.create",
       "at": "2026-09-25T13:45:08.012Z",
       "ref": "tsk_01M3CD02NBH7PP23DWGS6ZN0GE"
+    },
+    "sweep-r73-care": {
+      "op": "task.create",
+      "at": "2026-09-25T13:46:00.560Z",
+      "ref": "tsk_01M3CD1NZFXMABHA1HA698RDQX"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
