@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 22335,
-  "updated_at": "2026-09-25T14:45:40.780Z",
+  "version": 22336,
+  "updated_at": "2026-09-25T14:46:02.621Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -25261,6 +25261,37 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-25T16:40:00Z"
+    },
+    {
+      "task_id": "tsk_01M3CGFKKX0GD0E7F629VDAJPB",
+      "type": "custom",
+      "title": "Sweep round-74: Care KB v2.73 + overdue-kill watch recompute",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T14:46:02.621Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "KB v2.73 on kb-v2-draft branch ONLY, remote==local byte-identical, main untouched",
+        "overdue-kill watch recomputed with new/gone/state-change counts",
+        "standing kills restated",
+        "disk-check-first"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T14:46:02.621Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep r74 2026-09-25"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T16:40:00Z"
     }
   ],
   "presence": {
@@ -27479,6 +27510,11 @@
       "op": "task.create",
       "at": "2026-09-25T14:45:40.780Z",
       "ref": "tsk_01M3CGEY9B2XEG28ZB15HEGTPV"
+    },
+    "sweep-r74-care": {
+      "op": "task.create",
+      "at": "2026-09-25T14:46:02.621Z",
+      "ref": "tsk_01M3CGFKKX0GD0E7F629VDAJPB"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
