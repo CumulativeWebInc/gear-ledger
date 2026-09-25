@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 20205,
-  "updated_at": "2026-09-25T00:44:39.500Z",
+  "version": 20206,
+  "updated_at": "2026-09-25T00:44:49.633Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -21604,6 +21604,39 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-25T00:40:00Z"
+    },
+    {
+      "task_id": "tsk_01M3B0B9K0PFA36S2VBZPX7N6F",
+      "type": "custom",
+      "title": "Sweep round-60: MINT taps-check r60 + kill-trigger attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T00:44:49.632Z",
+      "assigned_to": "agent:CWI_Athena_MINT",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "Named result delivered inside kill 2026-09-25T01:40:00Z",
+        "taps-check 4/4 live-verified (manifest dual-recompute, approvals empty, DRAFT staged-not-live, visualizer binary md5)",
+        "kill-trigger attested STANDS, STAGING ONLY — no on-chain action",
+        "new-media scan reported as honest zero if none",
+        "memory write + git push + L1 offchain-anchor + offchain-verify ANCHORED-OK",
+        "carve-outs held: $0, no wallet signing, no external publishing, nothing under Black's personal name"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T00:44:49.632Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep round-60, 2026-09-24"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T01:40:00Z"
     }
   ],
   "presence": {
@@ -23512,6 +23545,11 @@
       "op": "task.create",
       "at": "2026-09-24T23:45:46.688Z",
       "ref": "tsk_01M3AWZ5NXC2CGD7K9DTFM63AF"
+    },
+    "sweep-r60-mint": {
+      "op": "task.create",
+      "at": "2026-09-25T00:44:49.633Z",
+      "ref": "tsk_01M3B0B9K0PFA36S2VBZPX7N6F"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
