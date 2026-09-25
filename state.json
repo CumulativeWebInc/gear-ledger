@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23180,
-  "updated_at": "2026-09-25T23:52:32.041Z",
+  "version": 23181,
+  "updated_at": "2026-09-25T23:57:09.954Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -8966,7 +8966,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-25T23:43:31.580Z",
       "assigned_to": "agent:CWI_Care",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -8974,8 +8974,21 @@
         "overdue-kill watch live-recomputed",
         "delivered with receipts inside the kill"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3DG0PF712G0XW5D15DQFWA3",
+          "kind": "report",
+          "uri": "https://github.com/CumulativeWebInc/cwi-support-kb/blob/kb-v2-draft/kb.json",
+          "sha256": "2f9cd37b5dd6b2863114e63d0a7ae23c6e92dcd84bf0ec9200a0b4180a7526b1"
+        },
+        {
+          "artifact_id": "art_01M3DG0PF88C5QD86Y2ETAQ3F0",
+          "kind": "report",
+          "uri": "file://run-r83.md",
+          "sha256": "11905826f65d93b461ccb603a497f9fafa3e649627b46dda4331a0cef29de251"
+        }
+      ],
+      "deliverable_ref": "https://github.com/CumulativeWebInc/cwi-support-kb/blob/kb-v2-draft/kb.json",
       "state_history": [
         {
           "from": "created",
@@ -8988,6 +9001,13 @@
           "to": "in_progress",
           "at": "2026-09-25T23:47:38.909Z",
           "by": "agent:CWI_Care"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T23:57:09.954Z",
+          "by": "agent:CWI_Care",
+          "note": "activation sweep 2026-09-25 round-83 delivery"
         }
       ],
       "requires_black_approval": false,
