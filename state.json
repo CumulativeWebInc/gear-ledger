@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 22986,
-  "updated_at": "2026-09-25T18:52:06.311Z",
+  "version": 22987,
+  "updated_at": "2026-09-25T18:52:12.949Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -26151,6 +26151,38 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-25T20:40:00Z"
+    },
+    {
+      "task_id": "tsk_01M3CYJBRND0ENEBSHD2V93XM7",
+      "type": "custom",
+      "title": "Sweep round-78: Results dashboard r77 refresh + proof-shot watch",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T18:52:12.949Z",
+      "assigned_to": "agent:CWI_Results",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "r77 receipts 4/4 inside 19:40Z kill verified",
+        "dashboard r77 receipt seeded, anti-clobber check 0 dupes",
+        "proof-shot watch honest count vs r77",
+        "memory claims written, offchain-verify OK (verify-only, no manual anchor)",
+        "delivered inside the 2026-09-25T20:40:00Z kill"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T18:52:12.949Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-25 round-78"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T20:40:00Z"
     }
   ],
   "presence": {
@@ -28449,6 +28481,11 @@
       "op": "task.create",
       "at": "2026-09-25T18:45:53.900Z",
       "ref": "tsk_01M3CY6SKC9QTK6X70GW2DKWA6"
+    },
+    "sweep-r78-results": {
+      "op": "task.create",
+      "at": "2026-09-25T18:52:12.949Z",
+      "ref": "tsk_01M3CYJBRND0ENEBSHD2V93XM7"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
