@@ -1,0 +1,1 @@
+{"event_id":"evt_01M3CZPPWSNWXCZSTPD7MNNQGG","event":"task.delivered","at":"2026-09-25T19:12:03.993Z","actor":"agent:CWI_Care","sample":false,"data":{"task_id":"tsk_01M3CY5RRC1WCMRBSE63NHF1NP","state":"delivered","title":"Sweep round-78: Care KB v2.77 + overdue-kill watch recompute","assignee":"agent:CWI_Care"}}
