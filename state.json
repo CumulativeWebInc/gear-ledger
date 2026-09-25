@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 20603,
-  "updated_at": "2026-09-25T02:59:15.338Z",
+  "version": 20604,
+  "updated_at": "2026-09-25T02:59:20.702Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -22335,7 +22335,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-25T02:46:53.013Z",
       "assigned_to": "agent:CWI_Visual",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -22345,8 +22345,15 @@
         "memory claims written and offchain-verify OK",
         "delivered inside the 2026-09-25T03:40:00Z kill"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3B81E7KH82HXAEAGYSWFBNY",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r62/visual/run-r62.md",
+          "sha256": "01a013b102ddae7c51f6f3823b7f3e785cef3a1a23e400002dd8371d2a715841"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r62/visual/run-r62.md",
       "state_history": [
         {
           "from": "created",
@@ -22361,6 +22368,12 @@
           "at": "2026-09-25T02:53:55.836Z",
           "by": "agent:CWI_Visual",
           "note": "activation sweep 2026-09-24 round-62 Iris round-39 watch"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T02:59:20.702Z",
+          "by": "agent:CWI_Visual"
         }
       ],
       "requires_black_approval": false,
