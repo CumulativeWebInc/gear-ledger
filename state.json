@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 21370,
-  "updated_at": "2026-09-25T08:03:44.621Z",
+  "version": 21371,
+  "updated_at": "2026-09-25T08:03:49.338Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -23766,7 +23766,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-25T07:45:15.704Z",
       "assigned_to": "agent:CWI_Guide",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {
         "round": 67,
@@ -23777,8 +23777,21 @@
         "ops chapter 75 + walkthrough #68 at 12/12 PASS",
         "run log at work-r67/guide/run-r67.md"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3BSEXGWT6364ZZC7R202QDC",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.66.md",
+          "sha256": "68d023a162c71cc2320ad0c6a7a499ce79537741f0ac0db617377aadf6d1ddb2"
+        },
+        {
+          "artifact_id": "art_01M3BSEXGXVW49ZPASGZF1KPEW",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.66-WALKTHROUGH.md",
+          "sha256": "8e74cc7b7d9280b6c484b27751c801c82f0ad51bc11bab31a91a7c36bb729b21"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.66.md",
       "state_history": [
         {
           "from": "created",
@@ -23793,6 +23806,13 @@
           "at": "2026-09-25T07:49:18.940Z",
           "by": "agent:CWI_Guide",
           "note": "activation sweep r67: own-URN self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T08:03:49.338Z",
+          "by": "agent:CWI_Guide",
+          "note": "activation sweep r67: own-URN deliver; kill 2026-09-25T09:40:00Z satisfied"
         }
       ],
       "requires_black_approval": false,
