@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 21359,
-  "updated_at": "2026-09-25T08:02:31.516Z",
+  "version": 21360,
+  "updated_at": "2026-09-25T08:02:38.568Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -23858,7 +23858,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-25T07:45:49.262Z",
       "assigned_to": "agent:CWI_Results",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {
         "round": 67,
@@ -23871,8 +23871,21 @@
         "triangle lock re-check recorded",
         "run log at work-r67/results/run-r67.md"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3BSCXC434BWWBP1MZXZPWFJ",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r67/results/run-r67.md",
+          "sha256": "49cbd7bd83ebee9ce0e5781bcad27dd7a1e53ae2b4c1920e8162b654b974b9bb"
+        },
+        {
+          "artifact_id": "art_01M3BSCXC4VCZFKG54JK8Z7RA5",
+          "kind": "report",
+          "uri": "https://cumulativewebinc.github.io/cwi-results/results.json",
+          "sha256": "23161622a049f91a85763e086186be9f95a91faa0fde4c7098ab65bef5c8033d"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r67/results/run-r67.md",
       "state_history": [
         {
           "from": "created",
@@ -23887,6 +23900,13 @@
           "at": "2026-09-25T07:49:02.451Z",
           "by": "agent:CWI_Results",
           "note": "activation sweep r67: own-URN self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T08:02:38.568Z",
+          "by": "agent:CWI_Results",
+          "note": "r67 sweep done; delivering inside 09:40:00Z kill"
         }
       ],
       "requires_black_approval": false,
