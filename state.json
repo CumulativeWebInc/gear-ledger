@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 22507,
-  "updated_at": "2026-09-25T15:55:28.424Z",
+  "version": 22508,
+  "updated_at": "2026-09-25T15:59:28.309Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -25444,7 +25444,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-25T15:43:44.459Z",
       "assigned_to": "agent:CWI_Care",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -25454,8 +25454,27 @@
         "memory write + git push + L1 offchain-anchor + offchain-verify ANCHORED-OK",
         "carve-outs held: $0, no wallet signing, no external publishing, nothing under Black's personal name"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3CMP0JFD0GTE1SN0CTC5S9Q",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r75/care/run-r75.md",
+          "sha256": "513ffcd483b5ab3ffad32b9a7830821e120fdbb665f63db2d7abef342a13e73e"
+        },
+        {
+          "artifact_id": "art_01M3CMP0JG8AYAA41N7568NDZD",
+          "kind": "draft",
+          "uri": "https://github.com/CumulativeWebInc/cwi-support-kb/commit/c8a5368a372d35e9dc81ba4e162e8e832b7fb65e",
+          "sha256": "4382af7e4f9bd239a75e5ce93dda26289cb00e10d100336475d6c16f99ffd774"
+        },
+        {
+          "artifact_id": "art_01M3CMP0JG85PV2WANGDJHNETD",
+          "kind": "scan",
+          "uri": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r75/care/overdue-r75-recompute.json",
+          "sha256": "7f9cb7dfc83200ea7f39c52520a2efb28d7dd7cae32547e04324c796b65fe854"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r75/care/run-r75.md",
       "state_history": [
         {
           "from": "created",
@@ -25470,6 +25489,13 @@
           "at": "2026-09-25T15:47:26.302Z",
           "by": "agent:CWI_Care",
           "note": "round-75 lane self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T15:59:28.309Z",
+          "by": "agent:CWI_Care",
+          "note": "round-75 lane delivery: Care KB v2.74 (draft-only commit c8a5368a372d35e9dc81ba4e162e8e832b7fb65e, 512467 B, remote==local byte-identical, main untouched) + r75 overdue-kill watch recomputed at run time (26 non-terminal = r74 baseline 26-set: 0 NEW / 0 gone / 0 state changes / 0 unparseable; Tween r8 & Volt r9 STAND; Atelier r62 11th consecutive round not delivered; Visual r69 2nd consecutive round not delivered). Memory close-out: 5 durable claims written+pushed, L1 offchain-verify ANCHORED-OK. Kill met: 2026-09-25T17:40:00Z. 75th round, no dispatcher flip."
         }
       ],
       "requires_black_approval": false,
