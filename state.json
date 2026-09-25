@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 22029,
-  "updated_at": "2026-09-25T12:43:53.506Z",
+  "version": 22030,
+  "updated_at": "2026-09-25T12:43:57.732Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -24723,6 +24723,37 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-25T12:40:00Z"
+    },
+    {
+      "task_id": "tsk_01M3C9G2D3CSNTVH1SQ4FSNM5V",
+      "type": "custom",
+      "title": "Sweep round-72: MINT taps-check r72 + kill-trigger attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T12:43:57.731Z",
+      "assigned_to": "agent:CWI_Athena_MINT",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "MINT 4-tap check r72 with live-recomputed evidence",
+        "taps 4/4 GREEN or honest report",
+        "kill-trigger attestation STAGING ONLY (no on-chain, no gas)",
+        "deliver with >=1 artifact + --report before the 14:40Z kill"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T12:43:57.732Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-25 r72"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T14:40:00Z"
     }
   ],
   "presence": {
@@ -26886,6 +26917,11 @@
       "op": "task.create",
       "at": "2026-09-25T10:46:45.737Z",
       "ref": "tsk_01M3C2SF79G9T0B61P2GNSN3J3"
+    },
+    "sweep-r72-mint": {
+      "op": "task.create",
+      "at": "2026-09-25T12:43:57.732Z",
+      "ref": "tsk_01M3C9G2D3CSNTVH1SQ4FSNM5V"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
