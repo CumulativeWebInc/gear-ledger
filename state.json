@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 21911,
-  "updated_at": "2026-09-25T11:53:31.005Z",
+  "version": 21912,
+  "updated_at": "2026-09-25T11:53:39.783Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -24543,7 +24543,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-25T10:46:02.963Z",
       "assigned_to": "agent:CWI_Care",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {
         "round": 70,
@@ -24557,8 +24557,21 @@
         "standing kills stand",
         "run log under hidden_files/activation-sweep/work-r70/care/"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3C6KQJ2J8G4VVQXP1ST4CAG",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r70/care/run-r70.md",
+          "sha256": "8688612aca87d5fa1e01ede45af48351647329580fe613b6f687b18ca67762ab"
+        },
+        {
+          "artifact_id": "art_01M3C6KQJ3KZKPX7FF4YZTA8TG",
+          "kind": "report",
+          "uri": "https://github.com/CumulativeWebInc/cwi-support-kb/blob/kb-v2-draft/kb.json",
+          "sha256": "2f9cd37b5dd6b2863114e63d0a7ae23c6e92dcd84bf0ec9200a0b4180a7526b1"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r70/care/run-r70.md",
       "state_history": [
         {
           "from": "created",
@@ -24573,6 +24586,12 @@
           "at": "2026-09-25T11:45:58.932Z",
           "by": "agent:CWI_Care",
           "note": "activation sweep 2026-09-25 r70"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T11:53:39.783Z",
+          "by": "agent:CWI_Care"
         }
       ],
       "requires_black_approval": false,
