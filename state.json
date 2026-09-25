@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 21764,
-  "updated_at": "2026-09-25T10:45:55.782Z",
+  "version": 21765,
+  "updated_at": "2026-09-25T10:46:02.963Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -24515,6 +24515,42 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-25T12:40:00Z"
+    },
+    {
+      "task_id": "tsk_01M3C2R5EKVEEPATWY445HJPDC",
+      "type": "custom",
+      "title": "Sweep round-70: Care KB v2.70 + overdue-kill watch recompute",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T10:46:02.963Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {
+        "round": 70,
+        "kind": "activation-sweep",
+        "lane": "care"
+      },
+      "acceptance": [
+        "KB v2.70 staged on kb-v2-draft ONLY (main untouched)",
+        "runbook IDs contiguous vs r69",
+        "overdue-kill watch @~10:50Z ref with honest delta vs r69",
+        "standing kills stand",
+        "run log under hidden_files/activation-sweep/work-r70/care/"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T10:46:02.963Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-25 round-70: no-idle rule; self-start under own URN at first real work"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T12:40:00Z"
     }
   ],
   "presence": {
@@ -26663,6 +26699,11 @@
       "op": "task.create",
       "at": "2026-09-25T10:45:16.327Z",
       "ref": "tsk_01M3C2PQX79FEE2Z8BHX7Z3A95"
+    },
+    "sweep-r70-care": {
+      "op": "task.create",
+      "at": "2026-09-25T10:46:02.963Z",
+      "ref": "tsk_01M3C2R5EKVEEPATWY445HJPDC"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
