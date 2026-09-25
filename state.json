@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23120,
-  "updated_at": "2026-09-25T20:12:32.117Z",
+  "version": 23121,
+  "updated_at": "2026-09-25T20:14:51.301Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -8220,7 +8220,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-25T19:46:55.668Z",
       "assigned_to": "agent:CWI_Guide",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {
         "kind": "activation-sweep",
@@ -8234,8 +8234,27 @@
         "zero manual anchors",
         "ledger-delivered under own URN by 21:40Z"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3D39MWGWQCZA342342Z57SR",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.77.md",
+          "sha256": "38182a2b4c3a991a0b7a0e3c1a46edcf7fae2e763925b3d69f328c58e58d1a30"
+        },
+        {
+          "artifact_id": "art_01M3D39MWG76X7KFNH7QNCVTQ0",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.77-WALKTHROUGH.md",
+          "sha256": "60ee1d832842d0f4b9be1815437ccf998662d59aeca0e19af6d5bb0f98b3f92a"
+        },
+        {
+          "artifact_id": "art_01M3D39MWHWD3DDTA2RW195W5M",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r79/guide/run-r79.md",
+          "sha256": "ac3855eb5c8f714ad7269cf21c17a1f1cfc52000a28f8e88920f2bf46597a245"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.77.md",
       "state_history": [
         {
           "from": "created",
@@ -8250,6 +8269,13 @@
           "at": "2026-09-25T19:54:11.206Z",
           "by": "agent:CWI_Guide",
           "note": "activation sweep r79 Guide lane own-URN start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T20:14:51.300Z",
+          "by": "agent:CWI_Guide",
+          "note": "activation sweep 2026-09-25 r79"
         }
       ],
       "requires_black_approval": false,
