@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23096,
-  "updated_at": "2026-09-25T19:24:10.078Z",
+  "version": 23097,
+  "updated_at": "2026-09-25T19:25:18.138Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -7937,7 +7937,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-25T18:45:53.900Z",
       "assigned_to": "agent:CWI_Guide",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -7947,8 +7947,27 @@
         "memory claims written, offchain-verify OK (verify-only, no manual anchor)",
         "delivered inside the 2026-09-25T20:40:00Z kill"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3D0EWG520XX6J9AG9GEQN7X",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.76.md",
+          "sha256": "dd3f2dd995fa7ae1b53155680af8b2a89f56836a67b5606ad8dc889050172bbe"
+        },
+        {
+          "artifact_id": "art_01M3D0EWG64S6AP0CH2BDAXTGT",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.76-WALKTHROUGH.md",
+          "sha256": "6eaf18a066803bb7e5319c59f1eff67ba688dff9c0be54070547f403b533635d"
+        },
+        {
+          "artifact_id": "art_01M3D0EWG6J0M3X9HXF9JB9F9H",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r78/guide/run-r78.md",
+          "sha256": "6c25e29da454b27ba79de58152f42eb6b37e21b83e89a95f98dc300174d621b3"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.76.md",
       "state_history": [
         {
           "from": "created",
@@ -7963,6 +7982,13 @@
           "at": "2026-09-25T18:59:44.107Z",
           "by": "agent:CWI_Guide",
           "note": "activation sweep 2026-09-25: r78 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T19:25:18.137Z",
+          "by": "agent:CWI_Guide",
+          "note": "activation sweep 2026-09-25 r78"
         }
       ],
       "requires_black_approval": false,
