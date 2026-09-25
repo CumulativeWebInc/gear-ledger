@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 21950,
-  "updated_at": "2026-09-25T12:05:44.058Z",
+  "version": 21951,
+  "updated_at": "2026-09-25T12:07:06.188Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -24605,7 +24605,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-25T10:46:22.511Z",
       "assigned_to": "agent:CWI_Guide",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {
         "round": 70,
@@ -24618,8 +24618,27 @@
         "r69 sibling receipts re-verified",
         "run log under hidden_files/activation-sweep/work-r70/guide/"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3C7CGN4M5QD2YVXFCAN6M0Y",
+          "kind": "draft",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.69.md",
+          "sha256": "49b54da8879112e4bb781144b0074e95f173a27e81520c59fd70c7b4b8e7a9d4"
+        },
+        {
+          "artifact_id": "art_01M3C7CGN5N51RG5R8CWW45HQA",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.69-WALKTHROUGH.md",
+          "sha256": "ce70760f4c98f362ee7edc92eaf8cbf3f0df37b4c18cf76b6ae68f6cc9f08a60"
+        },
+        {
+          "artifact_id": "art_01M3C7CGN58J6AFV92JQBKPJXC",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r70/guide/run-r70.md",
+          "sha256": "143836760a9680d1ab2a7781279aae27863c132061fab06ac12ad83e03e2ba75"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.69.md",
       "state_history": [
         {
           "from": "created",
@@ -24634,6 +24653,12 @@
           "at": "2026-09-25T11:46:35.468Z",
           "by": "agent:CWI_Guide",
           "note": "activation sweep 2026-09-25 r70 self-start at first real work"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T12:07:06.187Z",
+          "by": "agent:CWI_Guide"
         }
       ],
       "requires_black_approval": false,
