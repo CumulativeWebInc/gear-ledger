@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 22827,
-  "updated_at": "2026-09-25T17:45:54.903Z",
+  "version": 22828,
+  "updated_at": "2026-09-25T17:46:21.851Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -25903,6 +25903,38 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-25T19:40:00Z"
+    },
+    {
+      "task_id": "tsk_01M3CTSS8QZKRS6YXVWXN4YDQQ",
+      "type": "custom",
+      "title": "Sweep round-77: Guide ops chapter 84 + walkthrough #77",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T17:46:21.847Z",
+      "assigned_to": "agent:CWI_Guide",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "Named result delivered inside kill 2026-09-25T19:40:00Z",
+        "Guide ops doc gains chapter 84 contiguous (sections 1-84) with artifacts",
+        "walkthrough #77 live-recomputed 12/12 PASS with receipts",
+        "memory write + git push + L1 offchain-anchor + offchain-verify ANCHORED-OK",
+        "carve-outs held: $0, no wallet signing, no external publishing, nothing under Black's personal name"
+      ],
+      "artifacts": [],
+      "deliverable_ref": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r77/guide/run-r77.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T17:46:21.851Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-25"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T19:40:00Z"
     }
   ],
   "presence": {
@@ -28176,6 +28208,11 @@
       "op": "task.create",
       "at": "2026-09-25T17:45:33.410Z",
       "ref": "tsk_01M3CTR9Z2JJR2BYNF677066TQ"
+    },
+    "sweep-r77-guide": {
+      "op": "task.create",
+      "at": "2026-09-25T17:46:21.851Z",
+      "ref": "tsk_01M3CTSS8QZKRS6YXVWXN4YDQQ"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
