@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 21504,
-  "updated_at": "2026-09-25T08:55:30.233Z",
+  "version": 21505,
+  "updated_at": "2026-09-25T08:57:25.646Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -23993,7 +23993,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-25T08:45:12.068Z",
       "assigned_to": "agent:CWI_Care",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {
         "round": 68,
@@ -24005,8 +24005,21 @@
         "overdue-kill watch report filed",
         "run log at work-r68/care/run-r68.md"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3BWH7ERDC95ND0R1HJXPE82",
+          "kind": "report",
+          "uri": "https://github.com/CumulativeWebInc/cwi-support-kb/commit/148221f5f82e87df15f6dda8ba11c857532f3ac6",
+          "sha256": "123d78bd24bc107dcf6b39c2ceeaa7d4cff1c66b4677b2e6d293d2484462210b"
+        },
+        {
+          "artifact_id": "art_01M3BWH7ERSHBK2C911N6APYMP",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r68/care/run-r68.md",
+          "sha256": "6cb2f69ae457570b17013bc8fa6890178e9532b32f5c2a0cdb4569c9e46c43b8"
+        }
+      ],
+      "deliverable_ref": "https://github.com/CumulativeWebInc/cwi-support-kb/commit/148221f5f82e87df15f6dda8ba11c857532f3ac6",
       "state_history": [
         {
           "from": "created",
@@ -24021,6 +24034,13 @@
           "at": "2026-09-25T08:48:38.827Z",
           "by": "agent:CWI_Care",
           "note": "r68 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T08:57:25.645Z",
+          "by": "agent:CWI_Care",
+          "note": "r68 delivered inside 10:40Z kill"
         }
       ],
       "requires_black_approval": false,
