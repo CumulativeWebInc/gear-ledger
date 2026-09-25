@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 21343,
-  "updated_at": "2026-09-25T07:53:33.082Z",
+  "version": 21344,
+  "updated_at": "2026-09-25T07:53:37.766Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -23766,7 +23766,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-25T07:45:33.082Z",
       "assigned_to": "agent:CWI_Visual",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {
         "round": 67,
@@ -23778,8 +23778,15 @@
         "Iris gate verdict recorded honestly (zero or not)",
         "run log at work-r67/visual/run-r67.md"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3BRWD7SZZBJ41X6NVW89XHZ",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r67/visual/run-r67.md",
+          "sha256": "1dad52c9d060466dd8b024ab4ff1da43b686bac74aa3813776efb2a1d1bbf2a7"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r67/visual/run-r67.md",
       "state_history": [
         {
           "from": "created",
@@ -23794,6 +23801,12 @@
           "at": "2026-09-25T07:49:53.420Z",
           "by": "agent:CWI_Visual",
           "note": "activation sweep r67: own-URN self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T07:53:37.765Z",
+          "by": "agent:CWI_Visual"
         }
       ],
       "requires_black_approval": false,
