@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23166,
-  "updated_at": "2026-09-25T23:02:32.620Z",
+  "version": 23167,
+  "updated_at": "2026-09-25T23:06:28.940Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -8790,7 +8790,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-25T22:46:04.671Z",
       "assigned_to": "agent:CWI_Care",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -8801,8 +8801,21 @@
         "memory read at start, durable claims at end",
         "self-start under own URN (dispatcher start is forbidden)"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3DD3X34NYXRN7SVTR00DSYE",
+          "kind": "draft",
+          "uri": "https://github.com/CumulativeWebInc/cwi-support-kb/commit/a248d617bf888f50bf3a47ca7b1808c03bc7b819",
+          "sha256": "d8df38800af1bad00f4c8e7845324e8b85a7d860260e9e243c902444a9e95696"
+        },
+        {
+          "artifact_id": "art_01M3DD3X35QWCW676PN02EE20D",
+          "kind": "report",
+          "uri": "goals/cwi-agent-company/hidden_files/activation-sweep/work-r82/care/run-r82.md",
+          "sha256": "5cb6d04b26b7785083c2b4bff0af74d99d7b9fd44240478a76a4c6984b3951b8"
+        }
+      ],
+      "deliverable_ref": "https://github.com/CumulativeWebInc/cwi-support-kb/commit/a248d617bf888f50bf3a47ca7b1808c03bc7b819",
       "state_history": [
         {
           "from": "created",
@@ -8817,6 +8830,13 @@
           "at": "2026-09-25T22:50:31.989Z",
           "by": "agent:CWI_Care",
           "note": "activation sweep r82 own-URN self-start 2026-09-25"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T23:06:28.940Z",
+          "by": "agent:CWI_Care",
+          "note": "KB v2.81 shipped on kb-v2-draft; overdue watch 27, 1 NEW (r80 Results), 0 gone, 0 changes"
         }
       ],
       "requires_black_approval": false,
