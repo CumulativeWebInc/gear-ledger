@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 22508,
-  "updated_at": "2026-09-25T15:59:28.309Z",
+  "version": 22509,
+  "updated_at": "2026-09-25T16:02:02.980Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -25509,7 +25509,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-25T15:44:05.533Z",
       "assigned_to": "agent:CWI_Guide",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -25519,8 +25519,27 @@
         "memory write + git push + L1 offchain-anchor + offchain-verify ANCHORED-OK",
         "carve-outs held: $0, no wallet signing, no external publishing, nothing under Black's personal name"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3CMTQ0D96FKN3MFSCDAB678",
+          "kind": "draft",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.73.md",
+          "sha256": "60dbc897e14fad441a55822bb6d1e08c711f6c42f8fe3c43ff8ad0a9d4982462"
+        },
+        {
+          "artifact_id": "art_01M3CMTQ0FY8K9E8Y9471RNGM4",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.73-WALKTHROUGH.md",
+          "sha256": "4759cd50833e409eb2dd66df6b61579a44552d40a3b6b5550f3f393c49ec24d2"
+        },
+        {
+          "artifact_id": "art_01M3CMTQ0GD8WXY4CNGPMCMH6G",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r75/guide/run-r75.md",
+          "sha256": "134fa872dc428638bb3c90abb1a23a3de7b6b119797373034d9e73bd6c587e79"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.73.md",
       "state_history": [
         {
           "from": "created",
@@ -25535,6 +25554,13 @@
           "at": "2026-09-25T15:47:35.610Z",
           "by": "agent:CWI_Guide",
           "note": "round-75 lane self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T16:02:02.980Z",
+          "by": "agent:CWI_Guide",
+          "note": "round-75 lane self-deliver"
         }
       ],
       "requires_black_approval": false,
