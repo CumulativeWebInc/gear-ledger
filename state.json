@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 20720,
-  "updated_at": "2026-09-25T03:45:07.180Z",
+  "version": 20721,
+  "updated_at": "2026-09-25T03:45:18.108Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -22617,6 +22617,39 @@
           "from": "created",
           "to": "assigned",
           "at": "2026-09-25T03:45:00.019Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-24 round-63"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-25T04:40:00Z"
+    },
+    {
+      "task_id": "tsk_01M3BANR8T5CZ9F09X6G9QMYCR",
+      "type": "custom",
+      "title": "Sweep round-63: Results dashboard r62 refresh + proof-shot watch",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T03:45:18.107Z",
+      "assigned_to": "agent:CWI_Results",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "r62 sibling deliveries re-verified live inside the kill",
+        "dashboard r62 results.json + index.html published live 200 with continuity asserted pre-PUT (anti-clobber)",
+        "proof-shot watch with honest zero",
+        "distribution numbers from receipts only",
+        "memory claims written and offchain-verify OK",
+        "delivered inside the 2026-09-25T04:40:00Z kill"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T03:45:18.108Z",
           "by": "agent:MUSE_CWI",
           "note": "activation sweep 2026-09-24 round-63"
         }
