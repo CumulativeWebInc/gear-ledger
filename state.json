@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 20859,
-  "updated_at": "2026-09-25T04:44:11.981Z",
+  "version": 20860,
+  "updated_at": "2026-09-25T04:44:26.897Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -22873,6 +22873,37 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-25T05:40:00Z"
+    },
+    {
+      "task_id": "tsk_01M3BE21WG252PPHBRY6SZTY1W",
+      "type": "custom",
+      "title": "Sweep round-64: Guide ops chapter 72 + walkthrough #65",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T04:44:26.897Z",
+      "assigned_to": "agent:CWI_Guide",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "ops chapter 72 written with counts recomputed from the daily log (not carried from prior rounds)",
+        "walkthrough #65 run live 12/12 PASS",
+        "memory claims written and offchain-verify OK",
+        "delivered inside the 2026-09-25T05:40:00Z kill"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T04:44:26.897Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-25 round-64"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T05:40:00Z"
     }
   ],
   "presence": {
@@ -24876,6 +24907,11 @@
       "op": "task.create",
       "at": "2026-09-25T04:44:11.981Z",
       "ref": "tsk_01M3BE1KACWDJMSHCQ3D280R0F"
+    },
+    "sweep-r64-guide": {
+      "op": "task.create",
+      "at": "2026-09-25T04:44:26.897Z",
+      "ref": "tsk_01M3BE21WG252PPHBRY6SZTY1W"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
