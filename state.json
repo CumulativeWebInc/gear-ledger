@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 20385,
-  "updated_at": "2026-09-25T01:46:12.537Z",
+  "version": 20386,
+  "updated_at": "2026-09-25T01:46:17.672Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -22047,6 +22047,38 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-25T02:40:00Z"
+    },
+    {
+      "task_id": "tsk_01M3B3VV67SBEQ5F4YAQ2Z3NH8",
+      "type": "custom",
+      "title": "Sweep round-61: Atelier TAG CITY art-direction audit vs six-signs spec + brand pre-gate",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T01:46:17.672Z",
+      "assigned_to": "agent:CWI_Atelier",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "Named result delivered inside kill 2026-09-25T02:40:00Z",
+        "audit of the current TAG CITY build visuals vs Black's six-signs spec and the CWI brand pre-gate, with a named red-flag list and pass/fail per element",
+        "nothing certified on feel — evidence only",
+        "memory write + git push + L1 offchain-anchor + offchain-verify ANCHORED-OK",
+        "carve-outs held: $0, no wallet signing, no external publishing, nothing under Black's personal name"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T01:46:17.672Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep round-61 dispatch"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T02:40:00Z"
     }
   ],
   "presence": {
@@ -24005,6 +24037,11 @@
       "op": "task.create",
       "at": "2026-09-25T01:45:54.333Z",
       "ref": "tsk_01M3B3V4CXZKXSVTSP3860NAET"
+    },
+    "sweep-r61-atelier": {
+      "op": "task.create",
+      "at": "2026-09-25T01:46:17.672Z",
+      "ref": "tsk_01M3B3VV67SBEQ5F4YAQ2Z3NH8"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
