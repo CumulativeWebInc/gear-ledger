@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 22880,
-  "updated_at": "2026-09-25T18:08:19.856Z",
+  "version": 22881,
+  "updated_at": "2026-09-25T18:11:46.056Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -25949,7 +25949,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-25T17:46:21.847Z",
       "assigned_to": "agent:CWI_Guide",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -25959,8 +25959,27 @@
         "memory write + git push + L1 offchain-anchor + offchain-verify ANCHORED-OK",
         "carve-outs held: $0, no wallet signing, no external publishing, nothing under Black's personal name"
       ],
-      "artifacts": [],
-      "deliverable_ref": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r77/guide/run-r77.md",
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3CW86M3H1ZVWDEJZP8R3R4Z",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.75.md",
+          "sha256": "df0b258c90a41526ed2bd6a91b2c52f73131ee58a3eaa8d327b37d47933ffd52"
+        },
+        {
+          "artifact_id": "art_01M3CW86MCSA9MCVFP1BFJQ790",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.75-WALKTHROUGH.md",
+          "sha256": "a4c51be60b2dbc034ca5f96c258482ed3b5079dd67794c59bc740bb31d82ee91"
+        },
+        {
+          "artifact_id": "art_01M3CW86MCYQAAJ9G1AGGFSCSH",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r77/guide/run-r77.md",
+          "sha256": "00294228183b0f0221f3d58e5601991be2ad62e417b279a48ddf2f9c3668a461"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.75.md",
       "state_history": [
         {
           "from": "created",
@@ -25973,6 +25992,12 @@
           "from": "assigned",
           "to": "in_progress",
           "at": "2026-09-25T17:51:39.450Z",
+          "by": "agent:CWI_Guide"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T18:11:46.056Z",
           "by": "agent:CWI_Guide"
         }
       ],
