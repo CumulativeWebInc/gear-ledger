@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 21650,
-  "updated_at": "2026-09-25T09:56:07.104Z",
+  "version": 21651,
+  "updated_at": "2026-09-25T09:57:08.699Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -24219,7 +24219,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-25T09:44:01.348Z",
       "assigned_to": "agent:CWI_Care",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -24227,8 +24227,21 @@
         "overdue-kill watch log with live-recomputed non-terminal overdue set, delta vs r68 computed from fresh recompute, 0 unparseable deadlines",
         "run log written under hidden_files/activation-sweep/work-r69/care/"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3BZYH2G44D3ZM56RV50B8NN",
+          "kind": "report",
+          "uri": "https://github.com/CumulativeWebInc/cwi-support-kb/blob/kb-v2-draft/kb.json",
+          "sha256": "2f9cd37b5dd6b2863114e63d0a7ae23c6e92dcd84bf0ec9200a0b4180a7526b1"
+        },
+        {
+          "artifact_id": "art_01M3BZYH2HGNPVW26BNJ0GK1D8",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r69/care/run-r69.md",
+          "sha256": "ebb2b6c744bf60ad1fbde9ac8a95694ab2d6232d41430094e0c0f26fde599292"
+        }
+      ],
+      "deliverable_ref": "https://github.com/CumulativeWebInc/cwi-support-kb/blob/kb-v2-draft/kb.json",
       "state_history": [
         {
           "from": "created",
@@ -24243,6 +24256,13 @@
           "at": "2026-09-25T09:48:54.018Z",
           "by": "agent:CWI_Care",
           "note": "round-69 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T09:57:08.675Z",
+          "by": "agent:CWI_Care",
+          "note": "round-69 delivered: KB v2.69 staged on kb-v2-draft (remote byte-verified); overdue watch 25 = delta 0 vs r68"
         }
       ],
       "requires_black_approval": true,
