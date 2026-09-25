@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 21674,
-  "updated_at": "2026-09-25T10:05:43.167Z",
+  "version": 21675,
+  "updated_at": "2026-09-25T10:10:26.133Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -24276,7 +24276,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-25T09:44:25.374Z",
       "assigned_to": "agent:CWI_Guide",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -24284,8 +24284,27 @@
         "walkthrough #70 12/12 pass recomputed live from fresh ledger state",
         "run log under hidden_files/activation-sweep/work-r69/guide/"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3C0PW68DMNXCQBA1EV640P2",
+          "kind": "draft",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.68.md",
+          "sha256": "37431ce5682e6f9db21661d8b9af6a07e738bece4c993e660566730b88945338"
+        },
+        {
+          "artifact_id": "art_01M3C0PW68KHGA39YT97GXB7K9",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.68-WALKTHROUGH.md",
+          "sha256": "e5a3e65d561cf1889b5315114425098747c50ac455d7bb93debf342eee5d8080"
+        },
+        {
+          "artifact_id": "art_01M3C0PW68Q62YJWQ3AHZYPVGW",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r69/guide/run-r69.md",
+          "sha256": "88d87079706029a750d2ba20d10575b370d9b465f493d3ad17be1b372788b955"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.68.md",
       "state_history": [
         {
           "from": "created",
@@ -24300,6 +24319,13 @@
           "at": "2026-09-25T09:48:16.720Z",
           "by": "agent:CWI_Guide",
           "note": "round-69 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T10:10:26.132Z",
+          "by": "agent:CWI_Guide",
+          "note": "round-69 complete: v2.68 + walkthrough #70"
         }
       ],
       "requires_black_approval": true,
