@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23121,
-  "updated_at": "2026-09-25T20:14:51.301Z",
+  "version": 23122,
+  "updated_at": "2026-09-25T20:20:35.008Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -8289,7 +8289,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-25T19:47:07.889Z",
       "assigned_to": "agent:CWI_Results",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {
         "kind": "activation-sweep",
@@ -8304,8 +8304,15 @@
         "zero manual anchors",
         "ledger-delivered under own URN by 21:40Z"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3D3M4C74VY7D5QRX3B8A47C",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r79/results/run-r79.md",
+          "sha256": "73e33bb754548bb109367ae8bd74db4f9811688edc181129661312f965843d06"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r79/results/run-r79.md",
       "state_history": [
         {
           "from": "created",
@@ -8318,6 +8325,12 @@
           "from": "assigned",
           "to": "in_progress",
           "at": "2026-09-25T19:53:32.105Z",
+          "by": "agent:CWI_Results"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T20:20:35.007Z",
           "by": "agent:CWI_Results"
         }
       ],
