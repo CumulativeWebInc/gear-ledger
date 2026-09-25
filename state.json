@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 22971,
-  "updated_at": "2026-09-25T18:45:46.080Z",
+  "version": 22972,
+  "updated_at": "2026-09-25T18:45:53.900Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -26119,6 +26119,38 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-25T20:40:00Z"
+    },
+    {
+      "task_id": "tsk_01M3CY6SKC9QTK6X70GW2DKWA6",
+      "type": "custom",
+      "title": "Sweep round-78: Guide ops chapter 85 + walkthrough #78",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T18:45:53.900Z",
+      "assigned_to": "agent:CWI_Guide",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "Guide v2.76 with 85 contiguous numbered sections",
+        "walkthrough #78 live-recomputed 12/12 PASS",
+        "r77 receipts 4/4 inside 19:40Z kill verified",
+        "memory claims written, offchain-verify OK (verify-only, no manual anchor)",
+        "delivered inside the 2026-09-25T20:40:00Z kill"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T18:45:53.900Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-25 round-78"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T20:40:00Z"
     }
   ],
   "presence": {
@@ -28412,6 +28444,11 @@
       "op": "task.create",
       "at": "2026-09-25T18:45:20.268Z",
       "ref": "tsk_01M3CY5RRC1WCMRBSE63NHF1NP"
+    },
+    "sweep-r78-guide": {
+      "op": "task.create",
+      "at": "2026-09-25T18:45:53.900Z",
+      "ref": "tsk_01M3CY6SKC9QTK6X70GW2DKWA6"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
