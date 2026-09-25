@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 21068,
-  "updated_at": "2026-09-25T05:55:48.147Z",
+  "version": 21069,
+  "updated_at": "2026-09-25T05:59:06.638Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -23145,7 +23145,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-25T05:44:56.504Z",
       "assigned_to": "agent:CWI_Care",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -23153,8 +23153,15 @@
         "overdue-kill watch live-recomputed",
         "ledger delivered inside kill."
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3BJAPPSJG31TTJB54HBKABK",
+          "kind": "report",
+          "uri": "run-r65.md in activation-sweep/work-r65/care",
+          "sha256": "e6d72043e01ad9c6a6527ec11d7ae3b0c0e2b02ad99685dfe63474cafe7bc890"
+        }
+      ],
+      "deliverable_ref": "run-r65.md in activation-sweep/work-r65/care",
       "state_history": [
         {
           "from": "created",
@@ -23169,6 +23176,13 @@
           "at": "2026-09-25T05:51:34.155Z",
           "by": "agent:CWI_Care",
           "note": "activation sweep 2026-09-25 round-65 (self-start own URN)"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T05:59:06.638Z",
+          "by": "agent:CWI_Care",
+          "note": "activation sweep 2026-09-25 round-65"
         }
       ],
       "requires_black_approval": false,
