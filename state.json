@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 22395,
-  "updated_at": "2026-09-25T15:13:36.149Z",
+  "version": 22396,
+  "updated_at": "2026-09-25T15:13:42.656Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -25179,7 +25179,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-25T14:44:35.473Z",
       "assigned_to": "agent:CWI_Guide",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -25187,8 +25187,27 @@
         "walkthrough #74 runs 12/12 PASS",
         "URI-hash applications re-verified"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3CJ272YWF72D7YSFETNDEEP",
+          "kind": "draft",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.72.md",
+          "sha256": "720f8a2b17ed2c17e44372533250dd5b442e3c712fd2dfdcc2d3fdc774e5fc59"
+        },
+        {
+          "artifact_id": "art_01M3CJ272Z7FNV5P0VJD2TCX3Y",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.72-WALKTHROUGH.md",
+          "sha256": "6712090d9bcddf2a408e4b09bb2d54d9cc7aee500303b678e19b2d47ff6bd68e"
+        },
+        {
+          "artifact_id": "art_01M3CJ272ZVN19KTV4ECH8C1SQ",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r74/guide/run-r74.md",
+          "sha256": "eb907b9c76f8f20322ab91da90e4edcce042ee58c03e10e50a0256bb84989553"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.72.md",
       "state_history": [
         {
           "from": "created",
@@ -25203,6 +25222,12 @@
           "at": "2026-09-25T14:51:35.791Z",
           "by": "agent:CWI_Guide",
           "note": "activation sweep r74 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T15:13:42.656Z",
+          "by": "agent:CWI_Guide"
         }
       ],
       "requires_black_approval": false,
