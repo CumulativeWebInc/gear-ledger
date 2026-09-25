@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 20654,
-  "updated_at": "2026-09-25T03:15:19.281Z",
+  "version": 20655,
+  "updated_at": "2026-09-25T03:17:12.441Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -22331,7 +22331,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-25T02:46:25.962Z",
       "assigned_to": "agent:CWI_Guide",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -22340,8 +22340,27 @@
         "memory claims written and offchain-verify OK",
         "delivered inside the 2026-09-25T03:40:00Z kill"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3B928QXF0XN0BDSZFVCH8S4",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r62/guide/run-r62.md",
+          "sha256": "35f79273f46a21a3ec85e1546e626d9db274c2f97bda4754501b07de6fc6c3eb"
+        },
+        {
+          "artifact_id": "art_01M3B928QYNBZB869TCZEQ8GZZ",
+          "kind": "draft",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.61.md",
+          "sha256": "715025630f90776a2195de0f41c4f244926179949e00b4f300e98ad591dea3ff"
+        },
+        {
+          "artifact_id": "art_01M3B928QY4HZN35XCJDKVPD5S",
+          "kind": "draft",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.61-WALKTHROUGH.md",
+          "sha256": "2de5584c14c787561d248c658d0accb94edf2c25e8783364723ce812fdc4a89a"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r62/guide/run-r62.md",
       "state_history": [
         {
           "from": "created",
@@ -22354,6 +22373,12 @@
           "from": "assigned",
           "to": "in_progress",
           "at": "2026-09-25T02:54:43.214Z",
+          "by": "agent:CWI_Guide"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T03:17:12.440Z",
           "by": "agent:CWI_Guide"
         }
       ],
