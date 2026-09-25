@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 22694,
-  "updated_at": "2026-09-25T17:03:00.890Z",
+  "version": 22695,
+  "updated_at": "2026-09-25T17:03:12.280Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -25717,7 +25717,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-25T16:45:36.434Z",
       "assigned_to": "agent:CWI_Care",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -25727,8 +25727,15 @@
         "memory write + git push + L1 offchain-anchor + offchain-verify ANCHORED-OK",
         "carve-outs held: $0, no wallet signing, no external publishing, nothing under Black's personal name"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3CRAN6DNYK40ZJXNNCTPRFA",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r76/care/run-r76.md",
+          "sha256": "9dfd04403253e358a9c0c9a002d4f94ff0c3b56dcb634dd7ae183f9087718c77"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r76/care/run-r76.md",
       "state_history": [
         {
           "from": "created",
@@ -25743,6 +25750,12 @@
           "at": "2026-09-25T16:49:33.435Z",
           "by": "agent:CWI_Care",
           "note": "sweep r76 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T17:03:12.279Z",
+          "by": "agent:CWI_Care"
         }
       ],
       "requires_black_approval": false,
