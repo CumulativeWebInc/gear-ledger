@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 22082,
-  "updated_at": "2026-09-25T13:04:22.754Z",
+  "version": 22083,
+  "updated_at": "2026-09-25T13:04:27.972Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -24872,7 +24872,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-25T12:45:17.720Z",
       "assigned_to": "agent:CWI_Results",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -24881,8 +24881,15 @@
         "receipt-tail continuity fail-closed",
         ">=1 artifact attached at deliver before the 14:40Z kill"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3CAND07ES4E9GRQY7A9RJER",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r72/results/run-r72.md",
+          "sha256": "bab5de335b3ede7fc7a2bd1ab80519946f069c3b0ecc92b20a156cff92db43b0"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r72/results/run-r72.md",
       "state_history": [
         {
           "from": "created",
@@ -24897,6 +24904,13 @@
           "at": "2026-09-25T12:48:36.755Z",
           "by": "agent:CWI_Results",
           "note": "activation sweep 2026-09-25"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T13:04:27.972Z",
+          "by": "agent:CWI_Results",
+          "note": "activation sweep round-72: r70 receipt seeded, dashboard re-published, proof-shot honest zero #48, inside 14:40Z kill"
         }
       ],
       "requires_black_approval": false,
