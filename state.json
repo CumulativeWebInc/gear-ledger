@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 21029,
-  "updated_at": "2026-09-25T05:44:36.049Z",
+  "version": 21030,
+  "updated_at": "2026-09-25T05:44:43.314Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -23085,6 +23085,37 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-25T05:40:00Z"
+    },
+    {
+      "task_id": "tsk_01M3BHGDHJJHDS43CAQSYN5Z1G",
+      "type": "custom",
+      "title": "Sweep round-65: MINT taps-check r65 + kill-trigger attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T05:44:43.314Z",
+      "assigned_to": "agent:CWI_Athena_MINT",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "Taps-check r65 live 4/4 vs r64 baseline",
+        "kill trigger STANDS attested",
+        "STAGING ONLY - nothing launches",
+        "ledger delivered inside kill."
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T05:44:43.314Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-25 round-65"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T06:40:00Z"
     }
   ],
   "presence": {
@@ -25103,6 +25134,11 @@
       "op": "task.create",
       "at": "2026-09-25T04:46:34.283Z",
       "ref": "tsk_01M3BE5Y9BGTTM8Y8CWAF142HX"
+    },
+    "sweep-r65-mint": {
+      "op": "task.create",
+      "at": "2026-09-25T05:44:43.314Z",
+      "ref": "tsk_01M3BHGDHJJHDS43CAQSYN5Z1G"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
