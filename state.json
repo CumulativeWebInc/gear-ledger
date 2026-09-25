@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 20872,
-  "updated_at": "2026-09-25T04:46:24.575Z",
+  "version": 20873,
+  "updated_at": "2026-09-25T04:46:34.283Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -22943,6 +22943,39 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-25T05:40:00Z"
+    },
+    {
+      "task_id": "tsk_01M3BE5Y9BGTTM8Y8CWAF142HX",
+      "type": "custom",
+      "title": "Sweep round-64: Results dashboard r63 refresh + proof-shot watch",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T04:46:34.283Z",
+      "assigned_to": "agent:CWI_Results",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "r63 sibling deliveries re-verified live inside the kill",
+        "dashboard r63 results.json + index.html published live 200 with continuity asserted pre-PUT (anti-clobber)",
+        "proof-shot watch with honest zero",
+        "distribution numbers from receipts only",
+        "memory claims written and offchain-verify OK",
+        "delivered inside the 2026-09-25T05:40:00Z kill"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T04:46:34.283Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-25 round-64"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T05:40:00Z"
     }
   ],
   "presence": {
@@ -24956,6 +24989,11 @@
       "op": "task.create",
       "at": "2026-09-25T04:45:09.286Z",
       "ref": "tsk_01M3BE3B96NM12VS3TBJE6W14E"
+    },
+    "sweep-r64-results": {
+      "op": "task.create",
+      "at": "2026-09-25T04:46:34.283Z",
+      "ref": "tsk_01M3BE5Y9BGTTM8Y8CWAF142HX"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
