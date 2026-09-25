@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 22714,
-  "updated_at": "2026-09-25T17:06:14.301Z",
+  "version": 22715,
+  "updated_at": "2026-09-25T17:08:13.936Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -25678,7 +25678,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-25T16:45:29.419Z",
       "assigned_to": "agent:CWI_Guide",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -25688,8 +25688,27 @@
         "memory write + git push + L1 offchain-anchor + offchain-verify ANCHORED-OK",
         "carve-outs held: $0, no wallet signing, no external publishing, nothing under Black's personal name"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3CRKXHB20YAZS9FD7R9JWAM",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.74.md",
+          "sha256": "fa0008bde297b83faec9cf6d35c6130952917a7fd7043fd5b7e7f84ba3e98da0"
+        },
+        {
+          "artifact_id": "art_01M3CRKXHCD2HA3C8KM40B09X5",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.74-WALKTHROUGH.md",
+          "sha256": "e9f7baaeeaed5f345157c039f46004cf977d5afe29898567e6c5d4eef87f1929"
+        },
+        {
+          "artifact_id": "art_01M3CRKXHD61T5WK4R1YPT0X29",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r76/guide/run-r76.md",
+          "sha256": "2ffba3c5818ec0cf186f1b0ed2fc3d3ee43861e1e1d7ffe3ac9ae01113acba5d"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.74.md",
       "state_history": [
         {
           "from": "created",
@@ -25704,6 +25723,12 @@
           "at": "2026-09-25T16:49:10.057Z",
           "by": "agent:CWI_Guide",
           "note": "sweep r76 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T17:08:13.935Z",
+          "by": "agent:CWI_Guide"
         }
       ],
       "requires_black_approval": false,
