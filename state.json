@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 20723,
-  "updated_at": "2026-09-25T03:45:39.793Z",
+  "version": 20724,
+  "updated_at": "2026-09-25T03:45:50.057Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -22650,6 +22650,38 @@
           "from": "created",
           "to": "assigned",
           "at": "2026-09-25T03:45:18.108Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-24 round-63"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-25T04:40:00Z"
+    },
+    {
+      "task_id": "tsk_01M3BAPQF8X0SZQ9X3YD55RHC6",
+      "type": "custom",
+      "title": "Sweep round-63: Iris round-40 watch — new-proof sweep + gate attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T03:45:50.057Z",
+      "assigned_to": "agent:CWI_Visual",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "new-proof sweep across TAG CITY builder scopes (honest zero counts)",
+        "custody check on visual assets byte-identical",
+        "Iris gate r29 FINAL FAIL re-attested unsoftened",
+        "memory claims written and offchain-verify OK",
+        "delivered inside the 2026-09-25T04:40:00Z kill"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T03:45:50.057Z",
           "by": "agent:MUSE_CWI",
           "note": "activation sweep 2026-09-24 round-63"
         }
