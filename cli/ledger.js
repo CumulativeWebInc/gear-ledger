@@ -19,7 +19,10 @@
  *   POST /tasks/{id}/fail        → task fail
  *   POST /approvals              → approval seal
  *   GET  /world/state            → state get
- *   event log                    → event append
+ *   state compaction             → state compact (windowed live store +
+ *                                   monthly archive; see ARCHIVE.md)
+ *   task restore                 → task restore (rehydrate from archive)
+ *   event log                    → event append (UTC-day shards)
  *   agent.presence heartbeats     → presence heartbeat
  *
  * HTTP server later: same protocol, same IDs, same CAS — no client changes.
@@ -69,6 +72,15 @@ export function ulid() {
 export const now = () => new Date().toISOString();
 export const sha256hex = (s) => createHash('sha256').update(s, 'utf8').digest('hex');
 
+/** Blocking sleep (stdlib only) for CAS backoff. */
+function sleepMs(ms) {
+  Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, ms);
+}
+/** Decorrelate concurrent writers: exponential backoff + jitter. */
+function casBackoff(attempt) {
+  sleepMs(Math.floor(150 * 2 ** attempt + Math.random() * 150));
+}
+
 // ---------------------------------------------------------------- errors
 export class LedgerError extends Error {
   constructor(code, message, detail = null, status = 409) {
@@ -76,6 +88,39 @@ export class LedgerError extends Error {
     this.code = code; this.detail = detail; this.status = status;
   }
   toJSON() { return { error: { code: this.code, message: this.message, detail: this.detail } }; }
+}
+
+// ---------------------------------------------------------------- secret scan
+// Pre-push guardrail (Black's order 2026-09-23): no secret material may ever
+// land in the public gear-ledger repo. Every GitHub write passes through
+// writeRepoFileCAS, which scans first and refuses on a match. Bare 64-hex is
+// deliberately NOT matched — the ledger legitimately records sha256 hashes.
+// The error names the pattern, never the matched value (no leaking secrets
+// into logs).
+const SECRET_PATTERNS = [
+  { name: 'pem-private-key', re: /-----BEGIN [A-Z0-9 ]*PRIVATE KEY-----/ },
+  { name: 'ssh-private-key', re: /-----BEGIN OPENSSH PRIVATE KEY-----/ },
+  { name: 'github-token', re: /\bghp_[A-Za-z0-9]{20,}/ },
+  { name: 'github-pat', re: /\bgithub_pat_[A-Za-z0-9_]{20,}/ },
+  { name: 'openai-key', re: /\bsk-[A-Za-z0-9]{20,}/ },
+  { name: 'aws-access-key', re: /\bAKIA[0-9A-Z]{16}\b/ },
+  { name: 'slack-token', re: /\bxox[bap]-[A-Za-z0-9-]{10,}/ },
+  { name: 'json-secret-field', re: /"(?:api[_-]?key|private[_-]?key|client[_-]?secret|secret|token|password|passwd|pwd)"\s*:\s*"[A-Za-z0-9_\-+/=]{16,}"/i },
+  { name: 'env-secret-line', re: /^\s*[A-Z_0-9]*(?:PRIVATE_KEY|API_KEY|CLIENT_SECRET|SECRET|PASSWORD)[A-Z_]*\s*=\s*\S{12,}\s*$/m },
+];
+export function scanForSecrets(text, path) {
+  const s = String(text || '');
+  for (const { name, re } of SECRET_PATTERNS) {
+    if (re.test(s)) {
+      throw new LedgerError(
+        'secret.scan_blocked',
+        `refusing to push ${path}: secret scan matched (${name}) — remove the secret material and retry`,
+        { path, pattern: name },
+        400
+      );
+    }
+  }
+  return true;
 }
 
 // ---------------------------------------------------------------- GitHub layer
@@ -112,6 +157,13 @@ function gh(method, path, data) {
 export function readRepoFile(path) {
   try {
     const r = gh('GET', `/repos/${REPO}/contents/${path}?ref=${BRANCH}`);
+    // Files > 1MB are returned by the Contents API with empty content and
+    // encoding "none". Fall back to the git blob endpoint for the true bytes
+    // (authority hierarchy: git/blobs > contents).
+    if ((!r.content || r.content === '') && r.sha) {
+      const b = gh('GET', `/repos/${REPO}/git/blobs/${r.sha}`);
+      return { sha: r.sha, text: Buffer.from(b.content || '', 'base64').toString('utf8') };
+    }
     return { sha: r.sha, text: Buffer.from(r.content || '', 'base64').toString('utf8') };
   } catch (e) {
     if (e.status === 404) return null;
@@ -120,6 +172,8 @@ export function readRepoFile(path) {
 }
 
 export function writeRepoFileCAS(path, text, message, baseSha) {
+  scanForSecrets(text, path);
+  if (message) scanForSecrets(message, `${path} (commit message)`);
   const payload = {
     message,
     content: Buffer.from(text, 'utf8').toString('base64'),
@@ -158,7 +212,7 @@ export function casMutateState(label, mutate, onConflict) {
       writeRepoFileCAS('state.json', JSON.stringify(doc, null, 2) + '\n', label, sha);
       return doc;
     } catch (e) {
-      if (e.status === 409) { lastErr = e; continue; }
+      if (e.status === 409) { lastErr = e; casBackoff(i); continue; }
       throw e;
     }
   }
@@ -166,20 +220,277 @@ export function casMutateState(label, mutate, onConflict) {
   throw new LedgerError('state.write_conflict', `CAS conflict on state.json after ${MAX_CAS_RETRIES} retries`, { label }, 409);
 }
 
+/**
+ * Append-only event log, sharded by UTC day: events/YYYY-MM-DD.jsonl.
+ * Sharding keeps every hot file small — the old monolithic events.jsonl is
+ * never rewritten (left in place as history; no in-workspace readers depend
+ * on it). Old shards are moved to events-archive/YYYY-MM/ after 90 days by
+ * the compaction sweep (moved, never deleted).
+ */
+export function eventShardPath(date = now()) { return `events/${date.slice(0, 10)}.jsonl`; }
+
 export function appendEvent(event, actor, data) {
   const full = { event_id: 'evt_' + ulid(), event, at: now(), actor, sample: false, data };
+  const shard = eventShardPath(full.at);
   for (let i = 0; i < MAX_CAS_RETRIES; i++) {
-    const f = readRepoFile('events.jsonl');
+    const f = readRepoFile(shard);
     const base = f ? f.text : '';
     try {
-      writeRepoFileCAS('events.jsonl', base + JSON.stringify(full) + '\n', `event: ${event} ${full.event_id}`, f ? f.sha : null);
+      writeRepoFileCAS(shard, base + JSON.stringify(full) + '\n', `event: ${event} ${full.event_id}`, f ? f.sha : null);
       return full;
     } catch (e) {
-      if (e.status === 409) continue;
+      if (e.status === 409) { casBackoff(i); continue; }
       throw e;
     }
   }
-  throw new LedgerError('events.write_conflict', 'CAS conflict appending to events.jsonl', null, 409);
+  throw new LedgerError('events.write_conflict', 'CAS conflict appending to event shard', { shard }, 409);
+}
+
+// ---------------------------------------------------------------- compaction
+// state.json is a WINDOWED live store, not an ever-growing log. Terminal
+// history is archived to state-archive/tasks-YYYY-MM.json with a per-task
+// index at state-archive/index.json. Retention rule (see ARCHIVE.md):
+//   verified/cancelled/failed -> archived on the first sweep after terminal
+//                              (no outgoing transitions exist for them)
+//   delivered                 -> archived 24h after last state change
+//                                (verification/rollback window; late
+//                                verify/rollback auto-rehydrates)
+//   created/assigned/in_progress -> NEVER archived
+//   idempotency keys          -> archived after 7 days (replay window)
+//   event shards (events/YYYY-MM-DD.jsonl) -> moved to events-archive/YYYY-MM/
+//                                after 90 days (moved, never deleted)
+// Steady-state bound: state.json holds at most ~24h of delivered tasks +
+// live tasks + 7 days of idempotency — bounded, not linear. At ~115
+// delivered/day the live task window stays under ~200 tasks (~400KB worst
+// case). Growth beyond the bound is a bug.
+//
+// Crash safety: two-phase. Phase 1 CAS-merges tasks into the monthly
+// archive + index (idempotent — skips ids already archived). Phase 2 reads
+// the archive back and verifies every batched id with a sha256 match.
+// Phase 3 CAS-removes from state.json ONLY ids that verified. A crash at
+// any point -> the next sweep completes it; no loss path exists because
+// removal never precedes a verified archive.
+const TERMINAL_STATES = new Set(['verified', 'cancelled', 'failed']);
+const IDEM_RETENTION_DAYS = 7;
+export const ARCHIVE_INDEX_PATH = 'state-archive/index.json';
+
+function lastChangeAt(t) {
+  const h = t.state_history || [];
+  return h.length ? h[h.length - 1].at : t.created_at;
+}
+
+export function archiveEligible(doc, graceHours = 24) {
+  const cutoff = Date.now() - graceHours * 3600 * 1000;
+  const tasks = (doc.tasks || []).filter((t) => {
+    if (TERMINAL_STATES.has(t.state)) return true;
+    if (t.state === 'delivered') {
+      const lc = Date.parse(lastChangeAt(t));
+      return Number.isFinite(lc) && lc < cutoff;
+    }
+    return false;
+  });
+  const idemCut = Date.now() - IDEM_RETENTION_DAYS * 86400 * 1000;
+  const idem = doc.idempotency || {};
+  const idemKeys = Object.keys(idem).filter((k) => {
+    const at = Date.parse((idem[k] || {}).at || 0);
+    return Number.isFinite(at) && at < idemCut;
+  });
+  return { tasks, idemKeys };
+}
+
+/** CAS-merge a JSON file: read (404 -> null) -> mergeFn -> write. */
+export function casMergeFile(path, mergeFn, label) {
+  for (let i = 0; i < MAX_CAS_RETRIES; i++) {
+    const f = readRepoFile(path);
+    const cur = f ? JSON.parse(f.text) : null;
+    const next = mergeFn(cur);
+    try {
+      writeRepoFileCAS(path, JSON.stringify(next, null, 2) + '\n', label, f ? f.sha : null);
+      return next;
+    } catch (e) {
+      if (e.status === 409) { casBackoff(i); continue; }
+      throw e;
+    }
+  }
+  throw new LedgerError('archive.write_conflict', `CAS conflict merging ${path}`, { path }, 409);
+}
+
+const canonTaskJson = (t) => JSON.stringify(t);
+
+export function opCompact({ graceHours = 24, dryRun = false } = {}) {
+  const { doc: live } = readState();
+  const bytesBefore = Buffer.byteLength(JSON.stringify(live), 'utf8');
+  const { tasks, idemKeys } = archiveEligible(live, graceHours);
+  if (dryRun) {
+    let prune = { pruned: 0, moved: [], warnings: [] };
+    try { prune = opPruneEvents({ days: 90, dryRun: true }); }
+    catch (e) { prune.warnings.push(String((e && e.message) || e)); }
+    return {
+      dry_run: true, task_count: tasks.length, idempotency_count: idemKeys.length,
+      eligible_tasks: tasks.map((t) => t.task_id), eligible_idempotency: idemKeys,
+      bytes_before: bytesBefore,
+      prune_candidates: prune.moved, prune_warnings: prune.warnings,
+    };
+  }
+  const archiveRefs = [];
+  const verifiedIds = new Set();
+  // Phase 1: merge tasks + idempotency into monthly archives and the index.
+  const byMonth = new Map();
+  for (const t of tasks) {
+    const m = (lastChangeAt(t) || now()).slice(0, 7);
+    if (!byMonth.has(m)) byMonth.set(m, { tasks: [], idem: [] });
+    byMonth.get(m).tasks.push(t);
+  }
+  for (const k of idemKeys) {
+    const m = ((live.idempotency[k] || {}).at || now()).slice(0, 7);
+    if (!byMonth.has(m)) byMonth.set(m, { tasks: [], idem: [] });
+    byMonth.get(m).idem.push(k);
+  }
+  const indexEntries = {};
+  for (const [m, batch] of byMonth) {
+    const path = `state-archive/tasks-${m}.json`;
+    casMergeFile(path, (cur) => {
+      const d = cur || { archive: 'tasks', month: m, tasks: {}, idempotency: {}, updated_at: now() };
+      d.tasks = d.tasks || {}; d.idempotency = d.idempotency || {};
+      for (const t of batch.tasks) if (!d.tasks[t.task_id]) d.tasks[t.task_id] = t;
+      for (const k of batch.idem) if (!d.idempotency[k]) d.idempotency[k] = live.idempotency[k];
+      d.updated_at = now();
+      return d;
+    }, `archive: merge ${batch.tasks.length} tasks + ${batch.idem.length} idempotency -> ${path}`);
+    archiveRefs.push(path);
+    for (const t of batch.tasks) {
+      indexEntries[t.task_id] = { path, archived_at: now(), sha256: sha256hex(canonTaskJson(t)) };
+    }
+  }
+  casMergeFile(ARCHIVE_INDEX_PATH, (cur) => {
+    const d = cur || { index: 'tasks', updated_at: now(), tasks: {} };
+    d.tasks = d.tasks || {};
+    for (const [id, e] of Object.entries(indexEntries)) if (!d.tasks[id]) d.tasks[id] = e;
+    d.updated_at = now();
+    return d;
+  }, `archive: index ${Object.keys(indexEntries).length} tasks`);
+  // Phase 2: read-back verify every batched id before touching live state.
+  // (one read per archive file, not per task)
+  const byPath = new Map();
+  for (const t of tasks) {
+    const p = (indexEntries[t.task_id] || {}).path;
+    if (!byPath.has(p)) byPath.set(p, []);
+    byPath.get(p).push(t);
+  }
+  for (const [p, list] of byPath) {
+    const arch = readRepoFile(p);
+    if (!arch) throw new LedgerError('archive.verify_failed', `archive file missing: ${p}`, null, 500);
+    const backTasks = (JSON.parse(arch.text).tasks || {});
+    for (const t of list) {
+      const back = backTasks[t.task_id];
+      const e = indexEntries[t.task_id];
+      if (!back || sha256hex(canonTaskJson(back)) !== e.sha256) {
+        throw new LedgerError('archive.verify_failed', 'archive read-back mismatch', { task_id: t.task_id, path: p }, 500);
+      }
+      verifiedIds.add(t.task_id);
+    }
+  }
+  const verifiedIdem = new Set();
+  for (const [m, batch] of byMonth) {
+    if (!batch.idem.length) continue;
+    const arch = readRepoFile(`state-archive/tasks-${m}.json`);
+    const back = (JSON.parse(arch.text).idempotency || {});
+    for (const k of batch.idem) if (back[k]) verifiedIdem.add(k);
+  }
+  // Phase 3: remove ONLY verified ids from live state (single CAS).
+  const removeTasks = tasks.filter((t) => verifiedIds.has(t.task_id)).map((t) => t.task_id);
+  const removeIdem = idemKeys.filter((k) => verifiedIdem.has(k));
+  const doc = casMutateState(`compact: archive ${removeTasks.length} tasks + ${removeIdem.length} idempotency`, (d) => {
+    const gone = new Set(removeTasks);
+    d.tasks = d.tasks.filter((t) => !gone.has(t.task_id));
+    for (const k of removeIdem) delete d.idempotency[k];
+  });
+  const bytesAfter = Buffer.byteLength(JSON.stringify(doc), 'utf8');
+  // Event-shard pruning: best-effort, never fails the compaction.
+  let prune = { pruned: 0, moved: [], warnings: [] };
+  try { prune = opPruneEvents({ days: 90 }); }
+  catch (e) { prune.warnings.push(String((e && e.message) || e)); }
+  return {
+    archived_tasks: removeTasks.length, archived_idempotency: removeIdem.length,
+    archive_refs: archiveRefs, bytes_before: bytesBefore, bytes_after: bytesAfter,
+    event_shards_pruned: prune.pruned, prune_warnings: prune.warnings,
+    version: doc.version,
+  };
+}
+
+/** Rehydrate one archived task back into live state (rare: post-grace rollback). */export function opTaskRestore(taskId) {
+  const idxF = readRepoFile(ARCHIVE_INDEX_PATH);
+  const entry = idxF && (JSON.parse(idxF.text).tasks || {})[taskId];
+  if (!entry) throw new LedgerError('task.not_found', `no such archived task: ${taskId}`, null, 404);
+  const arch = readRepoFile(entry.path);
+  const t = arch && (JSON.parse(arch.text).tasks || {})[taskId];
+  if (!t) throw new LedgerError('archive.missing_task', `index points at ${entry.path} but task absent`, { task_id: taskId }, 500);
+  if (entry.sha256 && sha256hex(canonTaskJson(t)) !== entry.sha256) {
+    throw new LedgerError('archive.integrity', 'archived task failed integrity check', { task_id: taskId }, 500);
+  }
+  const doc = casMutateState(`task restore ${taskId}`, (d) => {
+    if (!d.tasks.some((x) => x.task_id === taskId)) d.tasks.push(t);
+  });
+  return { task_id: taskId, state: t.state, restored_from: entry.path, version: doc.version };
+}
+
+/**
+ * Move event shards older than `days` to events-archive/YYYY-MM/ (moved,
+ * never deleted). Only touches cold files; failures are reported, never
+ * thrown — pruning must not fail a compaction run.
+ */
+export function opPruneEvents({ days = 90, dryRun = false } = {}) {
+  const cutoff = now().slice(0, 10);
+  const cutoffMs = Date.parse(cutoff) - days * 86400 * 1000;
+  const moved = [], warnings = [];
+  let listing;
+  try {
+    listing = gh('GET', `/repos/${REPO}/contents/events?ref=${BRANCH}`);
+  } catch (e) {
+    if (e.status === 404) return { pruned: 0, moved, warnings };
+    throw e;
+  }
+  const shards = (Array.isArray(listing) ? listing : []).filter(
+    (e) => e.type === 'file' && /^\d{4}-\d{2}-\d{2}\.jsonl$/.test(e.name || '')
+  );
+  for (const s of shards) {
+    const day = (s.name || '').replace('.jsonl', '');
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(day) || Date.parse(day) >= cutoffMs) continue;
+    const dest = `events-archive/${day.slice(0, 7)}/${day}.jsonl`;
+    if (dryRun) { moved.push({ from: `events/${day}.jsonl`, to: dest, dry_run: true }); continue; }
+    try {
+      const f = readRepoFile(`events/${day}.jsonl`);
+      if (!f) continue;
+      scanForSecrets(f.text, dest);
+      writeRepoFileCAS(dest, f.text, `events: archive shard ${day}`, null);
+      gh('DELETE', `/repos/${REPO}/contents/events/${day}.jsonl`, {
+        message: `events: archive shard ${day} -> ${dest}`, sha: f.sha, branch: BRANCH,
+      });
+      moved.push({ from: `events/${day}.jsonl`, to: dest });
+    } catch (e) {
+      warnings.push(`prune ${day}: ${e.message}`);
+    }
+  }
+  return { pruned: moved.length, moved, warnings };
+}
+
+/**
+ * Transparent rehydrate: a transition targeting an archived task pulls it
+ * back into live state inside the same CAS — callers (verifiers, watchdog)
+ * never observe archival.
+ */
+function rehydrateTask(doc, taskId) {
+  const idxF = readRepoFile(ARCHIVE_INDEX_PATH);
+  const entry = idxF && (JSON.parse(idxF.text).tasks || {})[taskId];
+  if (!entry) throw new LedgerError('task.not_found', `no such task: ${taskId}`, null, 404);
+  const arch = readRepoFile(entry.path);
+  const t = arch && (JSON.parse(arch.text).tasks || {})[taskId];
+  if (!t) throw new LedgerError('archive.missing_task', `index points at ${entry.path} but task absent`, { task_id: taskId }, 500);
+  if (entry.sha256 && sha256hex(canonTaskJson(t)) !== entry.sha256) {
+    throw new LedgerError('archive.integrity', 'archived task failed integrity check', { task_id: taskId }, 500);
+  }
+  doc.tasks.push(t);
+  return t;
 }
 
 // ---------------------------------------------------------------- transition engine (frozen §4.2)
@@ -268,8 +579,9 @@ export function checkTransition(doc, task, to, actor, opts = {}) {
 
 function findTask(doc, id) {
   const t = doc.tasks.find((x) => x.task_id === id);
-  if (!t) throw new LedgerError('task.not_found', `no such task: ${id}`, null, 404);
-  return t;
+  if (t) return t;
+  // Archived tasks rehydrate transparently — verifiers never see archival.
+  return rehydrateTask(doc, id);
 }
 
 const EVENT_FOR = {
@@ -381,19 +693,66 @@ export function opEventAppend(event, actor, data) {
   return appendEvent(event, actor, data);
 }
 
-export function opPresenceHeartbeat(agent, status = 'online', taskId = null, note = null) {
+/** Shared presence-record transform. Returns true when status/pointer changed. */
+function applyPresenceRecord(d, agent, status, taskId, note) {
   if (!/^agent:[A-Za-z0-9_]+$/.test(agent)) throw new LedgerError('presence.bad_agent', `bad agent: ${agent}`, null, 400);
+  assertRegistered(d, agent);
+  // null taskId = "no change": preserve the existing live-task pointer.
+  // The pointer is cleared only by an explicit empty-string --task "".
+  const prev = d.presence[agent] || {};
+  const keep = (taskId === null || taskId === undefined) ? (prev.current_task_id || null) : (taskId === '' ? null : taskId);
+  const changed = !prev.at || prev.status !== status || (prev.current_task_id || null) !== keep;
+  d.presence[agent] = { status, at: now(), current_task_id: keep, note: note || prev.note || 'ops heartbeat (10-min cron)' };
+  return { changed, current_task_id: keep };
+}
+
+export function opPresenceHeartbeat(agent, status = 'online', taskId = null, note = null) {
+  let changed = false, cur = null;
   const doc = casMutateState(`presence heartbeat ${agent} ${status}`, (d) => {
-    assertRegistered(d, agent);
-    // null taskId = "no change": preserve the existing live-task pointer.
-    // The pointer is cleared only by an explicit empty-string --task "".
-    const prev = d.presence[agent] || {};
-    const keep = (taskId === null || taskId === undefined) ? (prev.current_task_id || null) : (taskId === '' ? null : taskId);
-    d.presence[agent] = { status, at: now(), current_task_id: keep, note: note || prev.note || 'ops heartbeat (10-min cron)' };
+    const r = applyPresenceRecord(d, agent, status, taskId, note);
+    changed = r.changed; cur = r.current_task_id;
   });
-  const cur = doc.presence[agent].current_task_id;
-  const evt = appendEvent('agent.presence', agent, { agent_id: agent, status, current_task_id: cur, note: note || 'ops heartbeat (10-min cron)' });
-  return { agent_id: agent, status, event_id: evt.event_id, version: doc.version };
+  // The event log records presence only when something actually changed
+  // (status or pointer) — 22 identical pulses per 10-min run no longer
+  // spam ~3,100 events/day into the shards. state.presence still pulses
+  // every run (it is the rendered field).
+  let event_id = null;
+  if (changed) {
+    event_id = appendEvent('agent.presence', agent, { agent_id: agent, status, current_task_id: cur, note: note || 'ops heartbeat (10-min cron)' }).event_id;
+  }
+  return { agent_id: agent, status, event_id, version: doc.version };
+}
+
+/**
+ * Batch presence heartbeat: N agents pulsed in ONE compare-and-swap instead
+ * of N full state.json rewrites. This is what the 10-minute heartbeat uses —
+ * 22 sequential CAS cycles collapse to 1, so the race window (and write
+ * traffic) drops ~22x. Events still follow the on-change rule per agent.
+ */
+export function opPresenceHeartbeatBatch(entries) {
+  if (!Array.isArray(entries) || entries.length === 0) {
+    throw new LedgerError('presence.batch_empty', 'batch needs a non-empty entries array', null, 400);
+  }
+  if (entries.length > 100) throw new LedgerError('presence.batch_too_large', 'batch capped at 100 entries', null, 400);
+  const seen = new Set();
+  const changedAgents = [];
+  const doc = casMutateState(`presence heartbeat-batch ${entries.length} agents`, (d) => {
+    for (const e of entries) {
+      const agent = e.agent, status = e.status || 'online';
+      if (seen.has(agent)) throw new LedgerError('presence.batch_duplicate', `duplicate agent in batch: ${agent}`, null, 400);
+      seen.add(agent);
+      const r = applyPresenceRecord(d, agent, status, ('task' in e ? e.task : null), e.note || null);
+      if (r.changed) changedAgents.push({ agent, status, current_task_id: r.current_task_id, note: e.note || null });
+    }
+  });
+  const event_ids = [];
+  for (const c of changedAgents) {
+    event_ids.push(appendEvent('agent.presence', c.agent, {
+      agent_id: c.agent, status: c.status, current_task_id: c.current_task_id,
+      note: c.note || 'ops heartbeat (10-min cron)',
+    }).event_id);
+  }
+  return { agents: entries.length, changed: changedAgents.length, event_ids, version: doc.version };
 }
 
 export function opApprovalSeal({ exactCopyPath, scopes, taskId, surface = 'owner-console', expiresAt = null }) {
@@ -465,9 +824,15 @@ function main() {
     else if (cmd === 'task' && sub === 'fail') out = opTaskTransition(positional[0], 'failed', need(a, 'by'), { reason: need(a, 'reason') });
     else if (cmd === 'event' && sub === 'append') out = opEventAppend(need(a, 'event'), need(a, 'actor'), JSON.parse(a['data-json'] || '{}'));
     else if (cmd === 'presence' && sub === 'heartbeat') out = opPresenceHeartbeat(need(a, 'agent'), a.status || 'online', ('task' in a ? a.task : null), a.note || null);
+    else if (cmd === 'presence' && sub === 'heartbeat-batch') {
+      const raw = a['batch-file'] ? readFileSync(a['batch-file'], 'utf8') : need(a, 'batch-json');
+      out = opPresenceHeartbeatBatch(JSON.parse(raw));
+    }
     else if (cmd === 'approval' && sub === 'seal') out = opApprovalSeal({ exactCopyPath: need(a, 'exact-copy'), scopes: need(a, 'scope'), taskId: need(a, 'task'), surface: a.surface || 'owner-console', expiresAt: a['expires-at'] || null });
+    else if (cmd === 'task' && sub === 'restore') out = opTaskRestore(positional[0]);
     else if (cmd === 'state' && sub === 'get') out = readState().doc;
     else if (cmd === 'state' && sub === 'version') { const { doc, sha } = readState(); out = { version: doc.version, updated_at: doc.updated_at, sha, tasks: doc.tasks.length }; }
+    else if (cmd === 'state' && sub === 'compact') out = opCompact({ graceHours: parseFloat(a['grace-hours'] || '24'), dryRun: a['dry-run'] === 'true' });
     else throw new LedgerError('cli.unknown_command', `unknown command: ${[cmd, sub].filter(Boolean).join(' ')}`, null, 400);
     console.log(JSON.stringify(out, null, 2));
   } catch (e) {
