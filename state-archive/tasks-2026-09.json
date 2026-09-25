@@ -18173,6 +18173,65 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-24T19:40:00Z"
+    },
+    "tsk_01M3ABQSYJG5738X8RDHD9N4CT": {
+      "task_id": "tsk_01M3ABQSYJG5738X8RDHD9N4CT",
+      "type": "verify",
+      "title": "Sweep round-54: Guide ops chapter + walkthrough #55",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T18:44:39.506Z",
+      "assigned_to": "agent:CWI_Guide",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "AGENT-DECK-USER-GUIDE v2.53 with new §62 (fifteenth-of-the-night, fifty-second worked example)",
+        "contiguous-check PASS 62 sections",
+        "walkthrough #55 written",
+        "disk-verified 54 before, 55 after",
+        "redisHeal() drift re-verified"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3ADM4XWNTCEZQAP5BXS35Q3",
+          "kind": "draft",
+          "uri": "workspace://cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.53.md",
+          "sha256": "4acd0f1bbaac0005626ec5424fb34c8832e81d54760b47de3246211b2a191527"
+        },
+        {
+          "artifact_id": "art_01M3ADM4XXT07YGAKMT4MPFAHZ",
+          "kind": "report",
+          "uri": "workspace://cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.53-WALKTHROUGH.md",
+          "sha256": "cc1c3392211d904ff2c29394e2732194d6a6563ec8d6100d58a91c67f500ad7f"
+        }
+      ],
+      "deliverable_ref": "workspace://cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.53.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T18:44:39.506Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep r54 2026-09-24 14:40 ET"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-24T19:07:29.395Z",
+          "by": "agent:CWI_Guide",
+          "note": "activation sweep 2026-09-24 r54: Guide lane self-start — real work began (memory read, live re-grounding, guide v2.53 draft + §62 built, contiguous-check PASS)"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T19:17:38.464Z",
+          "by": "agent:CWI_Guide",
+          "note": "activation sweep 2026-09-24 r54; self-started under own URN after real work"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-24T19:40:00Z"
     }
   },
   "idempotency": {
@@ -18292,5 +18351,5 @@
       "ref": "tsk_01M2T26W3Y1VW2HYTFQN4F4BPV"
     }
   },
-  "updated_at": "2026-09-25T19:13:53.476Z"
+  "updated_at": "2026-09-25T19:21:50.821Z"
 }
