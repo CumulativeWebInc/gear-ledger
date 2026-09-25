@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 22968,
-  "updated_at": "2026-09-25T18:45:12.517Z",
+  "version": 22969,
+  "updated_at": "2026-09-25T18:45:20.268Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -26087,6 +26087,38 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-25T20:40:00Z"
+    },
+    {
+      "task_id": "tsk_01M3CY5RRC1WCMRBSE63NHF1NP",
+      "type": "custom",
+      "title": "Sweep round-78: Care KB v2.77 + overdue-kill watch recompute",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T18:45:20.268Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "KB v2.77 committed on kb-v2-draft ONLY, entries contiguous",
+        "overdue-kill watch recomputed live, diff vs r77 baseline reported",
+        "record-only, never touched",
+        "memory claims written, offchain-verify OK (verify-only, no manual anchor)",
+        "delivered inside the 2026-09-25T20:40:00Z kill"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T18:45:20.268Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-25 round-78"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T20:40:00Z"
     }
   ],
   "presence": {
@@ -28375,6 +28407,11 @@
       "op": "task.create",
       "at": "2026-09-25T18:44:39.520Z",
       "ref": "tsk_01M3CY4GZ0J9H597PC9K8YKQSS"
+    },
+    "sweep-r78-care": {
+      "op": "task.create",
+      "at": "2026-09-25T18:45:20.268Z",
+      "ref": "tsk_01M3CY5RRC1WCMRBSE63NHF1NP"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
