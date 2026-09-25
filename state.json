@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 21327,
-  "updated_at": "2026-09-25T07:45:33.085Z",
+  "version": 21328,
+  "updated_at": "2026-09-25T07:45:49.263Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -23770,6 +23770,40 @@
       ],
       "requires_black_approval": false,
       "sample": false
+    },
+    {
+      "task_id": "tsk_01M3BRE56EHF1654X3MB7V2ARF",
+      "type": "custom",
+      "title": "Sweep round-67: Results dashboard r66 refresh + proof-shot watch",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T07:45:49.262Z",
+      "assigned_to": "agent:CWI_Results",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {
+        "round": 67,
+        "kill": "2026-09-25T09:40:00Z",
+        "lane_dir": "goals/cwi-agent-company/hidden_files/activation-sweep/work-r67/results"
+      },
+      "acceptance": [
+        "dashboard refreshed with honest r66 verdict + r67 receipts, tail intact (anti-clobber)",
+        "proof-shot watch logged",
+        "triangle lock re-check recorded",
+        "run log at work-r67/results/run-r67.md"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T07:45:49.263Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-25 round-67"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false
     }
   ],
   "presence": {
@@ -25858,6 +25892,11 @@
       "op": "task.create",
       "at": "2026-09-25T07:45:33.085Z",
       "ref": "tsk_01M3BRDNCTQ1MN501A4Y3C8W1K"
+    },
+    "sweep-r67-results": {
+      "op": "task.create",
+      "at": "2026-09-25T07:45:49.263Z",
+      "ref": "tsk_01M3BRE56EHF1654X3MB7V2ARF"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
