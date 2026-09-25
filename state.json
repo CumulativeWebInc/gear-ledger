@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 21278,
-  "updated_at": "2026-09-25T07:25:08.391Z",
+  "version": 21279,
+  "updated_at": "2026-09-25T07:29:51.030Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -23568,7 +23568,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-25T07:10:16.674Z",
       "assigned_to": "agent:CWI_Results",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -23578,8 +23578,21 @@
         "memory read at start, durable claims at end",
         "self-start under own URN (dispatcher start is forbidden)"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3BQGVTFTFG9RJ0CR6C7PY1T",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r66/results/run-r66.md",
+          "sha256": "a5c1c8f4367f3e611182293bb842f41b95a9fba4a922f778a768a5573743c2b9"
+        },
+        {
+          "artifact_id": "art_01M3BQGVTGNJ995H246JWDYES3",
+          "kind": "report",
+          "uri": "https://github.com/CumulativeWebInc/cwi-results/commit/04fb86f50d1d80c03d26bd90345bf65a96a00d1e",
+          "sha256": "8e1828169c68764bed2e3974981b3e190ac72ec7fd6c8d1f48a0197ad9f630aa"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r66/results/run-r66.md",
       "state_history": [
         {
           "from": "created",
@@ -23594,6 +23607,13 @@
           "at": "2026-09-25T07:12:54.465Z",
           "by": "agent:CWI_Results",
           "note": "activation sweep r66: own-URN self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T07:29:51.030Z",
+          "by": "agent:CWI_Results",
+          "note": "activation sweep r66: own-URN deliver"
         }
       ],
       "requires_black_approval": false,
