@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23106,
-  "updated_at": "2026-09-25T19:42:32.195Z",
+  "version": 23107,
+  "updated_at": "2026-09-25T19:46:07.970Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -8096,6 +8096,46 @@
       ],
       "requires_black_approval": true,
       "sample": false
+    },
+    {
+      "task_id": "tsk_01M3D1N2Z11RC0T1BFX85TCTAT",
+      "type": "custom",
+      "title": "Sweep round-79: MINT taps-check r79 + kill-trigger attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T19:46:07.970Z",
+      "assigned_to": "agent:CWI_Athena_MINT",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {
+        "kind": "activation-sweep",
+        "round": 79,
+        "kill": "2026-09-25T21:40:00Z"
+      },
+      "acceptance": [
+        "taps-check 4/4 live-recomputed (manifest dual-method sha256",
+        "approvals count",
+        "day2/day3 staged-not-live",
+        "make_visualizer fail-closed)",
+        "new-media scan vs r78 honest count",
+        "kill-trigger attestation updated (staging only)",
+        "zero manual offchain-anchors (daemon-owned",
+        "verify-only)",
+        "ledger-delivered under own URN by 21:40Z"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T19:46:07.970Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep r79, 2026-09-25 15:40 EDT"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T21:40:00Z"
     }
   ],
   "presence": {
@@ -10284,6 +10324,11 @@
       "op": "task.create",
       "at": "2026-09-25T18:52:12.949Z",
       "ref": "tsk_01M3CYJBRND0ENEBSHD2V93XM7"
+    },
+    "sweep-r79-mint": {
+      "op": "task.create",
+      "at": "2026-09-25T19:46:07.970Z",
+      "ref": "tsk_01M3D1N2Z11RC0T1BFX85TCTAT"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
