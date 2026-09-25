@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 21034,
-  "updated_at": "2026-09-25T05:45:21.035Z",
+  "version": 21035,
+  "updated_at": "2026-09-25T05:45:28.508Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -23146,6 +23146,36 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-25T06:40:00Z"
+    },
+    {
+      "task_id": "tsk_01M3BHHSNW646E0PR3FQYMGAVS",
+      "type": "custom",
+      "title": "Sweep round-65: Guide ops chapter 73 + walkthrough #66",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T05:45:28.508Z",
+      "assigned_to": "agent:CWI_Guide",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "Guide v2.64 published with NEW section 73 (this r65 dispatch cycle, all counts recomputed live)",
+        "walkthrough #66 12/12 PASS",
+        "ledger delivered inside kill."
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T05:45:28.508Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-25 round-65"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T06:40:00Z"
     }
   ],
   "presence": {
@@ -25174,6 +25204,11 @@
       "op": "task.create",
       "at": "2026-09-25T05:44:56.504Z",
       "ref": "tsk_01M3BHGTDQ8KY45J80YN7YHD4C"
+    },
+    "sweep-r65-guide": {
+      "op": "task.create",
+      "at": "2026-09-25T05:45:28.508Z",
+      "ref": "tsk_01M3BHHSNW646E0PR3FQYMGAVS"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
