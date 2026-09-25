@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 21223,
-  "updated_at": "2026-09-25T07:09:37.022Z",
+  "version": 21224,
+  "updated_at": "2026-09-25T07:09:49.895Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -23413,6 +23413,39 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-25T08:40:00Z"
+    },
+    {
+      "task_id": "tsk_01M3BPC8E4VS8NGY0VG049Z50W",
+      "type": "custom",
+      "title": "Sweep round-66: Guide ops chapter 74 + walkthrough #67",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T07:09:49.894Z",
+      "assigned_to": "agent:CWI_Guide",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "AGENT-DECK-USER-GUIDE v2.65 written (round-n law: r66 -> v2.65): new chapter on the r66 dispatch cycle with receipts",
+        "walkthrough #67",
+        "contiguous numbered sections verified",
+        "footer + changelog updated",
+        "memory read at start, durable claims at end",
+        "self-start under own URN (dispatcher start is forbidden)"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T07:09:49.895Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-25 r66"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T08:40:00Z"
     }
   ],
   "presence": {
@@ -25466,6 +25499,11 @@
       "op": "task.create",
       "at": "2026-09-25T07:09:37.022Z",
       "ref": "tsk_01M3BPBVVXNKJJMBEBX11DRCJH"
+    },
+    "sweep-r66-guide": {
+      "op": "task.create",
+      "at": "2026-09-25T07:09:49.895Z",
+      "ref": "tsk_01M3BPC8E4VS8NGY0VG049Z50W"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
