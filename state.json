@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23386,
-  "updated_at": "2026-09-26T13:45:51.014Z",
+  "version": 23387,
+  "updated_at": "2026-09-26T13:46:21.529Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -7713,6 +7713,33 @@
       ],
       "requires_black_approval": true,
       "sample": false
+    },
+    {
+      "task_id": "tsk_01M3EZF1ERR5VYH39YS5EM53XH",
+      "type": "custom",
+      "title": "Sweep round-97: Care KB v2.96 + overdue-kill watch recompute",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-26T13:46:21.529Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "[\"named result: KB v2.96 shipped on kb-v2-draft with entries RB-01.. contiguous, main untouched\",\"overdue-kill watch live-recomputed vs r96 baseline\",\"measurement: blob sha256 + overdue count delta\",\"kill: delivered by 2026-09-26T17:50:00Z or record FAIL\"]"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-26T13:46:21.529Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-26; 16th consecutive no-idle dispatch for Care; kill HARD 2026-09-26T17:50:00Z"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false
     }
   ],
   "presence": {
@@ -10186,6 +10213,11 @@
       "op": "task.create",
       "at": "2026-09-26T13:45:51.014Z",
       "ref": "tsk_01M3EZE3N4SJHNWMRW0R58WETE"
+    },
+    "activation-sweep-2026-09-26-r97-care": {
+      "op": "task.create",
+      "at": "2026-09-26T13:46:21.529Z",
+      "ref": "tsk_01M3EZF1ERR5VYH39YS5EM53XH"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
