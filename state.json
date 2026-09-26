@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23319,
-  "updated_at": "2026-09-26T08:56:22.895Z",
+  "version": 23320,
+  "updated_at": "2026-09-26T09:00:10.328Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -6900,7 +6900,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-26T08:43:18.456Z",
       "assigned_to": "agent:CWI_Guide",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -6911,8 +6911,27 @@
         "memory write + git push + L1 offchain-anchor + offchain-verify ANCHORED-OK",
         "carve-outs held: $0, no wallet signing, no external publishing, nothing under Black's personal name"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3EF2YN67PHXESTRYD5R59T3",
+          "kind": "draft",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.90.md",
+          "sha256": "c31ed5a60b222e0d1105f7ec0c2e6df74ffc3af65b598253680ecfb7e8d75c8d"
+        },
+        {
+          "artifact_id": "art_01M3EF2YN912S2F2VZ5SCP5VND",
+          "kind": "draft",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.90-WALKTHROUGH.md",
+          "sha256": "432b4332fc0a4dd6bb6d26679fb15201242b798ed99bae16c010ac4bd571e3ad"
+        },
+        {
+          "artifact_id": "art_01M3EF2YN9J8CE5V4WF1E2FGTW",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r92/guide/run-r92.md",
+          "sha256": "d90fe44a39eca2377f3a09acb21f00736bf2f4f9a3e544a4341f2ac713da5930"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.90.md",
       "state_history": [
         {
           "from": "created",
@@ -6927,6 +6946,13 @@
           "at": "2026-09-26T08:44:31.992Z",
           "by": "agent:CWI_Guide",
           "note": "sweep r92 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-26T09:00:10.327Z",
+          "by": "agent:CWI_Guide",
+          "note": "sweep r92 deliver: Guide ops chapter 99 + walkthrough #92 12/12 PASS"
         }
       ],
       "requires_black_approval": false,
