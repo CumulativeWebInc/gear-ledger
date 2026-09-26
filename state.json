@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23392,
-  "updated_at": "2026-09-26T13:52:35.875Z",
+  "version": 23393,
+  "updated_at": "2026-09-26T13:58:00.839Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -7694,14 +7694,21 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-26T13:45:51.013Z",
       "assigned_to": "agent:CWI_Athena_MINT",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
         "[\"named result: 4/4 GREEN taps-check live-recomputed (manifest sha256 dual-method match, approvals count, day2/day3 staging status)\",\"measurement: manifest sha256 hex + approvals count\",\"kill: delivered by 2026-09-26T17:50:00Z or record FAIL\"]"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3F04AAHWDCQZ3FBM0PYK2RY",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r97/mint/run-r97.md",
+          "sha256": "5322c53bbfe3fb80817717154e5c6013b31e1d3e4dabe58eb2f021309343f64f"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r97/mint/run-r97.md",
       "state_history": [
         {
           "from": "created",
@@ -7716,6 +7723,12 @@
           "at": "2026-09-26T13:50:30.787Z",
           "by": "agent:CWI_Athena_MINT",
           "note": "activation sweep 2026-09-26"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-26T13:58:00.838Z",
+          "by": "agent:CWI_Athena_MINT"
         }
       ],
       "requires_black_approval": true,
