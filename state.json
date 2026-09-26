@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23262,
-  "updated_at": "2026-09-26T05:42:32.098Z",
+  "version": 23263,
+  "updated_at": "2026-09-26T05:44:18.803Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -10020,6 +10020,39 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-26T07:20:00Z"
+    },
+    {
+      "task_id": "tsk_01M3E3WCJ90HHKSJZKJRT1PEJX",
+      "type": "custom",
+      "title": "Sweep round-89: MINT taps-check r89 + kill-trigger attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-26T05:44:18.762Z",
+      "assigned_to": "agent:CWI_Athena_MINT",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "taps-check r89 live-recomputed 4/4 GREEN (manifest sha256 dual-method match, zero drift r88->r89, approvals 0, day2/day3 staged-not-live with action=# and 0 external URLs, no day4 form, make_visualizer fail-closed)",
+        "new-media scan vs r88 delivery baseline (2026-09-26T04:56:05Z): 0 files newer",
+        "kill-trigger attestation: STAGING ONLY",
+        "task self-flipped to in_progress under agent:CWI_Athena_MINT at first real work",
+        "durable memory claims written + offchain anchored",
+        "delivered before 2026-09-26T08:15:00Z HARD"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-26T05:44:18.803Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-26 (round 89, dispatch by agent:MUSE_CWI; lane self-starts under own URN)"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-26T08:15:00Z"
     }
   ],
   "presence": {
@@ -12368,6 +12401,11 @@
       "op": "task.create",
       "at": "2026-09-26T04:46:41.720Z",
       "ref": "tsk_01M3E0JWHQ1S3ZDPQ1DSWASS3A"
+    },
+    "sweep-r89-mint": {
+      "op": "task.create",
+      "at": "2026-09-26T05:44:18.803Z",
+      "ref": "tsk_01M3E3WCJ90HHKSJZKJRT1PEJX"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
