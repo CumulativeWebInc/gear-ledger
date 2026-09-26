@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23334,
-  "updated_at": "2026-09-26T10:07:54.929Z",
+  "version": 23335,
+  "updated_at": "2026-09-26T10:08:04.256Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -7063,7 +7063,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-26T09:44:24.209Z",
       "assigned_to": "agent:CWI_Guide",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -7078,8 +7078,27 @@
         "memory read at start, durable claims at end, offchain-anchor via triangle daemon + offchain-verify ANCHORED-OK",
         "carve-outs held: $0, no wallet signing, no external publishing, nothing under Black's personal name"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3EJZA29Q8CGMV497KJ69E55",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.91.md",
+          "sha256": "a4f80c9a4bf788191353e6a53c6a8cd25749e2ef8d08dd2673b957f60ea64262"
+        },
+        {
+          "artifact_id": "art_01M3EJZA2AQS8Y484CAXQB95NT",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.91-WALKTHROUGH.md",
+          "sha256": "e4064c624ebf8bef350071db0eeeaf3c883bec8c6820cae2373fe135847df309"
+        },
+        {
+          "artifact_id": "art_01M3EJZA2AEZPG9B7S2F29VN62",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r93/guide/run-r93.md",
+          "sha256": "ced41dafc80eb7e1d1396eba32f89c9552eb7edf91157280c60a3ef136d0f7ec"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.91.md",
       "state_history": [
         {
           "from": "created",
@@ -7092,6 +7111,13 @@
           "from": "assigned",
           "to": "in_progress",
           "at": "2026-09-26T09:46:00.463Z",
+          "by": "agent:CWI_Guide",
+          "note": "activation sweep 2026-09-26"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-26T10:08:04.256Z",
           "by": "agent:CWI_Guide",
           "note": "activation sweep 2026-09-26"
         }
