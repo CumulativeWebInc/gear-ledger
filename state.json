@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23287,
-  "updated_at": "2026-09-26T06:52:49.670Z",
+  "version": 23288,
+  "updated_at": "2026-09-26T06:58:17.603Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -10291,7 +10291,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-26T06:45:37.254Z",
       "assigned_to": "agent:CWI_Care",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -10302,8 +10302,27 @@
         "durable memory claims written + offchain anchored",
         "delivered before 2026-09-26T10:45:00Z HARD"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3E83T2GTD7Y4YF39N3J438S",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r90/care/run-r90.md",
+          "sha256": "13bf42096c183ddd199ebf89d3bd4396f2b52d943dc6f34de964c4305c22a337"
+        },
+        {
+          "artifact_id": "art_01M3E83T2HP84BM2HK01BPN26P",
+          "kind": "draft",
+          "uri": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r90/care/kb-v2.89.json",
+          "sha256": "f805bdd1e0c51e032f30f056cd5cba87f5ee96ab697c2999b2a96368f491ce77"
+        },
+        {
+          "artifact_id": "art_01M3E83T2JRYSKZG8RPNKN97ES",
+          "kind": "scan",
+          "uri": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r90/care/overdue-r90-recompute.json",
+          "sha256": "64b9bcae6175f4ba3e9f363ea88c78a377b95a636ed2d164d0bc1d8c65e88834"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r90/care/run-r90.md",
       "state_history": [
         {
           "from": "created",
@@ -10318,6 +10337,13 @@
           "at": "2026-09-26T06:48:07.357Z",
           "by": "agent:CWI_Care",
           "note": "r90 self-start under own URN agent:CWI_Care (assignee-only law); sweep round-90 Care KB v2.89 + overdue-kill watch recompute"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-26T06:58:17.603Z",
+          "by": "agent:CWI_Care",
+          "note": "r90 Care lane delivered inside the hard kill under own URN agent:CWI_Care; zero dispatcher flips"
         }
       ],
       "requires_black_approval": false,
