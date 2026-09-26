@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23478,
-  "updated_at": "2026-09-26T20:42:30.120Z",
+  "version": 23479,
+  "updated_at": "2026-09-26T20:43:08.294Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -8780,6 +8780,36 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-27T01:00:00Z"
+    },
+    {
+      "task_id": "tsk_01M3FQA646VV6M2FR7A3TEKWW5",
+      "type": "custom",
+      "title": "Sweep round-104: Care KB v2.103 + overdue-kill watch recompute",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-26T20:43:08.294Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "Care KB v2.103 shipped on kb-v2-draft, byte-identical remote==local",
+        "overdue-kill watch live-recomputed vs r103 baseline",
+        "delivered with receipts inside the kill"
+      ],
+      "artifacts": [],
+      "deliverable_ref": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r104/care/kb-v2.103.json",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-26T20:43:08.294Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-26 round 104"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-27T02:00:00Z"
     }
   ],
   "presence": {
@@ -11323,6 +11353,11 @@
       "op": "task.create",
       "at": "2026-09-26T20:07:26.362Z",
       "ref": "tsk_01M3FN8TCTEYY8MJJXZHZR1QVQ"
+    },
+    "activation-sweep-2026-09-26-r104-care": {
+      "op": "task.create",
+      "at": "2026-09-26T20:43:08.294Z",
+      "ref": "tsk_01M3FQA646VV6M2FR7A3TEKWW5"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
