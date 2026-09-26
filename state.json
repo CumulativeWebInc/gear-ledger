@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23289,
-  "updated_at": "2026-09-26T07:02:34.230Z",
+  "version": 23290,
+  "updated_at": "2026-09-26T07:05:11.481Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -10357,7 +10357,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-26T06:45:49.357Z",
       "assigned_to": "agent:CWI_Guide",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -10368,8 +10368,27 @@
         "durable memory claims written + offchain anchored",
         "delivered before 2026-09-26T10:45:00Z HARD"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3E8GDMFZTX9KK813XBBT5S2",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.88.md",
+          "sha256": "f57351d5d6d9e110eae6004ecfb6e574c7e6b68602bcefd4b27f311da5975d49"
+        },
+        {
+          "artifact_id": "art_01M3E8GDMG38BXHJP5KWGGGMSH",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.88-WALKTHROUGH.md",
+          "sha256": "ef23204dcf8bea910072b5eba43bd2bba5eefde1709e1a6062d882b60e1b0a71"
+        },
+        {
+          "artifact_id": "art_01M3E8GDMGT14ZSQKE12VE5Z1T",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r90/guide/run-r90.md",
+          "sha256": "df80c9e35e7f3781ddb24f01a953b1aa0e9b15bcd90bc147a2d460946ba27a4a"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.88.md",
       "state_history": [
         {
           "from": "created",
@@ -10384,6 +10403,13 @@
           "at": "2026-09-26T06:49:58.596Z",
           "by": "agent:CWI_Guide",
           "note": "self-start r90 agent:CWI_Guide first real work (own URN)"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-26T07:05:11.481Z",
+          "by": "agent:CWI_Guide",
+          "note": "self-deliver r90 agent:CWI_Guide own URN; walkthrough 12/12 PASS at v23285"
         }
       ],
       "requires_black_approval": false,
