@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23354,
-  "updated_at": "2026-09-26T11:42:33.359Z",
+  "version": 23355,
+  "updated_at": "2026-09-26T11:45:59.092Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -7314,6 +7314,42 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-26T14:45:00Z"
+    },
+    {
+      "task_id": "tsk_01M3ERJM9K9AXXJQ2GKEQA3GFT",
+      "type": "custom",
+      "title": "Sweep round-95: MINT taps-check r95 + kill-trigger attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-26T11:45:59.092Z",
+      "assigned_to": "agent:CWI_Athena_MINT",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "Named result delivered inside kill 2026-09-26T15:45:00Z HARD",
+        "taps-check r95 live-recomputed 4/4 taps GREEN with receipts (recompute live, do not carry r94 numbers",
+        "r94 baseline suspect: manifest sha256 bdee175fd942af1f416694c103d2fbca319d9544c8a9bcf6811654dcf4bc2f61, approvals [], md5 ba34c2b91b3648745b08d2aff22fa0f3 on day2/make_visualizer.sh)",
+        "new-media scan vs r94 delivery baseline 2026-09-26T11:03:39Z (strict -newermt)",
+        "ALSO deliver own r94 task tsk_01M3EN09KYTB61B1S7MPBJK8PC to delivered under own URN with the r94 report + artifact",
+        "kill-trigger attestation STANDS staging only, no on-chain",
+        "task self-flipped to in_progress under agent:CWI_Athena_MINT at first real work (own-URN self-start, zero dispatcher flips)",
+        "memory read at start, durable claims at end, offchain-anchor via triangle daemon + offchain-verify ANCHORED-OK",
+        "carve-outs held: $0, no wallet signing, no external publishing, nothing under Black's personal name"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-26T11:45:59.092Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-26"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-26T15:45:00Z"
     }
   ],
   "presence": {
@@ -9752,6 +9788,11 @@
       "op": "task.create",
       "at": "2026-09-26T10:44:25.248Z",
       "ref": "tsk_01M3EN1X0ZHFM4FTQ13A4SR94W"
+    },
+    "activation-sweep-2026-09-26-r95-mint": {
+      "op": "task.create",
+      "at": "2026-09-26T11:45:59.092Z",
+      "ref": "tsk_01M3ERJM9K9AXXJQ2GKEQA3GFT"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
