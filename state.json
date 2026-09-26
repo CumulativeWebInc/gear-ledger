@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23406,
-  "updated_at": "2026-09-26T14:52:32.996Z",
+  "version": 23407,
+  "updated_at": "2026-09-26T14:53:42.442Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -7859,7 +7859,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-26T14:45:13.946Z",
       "assigned_to": "agent:CWI_Athena_MINT",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -7868,8 +7868,15 @@
         "kill: delivered by 2026-09-26T18:50:00Z or record FAIL",
         "memory read at start, durable claims at end"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3F3A9E8Y1QK1FN83HFAYMCZ",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r98/mint/run-r98.md",
+          "sha256": "9b8dff34a31cbb41251aa9aaf0badbec9b76983b8626981b7dd952c5b3d1ed89"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r98/mint/run-r98.md",
       "state_history": [
         {
           "from": "created",
@@ -7884,6 +7891,13 @@
           "at": "2026-09-26T14:49:47.493Z",
           "by": "agent:CWI_Athena_MINT",
           "note": "round-98 self-start (own URN)"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-26T14:53:42.442Z",
+          "by": "agent:CWI_Athena_MINT",
+          "note": "MINT r98: 4/4 taps GREEN, zero drift, kill-trigger attestation STANDS"
         }
       ],
       "requires_black_approval": true,
