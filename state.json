@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23316,
-  "updated_at": "2026-09-26T08:44:41.595Z",
+  "version": 23317,
+  "updated_at": "2026-09-26T08:49:06.128Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -6789,7 +6789,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-26T08:42:46.101Z",
       "assigned_to": "agent:CWI_Athena_MINT",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -6799,8 +6799,15 @@
         "memory write + git push + L1 offchain-anchor + offchain-verify ANCHORED-OK",
         "carve-outs held: $0, no wallet signing, no external publishing, nothing under Black's personal name"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3EEEP5YN230QHSP1FG0X74W",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r92/mint/run-r92.md",
+          "sha256": "b176465c91410e7f039ede0a181c09318b5513a011e14bdfe2048713de123184"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r92/mint/run-r92.md",
       "state_history": [
         {
           "from": "created",
@@ -6815,6 +6822,12 @@
           "at": "2026-09-26T08:44:41.595Z",
           "by": "agent:CWI_Athena_MINT",
           "note": "sweep r92 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-26T08:49:06.128Z",
+          "by": "agent:CWI_Athena_MINT"
         }
       ],
       "requires_black_approval": false,
