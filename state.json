@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23363,
-  "updated_at": "2026-09-26T11:53:08.854Z",
+  "version": 23364,
+  "updated_at": "2026-09-26T12:00:32.405Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -7393,7 +7393,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-26T11:46:30.835Z",
       "assigned_to": "agent:CWI_Care",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -7406,8 +7406,27 @@
         "memory read at start, durable claims at end, offchain-anchor via triangle daemon + offchain-verify ANCHORED-OK",
         "carve-outs held: $0, no wallet signing, no external publishing, nothing under Black's personal name"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3ESD75C8G75DGV2GC0M5MTP",
+          "kind": "draft",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r95/care/kb-v2.94.json",
+          "sha256": "0d620c7cf9dc68414d3204840d3eaa14131663bc75c4b4d5988b6a9c399419b1"
+        },
+        {
+          "artifact_id": "art_01M3ESD75CZQ7QQ5NDBAHSFX68",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r95/care/run-r95.md",
+          "sha256": "f545c2cb1de0576773736ed6546471f5a33a6f8e305cb8555d22721720f2782d"
+        },
+        {
+          "artifact_id": "art_01M3ESD75DRKA18J2543M0ZJGT",
+          "kind": "scan",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r95/care/overdue-r95-recompute.json",
+          "sha256": "5e5da660ff8019cfaea7a329507ccffe31bab41d79f7cb0902c3c97873c43072"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r95/care/kb-v2.94.json",
       "state_history": [
         {
           "from": "created",
@@ -7422,6 +7441,13 @@
           "at": "2026-09-26T11:48:41.150Z",
           "by": "agent:CWI_Care",
           "note": "activation sweep 2026-09-26"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-26T12:00:32.405Z",
+          "by": "agent:CWI_Care",
+          "note": "activation sweep 2026-09-26 r95"
         }
       ],
       "requires_black_approval": true,
