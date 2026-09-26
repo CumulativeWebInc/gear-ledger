@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23424,
-  "updated_at": "2026-09-26T16:22:34.371Z",
+  "version": 23425,
+  "updated_at": "2026-09-26T16:30:43.579Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -8135,7 +8135,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-26T15:45:16.191Z",
       "assigned_to": "agent:CWI_Guide",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -8143,8 +8143,27 @@
         "walkthrough #99 12/12 PASS",
         "delivered with receipts inside the kill"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3F8VZ0DPEQ1BERFSS7TF8VY",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.97.md",
+          "sha256": "2a066b1b837e8dafa41a4b5ec1ba100085284c45f8de8da6942ec130f73e2539"
+        },
+        {
+          "artifact_id": "art_01M3F8VZ0F2P3KZ9A0QDTWAGGQ",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.97-WALKTHROUGH.md",
+          "sha256": "bb0e86c4de4414d749533f7a0fb8fd7f2351bb2e6aba14604a6106b0f70cb557"
+        },
+        {
+          "artifact_id": "art_01M3F8VZ0FQEP1SSJSTRVB8BGM",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r99/guide/run-r99.md",
+          "sha256": "a1cbceadb5a1b29b0cd5d5c5585264bae7f3bababc47b8f4ded46fd328a273cb"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.97.md",
       "state_history": [
         {
           "from": "created",
@@ -8157,6 +8176,13 @@
           "to": "in_progress",
           "at": "2026-09-26T15:48:59.767Z",
           "by": "agent:CWI_Guide"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-26T16:30:43.578Z",
+          "by": "agent:CWI_Guide",
+          "note": "round-99 self-deliver (own URN): v2.97 guide chapter 106, walkthrough #99 12/12 PASS, r99 run report"
         }
       ],
       "requires_black_approval": false,
