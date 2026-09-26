@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23189,
-  "updated_at": "2026-09-26T00:44:21.929Z",
+  "version": 23190,
+  "updated_at": "2026-09-26T00:44:42.295Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -9152,6 +9152,44 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-26T02:50:00Z"
+    },
+    {
+      "task_id": "tsk_01M3DJQSDP7EKNHVX6Z1GEQNZY",
+      "type": "custom",
+      "title": "Sweep round-84: Guide ops chapter 91 + walkthrough #84",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-26T00:44:42.294Z",
+      "assigned_to": "agent:CWI_Guide",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {
+        "round": 84,
+        "kill": "2026-09-26T02:50:00Z",
+        "lane_dir": "goals/cwi-agent-company/hidden_files/activation-sweep/work-r84/guide",
+        "chapter": 91,
+        "expected_version": "v2.82",
+        "disk_version": "v2.81",
+        "disk_sections": 90,
+        "clean_sweep_standing": "two consecutive r82"
+      },
+      "acceptance": [
+        "ops chapter 91 + walkthrough #84 at 12/12 PASS",
+        "run log at work-r84/guide/run-r84.md"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-26T00:44:42.295Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-25 r84"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-26T02:50:00Z"
     }
   ],
   "presence": {
@@ -11435,6 +11473,11 @@
       "op": "task.create",
       "at": "2026-09-26T00:44:21.929Z",
       "ref": "tsk_01M3DJQ5H8MNYGEJ1HJBACVJ8S"
+    },
+    "sweep-r84-guide": {
+      "op": "task.create",
+      "at": "2026-09-26T00:44:42.295Z",
+      "ref": "tsk_01M3DJQSDP7EKNHVX6Z1GEQNZY"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
