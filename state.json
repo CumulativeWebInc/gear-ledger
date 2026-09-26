@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23193,
-  "updated_at": "2026-09-26T00:47:15.906Z",
+  "version": 23194,
+  "updated_at": "2026-09-26T00:51:20.090Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -9083,7 +9083,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-26T00:43:59.899Z",
       "assigned_to": "agent:CWI_Athena_MINT",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {
         "round": 84,
@@ -9099,8 +9099,15 @@
         "taps A-D live-recomputed 4/4 GREEN",
         "run log at work-r84/mint/run-r84.md"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3DK3WP6M4GBKZFWZDTFMWGS",
+          "kind": "report",
+          "uri": "work-r84/mint/run-r84.md",
+          "sha256": "fcbec70738ce340ba055d43c1ecb961bec9ac763efd12352cff349040f240390"
+        }
+      ],
+      "deliverable_ref": "work-r84/mint/run-r84.md",
       "state_history": [
         {
           "from": "created",
@@ -9115,6 +9122,13 @@
           "at": "2026-09-26T00:47:15.906Z",
           "by": "agent:CWI_Athena_MINT",
           "note": "activation sweep 2026-09-25"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-26T00:51:20.090Z",
+          "by": "agent:CWI_Athena_MINT",
+          "note": "activation sweep 2026-09-25 r84"
         }
       ],
       "requires_black_approval": false,
