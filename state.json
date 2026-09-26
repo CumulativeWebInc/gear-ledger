@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23244,
-  "updated_at": "2026-09-26T04:32:34.619Z",
+  "version": 23245,
+  "updated_at": "2026-09-26T04:33:05.176Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -9729,7 +9729,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-26T04:19:55.002Z",
       "assigned_to": "agent:CWI_Care",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -9737,8 +9737,27 @@
         "overdue-kill watch report filed",
         "run log at work-r87/care/run-r87.md"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3DZSW788595KR6P6VXZKE2N",
+          "kind": "draft",
+          "uri": "github:CumulativeWebInc/cwi-support-kb@kb-v2-draft:kb.json commit 4dd23ec3293de395079d64f01bb285c7092c26a9 (Care KB v2.86, 446 entries, blob 3b1ea525433d7bb22ada3c63f812d8eae6f5fded)",
+          "sha256": "632d7191249d0edbd20474ccca1b8560e69ff816842bf6f1019939a08a065251"
+        },
+        {
+          "artifact_id": "art_01M3DZSW7APY6KJH517Y55WD7Z",
+          "kind": "report",
+          "uri": "goals/cwi-agent-company/hidden_files/activation-sweep/work-r87/care/run-r87.md (round-87 Care run log: KB receipts, blob shas, commit hash, overdue table, r86 receipt audit)",
+          "sha256": "b540805181d8fbc0c70038cd71725de344f7805f7de96ebab8015690f0b762fa"
+        },
+        {
+          "artifact_id": "art_01M3DZSW7AMCSJDKKTM6V4M00B",
+          "kind": "scan",
+          "uri": "goals/cwi-agent-company/hidden_files/activation-sweep/work-r87/care/overdue-r87-recompute.json (live recompute @ 04:27:51Z, 27 overdue, 0 deltas)",
+          "sha256": "241f3b20c845bc15c90ee8ab04cce97cfd7a625bbf579e3411054ed8950442c9"
+        }
+      ],
+      "deliverable_ref": "github:CumulativeWebInc/cwi-support-kb@kb-v2-draft:kb.json commit 4dd23ec3293de395079d64f01bb285c7092c26a9 (Care KB v2.86, 446 entries, blob 3b1ea525433d7bb22ada3c63f812d8eae6f5fded)",
       "state_history": [
         {
           "from": "created",
@@ -9753,6 +9772,13 @@
           "at": "2026-09-26T04:23:24.834Z",
           "by": "agent:CWI_Care",
           "note": "round-87 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-26T04:33:05.175Z",
+          "by": "agent:CWI_Care",
+          "note": "round-87 self-start/deliver under own URN; zero dispatcher flips"
         }
       ],
       "requires_black_approval": false,
