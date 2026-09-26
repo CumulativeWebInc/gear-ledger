@@ -18232,6 +18232,3812 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-24T19:40:00Z"
+    },
+    "tsk_01M3ABT7EX1W7MH3YK68AK8ND5": {
+      "task_id": "tsk_01M3ABT7EX1W7MH3YK68AK8ND5",
+      "type": "verify",
+      "title": "Sweep round-54: Care KB v2.54 runbooks + overdue-kill watch (live-recomputed)",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T18:45:58.877Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "KB v2.54 staged on kb-v2-draft ONLY",
+        "runbooks RB-01..RB-339+ contiguous with new r54 runbooks",
+        "overdue watch live-recomputed from live ledger",
+        "standing kills attested",
+        "memory read at start, durable claims at end"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3AECWHBSJQQF471DKS513D3",
+          "kind": "report",
+          "uri": "https://github.com/CumulativeWebInc/cwi-support-kb/blob/kb-v2-draft/kb.json",
+          "sha256": "2f9cd37b5dd6b2863114e63d0a7ae23c6e92dcd84bf0ec9200a0b4180a7526b1"
+        }
+      ],
+      "deliverable_ref": "https://github.com/CumulativeWebInc/cwi-support-kb/blob/kb-v2-draft/kb.json",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T18:45:58.877Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep r54 2026-09-24 14:40 ET"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-24T18:52:33.105Z",
+          "by": "agent:CWI_Care",
+          "note": "activation sweep 2026-09-24 — self-start after real work (ledger state get v19318 completed 14:50 ET)"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T19:31:09.248Z",
+          "by": "agent:CWI_Care",
+          "note": "activation sweep 2026-09-24"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-24T19:40:00Z"
+    },
+    "tsk_01M3AF7R2480C1HHZXGQ2CNCQK": {
+      "task_id": "tsk_01M3AF7R2480C1HHZXGQ2CNCQK",
+      "type": "verify",
+      "title": "Sweep round-55: MINT taps-check r55 + kill-trigger attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T19:45:47.589Z",
+      "assigned_to": "agent:CWI_Athena_MINT",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "taps-check r55: 4 taps live-recomputed with zero drift vs r54",
+        "8/8 clips verified",
+        "kill-trigger status attested (stands or overturned with evidence)",
+        "STAGING ONLY",
+        "no on-chain action"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3AFW1HKFEX3YVK2J4P21DRM",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-24-r55.md",
+          "sha256": "803658c79496dc7b59e9a402263147c32f7e4a240486e06106cc6d081066b39b"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-24-r55.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T19:45:47.589Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-24 r55"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-24T19:50:53.443Z",
+          "by": "agent:CWI_Athena_MINT",
+          "note": "activation sweep 2026-09-24"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T19:56:54.042Z",
+          "by": "agent:CWI_Athena_MINT",
+          "note": "r55 complete: 4 taps GREEN zero-drift vs r54, 8/8 clips byte-identical, kill-trigger STANDS STAGING ONLY; no on-chain action"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-24T20:40:00Z"
+    },
+    "tsk_01M3AF83DVG33R81QT15WHZX2K": {
+      "task_id": "tsk_01M3AF83DVG33R81QT15WHZX2K",
+      "type": "custom",
+      "title": "Sweep round-55: Care KB v2.55 runbooks + overdue-kill watch (live-recomputed)",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T19:45:59.228Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "live overdue recompute at run time",
+        "overdue composition proven vs r54",
+        "KB v2.55 runbooks contiguous (RB-01.. latest)",
+        "commit on kb-v2-draft ONLY, main untouched",
+        "offchain-verify ANCHORED-OK",
+        "JSONL fallback if log-task.js URN gap"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3AG6KENFD9HTN4GNJVAYYFM",
+          "kind": "report",
+          "uri": "https://github.com/CumulativeWebInc/cwi-support-kb/blob/kb-v2-draft/kb.json",
+          "sha256": "2f9cd37b5dd6b2863114e63d0a7ae23c6e92dcd84bf0ec9200a0b4180a7526b1"
+        }
+      ],
+      "deliverable_ref": "https://github.com/CumulativeWebInc/cwi-support-kb/blob/kb-v2-draft/kb.json",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T19:45:59.228Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-24 r55"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-24T19:51:08.758Z",
+          "by": "agent:CWI_Care",
+          "note": "activation sweep 2026-09-24"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T20:02:40.066Z",
+          "by": "agent:CWI_Care"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-24T20:40:00Z"
+    },
+    "tsk_01M3AF8DS91ZS0YVVEJKP9PYPV": {
+      "task_id": "tsk_01M3AF8DS91ZS0YVVEJKP9PYPV",
+      "type": "custom",
+      "title": "Sweep round-55: Guide ops chapter + walkthrough #56",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T19:46:09.834Z",
+      "assigned_to": "agent:CWI_Guide",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "guide chapter for 15:40 EDT dispatch cycle",
+        "walkthrough #56 12/12 PASS",
+        "contiguous section check PASS",
+        "URI-hash rule applied",
+        "live re-grounded on ledger scan"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3AGCE956S0H4GFHGD0578ZY",
+          "kind": "draft",
+          "uri": "workspace://cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.54.md",
+          "sha256": "a6f745492ed64da0dee7c2babc678f9c4e1fd25a85914756a847db7ea571be86"
+        },
+        {
+          "artifact_id": "art_01M3AGCE97B0187ENAGWSRCJ8C",
+          "kind": "draft",
+          "uri": "workspace://cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.54-WALKTHROUGH.md",
+          "sha256": "6944bbb2affad5a6331c7b9867ff075ae37a781dcb57a8b4e0aa6d5c94299007"
+        }
+      ],
+      "deliverable_ref": "workspace://cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.54.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T19:46:09.835Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-24 r55"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-24T19:51:00.224Z",
+          "by": "agent:CWI_Guide",
+          "note": "activation sweep 2026-09-24"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T20:05:51.722Z",
+          "by": "agent:CWI_Guide",
+          "note": "activation sweep 2026-09-24 r55; self-started under own URN"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-24T20:40:00Z"
+    },
+    "tsk_01M3AF8RT9SSP50MTFMVBYYA84": {
+      "task_id": "tsk_01M3AF8RT9SSP50MTFMVBYYA84",
+      "type": "custom",
+      "title": "Sweep round-55: Results dashboard r54 refresh + proof-shot watch",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T19:46:21.129Z",
+      "assigned_to": "agent:CWI_Results",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "dashboard r54 refresh",
+        "proof-shot watch: new TAG CITY proof media since r54 cutoff, honest zero if none",
+        "assert receipt-tail continuity before PUT (r54 clobber lesson)",
+        "verify manual receipt persists post-tick",
+        "ledger delivered by kill"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3AH21244QDBQA7EYJMFZZ42",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/run-2026-09-24-1540-results-r55.md",
+          "sha256": "a811574e4ef71d47b8ed48d657a111cac7d6e6d1e8ac0a1520e875ea15f1796d"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/run-2026-09-24-1540-results-r55.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T19:46:21.129Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-24 r55"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-24T19:50:47.934Z",
+          "by": "agent:CWI_Results",
+          "note": "activation sweep 2026-09-24"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T20:17:38.934Z",
+          "by": "agent:CWI_Results"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-24T20:40:00Z"
+    },
+    "tsk_01M3AF94SSTBKQS8HH9F3AW670": {
+      "task_id": "tsk_01M3AF94SSTBKQS8HH9F3AW670",
+      "type": "verify",
+      "title": "Sweep round-55: Iris round-32 watch - new-proof sweep + gate attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T19:46:33.401Z",
+      "assigned_to": "agent:CWI_Visual",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "scan all proof-media sources post-cutoff for new TAG CITY proof media",
+        "gate attestation vs r29 FINAL verdict",
+        "honest zero if none",
+        "ledger delivered by kill"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3AFV9K5QG1DVS27DM1S9CBY",
+          "kind": "report",
+          "uri": "goals/tag-city-3d-rebuild/hidden_files/composition/IRIS-VERDICT-R55-2026-09-24.md",
+          "sha256": "a10da5aeb5987325fcb9bb15b2b81f61e65505e716aac98dab516c7667f874a0"
+        }
+      ],
+      "deliverable_ref": "goals/tag-city-3d-rebuild/hidden_files/composition/IRIS-VERDICT-R55-2026-09-24.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T19:46:33.402Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-24 r55"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-24T19:51:58.996Z",
+          "by": "agent:CWI_Visual",
+          "note": "activation sweep 2026-09-24"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T19:56:29.733Z",
+          "by": "agent:CWI_Visual",
+          "note": "activation sweep 2026-09-24"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-24T20:40:00Z"
+    },
+    "tsk_01M3AJTPZS9VQY9XN1JH5XAXED": {
+      "task_id": "tsk_01M3AJTPZS9VQY9XN1JH5XAXED",
+      "type": "custom",
+      "title": "Sweep round-56: Care KB v2.56 runbooks + overdue-kill watch (live-recomputed)",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T20:48:34.809Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {
+        "round": 56,
+        "kind": "activation-sweep"
+      },
+      "acceptance": [
+        "live overdue recompute at stated ref time, composition delta vs r55 reported",
+        "KB v2.56 on kb-v2-draft ONLY (main untouched, blob verified via /git/blobs/)",
+        "0 /usr/local/bin refs",
+        "durable claims written + offchain-verify to ANCHORED-OK",
+        "delivered inside 2026-09-24T21:40:00Z kill"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3AKWK3NJ48SZ18ZCB272K7X",
+          "kind": "report",
+          "uri": "https://github.com/CumulativeWebInc/cwi-support-kb/blob/kb-v2-draft/kb.json",
+          "sha256": "2f9cd37b5dd6b2863114e63d0a7ae23c6e92dcd84bf0ec9200a0b4180a7526b1"
+        }
+      ],
+      "deliverable_ref": "https://github.com/CumulativeWebInc/cwi-support-kb/blob/kb-v2-draft/kb.json",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T20:48:34.809Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-24 r56"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-24T20:54:37.426Z",
+          "by": "agent:CWI_Care",
+          "note": "r56 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T21:07:06.495Z",
+          "by": "agent:CWI_Care"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-24T21:40:00Z"
+    },
+    "tsk_01M3AJTVT6GFSYR13DVRQEJ092": {
+      "task_id": "tsk_01M3AJTVT6GFSYR13DVRQEJ092",
+      "type": "custom",
+      "title": "Sweep round-56: Guide ops chapter 64 + walkthrough #57",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T20:48:39.750Z",
+      "assigned_to": "agent:CWI_Guide",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {
+        "round": 56,
+        "kind": "activation-sweep"
+      },
+      "acceptance": [
+        "Guide ops chapter 64 = 16:40 EDT dispatch cycle, brief-vs-live agreement",
+        "walkthrough #57 12/12 PASS",
+        "standing checks (22/22 pointers, honest zero, registry count, Redis PONG, 0 /usr/local/bin refs)",
+        "durable claims written + offchain-verify to ANCHORED-OK",
+        "delivered inside 2026-09-24T21:40:00Z kill"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3AME7JTTYAED06158CZ4X7G",
+          "kind": "draft",
+          "uri": "workspace://cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.55.md",
+          "sha256": "d94df9c6a724b8856172f12f9c5383486adc6537937619294a5f463b1a586097"
+        },
+        {
+          "artifact_id": "art_01M3AME7JVHTGAG2X292CA7Y8Q",
+          "kind": "draft",
+          "uri": "workspace://cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.55-WALKTHROUGH.md",
+          "sha256": "4267cc83411202db05943cbf965b6844df42991192ecca437adcb450310ca505"
+        }
+      ],
+      "deliverable_ref": "workspace://cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.55.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T20:48:39.750Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-24 r56"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-24T20:54:24.974Z",
+          "by": "agent:CWI_Guide",
+          "note": "r56 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T21:16:44.344Z",
+          "by": "agent:CWI_Guide"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-24T21:40:00Z"
+    },
+    "tsk_01M3AJV0VZNEM8R9ZEZXAV81S8": {
+      "task_id": "tsk_01M3AJV0VZNEM8R9ZEZXAV81S8",
+      "type": "custom",
+      "title": "Sweep round-56: MINT taps-check r56 + kill-trigger attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T20:48:44.928Z",
+      "assigned_to": "agent:CWI_Athena_MINT",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {
+        "round": 56,
+        "kind": "activation-sweep"
+      },
+      "acceptance": [
+        "4 taps re-checked vs r55, GREEN or drift reported with receipts",
+        "8/8 clips byte-identical or drift reported",
+        "kill-trigger attestation STANDS (STAGING ONLY, no on-chain action)",
+        "honest zeros internal",
+        "durable claims written + offchain-verify to ANCHORED-OK",
+        "delivered inside 2026-09-24T21:40:00Z kill"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3AKDTAHPVSSHGG8WS6HAG2A",
+          "kind": "report",
+          "uri": "~/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/run-2026-09-24-1640-mint-r56.md",
+          "sha256": "f1215f3493ba40d34728f30931f4cc4bd786741d3a96c2c2539042e637a64775"
+        }
+      ],
+      "deliverable_ref": "~/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/run-2026-09-24-1640-mint-r56.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T20:48:44.928Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-24 r56"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-24T20:54:04.075Z",
+          "by": "agent:CWI_Athena_MINT",
+          "note": "r56 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T20:59:02.546Z",
+          "by": "agent:CWI_Athena_MINT"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-24T21:40:00Z"
+    },
+    "tsk_01M3AJWEDE9N2E0XE6HM0P2B9V": {
+      "task_id": "tsk_01M3AJWEDE9N2E0XE6HM0P2B9V",
+      "type": "custom",
+      "title": "Sweep round-56: Results dashboard r55 refresh + proof-shot watch",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T20:49:31.567Z",
+      "assigned_to": "agent:CWI_Results",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {
+        "round": 56,
+        "kind": "activation-sweep"
+      },
+      "acceptance": [
+        "receipt-tail continuity ASSERTED before PUT",
+        "results.json + index.html re-seeded with r56 tail, both HTTP 200 verified live",
+        "proof-shot watch 3 scopes vs 20:31:09Z cutoff, honest zero or candidates",
+        "standing dashboard-publisher clobber risk noted (re-seed as needed, do not fix publisher code - lane boundary)",
+        "durable claims written + offchain-verify",
+        "delivered inside 2026-09-24T21:40:00Z kill"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3ANSSSG4Y83P95HAX656J2R",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/run-2026-09-24-1640-results-r56.md",
+          "sha256": "1fad14cf485f9d7fc46ea321dace4ce0ca9e17998d2b5d55052fd8190329a4ff"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/run-2026-09-24-1640-results-r56.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T20:49:31.568Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-24 r56"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-24T20:55:08.473Z",
+          "by": "agent:CWI_Results",
+          "note": "r56 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T21:40:32.092Z",
+          "by": "agent:CWI_Results"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-24T21:40:00Z"
+    },
+    "tsk_01M3AJWK8NR3MZPTJ9FN396ZKG": {
+      "task_id": "tsk_01M3AJWK8NR3MZPTJ9FN396ZKG",
+      "type": "custom",
+      "title": "Sweep round-56: Iris round-33 watch - new-proof sweep + gate attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T20:49:36.533Z",
+      "assigned_to": "agent:CWI_Visual",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {
+        "round": 56,
+        "kind": "activation-sweep"
+      },
+      "acceptance": [
+        "new-proof sweep since cutoff 2026-09-24T20:31:09Z (5 scopes + sanity net), 0 candidates = honest zero",
+        "custody check: proof files byte-identical or drift reported",
+        "gate attestation: r29 FINAL FAIL 2/3/2 re-attested unsoftened unless Round 3 proof arrives",
+        "durable claims written + offchain-verify",
+        "delivered inside 2026-09-24T21:40:00Z kill"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3AKGDZH81J8XX8W93V61NFC",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/goals/tag-city-3d-rebuild/hidden_files/composition/IRIS-VERDICT-R56-2026-09-24.md",
+          "sha256": "0f60d331cb79463dc98dfeb55851af1542ea0f75134f5905b1dc8e7a008ecf9d"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/goals/tag-city-3d-rebuild/hidden_files/composition/IRIS-VERDICT-R56-2026-09-24.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T20:49:36.533Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-24 r56"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-24T20:54:17.534Z",
+          "by": "agent:CWI_Visual",
+          "note": "r56 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T21:00:28.304Z",
+          "by": "agent:CWI_Visual"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-24T21:40:00Z"
+    },
+    "tsk_01M3AP5DN6KZJGNSWJ2BKBXJKJ": {
+      "task_id": "tsk_01M3AP5DN6KZJGNSWJ2BKBXJKJ",
+      "type": "custom",
+      "title": "Sweep round-57: MINT taps-check r57 + kill-trigger attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T21:46:51.430Z",
+      "assigned_to": "agent:CWI_Athena_MINT",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {
+        "round": 57,
+        "kind": "activation-sweep"
+      },
+      "acceptance": [
+        "4 taps re-checked vs r56, GREEN or drift reported with receipts",
+        "8/8 clips byte-identical or drift reported",
+        "kill-trigger attestation STANDS (STAGING ONLY, no on-chain action)",
+        "honest zeros internal",
+        "durable claims written + offchain-verify to ANCHORED-OK",
+        "delivered inside 2026-09-24T22:40:00Z kill"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3AQ0MYGDJJC0MXGJPZV1RWH",
+          "kind": "report",
+          "uri": "sandbox://workspace/cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-24-r57.md",
+          "sha256": "6aa3180ae4ce03917aad9b5ed032a98f7a12c3e2970d2cd5a245830dece31f67"
+        },
+        {
+          "artifact_id": "art_01M3AQ0MYHEPSZD4249JYSH1F0",
+          "kind": "report",
+          "uri": "sandbox://workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r57/mint/run-2026-09-24-1740-mint-r57.md",
+          "sha256": "8ad6f39edbd9abee6cb9f91fe72ec4de84d065f7af41e1e954f59ac75f46bb5d"
+        }
+      ],
+      "deliverable_ref": "sandbox://workspace/cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-24-r57.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T21:46:51.430Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-24 round 57"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-24T21:53:32.466Z",
+          "by": "agent:CWI_Athena_MINT",
+          "note": "activation sweep r57 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T22:01:45.701Z",
+          "by": "agent:CWI_Athena_MINT"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-24T22:40:00Z"
+    },
+    "tsk_01M3AP6AHJPZXD5J3RFS4KZCYF": {
+      "task_id": "tsk_01M3AP6AHJPZXD5J3RFS4KZCYF",
+      "type": "custom",
+      "title": "Sweep round-57: Care KB v2.57 runbooks + overdue-kill watch (live-recomputed)",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T21:47:21.011Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {
+        "round": 57,
+        "kind": "activation-sweep"
+      },
+      "acceptance": [
+        "live overdue recompute at stated ref time, composition delta vs r56 reported",
+        "KB v2.57 on kb-v2-draft ONLY (main untouched, blob verified via /git/blobs/)",
+        "0 /usr/local/bin refs",
+        "durable claims written + offchain-verify to ANCHORED-OK",
+        "delivered inside 2026-09-24T22:40:00Z kill"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3AQ6CWJVH7E7YDWANRVHV9F",
+          "kind": "report",
+          "uri": "https://github.com/CumulativeWebInc/cwi-support-kb/blob/kb-v2-draft/kb.json",
+          "sha256": "2f9cd37b5dd6b2863114e63d0a7ae23c6e92dcd84bf0ec9200a0b4180a7526b1"
+        }
+      ],
+      "deliverable_ref": "https://github.com/CumulativeWebInc/cwi-support-kb/blob/kb-v2-draft/kb.json",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T21:47:21.012Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-24 round 57"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-24T21:53:24.939Z",
+          "by": "agent:CWI_Care",
+          "note": "activation sweep r57 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T22:04:59.585Z",
+          "by": "agent:CWI_Care"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-24T22:40:00Z"
+    },
+    "tsk_01M3AP6YDCE0N1QMJR68190T2N": {
+      "task_id": "tsk_01M3AP6YDCE0N1QMJR68190T2N",
+      "type": "custom",
+      "title": "Sweep round-57: Guide ops chapter 65 + walkthrough #58",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T21:47:41.356Z",
+      "assigned_to": "agent:CWI_Guide",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {
+        "round": 57,
+        "kind": "activation-sweep"
+      },
+      "acceptance": [
+        "Guide ops chapter 65 = 17:40 EDT dispatch cycle, brief-vs-live agreement",
+        "walkthrough #58 12/12 PASS",
+        "standing checks (22/22 pointers, honest zero, registry count, Redis PONG, 0 /usr/local/bin refs)",
+        "durable claims written + offchain-verify to ANCHORED-OK",
+        "delivered inside 2026-09-24T22:40:00Z kill"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3AQSKM3V40H9CNFH34PN3MP",
+          "kind": "draft",
+          "uri": "workspace://cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.56.md",
+          "sha256": "c215f86a22a311c4665b384214102cf03d7e32b92b28efcbe2094d8ba97a6b3a"
+        },
+        {
+          "artifact_id": "art_01M3AQSKM4QDZ9P2PATSZREM2B",
+          "kind": "draft",
+          "uri": "workspace://cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.56-WALKTHROUGH.md",
+          "sha256": "db13f753b8ef33630635c05612d9ec681ea776394544e804a8a02ac460ed2fe5"
+        }
+      ],
+      "deliverable_ref": "workspace://cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.56.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T21:47:41.357Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-24 round 57"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-24T21:54:59.224Z",
+          "by": "agent:CWI_Guide",
+          "note": "activation sweep r57 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T22:15:23.087Z",
+          "by": "agent:CWI_Guide",
+          "note": "activation sweep r57 delivery"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-24T22:40:00Z"
+    },
+    "tsk_01M3AP7JAWJW3MVWWHR3RKEH8E": {
+      "task_id": "tsk_01M3AP7JAWJW3MVWWHR3RKEH8E",
+      "type": "custom",
+      "title": "Sweep round-57: Iris round-34 watch - new-proof sweep + gate attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T21:48:01.757Z",
+      "assigned_to": "agent:CWI_Visual",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {
+        "round": 57,
+        "kind": "activation-sweep"
+      },
+      "acceptance": [
+        "new-proof sweep since cutoff 2026-09-24T21:41:00Z (5 scopes + sanity net), 0 candidates = honest zero",
+        "custody check: proof files byte-identical or drift reported",
+        "gate attestation: r29 FINAL FAIL 2/3/2 re-attested unsoftened unless Round 3 proof arrives",
+        "durable claims written + offchain-verify",
+        "delivered inside 2026-09-24T22:40:00Z kill"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3APZ3HWXM9XKD2E0W4DH58Y",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/goals/tag-city-3d-rebuild/hidden_files/composition/IRIS-VERDICT-R57-2026-09-24.md",
+          "sha256": "127fe8b816026f9def42e54fa573f941142fe7625f858d835f01a2bbe0551e84"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/goals/tag-city-3d-rebuild/hidden_files/composition/IRIS-VERDICT-R57-2026-09-24.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T21:48:01.757Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-24 round 57"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-24T21:54:01.968Z",
+          "by": "agent:CWI_Visual",
+          "note": "activation sweep r57 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T22:00:54.691Z",
+          "by": "agent:CWI_Visual"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-24T22:40:00Z"
+    },
+    "tsk_01M3AP871QDH8PVWGT6FHS8V7E": {
+      "task_id": "tsk_01M3AP871QDH8PVWGT6FHS8V7E",
+      "type": "custom",
+      "title": "Sweep round-57: Results dashboard r56 refresh + proof-shot watch",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T21:48:22.967Z",
+      "assigned_to": "agent:CWI_Results",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {
+        "round": 57,
+        "kind": "activation-sweep"
+      },
+      "acceptance": [
+        "receipt-tail continuity ASSERTED before PUT",
+        "results.json + index.html re-seeded with r57 tail, both HTTP 200 verified live",
+        "proof-shot watch 3 scopes vs cutoff 2026-09-24T21:41:00Z, honest zero or candidates",
+        "standing dashboard-publisher clobber risk noted (re-seed as needed, do not fix publisher code - lane boundary)",
+        "deliver call MUST attach >=1 artifact (deliver.artifacts_required - r56 lesson)",
+        "durable claims written + offchain-verify",
+        "delivered inside 2026-09-24T22:40:00Z kill"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3AQDSTQK9RSJYSPBJTH87KJ",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/run-2026-09-24-1740-results-r57.md",
+          "sha256": "b42bc70a8c624aebf20b52e841426b4a89425e08c388d3feec775c97b47d1850"
+        },
+        {
+          "artifact_id": "art_01M3AQDSTRKXP9KCTSD8VE8RGT",
+          "kind": "scan",
+          "uri": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r57/results/r57-results.json",
+          "sha256": "ac7d3aa455807968ea609ea6d49e34319a954dda60eb54740977ee1db0dd40eb"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/run-2026-09-24-1740-results-r57.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T21:48:22.968Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-24 round 57"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-24T22:05:43.916Z",
+          "by": "agent:CWI_Results",
+          "note": "activation sweep r57 self-start (retry after CAS conflict)"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T22:08:56.126Z",
+          "by": "agent:CWI_Results",
+          "note": "activation sweep r57"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-24T22:40:00Z"
+    },
+    "tsk_01M3ASCD47HCQZ04SJZ3JWB578": {
+      "task_id": "tsk_01M3ASCD47HCQZ04SJZ3JWB578",
+      "type": "custom",
+      "title": "Sweep round-58: MINT taps-check r58 + kill-trigger attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T22:43:05.991Z",
+      "assigned_to": "agent:CWI_Athena_MINT",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "taps 1-4 recompute + green/attested",
+        "kill-trigger STAGING ONLY, no on-chain action",
+        "clips byte-identical to r57",
+        "≥1 artifact attached at deliver"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3AT44FX11HZ51RKTN993GWK",
+          "kind": "report",
+          "uri": "sandbox://workspace/cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-24-r58.md",
+          "sha256": "e057d12d76782d164ccf1d406def376d66822a318b68ebe4681bbfe5e7570531"
+        },
+        {
+          "artifact_id": "art_01M3AT44FY706ZX2EZ1ZWSPDD9",
+          "kind": "report",
+          "uri": "sandbox://workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r58/mint/run-2026-09-24-1849-mint-r58.md",
+          "sha256": "fbea47b4486019336596987b0baa71de38c879562a6c66913c9151b0084675d1"
+        }
+      ],
+      "deliverable_ref": "sandbox://workspace/cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-24-r58.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T22:43:05.992Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-24 r58"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-24T22:55:13.056Z",
+          "by": "agent:CWI_Athena_MINT",
+          "note": "activation sweep 2026-09-24 r58 - MINT self-start after tap work"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T22:56:04.953Z",
+          "by": "agent:CWI_Athena_MINT",
+          "note": "activation sweep 2026-09-24 r58 - delivered inside 23:40Z kill"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-24T23:40:00Z"
+    },
+    "tsk_01M3ASEV2BBEKFQ8RPNM8A6157": {
+      "task_id": "tsk_01M3ASEV2BBEKFQ8RPNM8A6157",
+      "type": "custom",
+      "title": "Sweep round-58: Care KB v2.58 runbooks + overdue-kill watch (live-recomputed)",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T22:44:25.804Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "KB v2.58 on kb-v2-draft only, main untouched, RB ids contiguous",
+        "overdue recompute live at run time",
+        "≥1 artifact attached at deliver"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3ATBNZQW45NTAB4SW6ABH5S",
+          "kind": "report",
+          "uri": "https://github.com/CumulativeWebInc/cwi-support-kb/blob/kb-v2-draft/kb.json",
+          "sha256": "2f9cd37b5dd6b2863114e63d0a7ae23c6e92dcd84bf0ec9200a0b4180a7526b1"
+        }
+      ],
+      "deliverable_ref": "https://github.com/CumulativeWebInc/cwi-support-kb/blob/kb-v2-draft/kb.json",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T22:44:25.804Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-24 r58"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-24T22:49:56.979Z",
+          "by": "agent:CWI_Care",
+          "note": "activation sweep 2026-09-24"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T23:00:12.477Z",
+          "by": "agent:CWI_Care",
+          "note": "activation sweep 2026-09-24"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-24T23:40:00Z"
+    },
+    "tsk_01M3ASGVEHSQDNEQWDVF6F79F2": {
+      "task_id": "tsk_01M3ASGVEHSQDNEQWDVF6F79F2",
+      "type": "custom",
+      "title": "Sweep round-58: Iris round-35 watch — new-proof sweep + gate attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T22:45:31.731Z",
+      "assigned_to": "agent:CWI_Visual",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "new-proof sweep reported honestly (zero is valid)",
+        "custody re-verify byte-identical",
+        "r29 FINAL FAIL 2/3/2 gate attestation unsoftened",
+        ">=1 artifact attached at deliver"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3AT1WFPEWK3VGG4BC8HAYV3",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/goals/tag-city-3d-rebuild/hidden_files/composition/IRIS-VERDICT-R58-2026-09-24.md",
+          "sha256": "7e0116f98d536b973a7500ddf73955ac0213bd018059442168bdb310d1c0f602"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/goals/tag-city-3d-rebuild/hidden_files/composition/IRIS-VERDICT-R58-2026-09-24.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T22:45:31.731Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-24 r58"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-24T22:49:43.017Z",
+          "by": "agent:CWI_Visual",
+          "note": "activation sweep 2026-09-24 round-58 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T22:54:51.883Z",
+          "by": "agent:CWI_Visual"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-24T23:40:00Z"
+    },
+    "tsk_01M3ASHHYY69K8QFTA0AK6BQN7": {
+      "task_id": "tsk_01M3ASHHYY69K8QFTA0AK6BQN7",
+      "type": "custom",
+      "title": "Sweep round-58: Guide ops chapter 66 + walkthrough #59",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T22:45:54.782Z",
+      "assigned_to": "agent:CWI_Guide",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "Guide v2.57 published with new section 66",
+        "walkthrough 59 12/12 PASS",
+        "22/22 pointers online exact-match",
+        ">=1 artifact attached at deliver"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3ATZB3PA697DAZ79CXV6DN2",
+          "kind": "draft",
+          "uri": "workspace://cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.57.md",
+          "sha256": "6d8d542346be67e81c28a4073a622193d5fb3448bd2271afbddf86315f590ff7"
+        },
+        {
+          "artifact_id": "art_01M3ATZB45TX8R40K8WYN19R3S",
+          "kind": "draft",
+          "uri": "workspace://cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.57-WALKTHROUGH.md",
+          "sha256": "80ec22e4121b406672516547ad7dbdcf49bee1b34fb4586f685e016df078eaea"
+        }
+      ],
+      "deliverable_ref": "workspace://cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.57.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T22:45:54.783Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-24 r58"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-24T22:49:51.390Z",
+          "by": "agent:CWI_Guide",
+          "note": "activation sweep 2026-09-24"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T23:10:56.732Z",
+          "by": "agent:CWI_Guide",
+          "note": "activation sweep 2026-09-24 r58 delivery"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-24T23:40:00Z"
+    },
+    "tsk_01M3ASJ6RFS7J326127BFQ1EA9": {
+      "task_id": "tsk_01M3ASJ6RFS7J326127BFQ1EA9",
+      "type": "custom",
+      "title": "Sweep round-58: Results dashboard r57 refresh + proof-shot watch",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T22:46:16.079Z",
+      "assigned_to": "agent:CWI_Results",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "results.json + index.html re-seeded with r57 tail, live 200 post-propagation",
+        "Moltbook equips live check",
+        "publisher no-clobber assertion",
+        ">=1 artifact attached at deliver"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3ATSZD4JBQS7TTYAZDJ0F2D",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r58/results/run-results-r58.md",
+          "sha256": "45903186725f9c9e8f1f9f82567b17218c1f06828c6e5aaf155f8daef1fbff73"
+        },
+        {
+          "artifact_id": "art_01M3ATSZD5MPJK30VQCCDCFT5G",
+          "kind": "scan",
+          "uri": "https://cumulativewebinc.github.io/cwi-results/results.json",
+          "sha256": "23161622a049f91a85763e086186be9f95a91faa0fde4c7098ab65bef5c8033d"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r58/results/run-results-r58.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T22:46:16.079Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-24 r58"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-24T22:49:34.771Z",
+          "by": "agent:CWI_Results",
+          "note": "activation sweep r58"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T23:08:01.380Z",
+          "by": "agent:CWI_Results",
+          "note": "activation sweep r58"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-24T23:40:00Z"
+    },
+    "tsk_01M3AWTNS2FHXC5MP4EVVWH0VR": {
+      "task_id": "tsk_01M3AWTNS2FHXC5MP4EVVWH0VR",
+      "type": "custom",
+      "title": "Sweep round-59: MINT taps-check r59 + kill-trigger attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T23:43:19.330Z",
+      "assigned_to": "agent:CWI_Athena_MINT",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "MINT 4-tap check r59 with live-recomputed evidence",
+        "taps 4/4 GREEN or honest report",
+        "kill-trigger attestation STAGING ONLY",
+        "deliver with >=1 artifact + --report before the 00:40Z kill"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3AXFTN8BZTHR41JDTRPWGQ6",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-24-r59.md",
+          "sha256": "73a4c073e1b6997662de5417629ca252313a0f566844df67cd4267e44effecc4"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-24-r59.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T23:43:19.330Z",
+          "by": "agent:MUSE_CWI"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-24T23:50:25.129Z",
+          "by": "agent:CWI_Athena_MINT",
+          "note": "activation sweep 2026-09-24 — assignee self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T23:55:01.039Z",
+          "by": "agent:CWI_Athena_MINT"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T00:40:00Z"
+    },
+    "tsk_01M3AWWBF0A844S3FFW4NZSJQM": {
+      "task_id": "tsk_01M3AWWBF0A844S3FFW4NZSJQM",
+      "type": "custom",
+      "title": "Sweep round-59: Care KB v2.59 runbooks + overdue-kill watch (live-recomputed)",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T23:44:14.304Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "KB v2.59 runbook drafts on kb-v2-draft branch only",
+        "overdue-kill watch live-recomputed vs r58",
+        "deliver with >=1 artifact + --report before the 00:40Z kill"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3AXWPHCXS1ARX9PVXA0SZTD",
+          "kind": "report",
+          "uri": "https://github.com/CumulativeWebInc/cwi-support-kb/blob/kb-v2-draft/kb.json",
+          "sha256": "2f9cd37b5dd6b2863114e63d0a7ae23c6e92dcd84bf0ec9200a0b4180a7526b1"
+        }
+      ],
+      "deliverable_ref": "https://github.com/CumulativeWebInc/cwi-support-kb/blob/kb-v2-draft/kb.json",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T23:44:14.305Z",
+          "by": "agent:MUSE_CWI"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-24T23:50:11.755Z",
+          "by": "agent:CWI_Care",
+          "note": "self-start: activation sweep r59 Care lane"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T00:01:55.725Z",
+          "by": "agent:CWI_Care",
+          "note": "activation sweep r59 care lane delivery"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T00:40:00Z"
+    },
+    "tsk_01M3AWX8TS5YR323267KZBF297": {
+      "task_id": "tsk_01M3AWX8TS5YR323267KZBF297",
+      "type": "custom",
+      "title": "Sweep round-59: Guide ops chapter 67 + walkthrough #60",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T23:44:44.380Z",
+      "assigned_to": "agent:CWI_Guide",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "ops chapter 67 folds the r58 cycle with receipts",
+        "walkthrough #60 all PASS live-recomputed",
+        "zero fabricated handoffs",
+        "deliver with >=1 artifact + --report before the 00:40Z kill"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3AYKT2AASY2SBBNGK9X6B0E",
+          "kind": "draft",
+          "uri": "workspace://cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.58.md",
+          "sha256": "a53db909b706ac60ac2cecbc7e40f1c39db3444598b6d52e44821dd24b484529"
+        },
+        {
+          "artifact_id": "art_01M3AYKT2BCZBPS3DV9YJAJP9T",
+          "kind": "draft",
+          "uri": "workspace://cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.58-WALKTHROUGH.md",
+          "sha256": "f06f5e7d170eb0eb406e909332e1975957bee8f7e4171f9fb65d7b4c29e52111"
+        }
+      ],
+      "deliverable_ref": "workspace://cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.58.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T23:44:44.380Z",
+          "by": "agent:MUSE_CWI"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-24T23:50:50.826Z",
+          "by": "agent:CWI_Guide",
+          "note": "activation sweep 2026-09-24 r59 — assignee self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T00:14:33.063Z",
+          "by": "agent:CWI_Guide"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T00:40:00Z"
+    },
+    "tsk_01M3AWY46AWGWRNF8V3DK1KPB4": {
+      "task_id": "tsk_01M3AWY46AWGWRNF8V3DK1KPB4",
+      "type": "custom",
+      "title": "Sweep round-59: Iris round-36 watch - new-proof sweep + gate attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T23:45:12.394Z",
+      "assigned_to": "agent:CWI_Visual",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "new-proof sweep vs r58",
+        "custody hashes re-verified byte-identical",
+        "r29 FINAL FAIL gate re-attested unsoftened",
+        "deliver with >=1 artifact + --report before the 00:40Z kill"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3AXF6X6ME22DR2TPKK4M0P6",
+          "kind": "report",
+          "uri": "goals/tag-city-3d-rebuild/hidden_files/composition/IRIS-VERDICT-R59-2026-09-24.md",
+          "sha256": "8441a59f69c59161a1ab692b0181bb868d336a3d0b3a7580bd2b340775fe4030"
+        }
+      ],
+      "deliverable_ref": "goals/tag-city-3d-rebuild/hidden_files/composition/IRIS-VERDICT-R59-2026-09-24.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T23:45:12.394Z",
+          "by": "agent:MUSE_CWI"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-24T23:50:40.656Z",
+          "by": "agent:CWI_Visual",
+          "note": "activation sweep 2026-09-24; assignee self-start per contract"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-24T23:54:34.603Z",
+          "by": "agent:CWI_Visual",
+          "note": "delivered inside 00:40:00Z kill"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T00:40:00Z"
+    },
+    "tsk_01M3AWZ5NXC2CGD7K9DTFM63AF": {
+      "task_id": "tsk_01M3AWZ5NXC2CGD7K9DTFM63AF",
+      "type": "custom",
+      "title": "Sweep round-59: Results dashboard r58 refresh + proof-shot watch",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-24T23:45:46.686Z",
+      "assigned_to": "agent:CWI_Results",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "r58 receipts re-verified on disk vs ledger",
+        "fresh distribution pull",
+        "honest counts published",
+        "proof-shot watch vs cutoff",
+        "deliver with >=1 artifact + --report before the 00:40Z kill"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3AY8D163HVNV9AYJH7HMSWK",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/run-2026-09-24-1940-results-r59.md",
+          "sha256": "3804079c9d72966bb32bc5fce7179de79a461586d2f82b52c04e8b1fe981947b"
+        },
+        {
+          "artifact_id": "art_01M3AY8D18TVKSFQM1ZDMJBAY2",
+          "kind": "scan",
+          "uri": "https://cumulativewebinc.github.io/cwi-results/results.json",
+          "sha256": "23161622a049f91a85763e086186be9f95a91faa0fde4c7098ab65bef5c8033d"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/run-2026-09-24-1940-results-r59.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-24T23:45:46.686Z",
+          "by": "agent:MUSE_CWI"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-24T23:49:29.544Z",
+          "by": "agent:CWI_Results",
+          "note": "activation sweep r59 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T00:08:19.340Z",
+          "by": "agent:CWI_Results",
+          "note": "activation sweep r59"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T00:40:00Z"
+    },
+    "tsk_01M3B0B9K0PFA36S2VBZPX7N6F": {
+      "task_id": "tsk_01M3B0B9K0PFA36S2VBZPX7N6F",
+      "type": "custom",
+      "title": "Sweep round-60: MINT taps-check r60 + kill-trigger attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T00:44:49.632Z",
+      "assigned_to": "agent:CWI_Athena_MINT",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "Named result delivered inside kill 2026-09-25T01:40:00Z",
+        "taps-check 4/4 live-verified (manifest dual-recompute, approvals empty, DRAFT staged-not-live, visualizer binary md5)",
+        "kill-trigger attested STANDS, STAGING ONLY — no on-chain action",
+        "new-media scan reported as honest zero if none",
+        "memory write + git push + L1 offchain-anchor + offchain-verify ANCHORED-OK",
+        "carve-outs held: $0, no wallet signing, no external publishing, nothing under Black's personal name"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3B14ASZT3H4SNFW32W43D41",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r60/mint/run-r60.md",
+          "sha256": "969bbbaff9ad677e98c3d38c669bc1d61de1d9e1c8a80a2a86de7c91eba41e2a"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r60/mint/run-r60.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T00:44:49.632Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep round-60, 2026-09-24"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-25T00:51:28.915Z",
+          "by": "agent:CWI_Athena_MINT",
+          "note": "round-60 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T00:58:31.736Z",
+          "by": "agent:CWI_Athena_MINT",
+          "note": "round-60 delivered"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T01:40:00Z"
+    },
+    "tsk_01M3B0C8MTS52E0SY1HJBVMNTR": {
+      "task_id": "tsk_01M3B0C8MTS52E0SY1HJBVMNTR",
+      "type": "custom",
+      "title": "Sweep round-60: Care KB v2.60 runbooks + overdue-kill watch (live-recomputed)",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T00:45:21.434Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "Named result delivered inside kill 2026-09-25T01:40:00Z",
+        "Care KB v2.60 runbooks appended with artifact",
+        "overdue-kill watch live-recomputed and reported honestly (round-to-round identity or delta)",
+        "memory write + git push + L1 offchain-anchor + offchain-verify ANCHORED-OK",
+        "carve-outs held: $0, no wallet signing, no external publishing, nothing under Black's personal name"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3B1FYP1AP0XB0XY849T3S0F",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r60/care/run-r60.md",
+          "sha256": "d78f62a79857834b398326c817e84b2ea825dae7221e8566ae21d0bfc17c6818"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r60/care/run-r60.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T00:45:21.435Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep round-60, 2026-09-24"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-25T00:52:03.795Z",
+          "by": "agent:CWI_Care",
+          "note": "round-60 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T01:04:53.047Z",
+          "by": "agent:CWI_Care",
+          "note": "round-60 delivered"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T01:40:00Z"
+    },
+    "tsk_01M3B0CYZ7DWTZ8JNVYCPENXQ2": {
+      "task_id": "tsk_01M3B0CYZ7DWTZ8JNVYCPENXQ2",
+      "type": "custom",
+      "title": "Sweep round-60: Guide ops chapter 68 + walkthrough #61",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T00:45:44.296Z",
+      "assigned_to": "agent:CWI_Guide",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "Named result delivered inside kill 2026-09-25T01:40:00Z",
+        "Guide ops chapter 68 contiguous with artifacts",
+        "walkthrough #61 live-recomputed 12/12 PASS with receipts",
+        "memory write + git push + L1 offchain-anchor + offchain-verify ANCHORED-OK",
+        "carve-outs held: $0, no wallet signing, no external publishing, nothing under Black's personal name"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3B26FB20C6EXV9H9EWBWVKK",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r60/guide/run-r60.md",
+          "sha256": "36a7d6a960f5ffb7c5aa9b92f6643778efdfc2dcb0c3a8ad38f621fec7491d49"
+        },
+        {
+          "artifact_id": "art_01M3B26FB3SSYB0FNNF30T907P",
+          "kind": "draft",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.59.md",
+          "sha256": "d9b252213b73686a32ed9de48a4cbfcd7216c72c8fe6f381e63574d8682735f2"
+        },
+        {
+          "artifact_id": "art_01M3B26FB3ZBR3MCBDJWDTR46V",
+          "kind": "draft",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.59-WALKTHROUGH.md",
+          "sha256": "6c975a50653325a06108146fdb3ca3e17bbf729610404fb9dcb85e32576fdd18"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r60/guide/run-r60.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T00:45:44.296Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep round-60, 2026-09-24"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-25T00:51:56.158Z",
+          "by": "agent:CWI_Guide",
+          "note": "round-60 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T01:17:10.293Z",
+          "by": "agent:CWI_Guide",
+          "note": "round-60 delivered"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T01:40:00Z"
+    },
+    "tsk_01M3B0DPC0C5TAS03GR55682X9": {
+      "task_id": "tsk_01M3B0DPC0C5TAS03GR55682X9",
+      "type": "custom",
+      "title": "Sweep round-60: Iris round-37 watch — new-proof sweep + gate attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T00:46:08.256Z",
+      "assigned_to": "agent:CWI_Visual",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "Named result delivered inside kill 2026-09-25T01:40:00Z",
+        "new-proof sweep 5-scope mtime scan with artifacts, honest zero reported if none",
+        "Iris gate re-attested UNSOFTENED",
+        "custody byte-identity check",
+        "memory write + git push + L1 offchain-anchor + offchain-verify ANCHORED-OK",
+        "carve-outs held: $0, no wallet signing, no external publishing, nothing under Black's personal name"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3B1B9HRM2YZPBXEP6RDTT9S",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r60/visual/run-r60.md",
+          "sha256": "27009db9caa634f0abd0b1ef8a7f0b31c284b1a4f4d517954c7880984e33ab3c"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r60/visual/run-r60.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T00:46:08.256Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep round-60, 2026-09-24"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-25T00:51:40.656Z",
+          "by": "agent:CWI_Visual",
+          "note": "round-60 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T01:02:19.801Z",
+          "by": "agent:CWI_Visual",
+          "note": "round-60 delivered"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T01:40:00Z"
+    },
+    "tsk_01M3B0EN10ZJTW87M4JY7DKJYY": {
+      "task_id": "tsk_01M3B0EN10ZJTW87M4JY7DKJYY",
+      "type": "custom",
+      "title": "Sweep round-60: Results dashboard r59 refresh + proof-shot watch",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T00:46:39.648Z",
+      "assigned_to": "agent:CWI_Results",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "Named result delivered inside kill 2026-09-25T01:40:00Z",
+        "results dashboard refreshed with receipts, HTTP 200 verified live, no-clobber continuity asserted",
+        "proof-shot watch honest zero if none",
+        "prior-round deliveries re-verified",
+        "memory write + git push + L1 offchain-anchor + offchain-verify ANCHORED-OK",
+        "carve-outs held: $0, no wallet signing, no external publishing, nothing under Black's personal name"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3B1KS5ZB0339PPDYH8W34AZ",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r60/results/run-r60.md",
+          "sha256": "68a4ec033638f4e7388963d168ad2a4b7d6ba0f83f16887499aac6424e6f7e19"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r60/results/run-r60.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T00:46:39.648Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep round-60, 2026-09-24"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-25T00:51:06.445Z",
+          "by": "agent:CWI_Results",
+          "note": "round-60 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T01:06:58.434Z",
+          "by": "agent:CWI_Results",
+          "note": "round-60 delivered"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T01:40:00Z"
+    },
+    "tsk_01M3B3R2W6SB0BBBB4X8V3SSMB": {
+      "task_id": "tsk_01M3B3R2W6SB0BBBB4X8V3SSMB",
+      "type": "custom",
+      "title": "Sweep round-61: MINT taps-check r61 + kill-trigger attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T01:44:14.471Z",
+      "assigned_to": "agent:CWI_Athena_MINT",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "Named result delivered inside kill 2026-09-25T02:40:00Z",
+        "taps-check 4/4 live-verified (manifest dual-recompute, approvals empty, DRAFT staged-not-live, visualizer binary md5)",
+        "kill-trigger attested STANDS, STAGING ONLY — no on-chain action",
+        "new-media scan reported as honest zero if none",
+        "memory write + git push + L1 offchain-anchor + offchain-verify ANCHORED-OK",
+        "carve-outs held: $0, no wallet signing, no external publishing, nothing under Black's personal name"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3B4GYC9C0F7250CWTT1C515",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r61/mint/run-r61.md",
+          "sha256": "fc0263552c01f2495f07feeebea611aac602b0c9a147c374a233a4c41ece9eb2"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r61/mint/run-r61.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T01:44:14.472Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep round-61 dispatch"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-25T01:55:31.104Z",
+          "by": "agent:CWI_Athena_MINT",
+          "note": "round-61 lane self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T01:57:50.824Z",
+          "by": "agent:CWI_Athena_MINT"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T02:40:00Z"
+    },
+    "tsk_01M3B3R93C3CCPAEHQQJZC0F1Y": {
+      "task_id": "tsk_01M3B3R93C3CCPAEHQQJZC0F1Y",
+      "type": "custom",
+      "title": "Sweep round-61: Care KB v2.61 runbooks + overdue-kill watch (live-recomputed)",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T01:44:20.844Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "Named result delivered inside kill 2026-09-25T02:40:00Z",
+        "Care KB v2.61 runbooks appended with artifact",
+        "overdue-kill watch live-recomputed and reported honestly (round-to-round identity or delta)",
+        "memory write + git push + L1 offchain-anchor + offchain-verify ANCHORED-OK",
+        "carve-outs held: $0, no wallet signing, no external publishing, nothing under Black's personal name"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3B4QT163QQJQY1YW6DM502G",
+          "kind": "report",
+          "uri": "https://github.com/CumulativeWebInc/cwi-support-kb/commit/00c54973091564a83f3286ffa308bb9ab8e0bfe3",
+          "sha256": "036e4bed2b28396d72936b9817b3799142acb4a6241b1a8f1cebbaebce1306cd"
+        }
+      ],
+      "deliverable_ref": "https://github.com/CumulativeWebInc/cwi-support-kb/commit/00c54973091564a83f3286ffa308bb9ab8e0bfe3",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T01:44:20.844Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep round-61 dispatch"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-25T01:54:23.059Z",
+          "by": "agent:CWI_Care",
+          "note": "round-61 lane self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T02:01:36.021Z",
+          "by": "agent:CWI_Care"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T02:40:00Z"
+    },
+    "tsk_01M3B3SKYKC9VT84PMR5BAB673": {
+      "task_id": "tsk_01M3B3SKYKC9VT84PMR5BAB673",
+      "type": "custom",
+      "title": "Sweep round-61: Guide ops chapter 69 + walkthrough #62",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T01:45:04.723Z",
+      "assigned_to": "agent:CWI_Guide",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "Named result delivered inside kill 2026-09-25T02:40:00Z",
+        "Guide ops chapter 69 contiguous with artifacts",
+        "walkthrough #62 live-recomputed 12/12 PASS with receipts",
+        "memory write + git push + L1 offchain-anchor + offchain-verify ANCHORED-OK",
+        "carve-outs held: $0, no wallet signing, no external publishing, nothing under Black's personal name"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3B5G2SY51PA6YHZRY3S1CXH",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r61/guide/run-r61.md",
+          "sha256": "19086ad8c2527bab21819ecffd291349dcb52c9e725d2be71bf92d282a0fa6a0"
+        },
+        {
+          "artifact_id": "art_01M3B5G2SZNVY1DRBSXRJM0NE9",
+          "kind": "draft",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.60.md",
+          "sha256": "7c773a40a4b25af9498cf5daf2fb891d9991a469d43921e655aaf31ee08823e1"
+        },
+        {
+          "artifact_id": "art_01M3B5G2SZT4EGV80NWCHS12DY",
+          "kind": "draft",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.60-WALKTHROUGH.md",
+          "sha256": "5109b195b09c3c32c6593b5d7c3165916808ede6c128d08df4e50c0a40911169"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r61/guide/run-r61.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T01:45:04.724Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep round-61 dispatch"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-25T01:52:40.490Z",
+          "by": "agent:CWI_Guide",
+          "note": "round-61 lane self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T02:14:51.540Z",
+          "by": "agent:CWI_Guide",
+          "note": "round-61 lane deliver inside kill 2026-09-25T02:40:00Z"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T02:40:00Z"
+    },
+    "tsk_01M3B3T9TNNB1Y3RTYX7DKQCBC": {
+      "task_id": "tsk_01M3B3T9TNNB1Y3RTYX7DKQCBC",
+      "type": "custom",
+      "title": "Sweep round-61: Iris round-38 watch — new-proof sweep + gate attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T01:45:27.125Z",
+      "assigned_to": "agent:CWI_Visual",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "Named result delivered inside kill 2026-09-25T02:40:00Z",
+        "new-proof sweep 5-scope mtime scan with artifacts, honest zero reported if none",
+        "Iris gate re-attested UNSOFTENED",
+        "custody byte-identity check",
+        "memory write + git push + L1 offchain-anchor + offchain-verify ANCHORED-OK",
+        "carve-outs held: $0, no wallet signing, no external publishing, nothing under Black's personal name"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3B4FNV3TSS81NC5W90PJG1Z",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r61/visual/run-r61.md",
+          "sha256": "864c413d4145a1ce672396d67e2f3c4e5643b2fce4c812f917f9d2b3e71434aa"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r61/visual/run-r61.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T01:45:27.126Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep round-61 dispatch"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-25T01:52:31.857Z",
+          "by": "agent:CWI_Visual",
+          "note": "round-61 lane self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T01:57:09.749Z",
+          "by": "agent:CWI_Visual",
+          "note": "r61 delivered inside 02:40Z kill: 38th consecutive zero new-proof round, custody PASS (3 PNGs byte-identical), r29 FINAL FAIL 2/3/2 re-attested unsoftened, Round 3 still required"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T02:40:00Z"
+    },
+    "tsk_01M3B3V4CXZKXSVTSP3860NAET": {
+      "task_id": "tsk_01M3B3V4CXZKXSVTSP3860NAET",
+      "type": "custom",
+      "title": "Sweep round-61: Results dashboard r60 refresh + proof-shot watch",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T01:45:54.333Z",
+      "assigned_to": "agent:CWI_Results",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "Named result delivered inside kill 2026-09-25T02:40:00Z",
+        "results dashboard refreshed with receipts, HTTP 200 verified live, no-clobber continuity asserted",
+        "proof-shot watch honest zero if none",
+        "prior-round deliveries re-verified",
+        "memory write + git push + L1 offchain-anchor + offchain-verify ANCHORED-OK",
+        "carve-outs held: $0, no wallet signing, no external publishing, nothing under Black's personal name"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3B4WY3F18C803N64NJTV7QD",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r61/results/run-r61.md",
+          "sha256": "6b738ee6509cfd834503b0d9c407fd4e6da65c0b720c90140937469bbcb6379f"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r61/results/run-r61.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T01:45:54.333Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep round-61 dispatch"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-25T01:52:24.828Z",
+          "by": "agent:CWI_Results",
+          "note": "round-61 lane self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T02:04:29.095Z",
+          "by": "agent:CWI_Results"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T02:40:00Z"
+    },
+    "tsk_01M3B3VV67SBEQ5F4YAQ2Z3NH8": {
+      "task_id": "tsk_01M3B3VV67SBEQ5F4YAQ2Z3NH8",
+      "type": "custom",
+      "title": "Sweep round-61: Atelier TAG CITY art-direction audit vs six-signs spec + brand pre-gate",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T01:46:17.672Z",
+      "assigned_to": "agent:CWI_Atelier",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "Named result delivered inside kill 2026-09-25T02:40:00Z",
+        "audit of the current TAG CITY build visuals vs Black's six-signs spec and the CWI brand pre-gate, with a named red-flag list and pass/fail per element",
+        "nothing certified on feel — evidence only",
+        "memory write + git push + L1 offchain-anchor + offchain-verify ANCHORED-OK",
+        "carve-outs held: $0, no wallet signing, no external publishing, nothing under Black's personal name"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3B4ECVYPT7WKEZNK7WD7FYV",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r61/atelier/ATELIER-R61-AUDIT.md",
+          "sha256": "7079007d44b31f5ac902436c9e3d3dabde9572be2236c568519671cee5e43050"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r61/atelier/ATELIER-R61-AUDIT.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T01:46:17.672Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep round-61 dispatch"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-25T01:52:20.720Z",
+          "by": "agent:CWI_Atelier",
+          "note": "round-61 lane self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T01:56:28.521Z",
+          "by": "agent:CWI_Atelier"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T02:40:00Z"
+    },
+    "tsk_01M3B76E2YJB37FT2WGQ75DG44": {
+      "task_id": "tsk_01M3B76E2YJB37FT2WGQ75DG44",
+      "type": "custom",
+      "title": "Sweep round-62: MINT taps-check r62 + kill-trigger attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T02:44:30.430Z",
+      "assigned_to": "agent:CWI_Athena_MINT",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "taps-check 4/4 vs r61 baseline with evidence",
+        "new-media count reported (honest zero counts)",
+        "kill-trigger attested STANDS or STAGING ONLY with reason",
+        "memory claims written and offchain-verify OK",
+        "delivered inside the 2026-09-25T03:40:00Z kill"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3B86Z5674TFJGVJMMCEB7VF",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r62/mint/run-r62.md",
+          "sha256": "f9bcf61089348ce18b89bca835974f5c1a15e60d25590a7699dab0cab7055423"
+        },
+        {
+          "artifact_id": "art_01M3B86Z58Z9S9RBCVGS6GC8E1",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r62/mint/claims-r62.json",
+          "sha256": "6ed1b4808bcdbe95b9a3f8255a90ab37b9e4f8b9d1c4a44c860af909ea545035"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r62/mint/run-r62.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T02:44:30.431Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-24 round-62"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-25T02:52:52.143Z",
+          "by": "agent:CWI_Athena_MINT"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T03:02:17.919Z",
+          "by": "agent:CWI_Athena_MINT"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T03:40:00Z"
+    },
+    "tsk_01M3B793RTVAY2ZGHPEMTH9NAQ": {
+      "task_id": "tsk_01M3B793RTVAY2ZGHPEMTH9NAQ",
+      "type": "custom",
+      "title": "Sweep round-62: Care KB v2.62 runbooks + overdue-kill watch (live-recomputed)",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T02:45:58.170Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "KB v2.62 built and pushed with contiguous runbooks",
+        "overdue-kill watch live-recomputed from ledger (report delta honestly, no theater)",
+        "publisher-clobber check 0",
+        "memory claims written and offchain-verify OK",
+        "delivered inside the 2026-09-25T03:40:00Z kill"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3B856KCMBT8W4CDN662W0AM",
+          "kind": "draft",
+          "uri": "https://github.com/CumulativeWebInc/cwi-support-kb/blob/kb-v2-draft/kb.json",
+          "sha256": "2f9cd37b5dd6b2863114e63d0a7ae23c6e92dcd84bf0ec9200a0b4180a7526b1"
+        }
+      ],
+      "deliverable_ref": "https://github.com/CumulativeWebInc/cwi-support-kb/blob/kb-v2-draft/kb.json",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T02:45:58.170Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-24 round-62"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-25T02:53:26.912Z",
+          "by": "agent:CWI_Care",
+          "note": "activation sweep 2026-09-24 r62 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T03:01:20.054Z",
+          "by": "agent:CWI_Care",
+          "note": "activation sweep 2026-09-24 r62 inside kill 03:40Z"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T03:40:00Z"
+    },
+    "tsk_01M3B79YX9EWATYQKC2T9Q0Y1S": {
+      "task_id": "tsk_01M3B79YX9EWATYQKC2T9Q0Y1S",
+      "type": "custom",
+      "title": "Sweep round-62: Guide ops chapter 70 + walkthrough #63",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T02:46:25.962Z",
+      "assigned_to": "agent:CWI_Guide",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "ops chapter 70 written with counts recomputed from the daily log (not carried from prior rounds)",
+        "walkthrough #63 run live 12/12 PASS",
+        "memory claims written and offchain-verify OK",
+        "delivered inside the 2026-09-25T03:40:00Z kill"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3B928QXF0XN0BDSZFVCH8S4",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r62/guide/run-r62.md",
+          "sha256": "35f79273f46a21a3ec85e1546e626d9db274c2f97bda4754501b07de6fc6c3eb"
+        },
+        {
+          "artifact_id": "art_01M3B928QYNBZB869TCZEQ8GZZ",
+          "kind": "draft",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.61.md",
+          "sha256": "715025630f90776a2195de0f41c4f244926179949e00b4f300e98ad591dea3ff"
+        },
+        {
+          "artifact_id": "art_01M3B928QY4HZN35XCJDKVPD5S",
+          "kind": "draft",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.61-WALKTHROUGH.md",
+          "sha256": "2de5584c14c787561d248c658d0accb94edf2c25e8783364723ce812fdc4a89a"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r62/guide/run-r62.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T02:46:25.962Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-24 round-62"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-25T02:54:43.214Z",
+          "by": "agent:CWI_Guide"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T03:17:12.440Z",
+          "by": "agent:CWI_Guide"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T03:40:00Z"
+    },
+    "tsk_01M3B7ASANA1HM6GTE354MC8CX": {
+      "task_id": "tsk_01M3B7ASANA1HM6GTE354MC8CX",
+      "type": "custom",
+      "title": "Sweep round-62: Iris round-39 watch — new-proof sweep + gate attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T02:46:53.013Z",
+      "assigned_to": "agent:CWI_Visual",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "new-proof sweep across TAG CITY builder scopes (honest zero counts)",
+        "custody check on visual assets byte-identical",
+        "Iris gate r29 FINAL FAIL re-attested unsoftened",
+        "memory claims written and offchain-verify OK",
+        "delivered inside the 2026-09-25T03:40:00Z kill"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3B81E7KH82HXAEAGYSWFBNY",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r62/visual/run-r62.md",
+          "sha256": "01a013b102ddae7c51f6f3823b7f3e785cef3a1a23e400002dd8371d2a715841"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r62/visual/run-r62.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T02:46:53.014Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-24 round-62"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-25T02:53:55.836Z",
+          "by": "agent:CWI_Visual",
+          "note": "activation sweep 2026-09-24 round-62 Iris round-39 watch"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T02:59:20.702Z",
+          "by": "agent:CWI_Visual"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T03:40:00Z"
+    },
+    "tsk_01M3B7BKD8K01EA7AJYRRD52E8": {
+      "task_id": "tsk_01M3B7BKD8K01EA7AJYRRD52E8",
+      "type": "custom",
+      "title": "Sweep round-62: Results dashboard r61 refresh + proof-shot watch",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T02:47:19.721Z",
+      "assigned_to": "agent:CWI_Results",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "r61 sibling deliveries re-verified live inside the kill",
+        "dashboard r61 results.json + index.html published live 200 with continuity asserted pre-PUT (anti-clobber)",
+        "proof-shot watch with honest zero",
+        "distribution numbers from receipts only",
+        "memory claims written and offchain-verify OK",
+        "delivered inside the 2026-09-25T03:40:00Z kill"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3B8GFMW74MF5TYBVH487HP8",
+          "kind": "report",
+          "uri": "https://cumulativewebinc.github.io/cwi-results/results.json",
+          "sha256": "23161622a049f91a85763e086186be9f95a91faa0fde4c7098ab65bef5c8033d"
+        }
+      ],
+      "deliverable_ref": "https://cumulativewebinc.github.io/cwi-results/results.json",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T02:47:19.721Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-24 round-62"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-25T02:53:18.114Z",
+          "by": "agent:CWI_Results",
+          "note": "activation sweep r62 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T03:07:29.726Z",
+          "by": "agent:CWI_Results"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T03:40:00Z"
+    },
+    "tsk_01M3BAM7VFP65QCK1APJF6VGN8": {
+      "task_id": "tsk_01M3BAM7VFP65QCK1APJF6VGN8",
+      "type": "custom",
+      "title": "Sweep round-63: MINT taps-check r63 + kill-trigger attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T03:44:28.527Z",
+      "assigned_to": "agent:CWI_Athena_MINT",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "taps-check 4/4 vs r62 baseline with evidence",
+        "new-media count reported (honest zero counts)",
+        "kill-trigger attested STANDS or STAGING ONLY with reason",
+        "memory claims written and offchain-verify OK",
+        "delivered inside the 2026-09-25T04:40:00Z kill"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3BB5DQ3NY5HVYJF34RB1X30",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r63/mint/run-r63.md",
+          "sha256": "0bd02a5e52cc1b291ec74e604b6fafb02050fe28e18b9821b94a9a72be7235e7"
+        },
+        {
+          "artifact_id": "art_01M3BB5DQ3NDWE0435H7DHKFGY",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-24-r63.md",
+          "sha256": "d73b18d66cacd0bb8e27c879a41d83fc12093139ff55c864694d45d8227e05cd"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r63/mint/run-r63.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T03:44:28.527Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-24 round-63"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-25T03:47:43.852Z",
+          "by": "agent:CWI_Athena_MINT",
+          "note": "activation sweep 2026-09-24 round-63"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T03:53:53.791Z",
+          "by": "agent:CWI_Athena_MINT",
+          "note": "r63 delivered inside 2026-09-25T04:40:00Z kill"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-25T04:40:00Z"
+    },
+    "tsk_01M3BAMMD5915F7RQ0M9XJJBQE": {
+      "task_id": "tsk_01M3BAMMD5915F7RQ0M9XJJBQE",
+      "type": "custom",
+      "title": "Sweep round-63: Care KB v2.63 runbooks + overdue-kill watch (live-recomputed)",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T03:44:41.381Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "KB v2.63 built and pushed with contiguous runbooks",
+        "overdue-kill watch live-recomputed from ledger (report delta honestly, no theater)",
+        "publisher-clobber check 0",
+        "memory claims written and offchain-verify OK",
+        "delivered inside the 2026-09-25T04:40:00Z kill"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3BBACQC24P4SFXMF60PA38E",
+          "kind": "report",
+          "uri": "https://github.com/CumulativeWebInc/cwi-support-kb/blob/kb-v2-draft/kb.json",
+          "sha256": "2f9cd37b5dd6b2863114e63d0a7ae23c6e92dcd84bf0ec9200a0b4180a7526b1"
+        }
+      ],
+      "deliverable_ref": "https://github.com/CumulativeWebInc/cwi-support-kb/blob/kb-v2-draft/kb.json",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T03:44:41.382Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-24 round-63"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-25T03:48:47.491Z",
+          "by": "agent:CWI_Care",
+          "note": "activation sweep 2026-09-24 round-63"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T03:56:35.897Z",
+          "by": "agent:CWI_Care"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-25T04:40:00Z"
+    },
+    "tsk_01M3BAN6KJQVZBSAY4VFTRSGXR": {
+      "task_id": "tsk_01M3BAN6KJQVZBSAY4VFTRSGXR",
+      "type": "custom",
+      "title": "Sweep round-63: Guide ops chapter 71 + walkthrough #64",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T03:45:00.018Z",
+      "assigned_to": "agent:CWI_Guide",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "ops chapter 71 written with counts recomputed from the daily log (not carried from prior rounds)",
+        "walkthrough #64 run live 12/12 PASS",
+        "memory claims written and offchain-verify OK",
+        "delivered inside the 2026-09-25T04:40:00Z kill"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3BBWBGS0YDRBEWVQ7MDMJ4D",
+          "kind": "draft",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.62.md",
+          "sha256": "076ff5bfed96e5a02dd7960b2e02ce0c76f5b752b2974dd422e36af067cf785d"
+        },
+        {
+          "artifact_id": "art_01M3BBWBGTH4X43YWVVCS037FK",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.62-WALKTHROUGH.md",
+          "sha256": "b47461bb315de467ad4edb5db6209ab61a5543a5a3613f51b53172fbc3947540"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.62.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T03:45:00.019Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-24 round-63"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-25T03:48:05.313Z",
+          "by": "agent:CWI_Guide",
+          "note": "activation sweep 2026-09-24 round-63"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T04:06:24.798Z",
+          "by": "agent:CWI_Guide",
+          "note": "activation sweep 2026-09-24 round-63"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-25T04:40:00Z"
+    },
+    "tsk_01M3BANR8T5CZ9F09X6G9QMYCR": {
+      "task_id": "tsk_01M3BANR8T5CZ9F09X6G9QMYCR",
+      "type": "custom",
+      "title": "Sweep round-63: Results dashboard r62 refresh + proof-shot watch",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T03:45:18.107Z",
+      "assigned_to": "agent:CWI_Results",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "r62 sibling deliveries re-verified live inside the kill",
+        "dashboard r62 results.json + index.html published live 200 with continuity asserted pre-PUT (anti-clobber)",
+        "proof-shot watch with honest zero",
+        "distribution numbers from receipts only",
+        "memory claims written and offchain-verify OK",
+        "delivered inside the 2026-09-25T04:40:00Z kill"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3BBMYTWX7C11X1AJWVGME4M",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r63/results/run-r63.md",
+          "sha256": "6efdc0497365536a8a61bfe32c5f93d8136e8ad2f4e25b9e857a0739106c5202"
+        },
+        {
+          "artifact_id": "art_01M3BBMYTYMFKJGWZS08TR65RH",
+          "kind": "scan",
+          "uri": "https://cumulativewebinc.github.io/cwi-results/results.json",
+          "sha256": "23161622a049f91a85763e086186be9f95a91faa0fde4c7098ab65bef5c8033d"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r63/results/run-r63.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T03:45:18.108Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-24 round-63"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-25T03:47:27.166Z",
+          "by": "agent:CWI_Results",
+          "note": "activation sweep 2026-09-24 round-63"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T04:02:21.940Z",
+          "by": "agent:CWI_Results"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-25T04:40:00Z"
+    },
+    "tsk_01M3BAPQF8X0SZQ9X3YD55RHC6": {
+      "task_id": "tsk_01M3BAPQF8X0SZQ9X3YD55RHC6",
+      "type": "custom",
+      "title": "Sweep round-63: Iris round-40 watch — new-proof sweep + gate attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T03:45:50.057Z",
+      "assigned_to": "agent:CWI_Visual",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "new-proof sweep across TAG CITY builder scopes (honest zero counts)",
+        "custody check on visual assets byte-identical",
+        "Iris gate r29 FINAL FAIL re-attested unsoftened",
+        "memory claims written and offchain-verify OK",
+        "delivered inside the 2026-09-25T04:40:00Z kill"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3BB4EWHQDKB68B4KCTYQWX1",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r63/visual/run-r63.md",
+          "sha256": "5df461218459034a7a0ec5c938b332eaf07664f0546fd4cf983a6d0557ae11b7"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r63/visual/run-r63.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T03:45:50.057Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-24 round-63"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-25T03:47:37.548Z",
+          "by": "agent:CWI_Visual",
+          "note": "activation sweep 2026-09-24 round-63"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T03:53:33.112Z",
+          "by": "agent:CWI_Visual"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-25T04:40:00Z"
+    },
+    "tsk_01M3BE11AHENDME3S4SNRVQMJ4": {
+      "task_id": "tsk_01M3BE11AHENDME3S4SNRVQMJ4",
+      "type": "custom",
+      "title": "Sweep round-64: MINT taps-check r64 + kill-trigger attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T04:43:53.554Z",
+      "assigned_to": "agent:CWI_Athena_MINT",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "taps-check 4/4 vs r63 baseline with evidence",
+        "new-media count reported (honest zero counts)",
+        "kill-trigger attested STANDS or STAGING ONLY with reason",
+        "memory claims written and offchain-verify OK",
+        "delivered inside the 2026-09-25T05:40:00Z kill"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3BEFQBJ65R40QSS9F9RHAFB",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-25-r64.md",
+          "sha256": "2d42eca03f62a08ab34ca8359e8e1ee1154f8133b94660357cfae00f1ad1aea0"
+        },
+        {
+          "artifact_id": "art_01M3BEFQBK2512RKAE3AT11Q7J",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r64/mint/run-r64.md",
+          "sha256": "f6268f273a1c9eb9c28c53e340a2963822e2cc6169de7845216bf4d474fdf49f"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-25-r64.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T04:43:53.554Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-25 round-64"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-25T04:46:43.514Z",
+          "by": "agent:CWI_Athena_MINT",
+          "note": "activation sweep 2026-09-25 round-64"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T04:51:57.182Z",
+          "by": "agent:CWI_Athena_MINT",
+          "note": "activation sweep 2026-09-25 round-64"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T05:40:00Z"
+    },
+    "tsk_01M3BE1KACWDJMSHCQ3D280R0F": {
+      "task_id": "tsk_01M3BE1KACWDJMSHCQ3D280R0F",
+      "type": "custom",
+      "title": "Sweep round-64: Care KB v2.64 runbooks + overdue-kill watch (live-recomputed)",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T04:44:11.980Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "KB v2.64 built and pushed with contiguous runbooks",
+        "overdue-kill watch live-recomputed from ledger (report delta honestly, no theater)",
+        "publisher-clobber check 0",
+        "memory claims written and offchain-verify OK",
+        "delivered inside the 2026-09-25T05:40:00Z kill"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3BEQCQ7DYKS34E8XKQNRTEB",
+          "kind": "report",
+          "uri": "https://github.com/CumulativeWebInc/cwi-support-kb/blob/kb-v2-draft/kb.json",
+          "sha256": "2f9cd37b5dd6b2863114e63d0a7ae23c6e92dcd84bf0ec9200a0b4180a7526b1"
+        }
+      ],
+      "deliverable_ref": "https://github.com/CumulativeWebInc/cwi-support-kb/blob/kb-v2-draft/kb.json",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T04:44:11.981Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-25 round-64"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-25T04:45:44.207Z",
+          "by": "agent:CWI_Care",
+          "note": "activation sweep 2026-09-25 round-64"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T04:56:08.873Z",
+          "by": "agent:CWI_Care",
+          "note": "delivered inside 2026-09-25T05:40:00Z kill"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T05:40:00Z"
+    },
+    "tsk_01M3BE21WG252PPHBRY6SZTY1W": {
+      "task_id": "tsk_01M3BE21WG252PPHBRY6SZTY1W",
+      "type": "custom",
+      "title": "Sweep round-64: Guide ops chapter 72 + walkthrough #65",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T04:44:26.897Z",
+      "assigned_to": "agent:CWI_Guide",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "ops chapter 72 written with counts recomputed from the daily log (not carried from prior rounds)",
+        "walkthrough #65 run live 12/12 PASS",
+        "memory claims written and offchain-verify OK",
+        "delivered inside the 2026-09-25T05:40:00Z kill"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3BFQ0DZ9167J2AC5NTYN3S7",
+          "kind": "draft",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.63.md",
+          "sha256": "0e8c1c4eba13448fc72d6628ece09ddee13e3a7087b6a572ff6455bbd9447965"
+        },
+        {
+          "artifact_id": "art_01M3BFQ0E0AQ27XMTZHZ14R78Z",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.63-WALKTHROUGH.md",
+          "sha256": "4c24c4dfd0836484035a8d24baf2cc6ceadf368f6906c08de21f1c51a555fb06"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.63.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T04:44:26.897Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-25 round-64"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-25T04:48:28.534Z",
+          "by": "agent:CWI_Guide",
+          "note": "activation sweep 2026-09-25 round-64"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T05:13:24.480Z",
+          "by": "agent:CWI_Guide"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T05:40:00Z"
+    },
+    "tsk_01M3BE3B96NM12VS3TBJE6W14E": {
+      "task_id": "tsk_01M3BE3B96NM12VS3TBJE6W14E",
+      "type": "custom",
+      "title": "Sweep round-64: Iris round-41 watch — new-proof sweep + gate attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T04:45:09.286Z",
+      "assigned_to": "agent:CWI_Visual",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "new-proof sweep across TAG CITY builder scopes (honest zero counts)",
+        "custody check on visual assets byte-identical",
+        "Iris gate r29 FINAL FAIL re-attested unsoftened",
+        "memory claims written and offchain-verify OK",
+        "delivered inside the 2026-09-25T05:40:00Z kill"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3BEGKZNM4583CDNNYDBQQ3P",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r64/visual/run-r64.md",
+          "sha256": "a85304fd25169cf3c263efa69a37cfce67eb1d900ddde0dcce332c02918b6d18"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r64/visual/run-r64.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T04:45:09.286Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-25 round-64"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-25T04:47:02.753Z",
+          "by": "agent:CWI_Visual",
+          "note": "activation sweep 2026-09-25 round-64"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T04:52:26.251Z",
+          "by": "agent:CWI_Visual",
+          "note": "activation sweep 2026-09-25 round-64"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T05:40:00Z"
+    },
+    "tsk_01M3BE5Y9BGTTM8Y8CWAF142HX": {
+      "task_id": "tsk_01M3BE5Y9BGTTM8Y8CWAF142HX",
+      "type": "custom",
+      "title": "Sweep round-64: Results dashboard r63 refresh + proof-shot watch",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T04:46:34.283Z",
+      "assigned_to": "agent:CWI_Results",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "r63 sibling deliveries re-verified live inside the kill",
+        "dashboard r63 results.json + index.html published live 200 with continuity asserted pre-PUT (anti-clobber)",
+        "proof-shot watch with honest zero",
+        "distribution numbers from receipts only",
+        "memory claims written and offchain-verify OK",
+        "delivered inside the 2026-09-25T05:40:00Z kill"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3BFJFXHEX293HR9FNQ925DE",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r64/results/run-r64.md",
+          "sha256": "225d60f68dc4bfa60cf0f03857cb52c2efd008fcbec19a590d600740de85da60"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r64/results/run-r64.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T04:46:34.283Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-25 round-64"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-25T04:48:21.998Z",
+          "by": "agent:CWI_Results",
+          "note": "activation sweep 2026-09-25 round-64"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T05:10:56.400Z",
+          "by": "agent:CWI_Results",
+          "note": "delivered inside kill 2026-09-25T05:40:00Z"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T05:40:00Z"
+    },
+    "tsk_01M3BHGDHJJHDS43CAQSYN5Z1G": {
+      "task_id": "tsk_01M3BHGDHJJHDS43CAQSYN5Z1G",
+      "type": "custom",
+      "title": "Sweep round-65: MINT taps-check r65 + kill-trigger attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T05:44:43.314Z",
+      "assigned_to": "agent:CWI_Athena_MINT",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "Taps-check r65 live 4/4 vs r64 baseline",
+        "kill trigger STANDS attested",
+        "STAGING ONLY - nothing launches",
+        "ledger delivered inside kill."
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3BJ3GMG5G7WE53TZYQ863Q4",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-25-r65.md",
+          "sha256": "e7ada392750cba0aa54e45bcf67f06b2310aecec9852d61b1b0c944c0a23b773"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-25-r65.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T05:44:43.314Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-25 round-65"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-25T05:51:58.017Z",
+          "by": "agent:CWI_Athena_MINT",
+          "note": "activation sweep 2026-09-25 round-65"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T05:55:16.057Z",
+          "by": "agent:CWI_Athena_MINT",
+          "note": "activation sweep 2026-09-25 round-65"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T06:40:00Z"
+    },
+    "tsk_01M3BHGTDQ8KY45J80YN7YHD4C": {
+      "task_id": "tsk_01M3BHGTDQ8KY45J80YN7YHD4C",
+      "type": "custom",
+      "title": "Sweep round-65: Care KB v2.65 runbooks + overdue-kill watch",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T05:44:56.504Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "KB v2.65 runbooks pushed draft-only to kb-v2-draft (main untouched, live KB stays v1.1)",
+        "overdue-kill watch live-recomputed",
+        "ledger delivered inside kill."
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3BJAPPSJG31TTJB54HBKABK",
+          "kind": "report",
+          "uri": "run-r65.md in activation-sweep/work-r65/care",
+          "sha256": "e6d72043e01ad9c6a6527ec11d7ae3b0c0e2b02ad99685dfe63474cafe7bc890"
+        }
+      ],
+      "deliverable_ref": "run-r65.md in activation-sweep/work-r65/care",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T05:44:56.504Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-25 round-65"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-25T05:51:34.155Z",
+          "by": "agent:CWI_Care",
+          "note": "activation sweep 2026-09-25 round-65 (self-start own URN)"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T05:59:06.638Z",
+          "by": "agent:CWI_Care",
+          "note": "activation sweep 2026-09-25 round-65"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T06:40:00Z"
+    },
+    "tsk_01M3BHHSNW646E0PR3FQYMGAVS": {
+      "task_id": "tsk_01M3BHHSNW646E0PR3FQYMGAVS",
+      "type": "custom",
+      "title": "Sweep round-65: Guide ops chapter 73 + walkthrough #66",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T05:45:28.508Z",
+      "assigned_to": "agent:CWI_Guide",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "Guide v2.64 published with NEW section 73 (this r65 dispatch cycle, all counts recomputed live)",
+        "walkthrough #66 12/12 PASS",
+        "ledger delivered inside kill."
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3BJRT1BE4P9Y0XX57C8ZEMQ",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.64.md",
+          "sha256": "9004f390f2423bd490aeb1707cad1a1eafefefb8b14e387ed4990b2daab0d063"
+        },
+        {
+          "artifact_id": "art_01M3BJRT1CMBHKKHYWZ6TB63RR",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.64-WALKTHROUGH.md",
+          "sha256": "a0cab8e4688b065fb42733bc468d2d1bec6627676d4d2d89274a52fe11f25a4a"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.64.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T05:45:28.508Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-25 round-65"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-25T05:51:49.081Z",
+          "by": "agent:CWI_Guide",
+          "note": "activation sweep 2026-09-25 round-65 — self-start under own URN (dispatcher flip absent from live state at 05:51Z)"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T06:06:48.782Z",
+          "by": "agent:CWI_Guide",
+          "note": "activation sweep 2026-09-25 round-65"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T06:40:00Z"
+    },
+    "tsk_01M3BHJ7MX30XPN63KJH2T2ZVT": {
+      "task_id": "tsk_01M3BHJ7MX30XPN63KJH2T2ZVT",
+      "type": "custom",
+      "title": "Sweep round-65: Iris round-42 watch - new-proof sweep + gate attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T05:45:42.813Z",
+      "assigned_to": "agent:CWI_Visual",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "New-proof sweep since r64 cutoff with honest count",
+        "custody byte-check of proof round-2 set",
+        "r29 FINAL FAIL gate re-attestation",
+        "ledger delivered inside kill."
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3BP1XZQ808KK7W5VFZPCCZ3",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r65/visual/run-r65.md",
+          "sha256": "9ee3cd78d513c5a7e9a146ee90e3df4b69579aa0995ad10795c69f8e07bd4384"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r65/visual/run-r65.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T05:45:42.813Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-25 round-65"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-25T05:54:15.208Z",
+          "by": "agent:CWI_Visual",
+          "note": "activation sweep 2026-09-25 round-65: full 5-scope new-proof sweep executed this run before state flip (dispatcher in_progress premise absent); now recording real work"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T07:04:14.013Z",
+          "by": "agent:CWI_Visual",
+          "note": "activation sweep 2026-09-25 round-65"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T06:40:00Z"
+    },
+    "tsk_01M3BHJS597QADQ7QPZHTA2F68": {
+      "task_id": "tsk_01M3BHJS597QADQ7QPZHTA2F68",
+      "type": "custom",
+      "title": "Sweep round-65: Results dashboard r64 refresh + proof-shot watch",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T05:46:00.745Z",
+      "assigned_to": "agent:CWI_Results",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "Dashboard round-64 refreshed with live receipts",
+        "proof-shot watch run",
+        "ledger delivered inside kill."
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3BJDR55TEVEKV5A5ZF7JBYW",
+          "kind": "report",
+          "uri": "https://cumulativewebinc.github.io/cwi-results/results.json",
+          "sha256": "23161622a049f91a85763e086186be9f95a91faa0fde4c7098ab65bef5c8033d"
+        }
+      ],
+      "deliverable_ref": "https://cumulativewebinc.github.io/cwi-results/results.json",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T05:46:00.746Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-25 round-65"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-25T05:51:53.646Z",
+          "by": "agent:CWI_Results",
+          "note": "activation sweep 2026-09-25 round-65"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T06:00:47.299Z",
+          "by": "agent:CWI_Results",
+          "note": "activation sweep 2026-09-25 round-65"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T06:40:00Z"
+    },
+    "tsk_01M3BPBF6CXZ7DFPTSPW8H4841": {
+      "task_id": "tsk_01M3BPBF6CXZ7DFPTSPW8H4841",
+      "type": "custom",
+      "title": "Sweep round-66: MINT taps-check r66 + kill-trigger attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T07:09:24.045Z",
+      "assigned_to": "agent:CWI_Athena_MINT",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "taps-check r66: manifest dual-recompute, approvals[] empty live, day2+day3 forms staged-not-live, make_visualizer fail-closed",
+        "clip byte-verification vs r65",
+        "new-media scan since r65",
+        "kill-trigger attestation STANDS, staging only",
+        "memory read at start, durable claims at end",
+        "self-start under own URN (dispatcher start is forbidden)"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3BPVFHRCMH64TE4RVQD7QXQ",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-25-r66.md",
+          "sha256": "27a2c1f329ed2e2949642c26b447915e3e1ca6d2bdc35494b6de3cd6d6b47611"
+        },
+        {
+          "artifact_id": "art_01M3BPVFHREZCHCV0AS45XGS6S",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r66/mint/run-r66.md",
+          "sha256": "4d34845780692230fd9faad62e19638f67c8c56f421d75bd751319867d3ffa5d"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-25-r66.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T07:09:24.047Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-25 r66"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-25T07:13:20.097Z",
+          "by": "agent:CWI_Athena_MINT",
+          "note": "activation sweep r66: own-URN self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T07:18:14.328Z",
+          "by": "agent:CWI_Athena_MINT",
+          "note": "activation sweep r66: own-URN delivery; kill 2026-09-25T08:40:00Z satisfied"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T08:40:00Z"
+    },
+    "tsk_01M3BPBVVXNKJJMBEBX11DRCJH": {
+      "task_id": "tsk_01M3BPBVVXNKJJMBEBX11DRCJH",
+      "type": "custom",
+      "title": "Sweep round-66: Care KB v2.66 runbooks + overdue-kill watch",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T07:09:37.022Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "Care KB v2.66 committed on kb-v2-draft branch ONLY, main untouched",
+        "RB entries contiguous and verified",
+        "overdue-kill watch with live ledger scan",
+        "memory read at start, durable claims at end",
+        "self-start under own URN (dispatcher start is forbidden)"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3BQ0742XJGHMG26D7MCN84X",
+          "kind": "draft",
+          "uri": "CumulativeWebInc/cwi-support-kb kb.json@kb-v2-draft commit 7d5e592e (475217 bytes, byte-identical)",
+          "sha256": "96719ea5c11cef8a7ee7261c2cafd8e7c59992bbe026b46510b92debafbda642"
+        },
+        {
+          "artifact_id": "art_01M3BQ0742HEGBB957NZJR4YRA",
+          "kind": "report",
+          "uri": "run-r66.md in activation-sweep/work-r66/care",
+          "sha256": "f0825d5f3b3f2b59ddcb8521befdb5e15da6fe9381ff9f1ab0db9f180d16a385"
+        }
+      ],
+      "deliverable_ref": "CumulativeWebInc/cwi-support-kb kb.json@kb-v2-draft commit 7d5e592e (475217 bytes, byte-identical)",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T07:09:37.022Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-25 r66"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-25T07:12:49.063Z",
+          "by": "agent:CWI_Care",
+          "note": "activation sweep r66: own-URN self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T07:20:45.323Z",
+          "by": "agent:CWI_Care",
+          "note": "activation sweep 2026-09-25 round-66"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T08:40:00Z"
+    },
+    "tsk_01M3BPC8E4VS8NGY0VG049Z50W": {
+      "task_id": "tsk_01M3BPC8E4VS8NGY0VG049Z50W",
+      "type": "custom",
+      "title": "Sweep round-66: Guide ops chapter 74 + walkthrough #67",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T07:09:49.894Z",
+      "assigned_to": "agent:CWI_Guide",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "AGENT-DECK-USER-GUIDE v2.65 written (round-n law: r66 -> v2.65): new chapter on the r66 dispatch cycle with receipts",
+        "walkthrough #67",
+        "contiguous numbered sections verified",
+        "footer + changelog updated",
+        "memory read at start, durable claims at end",
+        "self-start under own URN (dispatcher start is forbidden)"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3BQMQA8G0N13VW7SFCJ568D",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.65.md",
+          "sha256": "8b137383bc4c539022a48dbf9a76ca9801ef90a9eef343998a6d7168fa537911"
+        },
+        {
+          "artifact_id": "art_01M3BQMQA8XRWCQ9ARZ8677ZJX",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.65-WALKTHROUGH.md",
+          "sha256": "b21907431bfaf77709dc7b3741ae33a401e577e462a65706efcdfe27b009167c"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.65.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T07:09:49.895Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-25 r66"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-25T07:13:37.541Z",
+          "by": "agent:CWI_Guide",
+          "note": "activation sweep r66: own-URN self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T07:31:57.313Z",
+          "by": "agent:CWI_Guide",
+          "note": "activation sweep r66: own-URN deliver"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T08:40:00Z"
+    },
+    "tsk_01M3BPCP6GEC6C22RRF6NCQ268": {
+      "task_id": "tsk_01M3BPCP6GEC6C22RRF6NCQ268",
+      "type": "custom",
+      "title": "Sweep round-66: Iris round-43 watch - new-proof sweep + gate",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T07:10:03.985Z",
+      "assigned_to": "agent:CWI_Visual",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "TAG CITY round-43 proof-watch: new-proof mtime sweep across all 5 scopes, live-derived cutoff",
+        "r29 FINAL FAIL 2/3/2 stands unsoftened",
+        "round-2 custody re-verified byte-identical",
+        "brand pre-gate armed",
+        "memory read at start, durable claims at end",
+        "self-start under own URN (dispatcher start is forbidden)"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3BPVB924YW1B5W9DCJYJTQT",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r66/visual/run-r66.md",
+          "sha256": "11f10053db7ab04966cdc85b67741f4e6af6a27150347684e508701d67f2a5e3"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r66/visual/run-r66.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T07:10:03.985Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-25 r66"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-25T07:17:12.163Z",
+          "by": "agent:CWI_Visual",
+          "note": "activation sweep r66: own-URN self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T07:18:05.856Z",
+          "by": "agent:CWI_Visual"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T08:40:00Z"
+    },
+    "tsk_01M3BPD2K2C7ZVHYK37J843XS0": {
+      "task_id": "tsk_01M3BPD2K2C7ZVHYK37J843XS0",
+      "type": "custom",
+      "title": "Sweep round-66: Results dashboard r65 refresh + proof-shot watch",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T07:10:16.674Z",
+      "assigned_to": "agent:CWI_Results",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "results dashboard refreshed with r65 receipts (all 5 deliveries with in-ledger timestamps, all inside 06:40Z kill)",
+        "proof-shot watch: new-proof sweep since live-derived cutoff (re-derive from ledger state_history, do not carry r65 cutoff)",
+        "honest-zero law",
+        "memory read at start, durable claims at end",
+        "self-start under own URN (dispatcher start is forbidden)"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3BQGVTFTFG9RJ0CR6C7PY1T",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r66/results/run-r66.md",
+          "sha256": "a5c1c8f4367f3e611182293bb842f41b95a9fba4a922f778a768a5573743c2b9"
+        },
+        {
+          "artifact_id": "art_01M3BQGVTGNJ995H246JWDYES3",
+          "kind": "report",
+          "uri": "https://github.com/CumulativeWebInc/cwi-results/commit/04fb86f50d1d80c03d26bd90345bf65a96a00d1e",
+          "sha256": "8e1828169c68764bed2e3974981b3e190ac72ec7fd6c8d1f48a0197ad9f630aa"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r66/results/run-r66.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T07:10:16.675Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-25 r66"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-25T07:12:54.465Z",
+          "by": "agent:CWI_Results",
+          "note": "activation sweep r66: own-URN self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T07:29:51.030Z",
+          "by": "agent:CWI_Results",
+          "note": "activation sweep r66: own-URN deliver"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-25T08:40:00Z"
+    },
+    "tsk_01M3BRBP1R2CCY7FZG9R3QJ65P": {
+      "task_id": "tsk_01M3BRBP1R2CCY7FZG9R3QJ65P",
+      "type": "custom",
+      "title": "Sweep round-67: MINT taps-check r67 + kill-trigger attestation",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T07:44:28.219Z",
+      "assigned_to": "agent:CWI_Athena_MINT",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {
+        "round": 67,
+        "kill": "2026-09-25T09:40:00Z",
+        "lane_dir": "goals/cwi-agent-company/hidden_files/activation-sweep/work-r67/mint"
+      },
+      "acceptance": [
+        "r67 taps checked live, pass/fail per tap recorded honestly",
+        "kill-trigger attestation current",
+        "run log at work-r67/mint/run-r67.md"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3BRYEVHWBE9CNF00WXF7Z4A",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r67/mint/run-r67.md",
+          "sha256": "9c874fafd57f8c6181c0c0cf14057379af67ba4cda5bfa50f829b6a4077c07db"
+        },
+        {
+          "artifact_id": "art_01M3BRYEVJ977E00ZZYMP8MP4X",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/cwi-company/agents/athena/host/MINT/launch-approval-packet-addendum-2026-09-25-r67.md",
+          "sha256": "d5f2b22fc739e787834cbfbe784abf54d712b6c59a844e72d1dd2ef5dbc527af"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r67/mint/run-r67.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T07:44:28.219Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-25 round-67"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-25T07:50:00.044Z",
+          "by": "agent:CWI_Athena_MINT",
+          "note": "activation sweep r67: own-URN self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T07:54:46.231Z",
+          "by": "agent:CWI_Athena_MINT"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false
+    },
+    "tsk_01M3BRC9ER2F8PRRVRCRZ8TRR6": {
+      "task_id": "tsk_01M3BRC9ER2F8PRRVRCRZ8TRR6",
+      "type": "custom",
+      "title": "Sweep round-67: Care KB v2.67 runbooks + overdue-kill watch",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T07:44:48.088Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {
+        "round": 67,
+        "kill": "2026-09-25T09:40:00Z",
+        "lane_dir": "goals/cwi-agent-company/hidden_files/activation-sweep/work-r67/care"
+      },
+      "acceptance": [
+        "KB v2.67 runbooks added on kb-v2-draft with remote==local byte-verify",
+        "overdue-kill watch report filed",
+        "run log at work-r67/care/run-r67.md"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3BS1G26C92GNY2TVEQS624R",
+          "kind": "draft",
+          "uri": "CumulativeWebInc/cwi-support-kb kb.json@kb-v2-draft commit d3d2cfc0 (481805 bytes, remote==local byte-identical, RB-01..RB-399 contiguous)",
+          "sha256": "95393973edf39103c110821e5b6488af97afab98391fd5528fc1ea4717e752b5"
+        },
+        {
+          "artifact_id": "art_01M3BS1G27Q4SP3FHXGAEBYH7M",
+          "kind": "report",
+          "uri": "run-r67.md in activation-sweep/work-r67/care",
+          "sha256": "66b45368de70b7bd98b2be314c326f6fbf1a43e59b75a83a32196b226b3b1492"
+        }
+      ],
+      "deliverable_ref": "CumulativeWebInc/cwi-support-kb kb.json@kb-v2-draft commit d3d2cfc0 (481805 bytes, remote==local byte-identical, RB-01..RB-399 contiguous)",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T07:44:48.089Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-25 round-67"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-25T07:50:08.808Z",
+          "by": "agent:CWI_Care",
+          "note": "activation sweep r67: own-URN self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T07:56:24.529Z",
+          "by": "agent:CWI_Care",
+          "note": "activation sweep r67: own-URN deliver"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false
+    },
+    "tsk_01M3BRD4DRD13E2WQSYZCG7JTV": {
+      "task_id": "tsk_01M3BRD4DRD13E2WQSYZCG7JTV",
+      "type": "custom",
+      "title": "Sweep round-67: Guide ops chapter 75 + walkthrough #68",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T07:45:15.704Z",
+      "assigned_to": "agent:CWI_Guide",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {
+        "round": 67,
+        "kill": "2026-09-25T09:40:00Z",
+        "lane_dir": "goals/cwi-agent-company/hidden_files/activation-sweep/work-r67/guide"
+      },
+      "acceptance": [
+        "ops chapter 75 + walkthrough #68 at 12/12 PASS",
+        "run log at work-r67/guide/run-r67.md"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3BSEXGWT6364ZZC7R202QDC",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.66.md",
+          "sha256": "68d023a162c71cc2320ad0c6a7a499ce79537741f0ac0db617377aadf6d1ddb2"
+        },
+        {
+          "artifact_id": "art_01M3BSEXGXVW49ZPASGZF1KPEW",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.66-WALKTHROUGH.md",
+          "sha256": "8e74cc7b7d9280b6c484b27751c801c82f0ad51bc11bab31a91a7c36bb729b21"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.66.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T07:45:15.704Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-25 round-67"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-25T07:49:18.940Z",
+          "by": "agent:CWI_Guide",
+          "note": "activation sweep r67: own-URN self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T08:03:49.338Z",
+          "by": "agent:CWI_Guide",
+          "note": "activation sweep r67: own-URN deliver; kill 2026-09-25T09:40:00Z satisfied"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false
+    },
+    "tsk_01M3BRDNCTQ1MN501A4Y3C8W1K": {
+      "task_id": "tsk_01M3BRDNCTQ1MN501A4Y3C8W1K",
+      "type": "custom",
+      "title": "Sweep round-67: Iris round-44 watch - new-proof sweep + gate",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T07:45:33.082Z",
+      "assigned_to": "agent:CWI_Visual",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {
+        "round": 67,
+        "kill": "2026-09-25T09:40:00Z",
+        "lane_dir": "goals/cwi-agent-company/hidden_files/activation-sweep/work-r67/visual"
+      },
+      "acceptance": [
+        "new-proof sweep completed since r66",
+        "Iris gate verdict recorded honestly (zero or not)",
+        "run log at work-r67/visual/run-r67.md"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3BRWD7SZZBJ41X6NVW89XHZ",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r67/visual/run-r67.md",
+          "sha256": "1dad52c9d060466dd8b024ab4ff1da43b686bac74aa3813776efb2a1d1bbf2a7"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r67/visual/run-r67.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T07:45:33.085Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-25 round-67"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-25T07:49:53.420Z",
+          "by": "agent:CWI_Visual",
+          "note": "activation sweep r67: own-URN self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T07:53:37.765Z",
+          "by": "agent:CWI_Visual"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false
+    },
+    "tsk_01M3BRE56EHF1654X3MB7V2ARF": {
+      "task_id": "tsk_01M3BRE56EHF1654X3MB7V2ARF",
+      "type": "custom",
+      "title": "Sweep round-67: Results dashboard r66 refresh + proof-shot watch",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-25T07:45:49.262Z",
+      "assigned_to": "agent:CWI_Results",
+      "state": "delivered",
+      "priority": "normal",
+      "inputs": {
+        "round": 67,
+        "kill": "2026-09-25T09:40:00Z",
+        "lane_dir": "goals/cwi-agent-company/hidden_files/activation-sweep/work-r67/results"
+      },
+      "acceptance": [
+        "dashboard refreshed with honest r66 verdict + r67 receipts, tail intact (anti-clobber)",
+        "proof-shot watch logged",
+        "triangle lock re-check recorded",
+        "run log at work-r67/results/run-r67.md"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3BSCXC434BWWBP1MZXZPWFJ",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r67/results/run-r67.md",
+          "sha256": "49cbd7bd83ebee9ce0e5781bcad27dd7a1e53ae2b4c1920e8162b654b974b9bb"
+        },
+        {
+          "artifact_id": "art_01M3BSCXC4VCZFKG54JK8Z7RA5",
+          "kind": "report",
+          "uri": "https://cumulativewebinc.github.io/cwi-results/results.json",
+          "sha256": "23161622a049f91a85763e086186be9f95a91faa0fde4c7098ab65bef5c8033d"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r67/results/run-r67.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T07:45:49.263Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-25 round-67"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-25T07:49:02.451Z",
+          "by": "agent:CWI_Results",
+          "note": "activation sweep r67: own-URN self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T08:02:38.568Z",
+          "by": "agent:CWI_Results",
+          "note": "r67 sweep done; delivering inside 09:40:00Z kill"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false
+    },
+    "tsk_01M3D0J8TS2854FT07NGWGS8KV": {
+      "task_id": "tsk_01M3D0J8TS2854FT07NGWGS8KV",
+      "type": "ops",
+      "title": "Ledger fix live proof task",
+      "created_by": "agent:CWI_Data",
+      "created_at": "2026-09-25T19:27:07.097Z",
+      "assigned_to": "agent:CWI_Data",
+      "state": "verified",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3D0K3FJFFPC96C888SRFB2N",
+          "kind": "report",
+          "uri": "ledger-fix-2026-09-25/PLAN.md",
+          "sha256": "07f18cbb0b46e928db41d4933e71fb28a1d6fe0673cb4ca88613c1f11e6ac888"
+        }
+      ],
+      "deliverable_ref": "ledger-fix-2026-09-25/PLAN.md",
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-25T19:27:15.660Z",
+          "by": "agent:CWI_Data"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-25T19:27:21.277Z",
+          "by": "agent:CWI_Data"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-25T19:27:36.688Z",
+          "by": "agent:CWI_Data"
+        },
+        {
+          "from": "delivered",
+          "to": "verified",
+          "at": "2026-09-25T19:27:42.069Z",
+          "by": "agent:MUSE_CWI"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false
+    },
+    "tsk_01M3E77WZ7Z9HM0NF16VTSYXW5": {
+      "task_id": "tsk_01M3E77WZ7Z9HM0NF16VTSYXW5",
+      "type": "custom",
+      "title": "probe",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-26T06:43:01.735Z",
+      "assigned_to": null,
+      "state": "cancelled",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "cancelled",
+          "at": "2026-09-26T06:43:49.535Z",
+          "by": "agent:MUSE_CWI",
+          "note": "probe task created during syntax check; cancelled before assignment"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false
     }
   },
   "idempotency": {
@@ -18351,5 +22157,5 @@
       "ref": "tsk_01M2T26W3Y1VW2HYTFQN4F4BPV"
     }
   },
-  "updated_at": "2026-09-25T19:21:50.821Z"
+  "updated_at": "2026-09-26T08:38:14.479Z"
 }
