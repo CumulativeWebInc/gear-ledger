@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23401,
-  "updated_at": "2026-09-26T14:45:13.947Z",
+  "version": 23402,
+  "updated_at": "2026-09-26T14:45:57.502Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -7882,6 +7882,38 @@
       "requires_black_approval": true,
       "sample": false,
       "deadline_at": "2026-09-26T18:50:00Z"
+    },
+    {
+      "task_id": "tsk_01M3F2W5KW8VTE7T7M5S34ASM9",
+      "type": "custom",
+      "title": "Sweep round-98: Care KB v2.97 + overdue-kill watch recompute",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-26T14:45:57.501Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "named result: KB v2.97 shipped on kb-v2-draft with entries RB-01.. contiguous, main untouched, drift gate passed",
+        "overdue-kill watch live-recomputed vs r97 baseline",
+        "measurement: blob sha256 + overdue count delta",
+        "kill: delivered by 2026-09-26T18:50:00Z or record FAIL",
+        "memory read at start, durable claims at end"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-26T14:45:57.501Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-26 round-98"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-26T18:50:00Z"
     }
   ],
   "presence": {
@@ -10370,6 +10402,11 @@
       "op": "task.create",
       "at": "2026-09-26T14:45:13.947Z",
       "ref": "tsk_01M3F2TV2QBP1CWA64JQ1NW619"
+    },
+    "activation-sweep-2026-09-26-r98-care": {
+      "op": "task.create",
+      "at": "2026-09-26T14:45:57.501Z",
+      "ref": "tsk_01M3F2W5KW8VTE7T7M5S34ASM9"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
