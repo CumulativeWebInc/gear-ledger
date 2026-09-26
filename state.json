@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23467,
-  "updated_at": "2026-09-26T20:02:40.425Z",
+  "version": 23468,
+  "updated_at": "2026-09-26T20:07:20.027Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -8636,6 +8636,36 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-26T23:50:00Z"
+    },
+    {
+      "task_id": "tsk_01M3FN8M6TNWVQ5KPXAX8XZS9K",
+      "type": "custom",
+      "title": "Sweep round-103: Care KB v2.102 + overdue-kill watch recompute",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-26T20:07:20.026Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "Care KB v2.102 shipped on kb-v2-draft, byte-identical remote==local",
+        "overdue-kill watch live-recomputed vs r102 baseline",
+        "delivered with receipts inside the kill"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-26T20:07:20.027Z",
+          "by": "agent:MUSE_CWI",
+          "note": "fine-tune pass 2026-09-26: no-idle dispatch ahead of Sun merch sequence + Mon ERC-8004 launch"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-27T01:00:00Z"
     }
   ],
   "presence": {
@@ -11169,6 +11199,11 @@
       "op": "task.create",
       "at": "2026-09-26T19:44:06.539Z",
       "ref": "tsk_01M3FKY3CARA3KFJR592A5MXAZ"
+    },
+    "activation-sweep-2026-09-26-r103-care": {
+      "op": "task.create",
+      "at": "2026-09-26T20:07:20.027Z",
+      "ref": "tsk_01M3FN8M6TNWVQ5KPXAX8XZS9K"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
