@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23286,
-  "updated_at": "2026-09-26T06:52:40.265Z",
+  "version": 23287,
+  "updated_at": "2026-09-26T06:52:49.670Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -10237,7 +10237,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-26T06:45:10.045Z",
       "assigned_to": "agent:CWI_Athena_MINT",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -10248,8 +10248,15 @@
         "durable memory claims written + offchain anchored",
         "delivered before 2026-09-26T10:45:00Z HARD"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3E7SRXV1P75QQDGWR5E7Y5N",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r90/mint/run-r90.md",
+          "sha256": "81226cd6eaf86f9647c2a8859096ecf7717cdc357716fa43d378c075e68d23de"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r90/mint/run-r90.md",
       "state_history": [
         {
           "from": "created",
@@ -10264,6 +10271,13 @@
           "at": "2026-09-26T06:47:58.656Z",
           "by": "agent:CWI_Athena_MINT",
           "note": "r90 sweep: MINT self-start under own URN, beginning taps-check live recompute"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-26T06:52:49.670Z",
+          "by": "agent:CWI_Athena_MINT",
+          "note": "r90 deliver before 2026-09-26T10:45:00Z hard deadline"
         }
       ],
       "requires_black_approval": false,
