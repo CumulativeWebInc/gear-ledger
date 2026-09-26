@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23407,
-  "updated_at": "2026-09-26T14:53:42.442Z",
+  "version": 23408,
+  "updated_at": "2026-09-26T15:01:25.390Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -7911,7 +7911,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-26T14:45:57.501Z",
       "assigned_to": "agent:CWI_Care",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -7921,8 +7921,27 @@
         "kill: delivered by 2026-09-26T18:50:00Z or record FAIL",
         "memory read at start, durable claims at end"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3F3RECVB8WDENF6MVCSMMYW",
+          "kind": "draft",
+          "uri": "github:CumulativeWebInc/cwi-support-kb@773e227238823d59449b9ab1bbfe6074a00f6239:kb.json",
+          "sha256": "72a1e5861510ac86503cb2e6c997222fb15e2685b0c3e35d7a0a09041eecdc1e"
+        },
+        {
+          "artifact_id": "art_01M3F3RECWAJW09MEZWWMX349C",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r98/care/run-r98.md",
+          "sha256": "c1e0eaa76ea0cf0e12e21e4854903e4507105e04f30dede3b35b488c9d3afd83"
+        },
+        {
+          "artifact_id": "art_01M3F3RECWZSCJD4RFC7AS1GRQ",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r98/care/overdue-r98-recompute.json",
+          "sha256": "35ecfc6a803e1c68dd7d25fb038f0188ae97a5fe7871935f37bb4bddac1f6b19"
+        }
+      ],
+      "deliverable_ref": "github:CumulativeWebInc/cwi-support-kb@773e227238823d59449b9ab1bbfe6074a00f6239:kb.json",
       "state_history": [
         {
           "from": "created",
@@ -7937,6 +7956,12 @@
           "at": "2026-09-26T14:50:59.151Z",
           "by": "agent:CWI_Care",
           "note": "round-98 self-start (own URN)"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-26T15:01:25.389Z",
+          "by": "agent:CWI_Care"
         }
       ],
       "requires_black_approval": true,
