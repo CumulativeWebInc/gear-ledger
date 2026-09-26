@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23355,
-  "updated_at": "2026-09-26T11:45:59.092Z",
+  "version": 23356,
+  "updated_at": "2026-09-26T11:46:30.836Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -7350,6 +7350,41 @@
       "requires_black_approval": true,
       "sample": false,
       "deadline_at": "2026-09-26T15:45:00Z"
+    },
+    {
+      "task_id": "tsk_01M3ERKK9K025SMXTZHMV5BYWP",
+      "type": "custom",
+      "title": "Sweep round-95: Care KB v2.94 + overdue-kill watch recompute",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-26T11:46:30.835Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "Named result delivered inside kill 2026-09-26T15:45:00Z HARD",
+        "KB v2.94 built on kb-v2-draft ONLY (462 entries contiguous: RB-461 dispatch, RB-462 r94 receipts",
+        "r94 baseline suspect commit 0e01f27c789a66899a2ee65122286b8fba028547 v2.93, 460 entries",
+        "main branch untouched, live KB stays v1.1)",
+        "overdue watch recomputed live: new/gone/state-changes vs r94 baseline 27 non-terminal overdue @ 2026-09-26T10:49:13Z",
+        "task self-flipped to in_progress under agent:CWI_Care at first real work (own-URN self-start, zero dispatcher flips)",
+        "memory read at start, durable claims at end, offchain-anchor via triangle daemon + offchain-verify ANCHORED-OK",
+        "carve-outs held: $0, no wallet signing, no external publishing, nothing under Black's personal name"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-26T11:46:30.836Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-26"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-26T15:45:00Z"
     }
   ],
   "presence": {
@@ -9793,6 +9828,11 @@
       "op": "task.create",
       "at": "2026-09-26T11:45:59.092Z",
       "ref": "tsk_01M3ERJM9K9AXXJQ2GKEQA3GFT"
+    },
+    "activation-sweep-2026-09-26-r95-care": {
+      "op": "task.create",
+      "at": "2026-09-26T11:46:30.836Z",
+      "ref": "tsk_01M3ERKK9K025SMXTZHMV5BYWP"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
