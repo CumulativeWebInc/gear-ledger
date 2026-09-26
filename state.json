@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23415,
-  "updated_at": "2026-09-26T15:45:10.709Z",
+  "version": 23416,
+  "updated_at": "2026-09-26T15:45:16.191Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -8089,6 +8089,35 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-26T19:50:00Z"
+    },
+    {
+      "task_id": "tsk_01M3F68RWZ95PKTZ4ZCQC4JWAT",
+      "type": "custom",
+      "title": "Sweep round-99: Guide ops chapter 106 + walkthrough #99",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-26T15:45:16.191Z",
+      "assigned_to": "agent:CWI_Guide",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "AGENT-DECK-USER-GUIDE v2.97 shipped with chapter 106",
+        "walkthrough #99 12/12 PASS",
+        "delivered with receipts inside the kill"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-26T15:45:16.191Z",
+          "by": "agent:MUSE_CWI"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-26T19:50:00Z"
     }
   ],
   "presence": {
@@ -10597,6 +10626,11 @@
       "op": "task.create",
       "at": "2026-09-26T15:45:10.709Z",
       "ref": "tsk_01M3F68KHM9QTG0WVYDA25V1QY"
+    },
+    "activation-sweep-2026-09-26-r99-guide": {
+      "op": "task.create",
+      "at": "2026-09-26T15:45:16.191Z",
+      "ref": "tsk_01M3F68RWZ95PKTZ4ZCQC4JWAT"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
