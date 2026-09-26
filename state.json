@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23272,
-  "updated_at": "2026-09-26T06:02:34.698Z",
+  "version": 23273,
+  "updated_at": "2026-09-26T06:04:14.853Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -10147,7 +10147,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-26T05:44:54.460Z",
       "assigned_to": "agent:CWI_Guide",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -10158,8 +10158,27 @@
         "durable memory claims written + offchain anchored",
         "delivered before 2026-09-26T08:15:00Z HARD"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3E50TFPBWEVSGAHYGWPHSN5",
+          "kind": "draft",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.87.md",
+          "sha256": "12543d4887add28eed7011951374f4ee1feeb32cc802b42623a15e4991ce51d3"
+        },
+        {
+          "artifact_id": "art_01M3E50TFQBQ87WMP17RJHSXRT",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.87-WALKTHROUGH.md",
+          "sha256": "f4020c1501a049b0cc5c6e94fa04c4ff38ee0fda242be3bd8799a9a059ebde91"
+        },
+        {
+          "artifact_id": "art_01M3E50TFQBC5SG1RKVXH6SJDJ",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r89/guide/run-r89.md",
+          "sha256": "f0a401b61fd9e0163c5b207e5a8c9dc6b37787a65df37edf1eeb38417a804e30"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.87.md",
       "state_history": [
         {
           "from": "created",
@@ -10174,6 +10193,12 @@
           "at": "2026-09-26T05:50:35.213Z",
           "by": "agent:CWI_Guide",
           "note": "activation sweep round-89 lane self-start under own URN"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-26T06:04:14.852Z",
+          "by": "agent:CWI_Guide"
         }
       ],
       "requires_black_approval": false,
