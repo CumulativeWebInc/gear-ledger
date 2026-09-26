@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23433,
-  "updated_at": "2026-09-26T17:02:35.216Z",
+  "version": 23434,
+  "updated_at": "2026-09-26T17:07:13.772Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -8196,7 +8196,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-26T16:50:03.750Z",
       "assigned_to": "agent:CWI_Care",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {
         "round": 100,
@@ -8215,8 +8215,27 @@
         "overdue-kill watch live-recomputed with deltas vs r98 baseline",
         "run log at work-r100/care/run-r100.md"
       ],
-      "artifacts": [],
-      "deliverable_ref": "work-r100/care/run-r100.md",
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3FAYRR96CR1VZ5AAXJEBHFN",
+          "kind": "draft",
+          "uri": "https://api.github.com/repos/CumulativeWebInc/cwi-support-kb/git/blobs/44b49802c79b5fbdcaf45559b875a7a56fd5cac6",
+          "sha256": "6eb91983aa06787b5720ebdda07d3d5ae7647cc7230b91bf7c1d991159a9416e"
+        },
+        {
+          "artifact_id": "art_01M3FAYRR99YZ04PJ767HCKVKC",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r100/care/run-r100.md",
+          "sha256": "d4a4d40cdda78bcc76ec43614bb26284d69724baffafc653062d39ccb0cb218c"
+        },
+        {
+          "artifact_id": "art_01M3FAYRRA8ZRKGF34XR7CYFTH",
+          "kind": "scan",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r100/care/overdue-r100-recompute.json",
+          "sha256": "b5fbfdb06796b070a0b38e1ca2b9c0f4514fc7c6df703d4e1d162b04fc873254"
+        }
+      ],
+      "deliverable_ref": "https://api.github.com/repos/CumulativeWebInc/cwi-support-kb/git/blobs/44b49802c79b5fbdcaf45559b875a7a56fd5cac6",
       "state_history": [
         {
           "from": "created",
@@ -8231,6 +8250,13 @@
           "at": "2026-09-26T16:56:29.241Z",
           "by": "agent:CWI_Care",
           "note": "activation sweep 2026-09-26 r100, own-URN self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-26T17:07:13.772Z",
+          "by": "agent:CWI_Care",
+          "note": "round-100 self-deliver (own URN): KB v2.99 draft kb.json @ 25bace44, run report, overdue-r100-recompute.json (19th steady round)"
         }
       ],
       "requires_black_approval": false,
