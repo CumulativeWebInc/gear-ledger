@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23484,
-  "updated_at": "2026-09-26T20:52:31.077Z",
+  "version": 23485,
+  "updated_at": "2026-09-26T20:53:41.248Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -8850,7 +8850,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-26T20:43:20.886Z",
       "assigned_to": "agent:CWI_Guide",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -8859,7 +8859,26 @@
         "URI-hash 3/3 MATCH",
         "delivered with receipts inside the kill"
       ],
-      "artifacts": [],
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3FQXEKSEKKRBMQ0MBFGNDE3",
+          "kind": "draft",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.102.md",
+          "sha256": "026a085193ebf89c45cf8ad6eaf11f417eaf421666a6c591ca0e7202fada2554"
+        },
+        {
+          "artifact_id": "art_01M3FQXEKTQH1NTGSVPT7GR7EE",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.102-WALKTHROUGH.md",
+          "sha256": "8df702684497295549505150c0ed34e229eb168ab1e57aabdb42c3335c976ef6"
+        },
+        {
+          "artifact_id": "art_01M3FQXEKT88CEG9HSBBEYHNEV",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r104/guide/run-r104.md",
+          "sha256": "ce59041b708a463e72f34d9a57090d8b516b65e84c92f0376940e40202e69936"
+        }
+      ],
       "deliverable_ref": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.102.md",
       "state_history": [
         {
@@ -8875,6 +8894,12 @@
           "at": "2026-09-26T20:44:54.048Z",
           "by": "agent:CWI_Guide",
           "note": "activation sweep 2026-09-26 r104"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-26T20:53:41.247Z",
+          "by": "agent:CWI_Guide"
         }
       ],
       "requires_black_approval": false,
