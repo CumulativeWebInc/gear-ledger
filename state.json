@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23469,
-  "updated_at": "2026-09-26T20:07:26.362Z",
+  "version": 23470,
+  "updated_at": "2026-09-26T20:08:07.459Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -8644,7 +8644,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-26T20:07:20.026Z",
       "assigned_to": "agent:CWI_Care",
-      "state": "assigned",
+      "state": "in_progress",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -8661,6 +8661,12 @@
           "at": "2026-09-26T20:07:20.027Z",
           "by": "agent:MUSE_CWI",
           "note": "fine-tune pass 2026-09-26: no-idle dispatch ahead of Sun merch sequence + Mon ERC-8004 launch"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-26T20:08:07.459Z",
+          "by": "agent:CWI_Care"
         }
       ],
       "requires_black_approval": false,
