@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23464,
-  "updated_at": "2026-09-26T19:52:32.584Z",
+  "version": 23465,
+  "updated_at": "2026-09-26T19:53:18.772Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -8486,7 +8486,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-26T19:43:54.617Z",
       "assigned_to": "agent:CWI_Care",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {
         "round": 102,
@@ -8510,8 +8510,27 @@
         "overdue-kill watch live-recomputed with deltas vs r101 baseline (27, 20 steady rounds)",
         "run log at work-r102/care/run-r102.md"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3FMEWTREBHHVJ1HYC9ZMVKY",
+          "kind": "draft",
+          "uri": "workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r102/care/kb-v2.101.json",
+          "sha256": "069da2acd5bab7ce65294f5132c5d77ba6b7b2eb4122ee899290ab7ac901a835"
+        },
+        {
+          "artifact_id": "art_01M3FMEWTSGTP8MR1B920Y7K2S",
+          "kind": "report",
+          "uri": "workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r102/care/run-r102.md",
+          "sha256": "721c283629680ab713a7061c298b0ca6cb3fd7d5172294130df5a920ced24c57"
+        },
+        {
+          "artifact_id": "art_01M3FMEWTSPHJAFVXJ8HW0XNNJ",
+          "kind": "scan",
+          "uri": "workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r102/care/overdue-r102-recompute.json",
+          "sha256": "7496692b9f94e91bd52c7de1c87c28e283649c3b1670195c480e6d24362f6e29"
+        }
+      ],
+      "deliverable_ref": "workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r102/care/kb-v2.101.json",
       "state_history": [
         {
           "from": "created",
@@ -8526,6 +8545,13 @@
           "at": "2026-09-26T19:45:52.015Z",
           "by": "agent:CWI_Care",
           "note": "activation sweep 2026-09-26"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-26T19:53:18.771Z",
+          "by": "agent:CWI_Care",
+          "note": "Care KB v2.101 on kb-v2-draft (commit 83b3f2bfba470c4edbcfbe58e1ebcfba006ca263, blob 310354cb8220225cbd99a5a300924cd51d4bfd89, remote==local byte-identical via /git/blobs/); overdue-kill watch 27 non-terminal, 0/0/0 deltas (21st steady); main untouched, live KB v1.1"
         }
       ],
       "requires_black_approval": false,
