@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23459,
-  "updated_at": "2026-09-26T19:42:32.206Z",
+  "version": 23460,
+  "updated_at": "2026-09-26T19:43:54.618Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -8478,6 +8478,52 @@
       ],
       "requires_black_approval": true,
       "sample": false
+    },
+    {
+      "task_id": "tsk_01M3FKXQQRR9EX6BYQPJ4VGE1V",
+      "type": "custom",
+      "title": "Sweep round-102: Care KB v2.101 + overdue-kill watch recompute",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-26T19:43:54.617Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {
+        "round": 102,
+        "kill": "2026-09-26T23:50:00Z",
+        "lane_dir": "goals/cwi-agent-company/hidden_files/activation-sweep/work-r102/care",
+        "base_version": "v2.100",
+        "base_entries": 474,
+        "base_commit": "2658c2b3111daa2ea0623b91fae93cc557cac912",
+        "base_blob": "4bc217657e4188669a83d0173f4e8cd381364460",
+        "base_bytes": 606646,
+        "overdue_baseline": 27,
+        "overdue_steady_rounds": 20,
+        "r101_receipts": {
+          "care": "tsk_01M3FGJ6V7TRSFY9EWPSV17D37 delivered 2026-09-26T18:52:57.006Z",
+          "guide": "tsk_01M3FGJNSN288EZ0DA8GE5FJSP delivered 2026-09-26T19:03:37.211Z",
+          "mint": "tsk_01M3F67S824RZAG72EX5AN9V0T in_progress at dispatch (kill 2026-09-26T19:50:00Z not yet hit; worker-owned verdict pending)"
+        }
+      },
+      "acceptance": [
+        "KB v2.101 shipped on kb-v2-draft with remote==local byte-verify",
+        "overdue-kill watch live-recomputed with deltas vs r101 baseline (27, 20 steady rounds)",
+        "run log at work-r102/care/run-r102.md"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-26T19:43:54.618Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-26 round 102"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-26T23:50:00Z"
     }
   ],
   "presence": {
@@ -11001,6 +11047,11 @@
       "op": "task.create",
       "at": "2026-09-26T16:52:30.164Z",
       "ref": "tsk_01M3FA3WAKNVKKPWMFXP0E0P7K"
+    },
+    "activation-sweep-2026-09-26-r102-care": {
+      "op": "task.create",
+      "at": "2026-09-26T19:43:54.618Z",
+      "ref": "tsk_01M3FKXQQRR9EX6BYQPJ4VGE1V"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
