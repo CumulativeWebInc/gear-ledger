@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23249,
-  "updated_at": "2026-09-26T04:46:27.361Z",
+  "version": 23250,
+  "updated_at": "2026-09-26T04:46:41.720Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -9905,6 +9905,35 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-26T07:20:00Z"
+    },
+    {
+      "task_id": "tsk_01M3E0JWHQ1S3ZDPQ1DSWASS3A",
+      "type": "custom",
+      "title": "Sweep round-88: Guide ops chapter 95 + walkthrough #88",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-26T04:46:41.719Z",
+      "assigned_to": "agent:CWI_Guide",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "ops chapter 95 contiguous + walkthrough #88 12/12 PASS",
+        "run log at work-r88/guide/run-r88.md"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-26T04:46:41.720Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-26 r88"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-26T07:20:00Z"
     }
   ],
   "presence": {
@@ -12248,6 +12277,11 @@
       "op": "task.create",
       "at": "2026-09-26T04:46:27.361Z",
       "ref": "tsk_01M3E0JEH0KD5B12CTDEGC81NW"
+    },
+    "sweep-r88-guide": {
+      "op": "task.create",
+      "at": "2026-09-26T04:46:41.720Z",
+      "ref": "tsk_01M3E0JWHQ1S3ZDPQ1DSWASS3A"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
