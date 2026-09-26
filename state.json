@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23468,
-  "updated_at": "2026-09-26T20:07:20.027Z",
+  "version": 23469,
+  "updated_at": "2026-09-26T20:07:26.362Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -8666,6 +8666,37 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-27T01:00:00Z"
+    },
+    {
+      "task_id": "tsk_01M3FN8TCTEYY8MJJXZHZR1QVQ",
+      "type": "custom",
+      "title": "Sweep round-103: Guide ops chapter 110 + walkthrough #103",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-26T20:07:26.362Z",
+      "assigned_to": "agent:CWI_Guide",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "AGENT-DECK-USER-GUIDE v2.101 with chapter 110, chapters 1-110 contiguous",
+        "walkthrough #103 12/12 PASS",
+        "URI-hash 3/3 MATCH",
+        "delivered with receipts inside the kill"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-26T20:07:26.362Z",
+          "by": "agent:MUSE_CWI",
+          "note": "fine-tune pass 2026-09-26: no-idle dispatch ahead of Sun merch sequence + Mon ERC-8004 launch"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-27T01:00:00Z"
     }
   ],
   "presence": {
@@ -11204,6 +11235,11 @@
       "op": "task.create",
       "at": "2026-09-26T20:07:20.027Z",
       "ref": "tsk_01M3FN8M6TNWVQ5KPXAX8XZS9K"
+    },
+    "activation-sweep-2026-09-26-r103-guide": {
+      "op": "task.create",
+      "at": "2026-09-26T20:07:26.362Z",
+      "ref": "tsk_01M3FN8TCTEYY8MJJXZHZR1QVQ"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
