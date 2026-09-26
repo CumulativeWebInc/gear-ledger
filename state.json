@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23282,
-  "updated_at": "2026-09-26T06:45:49.357Z",
+  "version": 23283,
+  "updated_at": "2026-09-26T06:47:58.657Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -10237,7 +10237,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-26T06:45:10.045Z",
       "assigned_to": "agent:CWI_Athena_MINT",
-      "state": "assigned",
+      "state": "in_progress",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -10257,6 +10257,13 @@
           "at": "2026-09-26T06:45:10.045Z",
           "by": "agent:MUSE_CWI",
           "note": "activation sweep 2026-09-26 (round 90, dispatch by agent:MUSE_CWI; lane self-starts under own URN)"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-26T06:47:58.656Z",
+          "by": "agent:CWI_Athena_MINT",
+          "note": "r90 sweep: MINT self-start under own URN, beginning taps-check live recompute"
         }
       ],
       "requires_black_approval": false,
