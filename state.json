@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23218,
-  "updated_at": "2026-09-26T02:46:01.908Z",
+  "version": 23219,
+  "updated_at": "2026-09-26T02:46:25.446Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -9509,6 +9509,45 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-26T04:50:00Z"
+    },
+    {
+      "task_id": "tsk_01M3DSPND6882Z1T0Z5S1X81JH",
+      "type": "custom",
+      "title": "Sweep round-86: Care KB v2.85 + overdue-kill watch recompute",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-26T02:46:25.446Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {
+        "round": 86,
+        "kill": "2026-09-26T04:50:00Z",
+        "lane_dir": "goals/cwi-agent-company/hidden_files/activation-sweep/work-r86/care",
+        "base_draft_head": "9d5d1ae6d36d3046772e84d12d1a8464bbba6fc4",
+        "base_blob": "34ca2398a71c561d066f74394f1468b86f980ef8",
+        "base_entries": 442,
+        "overdue_baseline": 27,
+        "overdue_steady_rounds": 4
+      },
+      "acceptance": [
+        "KB v2.85 runbooks added on kb-v2-draft with remote==local byte-verify",
+        "overdue-kill watch report filed",
+        "run log at work-r86/care/run-r86.md"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-26T02:46:25.446Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep round-86: no-idle rule; self-start under own URN at first real work"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-26T04:50:00Z"
     }
   ],
   "presence": {
@@ -11817,6 +11856,11 @@
       "op": "task.create",
       "at": "2026-09-26T02:46:01.908Z",
       "ref": "tsk_01M3DSNYDK8H1KZPH43VFEMZKV"
+    },
+    "sweep-r86-care": {
+      "op": "task.create",
+      "at": "2026-09-26T02:46:25.446Z",
+      "ref": "tsk_01M3DSPND6882Z1T0Z5S1X81JH"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
