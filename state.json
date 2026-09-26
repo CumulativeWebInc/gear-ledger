@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23327,
-  "updated_at": "2026-09-26T09:44:00.838Z",
+  "version": 23328,
+  "updated_at": "2026-09-26T09:44:24.210Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -7028,6 +7028,43 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-26T13:45:00Z"
+    },
+    {
+      "task_id": "tsk_01M3EHM0CHTK7J1K4KJQX66YDW",
+      "type": "custom",
+      "title": "Sweep round-93: Guide ops chapter 100 + walkthrough #93",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-26T09:44:24.209Z",
+      "assigned_to": "agent:CWI_Guide",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "Named result delivered inside kill 2026-09-26T13:45:00Z",
+        "Guide ops chapter 100 written on draft guide ONLY (live guide untouched",
+        "chapter->version law: ch100 -> v2.91",
+        "baseline 99 chapters contiguous on AGENT-DECK-USER-GUIDE-v2.90.md - verify live)",
+        "walkthrough #93 12/12 PASS on live ledger numbers",
+        "r93 dispatch accounting live-computed (MINT->Care->Guide creation order, dispatch window, dispatch latency from scheduled 09:40:58Z, self-start band/order, pointer rule, idempotency keys, URI-hash, honest zero)",
+        "r92 receipts ledger-exact (MINT delivered 08:49:06.128Z, Care delivered 08:56:22.895Z, Guide delivered 09:00:10.327Z - 3/3 inside the 12:45Z kill)",
+        "task self-flipped to in_progress under agent:CWI_Guide at first real work (own-URN self-start, zero dispatcher flips)",
+        "memory read at start, durable claims at end, offchain-anchor via triangle daemon + offchain-verify ANCHORED-OK",
+        "carve-outs held: $0, no wallet signing, no external publishing, nothing under Black's personal name"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-26T09:44:24.210Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-26 round-93"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-26T13:45:00Z"
     }
   ],
   "presence": {
@@ -9446,6 +9483,11 @@
       "op": "task.create",
       "at": "2026-09-26T09:44:00.838Z",
       "ref": "tsk_01M3EHK9J5M29TH0G9SJSNZBYJ"
+    },
+    "activation-sweep-2026-09-26-r93-guide": {
+      "op": "task.create",
+      "at": "2026-09-26T09:44:24.210Z",
+      "ref": "tsk_01M3EHM0CHTK7J1K4KJQX66YDW"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
