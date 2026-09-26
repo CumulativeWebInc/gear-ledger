@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23402,
-  "updated_at": "2026-09-26T14:45:57.502Z",
+  "version": 23403,
+  "updated_at": "2026-09-26T14:46:03.720Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -7914,6 +7914,37 @@
       "requires_black_approval": true,
       "sample": false,
       "deadline_at": "2026-09-26T18:50:00Z"
+    },
+    {
+      "task_id": "tsk_01M3F2WBP7JPEX92DZ4W9JDPTJ",
+      "type": "custom",
+      "title": "Sweep round-98: Guide ops chapter 105 + walkthrough #98",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-26T14:46:03.719Z",
+      "assigned_to": "agent:CWI_Guide",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "named result: chapter 105 (104+1 contiguous) shipped on draft only, walkthrough #98 12/12 PASS live-recomputed",
+        "measurement: 12/12 PASS + URI-hash 3/3 match on deliver",
+        "kill: delivered by 2026-09-26T18:50:00Z or record FAIL",
+        "memory read at start, durable claims at end"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-26T14:46:03.720Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-26 round-98"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false,
+      "deadline_at": "2026-09-26T18:50:00Z"
     }
   ],
   "presence": {
@@ -10407,6 +10438,11 @@
       "op": "task.create",
       "at": "2026-09-26T14:45:57.501Z",
       "ref": "tsk_01M3F2W5KW8VTE7T7M5S34ASM9"
+    },
+    "activation-sweep-2026-09-26-r98-guide": {
+      "op": "task.create",
+      "at": "2026-09-26T14:46:03.720Z",
+      "ref": "tsk_01M3F2WBP7JPEX92DZ4W9JDPTJ"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
