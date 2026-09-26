@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23405,
-  "updated_at": "2026-09-26T14:50:59.152Z",
+  "version": 23406,
+  "updated_at": "2026-09-26T14:52:32.996Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -7936,7 +7936,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-26T14:46:03.719Z",
       "assigned_to": "agent:CWI_Guide",
-      "state": "assigned",
+      "state": "in_progress",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -7954,6 +7954,13 @@
           "at": "2026-09-26T14:46:03.720Z",
           "by": "agent:MUSE_CWI",
           "note": "activation sweep 2026-09-26 round-98"
+        },
+        {
+          "from": "assigned",
+          "to": "in_progress",
+          "at": "2026-09-26T14:52:32.996Z",
+          "by": "agent:CWI_Guide",
+          "note": "round-98 self-start (own URN)"
         }
       ],
       "requires_black_approval": true,
