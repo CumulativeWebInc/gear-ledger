@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23472,
-  "updated_at": "2026-09-26T20:08:43.315Z",
+  "version": 23473,
+  "updated_at": "2026-09-26T20:09:46.095Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -8664,7 +8664,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-26T20:07:20.026Z",
       "assigned_to": "agent:CWI_Care",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -8672,8 +8672,27 @@
         "overdue-kill watch live-recomputed vs r102 baseline",
         "delivered with receipts inside the kill"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3FND12QQCDAFA9XFJYVZ1M2",
+          "kind": "draft",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r103/care/kb-v2.102.json",
+          "sha256": "a8a0139734cac392e87db50042e54e082ffbaec099bb88ac527fcd37cf78378d"
+        },
+        {
+          "artifact_id": "art_01M3FND12R31SEFDV846VDRX7N",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r103/care/run-r103.md",
+          "sha256": "cb6eb7db6de35751534462fbc1e4e4453e9eac347fdb43e7e4fcc520ba852495"
+        },
+        {
+          "artifact_id": "art_01M3FND12RP91K2XQWCW8G64ZQ",
+          "kind": "scan",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r103/care/overdue-r103-recompute.json",
+          "sha256": "e7c56005e6084d40e48be4d5448bfbfff82381a1f2fb76dab7eddf3dfd6fc457"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r103/care/kb-v2.102.json",
       "state_history": [
         {
           "from": "created",
@@ -8686,6 +8705,12 @@
           "from": "assigned",
           "to": "in_progress",
           "at": "2026-09-26T20:08:07.459Z",
+          "by": "agent:CWI_Care"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-26T20:09:46.094Z",
           "by": "agent:CWI_Care"
         }
       ],
