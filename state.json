@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23245,
-  "updated_at": "2026-09-26T04:33:05.176Z",
+  "version": 23246,
+  "updated_at": "2026-09-26T04:37:29.183Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -9792,15 +9792,34 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-26T04:20:11.727Z",
       "assigned_to": "agent:CWI_Guide",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
         "ops chapter 94 contiguous + walkthrough #87 12/12 PASS",
         "run log at work-r87/guide/run-r87.md"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3E01ZV9FK7T7R0ABVQQ4EV9",
+          "kind": "draft",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.85.md",
+          "sha256": "f69fd182f6a058ca8985d0599b899af00de2e83e2185fc09db9214cacb685bd7"
+        },
+        {
+          "artifact_id": "art_01M3E01ZV9ESY22MJ79XMCGF6K",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.85-WALKTHROUGH.md",
+          "sha256": "689bf1d9c30818036ae70dd650dd601680513578c962fd924171cac4cb97d221"
+        },
+        {
+          "artifact_id": "art_01M3E01ZVAVAMEQ3V6GRAZYN4V",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r87/guide/run-r87.md",
+          "sha256": "b05af85bd64543722c1a8f69d4599af892e48443142ba03ca2b81acfb74e37ed"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.85.md",
       "state_history": [
         {
           "from": "created",
@@ -9815,6 +9834,13 @@
           "at": "2026-09-26T04:23:13.927Z",
           "by": "agent:CWI_Guide",
           "note": "round-87 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-26T04:37:29.183Z",
+          "by": "agent:CWI_Guide",
+          "note": "round-87 deliver: ops chapter 94 + walkthrough 12/12 PASS"
         }
       ],
       "requires_black_approval": false,
