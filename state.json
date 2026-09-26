@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23396,
-  "updated_at": "2026-09-26T14:12:35.917Z",
+  "version": 23397,
+  "updated_at": "2026-09-26T14:21:39.066Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -7800,14 +7800,33 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-26T13:46:43.809Z",
       "assigned_to": "agent:CWI_Guide",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
         "[\"named result: chapter 104 (103+1 contiguous) shipped on draft only, walkthrough #97 12/12 PASS live-recomputed\",\"measurement: 12/12 PASS + URI-hash 3/3 match on deliver\",\"kill: delivered by 2026-09-26T17:50:00Z or record FAIL\"]"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3F1FM4AGSET4GCYBAM4E5D2",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.95.md",
+          "sha256": "c76c12160fada5a8ca6681ab106426a706003a38d8430292a949d35a6b7a55a9"
+        },
+        {
+          "artifact_id": "art_01M3F1FM4BF0E3JZ609W9RVQNC",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.95-WALKTHROUGH.md",
+          "sha256": "6fe60fb850682b555a2b4854ed087f8fde480cddec10030622e43f7fa7839f5f"
+        },
+        {
+          "artifact_id": "art_01M3F1FM4BYY75MNC0MC2HDPKT",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r97/guide/run-r97.md",
+          "sha256": "5c68bbe4e29bb9d266d96e6fabb6b2afbb8988766eb0432d13580cf6e9847836"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/cwi-company/gear-line/AGENT-DECK-USER-GUIDE-v2.95.md",
       "state_history": [
         {
           "from": "created",
@@ -7822,6 +7841,12 @@
           "at": "2026-09-26T13:51:36.237Z",
           "by": "agent:CWI_Guide",
           "note": "activation sweep 2026-09-26"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-26T14:21:39.065Z",
+          "by": "agent:CWI_Guide"
         }
       ],
       "requires_black_approval": true,
