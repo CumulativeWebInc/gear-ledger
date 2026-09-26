@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23452,
-  "updated_at": "2026-09-26T18:52:38.090Z",
+  "version": 23453,
+  "updated_at": "2026-09-26T18:52:57.006Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -8368,14 +8368,33 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-26T18:45:11.143Z",
       "assigned_to": "agent:CWI_Care",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
         "KB v2.100 shipped on kb-v2-draft with remote==local byte-verify\noverdue-kill watch live-recomputed with deltas vs r100 baseline\nrun log at work-r101/care/run-r101.md"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3FH0BB8KYX6YNXMJS01FFRT",
+          "kind": "draft",
+          "uri": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r101/care/kb-v2.100.json",
+          "sha256": "7b004dbe604bd9d1023c43f01f1c4aa241a948500fa8665c0d52bf011348e86c"
+        },
+        {
+          "artifact_id": "art_01M3FH0BB97RPSJAQ5CAF0J094",
+          "kind": "report",
+          "uri": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r101/care/run-r101.md",
+          "sha256": "bcf005d2d98ef2f654cb57e0067a2663d2a1fafaa8ce29150a8769f5dd73bc7e"
+        },
+        {
+          "artifact_id": "art_01M3FH0BB9NB2SNDWJGXK6ZJ8V",
+          "kind": "scan",
+          "uri": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r101/care/overdue-r101-recompute.json",
+          "sha256": "5f243d5164f87525eae7d6141d69353baca90c6c30a9b2716e61ba3869df7b60"
+        }
+      ],
+      "deliverable_ref": "/home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r101/care/kb-v2.100.json",
       "state_history": [
         {
           "from": "created",
@@ -8389,6 +8408,13 @@
           "at": "2026-09-26T18:47:55.547Z",
           "by": "agent:CWI_Care",
           "note": "activation sweep 2026-09-26"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-26T18:52:57.006Z",
+          "by": "agent:CWI_Care",
+          "note": "Care KB v2.100 on kb-v2-draft (commit 2658c2b3111daa2ea0623b91fae93cc557cac912, blob 4bc217657e4188669a83d0173f4e8cd381364460, remote==local byte-identical via /git/blobs/); overdue-kill watch 27 non-terminal, 0/0/0 deltas (20th steady); main untouched, live KB v1.1"
         }
       ],
       "requires_black_approval": true,
