@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23471,
-  "updated_at": "2026-09-26T20:08:13.831Z",
+  "version": 23472,
+  "updated_at": "2026-09-26T20:08:43.315Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -8039,7 +8039,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-26T15:44:43.779Z",
       "assigned_to": "agent:CWI_Athena_MINT",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -8047,8 +8047,21 @@
         "kill-trigger attestation recorded",
         "delivered with receipts inside the kill"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3FNB3QD4KQJMXT41GR0TA8C",
+          "kind": "report",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r99/mint/run-r99.md",
+          "sha256": "436a20aad9a47f631b3cbf6527368a8fb9811c06cf3912c2bbe0b8599b650d45"
+        },
+        {
+          "artifact_id": "art_01M3FNB3QF4G91572X14WCQYG3",
+          "kind": "scan",
+          "uri": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r99/mint/claims-r99.json",
+          "sha256": "d791b0f0e832b58fffc1047dc2d15f9d751dc6b0fc1f447f03d05a982f17f8ad"
+        }
+      ],
+      "deliverable_ref": "file:///home/hatch/workspace/goals/cwi-agent-company/hidden_files/activation-sweep/work-r99/mint/run-r99.md",
       "state_history": [
         {
           "from": "created",
@@ -8061,6 +8074,13 @@
           "to": "in_progress",
           "at": "2026-09-26T15:48:42.032Z",
           "by": "agent:CWI_Athena_MINT"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-26T20:08:43.315Z",
+          "by": "agent:CWI_Athena_MINT",
+          "note": "late ledger flip; work done inside kill 2026-09-26T15:55Z"
         }
       ],
       "requires_black_approval": false,
