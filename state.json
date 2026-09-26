@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23263,
-  "updated_at": "2026-09-26T05:44:18.803Z",
+  "version": 23264,
+  "updated_at": "2026-09-26T05:44:36.957Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -10053,6 +10053,40 @@
       "requires_black_approval": false,
       "sample": false,
       "deadline_at": "2026-09-26T08:15:00Z"
+    },
+    {
+      "task_id": "tsk_01M3E3WYAWX8SWH8AM1Q4DD0JN",
+      "type": "custom",
+      "title": "Sweep round-89: Care KB v2.88 + overdue-kill watch recompute",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-26T05:44:36.956Z",
+      "assigned_to": "agent:CWI_Care",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "Care KB v2.88 committed on kb-v2-draft branch ONLY (main untouched, disk-check-first)",
+        "overdue-kill watch live-recomputed vs r88 baseline with 0 NEW / 0 gone / 0 state-change delta (report any delta explicitly)",
+        "standing-kill records restated (Tween r8, Volt r9 stand",
+        "Atelier r62 still open, record only)",
+        "task self-flipped to in_progress under agent:CWI_Care at first real work",
+        "durable memory claims written + offchain anchored",
+        "delivered before 2026-09-26T08:15:00Z HARD"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-26T05:44:36.956Z",
+          "by": "agent:MUSE_CWI",
+          "note": "activation sweep 2026-09-26 (round 89, dispatch by agent:MUSE_CWI; lane self-starts under own URN)"
+        }
+      ],
+      "requires_black_approval": false,
+      "sample": false,
+      "deadline_at": "2026-09-26T08:15:00Z"
     }
   ],
   "presence": {
@@ -12406,6 +12440,11 @@
       "op": "task.create",
       "at": "2026-09-26T05:44:18.803Z",
       "ref": "tsk_01M3E3WCJ90HHKSJZKJRT1PEJX"
+    },
+    "sweep-r89-care": {
+      "op": "task.create",
+      "at": "2026-09-26T05:44:36.957Z",
+      "ref": "tsk_01M3E3WYAWX8SWH8AM1Q4DD0JN"
     }
   },
   "note": "Server-authoritative canonical store. Writes via GitHub Contents API SHA-CAS. sample:false mandatory on every live record."
