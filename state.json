@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23448,
-  "updated_at": "2026-09-26T18:45:11.144Z",
+  "version": 23449,
+  "updated_at": "2026-09-26T18:45:26.454Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -8381,6 +8381,32 @@
           "from": "created",
           "to": "assigned",
           "at": "2026-09-26T18:45:11.143Z",
+          "by": "agent:MUSE_CWI"
+        }
+      ],
+      "requires_black_approval": true,
+      "sample": false
+    },
+    {
+      "task_id": "tsk_01M3FGJNSN288EZ0DA8GE5FJSP",
+      "type": "custom",
+      "title": "Sweep round-101: Guide ops chapter 108 + walkthrough #101",
+      "created_by": "agent:MUSE_CWI",
+      "created_at": "2026-09-26T18:45:26.453Z",
+      "assigned_to": "agent:CWI_Guide",
+      "state": "assigned",
+      "priority": "normal",
+      "inputs": {},
+      "acceptance": [
+        "AGENT-DECK-USER-GUIDE-v2.99.md with chapter 108 (108/108 contiguous)\nwalkthrough #101 12/12 PASS\nURI-hash 3/3 MATCH on deliver\nrun log at work-r101/guide/run-r101.md"
+      ],
+      "artifacts": [],
+      "deliverable_ref": null,
+      "state_history": [
+        {
+          "from": "created",
+          "to": "assigned",
+          "at": "2026-09-26T18:45:26.454Z",
           "by": "agent:MUSE_CWI"
         }
       ],
