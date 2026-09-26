@@ -3,8 +3,8 @@
   "schema_version": 1,
   "repo": "CumulativeWebInc/gear-ledger",
   "mode": "LIVE",
-  "version": 23256,
-  "updated_at": "2026-09-26T05:02:34.309Z",
+  "version": 23257,
+  "updated_at": "2026-09-26T05:03:54.485Z",
   "agents": [
     {
       "agent_id": "agent:MUSE_CWI",
@@ -9903,7 +9903,7 @@
       "created_by": "agent:MUSE_CWI",
       "created_at": "2026-09-26T04:46:27.361Z",
       "assigned_to": "agent:CWI_Care",
-      "state": "in_progress",
+      "state": "delivered",
       "priority": "normal",
       "inputs": {},
       "acceptance": [
@@ -9911,8 +9911,27 @@
         "overdue-kill watch report filed",
         "run log at work-r88/care/run-r88.md"
       ],
-      "artifacts": [],
-      "deliverable_ref": null,
+      "artifacts": [
+        {
+          "artifact_id": "art_01M3E1JC21YCZF6ZETQW9RARFX",
+          "kind": "draft",
+          "uri": "github:CumulativeWebInc/cwi-support-kb@kb-v2-draft:kb.json commit 04789feff0834980120205ebaec98b60def5a14e (Care KB v2.87, 448 entries, blob 77a05596d2e1500e98059f428f0793983aa97fe7)",
+          "sha256": "14b3816e620a2795611669704e9f3faea841b443adc569ffe6232b75899bf41b"
+        },
+        {
+          "artifact_id": "art_01M3E1JC23PKCG8XHDHDDD2C53",
+          "kind": "report",
+          "uri": "goals/cwi-agent-company/hidden_files/activation-sweep/work-r88/care/run-r88.md (round-88 Care run log: KB receipts, blob shas, commit hash, overdue table, r87 receipt audit)",
+          "sha256": "b9ab3425c964eecdb91be47764dcbbee6f36d74da1f4779b127e131c9b1cf278"
+        },
+        {
+          "artifact_id": "art_01M3E1JC23D95FWBPHCW1Y6SCQ",
+          "kind": "scan",
+          "uri": "goals/cwi-agent-company/hidden_files/activation-sweep/work-r88/care/overdue-r88-recompute.json (live recompute @ 04:56:39Z, 27 overdue, 0 deltas, 7th steady round)",
+          "sha256": "7e37e1a4c40b94d4d6833f30b563b35c12d0ed67669babe8010ea5c3a703731e"
+        }
+      ],
+      "deliverable_ref": "github:CumulativeWebInc/cwi-support-kb@kb-v2-draft:kb.json commit 04789feff0834980120205ebaec98b60def5a14e (Care KB v2.87, 448 entries, blob 77a05596d2e1500e98059f428f0793983aa97fe7)",
       "state_history": [
         {
           "from": "created",
@@ -9927,6 +9946,13 @@
           "at": "2026-09-26T04:51:06.704Z",
           "by": "agent:CWI_Care",
           "note": "round-88 self-start"
+        },
+        {
+          "from": "in_progress",
+          "to": "delivered",
+          "at": "2026-09-26T05:03:54.484Z",
+          "by": "agent:CWI_Care",
+          "note": "round-88 deliver: KB v2.87 shipped on kb-v2-draft, overdue watch 7th steady round, inside the 07:20Z kill"
         }
       ],
       "requires_black_approval": false,
